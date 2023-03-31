@@ -12,7 +12,9 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
     <html lang='en'>
       <body className='w-screen h-screen text-white1 bg-dark2 overflow-hidden'>
         <Header />
-        <main className='main overflow-auto'>{children}</main>
+        <main className='main overflow-auto scroll-smooth px-[20px] md:px-[40px] py-[80px]'>
+          {children}
+        </main>
       </body>
     </html>
   );

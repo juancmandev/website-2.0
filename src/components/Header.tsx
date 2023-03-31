@@ -12,16 +12,16 @@ const navItems = [
     to: '/',
   },
   {
-    label: 'About',
-    to: '/about',
-  },
-  {
     label: 'Blog',
     to: '/blog',
   },
   {
     label: 'Projects',
     to: '/projects',
+  },
+  {
+    label: 'About',
+    to: '/about',
   },
 ];
 
@@ -32,7 +32,7 @@ const Header = () => {
 
   return (
     <>
-      <header className='w-full sticky px-[20px] py-[24px] -top-1 z-1 flex justify-between items-center bg-dark1 shadow-sm shadow-boxShadow'>
+      <header className='w-full sticky px-[20px] md:px-[40px] py-[24px] -top-1 z-1 flex justify-between items-center bg-dark1 shadow-sm shadow-boxShadow'>
         <nav className='w-full flex justify-between items-center'>
           <section>
             <Link href='/'>
@@ -61,9 +61,12 @@ const Header = () => {
           </Tippy>
         </section>
       </header>
+
       <div
+        onClick={() => setToggleSideMenu(false)}
         className={`${sideMenu} w-screen h-screen absolute top-0 z-20 overflow-hidden backdrop`}
       />
+
       <nav
         className={`${sideMenu} w-[200px] h-full py-[32px] -top-1 z-30 overflow-hidden bg-dark1 side-transition text-white1`}>
         <section className='flex justify-center'>

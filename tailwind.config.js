@@ -10,7 +10,7 @@ module.exports = {
       dark1: '#393e46',
       dark2: '#222831',
       white1: '#eee',
-      boxShadow: 'rgba(56,56,56,0.75)',
+      boxShadow: 'rgba(125,125,125,0.9)',
     },
   },
   plugins: [],
