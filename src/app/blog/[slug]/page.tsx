@@ -12,7 +12,7 @@ const getPostContent = (slug: string) => {
   return matterResult;
 };
 
-export const getStaticParams = async () => {
+export const generateStaticParams = async () => {
   const posts = getPostMetadata();
 
   return posts.map((post) => ({

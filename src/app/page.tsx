@@ -4,11 +4,6 @@ import getPostMetadata from '@/utils/getPostMetadata';
 const Home = () => {
   const postMetadata = getPostMetadata();
   const last3Posts = postMetadata.slice(0, 3);
-  const BlogCardsPreviews = last3Posts.map((post) => (
-    <li key={post.slug}>
-      <BlogCard {...post} />
-    </li>
-  ));
 
   return (
     <div className='grid gap-y-[100px]'>
@@ -31,7 +26,11 @@ const Home = () => {
           {`Here're my latest posts, feel free to read, I'll be happy if you found something that could help you in your career.`}
         </p>
         <ul className='mt-[32px] flex flex-col lg:flex-row gap-[12px] '>
-          {BlogCardsPreviews}
+          {last3Posts.map((post) => (
+            <li key={post.slug}>
+              <BlogCard {...post} />
+            </li>
+          ))}
         </ul>
       </section>
     </div>
