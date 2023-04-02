@@ -1,0 +1,13 @@
+---
+title: 'First Post'
+subtitle: "Her I'll be sharing my experience"
+date: '2022-04-2'
+tags: ['React.js', 'Next.js']
+featuredImage: '/metroid_dread.jpg'
+---
+
+Hey there!
+
+# juancmandev here
+
+Writing some stuff

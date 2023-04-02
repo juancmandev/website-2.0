@@ -15,5 +15,5 @@ module.exports = {
       boxShadow: 'rgba(125,125,125,0.9)',
     },
   },
-  plugins: [],
+  plugins: [require('@tailwindcss/typography')],
 };

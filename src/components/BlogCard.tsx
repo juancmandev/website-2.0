@@ -1,16 +1,22 @@
 import Image from 'next/image';
-import BlogCardProps from '@/interfaces/BlogCard.model';
+import PostMetadataProps from '@/interfaces/PostMetadata.model';
 import Chip from './Chip';
+import Link from 'next/link';
 
-const tags: string[] = ['React.js', 'Next.js'];
-
-const BlogCard = ({ image, title, date, description }: BlogCardProps) => {
-  return (
+const BlogCard = ({
+  featuredImage,
+  title,
+  date,
+  tags,
+  subtitle,
+  slug,
+}: PostMetadataProps) => (
+  <Link href={`/blog/${slug}`}>
     <article className='bg-dark1 w-[280px] h-full rounded-[8px] shadow-boxShadow cursor-pointer'>
       <header>
         <Image
           priority
-          src={image}
+          src={featuredImage}
           style={{ borderRadius: '8px 8px 0 0' }}
           width={280}
           height={50}
@@ -20,19 +26,19 @@ const BlogCard = ({ image, title, date, description }: BlogCardProps) => {
       <main className='px-[12px] py-[16px] grid gap-y-[8px]'>
         <section>
           <h3 className='text-lg'>{title}</h3>
-          <h4 className='text-sm font-normal'>{date}</h4>
+          <h4 className='text-sm font-normal'>
+            {date.toLocaleDateString('en-US')}
+          </h4>
         </section>
         <section className='flex flex-wrap gap-[4px]'>
-          {tags.map((tag) => (
-            <Chip key={tag} tag={tag} />
-          ))}
+          {tags && tags.map((tag) => <Chip key={tag} tag={tag} />)}
         </section>
         <section>
-          <p className='text-md font-thin'>{description}</p>
+          <p className='text-md font-thin'>{subtitle}</p>
         </section>
       </main>
     </article>
-  );
-};
+  </Link>
+);
 
 export default BlogCard;
