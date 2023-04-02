@@ -32,11 +32,13 @@ const Header = () => {
 
   return (
     <>
-      <header className='w-full sticky px-[20px] md:px-[40px] py-[24px] -top-1 z-1 flex justify-between items-center bg-dark1 shadow-sm shadow-boxShadow'>
+      <header className='w-full sticky px-[20px] md:px-[80px] py-[24px] -top-1 z-1 flex justify-between items-center bg-dark1 shadow-sm shadow-boxShadow'>
         <nav className='w-full flex justify-between items-center'>
           <section>
             <Link href='/'>
-              <h1>juancmandev</h1>
+              <h1 className='text-lg font-semibold hover:underline'>
+                juancmandev
+              </h1>
             </Link>
           </section>
           <section>
