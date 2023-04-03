@@ -6,7 +6,7 @@ const Home = () => {
   const last3Posts = postMetadata.slice(0, 3);
 
   return (
-    <div className='grid gap-y-[100px]'>
+    <div className='grid gap-y-[200px]'>
       <section className='grid gap-y-[4px]'>
         <h2 className='text-3xl'>{`Hi, I'm Juan`}</h2>
         <h1 className='text-4xl text-primary'>Frontend Engineer</h1>
@@ -18,7 +18,7 @@ const Home = () => {
       </section>
 
       <section>
-        <h1 className='text-3xl'>Latest Posts</h1>
+        <h2 className='text-3xl text-primary'>Latest Posts</h2>
         <p className='font-thin text-lg'>
           The best way to demostrate that you learnt something, is sharing it.
         </p>

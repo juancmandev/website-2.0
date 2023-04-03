@@ -12,7 +12,7 @@ const BlogCard = ({
   slug,
 }: PostMetadataProps) => (
   <Link href={`/blog/${slug}`}>
-    <article className='bg-dark1 w-[280px] h-full rounded-[8px] shadow-boxShadow cursor-pointer'>
+    <article className='bg-dark1 w-[280px] h-full rounded-[8px] shadow-boxShadow cursor-pointer group'>
       <header>
         <Image
           priority
@@ -23,9 +23,11 @@ const BlogCard = ({
           alt='Metroid Dread image example'
         />
       </header>
-      <main className='px-[12px] py-[16px] grid gap-y-[8px]'>
+      <main className='p-[12px] grid gap-y-[8px]'>
         <section>
-          <h3 className='text-lg'>{title}</h3>
+          <h3 className='text-lg transition-colors group-hover:text-primary group-hover:underline'>
+            {title}
+          </h3>
           <h4 className='text-sm font-normal'>
             {date.toLocaleDateString('en-US')}
           </h4>

@@ -50,7 +50,7 @@ const PostPage = ({ params }: { params: { slug: string } }) => {
         </p>
       </header>
 
-      <article className='prose prose-invert mx-auto'>
+      <article className='prose prose-invert mx-auto prose-a:transition-all prose-a:no-underline prose-a:text-primary hover:prose-a:underline hover:prose-a:text-primaryLight'>
         <Markdown>{post.content}</Markdown>
       </article>
     </>
