@@ -1,15 +1,7 @@
 import { NextJSIcon, ReactJSIcon } from '@/assets/Icons';
-import { ReactElement } from 'react';
 
 interface ChipProps {
   tag: string;
-}
-
-interface TagProps {
-  label: string;
-  icon: ReactElement;
-  backgroundColor: string;
-  borderColor: string;
 }
 
 const tags: any = {
