@@ -2,7 +2,7 @@
 title: 'First Post'
 subtitle: "Her I'll be sharing my experience"
 date: '2022-03-2'
-tags: ['React.js', 'Next.js']
+tags: ['Next.js', 'React.js']
 featuredImage: '/metroid_dread.jpg'
 ---
 
