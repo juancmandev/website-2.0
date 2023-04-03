@@ -4,6 +4,7 @@ subtitle: "Her I'll be sharing my experience"
 date: '2022-03-2'
 tags: ['Next.js', 'React.js']
 featuredImage: '/metroid_dread.jpg'
+featuredImageCaption: 'This is the banner image of this post'
 ---
 
 "Cloud computing" plays a vital role in the creation of software products and services. It's also one of the most highly sought-after skills in the tech industry.

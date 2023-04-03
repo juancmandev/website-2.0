@@ -5,4 +5,5 @@ export default interface PostMetadataProps {
   slug: string;
   tags: string[];
   featuredImage: string;
+  featuredImageCaption: string;
 }

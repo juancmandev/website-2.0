@@ -26,21 +26,31 @@ const PostPage = ({ params }: { params: { slug: string } }) => {
 
   return (
     <>
-      <header className='my-12 text-center'>
-        <h1 className='text-2xl text-slate-600'>{post.data.title}</h1>
-        <p className='text-slate-400 mt-2'>{post.data.date}</p>
-        <figure>
+      <header className='mb-[40px] text-center max-w-[65ch] mx-auto flex flex-col gap-[8px]'>
+        <figure className='w-full'>
           <Image
+            style={{
+              objectFit: 'contain',
+              position: 'relative',
+              minWidth: '100%',
+            }}
+            width={300}
+            height={100}
             src={post.data.featuredImage}
-            width={500}
-            height={300}
             alt={`${post.data.title} image`}
           />
-          <figcaption>{post.data.title} image</figcaption>
+          <figcaption className='text-sm font-light'>
+            {post.data.featuredImageCaption}
+          </figcaption>
         </figure>
+
+        <h1 className='text-4xl font-bold'>{post.data.title}</h1>
+        <p className='text-md font-light'>
+          {new Date(post.data.date).toLocaleDateString('en-US')}
+        </p>
       </header>
 
-      <article className='prose prose-invert'>
+      <article className='prose prose-invert mx-auto'>
         <Markdown>{post.content}</Markdown>
       </article>
     </>

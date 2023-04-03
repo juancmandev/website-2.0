@@ -36,7 +36,7 @@ const Header = () => {
         <nav className='w-full flex justify-between items-center'>
           <section>
             <Link href='/'>
-              <h1 className='text-lg font-semibold hover:underline'>
+              <h1 className='text-xl font-semibold hover:underline'>
                 juancmandev
               </h1>
             </Link>
@@ -47,7 +47,7 @@ const Header = () => {
                 <li key={navItem.label} className='w-max h-max'>
                   <Link
                     href={navItem.to}
-                    className='hover:underline px-[8px] py-[4px]'>
+                    className='font-bold hover:underline px-[8px] py-[4px]'>
                     {navItem.label}
                   </Link>
                 </li>
@@ -87,7 +87,7 @@ const Header = () => {
                 <Link
                   href={navItem.to}
                   onClick={() => setToggleSideMenu(false)}
-                  className='w-full py-[12px] text-center hover:underline'>
+                  className='w-full py-[12px] font-bold text-center hover:underline'>
                   {navItem.label}
                 </Link>
               </li>

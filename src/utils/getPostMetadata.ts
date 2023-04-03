@@ -18,6 +18,7 @@ const getPostMetadata = (): PostMetadataProps[] => {
       slug: fileName.replace('.md', ''),
       tags: matterResults.data.tags,
       featuredImage: matterResults.data.featuredImage,
+      featuredImageCaption: matterResults.data.featuredImageCaption,
     };
   });
 
