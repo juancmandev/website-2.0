@@ -1,28 +1,35 @@
 import fs from 'fs';
 import Markdown from 'markdown-to-jsx';
 import matter from 'gray-matter';
-import getPostMetadata from '@/utils/getPostMetadata';
+import { getPostEnMetadata, getPostEsMetadata } from '@/utils/getPostMetadata';
 import Image from 'next/image';
+import { Locale } from '../../../../../i18n-config';
 
-const getPostContent = (slug: string) => {
-  const file = `src/posts/${slug}.md`;
+const getPostContent = (slug: string, lang: string) => {
+  const file = `src/posts/${lang}/${slug}.md`;
   const content = fs.readFileSync(file, 'utf8');
   const matterResult = matter(content);
 
   return matterResult;
 };
 
-export const generateStaticParams = async () => {
-  const posts = getPostMetadata();
+export const generateStaticParams = async ({
+  params,
+}: {
+  params: { lang: Locale };
+}) => {
+  const { lang } = params;
+  const posts = lang === 'en' ? getPostEnMetadata() : getPostEsMetadata();
 
   return posts.map((post) => ({
     slug: post.slug,
   }));
 };
 
-const PostPage = ({ params }: { params: { slug: string } }) => {
-  const { slug } = params;
-  const post = getPostContent(slug);
+const PostPage = ({ params }: { params: { slug: string; lang: Locale } }) => {
+  const { slug, lang } = params;
+
+  const post = getPostContent(slug, lang);
 
   return (
     <>
@@ -50,7 +57,7 @@ const PostPage = ({ params }: { params: { slug: string } }) => {
         </p>
       </header>
 
-      <article className='prose prose-invert mx-auto prose-a:transition-all prose-a:no-underline prose-a:text-primary hover:prose-a:underline hover:prose-a:text-primaryLight'>
+      <article className='prose prose-invert mx-auto prose-a:transition-colors prose-a:no-underline prose-a:text-primary hover:prose-a:underline hover:prose-a:text-primaryLight'>
         <Markdown>{post.content}</Markdown>
       </article>
     </>

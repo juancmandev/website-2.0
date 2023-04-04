@@ -1,5 +1,5 @@
 ---
-title: 'First Post'
+title: 'Segundo Post'
 subtitle: "Her I'll be sharing my experience"
 date: '2022-04-2'
 tags: ['React.js', 'Next.js']

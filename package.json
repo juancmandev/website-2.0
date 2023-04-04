@@ -10,19 +10,23 @@
   },
   "dependencies": {
     "@fontsource/roboto": "4.5.8",
+    "@formatjs/intl-localematcher": "0.2.32",
     "@tippyjs/react": "4.2.6",
     "@types/node": "18.15.11",
     "@types/react": "18.0.31",
     "@types/react-dom": "18.0.11",
     "eslint": "8.37.0",
     "eslint-config-next": "13.2.4",
+    "negotiator": "0.6.3",
     "next": "13.2.4",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "server-only": "0.0.1",
     "typescript": "5.0.3"
   },
   "devDependencies": {
     "@tailwindcss/typography": "0.5.9",
+    "@types/negotiator": "0.6.1",
     "autoprefixer": "10.4.14",
     "gray-matter": "4.0.3",
     "markdown-to-jsx": "7.2.0",

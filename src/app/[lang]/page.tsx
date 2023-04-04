@@ -1,8 +1,12 @@
 import BlogCard from '@/components/BlogCard';
-import getPostMetadata from '@/utils/getPostMetadata';
+import { getPostEnMetadata, getPostEsMetadata } from '@/utils/getPostMetadata';
+import { getDictionary } from '@/utils/getDictionary';
+import { Locale } from '../../../i18n-config';
 
-const Home = () => {
-  const postMetadata = getPostMetadata();
+const Home = async ({ params: { lang } }: { params: { lang: Locale } }) => {
+  const dictionary = await getDictionary(lang);
+  const postMetadata =
+    lang === 'en' ? getPostEnMetadata() : getPostEsMetadata();
   const last3Posts = postMetadata.slice(0, 3);
 
   return (
@@ -28,7 +32,7 @@ const Home = () => {
         <ul className='mt-[32px] flex flex-col lg:flex-row gap-[12px] '>
           {last3Posts.map((post) => (
             <li key={post.slug}>
-              <BlogCard {...post} />
+              <BlogCard lang={lang} {...post} />
             </li>
           ))}
         </ul>

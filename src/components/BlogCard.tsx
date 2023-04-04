@@ -10,8 +10,9 @@ const BlogCard = ({
   tags,
   subtitle,
   slug,
+  lang,
 }: PostMetadataProps) => (
-  <Link href={`/blog/${slug}`}>
+  <Link href={`/${lang}/blog/${slug}`}>
     <article className='bg-dark1 w-[280px] h-full rounded-[8px] shadow-boxShadow cursor-pointer group'>
       <header>
         <Image

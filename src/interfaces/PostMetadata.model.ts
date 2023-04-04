@@ -6,4 +6,5 @@ export default interface PostMetadataProps {
   tags: string[];
   featuredImage: string;
   featuredImageCaption: string;
+  lang?: string;
 }
