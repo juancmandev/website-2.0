@@ -1,23 +1,8 @@
-import { NextJSIcon, ReactJSIcon } from '@/assets/Icons';
+import { tags } from '@/utils/tags';
 
 interface ChipProps {
   tag: string;
 }
-
-const tags: any = {
-  ['React.js']: {
-    label: 'React.js',
-    icon: <ReactJSIcon />,
-    backgroundColor: '#00befb',
-    borderColor: '#61dafb',
-  },
-  ['Next.js']: {
-    label: 'Next.js',
-    icon: <NextJSIcon />,
-    backgroundColor: '#000',
-    borderColor: '#fff',
-  },
-};
 
 const Chip = ({ tag }: ChipProps) => (
   <div

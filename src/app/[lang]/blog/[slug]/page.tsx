@@ -17,7 +17,7 @@ export const generateStaticParams = async ({
   params,
 }: {
   params: { lang: Locale };
-}) => {
+}): Promise<any> => {
   const { lang } = params;
 
   if (lang === 'en') {
@@ -31,6 +31,48 @@ export const generateStaticParams = async ({
       lang,
     }));
   }
+};
+
+export const generateMetadata = async ({
+  params: { slug, lang },
+}: {
+  params: { slug: string; lang: Locale };
+}) => {
+  const post = getPostContent(slug, lang);
+
+  return {
+    title: post.data.title,
+    description: post.data.subtitle,
+    openGraph: {
+      type: 'article',
+      locale: lang,
+      title: post.data.title,
+      description: post.data.subtitle,
+      publishedTime: new Date(post.data.date).toISOString(),
+      authors: ['Juan Carlos Manzanero Domínguez | @juancmandev'],
+      images: [
+        {
+          url: post.data.featuredImage,
+          width: 800,
+          height: 600,
+          alt: post.data.featuredImageCaption,
+        },
+      ],
+    },
+    robots: {
+      index: false,
+      follow: true,
+      nocache: true,
+      googleBot: {
+        index: true,
+        follow: false,
+        noimageindex: true,
+        'max-video-preview': -1,
+        'max-image-preview': 'large',
+        'max-snippet': -1,
+      },
+    },
+  };
 };
 
 const PostPage = ({
