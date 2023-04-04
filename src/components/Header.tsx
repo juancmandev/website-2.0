@@ -5,7 +5,6 @@ import Link from 'next/link';
 import { HamburgerIcon, CloseIcon } from '@/assets/Icons';
 import Tippy from '@tippyjs/react';
 import 'tippy.js/dist/tippy.css';
-import { usePathname } from 'next/navigation';
 
 const navItems = [
   {
@@ -26,9 +25,7 @@ const navItems = [
   },
 ];
 
-const Header = () => {
-  const path = usePathname();
-  const lang = path.slice(1, 3);
+const Header = ({ lang }: any) => {
   const changeLang = lang === 'en' ? 'es' : 'en';
 
   const [toggleSideMenu, setToggleSideMenu] = useState(false);

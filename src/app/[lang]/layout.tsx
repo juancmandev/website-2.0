@@ -7,11 +7,11 @@ export const metadata = {
   description: `Let's dev!`,
 };
 
-const RootLayout = ({ children }: { children: React.ReactNode }) => {
+const RootLayout = ({ children, params }: any) => {
   return (
-    <html lang='en'>
+    <html lang={params.lang}>
       <body className='w-screen h-screen text-white1 bg-dark2 overflow-hidden'>
-        <Header />
+        <Header lang={params.lang} />
         <main className='main overflow-auto scroll-smooth px-[20px] md:px-[80px] py-[80px]'>
           {children}
         </main>

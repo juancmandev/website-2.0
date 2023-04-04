@@ -26,9 +26,11 @@ export const generateStaticParams = async ({
   }));
 };
 
-const PostPage = ({ params }: { params: { slug: string; lang: Locale } }) => {
-  const { slug, lang } = params;
-
+const PostPage = ({
+  params: { slug, lang },
+}: {
+  params: { slug: string; lang: Locale };
+}) => {
   const post = getPostContent(slug, lang);
 
   return (
