@@ -3,6 +3,10 @@ import { getPostEnMetadata, getPostEsMetadata } from '@/utils/getPostMetadata';
 import { getDictionary } from '@/utils/getDictionary';
 import { Locale } from '../../../i18n-config';
 
+export async function generateStaticParams() {
+  return [{ lang: 'en' }, { lang: 'es' }];
+}
+
 const Home = async ({ params: { lang } }: { params: { lang: Locale } }) => {
   const dictionary = await getDictionary(lang);
   const postMetadata =
