@@ -27,7 +27,7 @@ const Home = async ({ params: { lang } }: { params: { lang: Locale } }) => {
   const last3Projects = projectsMetadata.slice(0, 3);
 
   return (
-    <div className='grid gap-y-[200px]'>
+    <div className='grid gap-y-[150px]'>
       <section className='grid gap-y-[4px]'>
         <h2 className='text-3xl'>{`Hi, I'm Juan`}</h2>
         <h1 className='text-4xl text-primary'>Frontend Engineer</h1>

@@ -87,13 +87,11 @@ const PostPage = ({
       <header className='mb-[40px] text-center max-w-[65ch] mx-auto flex flex-col gap-[8px]'>
         <figure className='w-full'>
           <Image
-            style={{
-              objectFit: 'contain',
-              position: 'relative',
-              minWidth: '100%',
-            }}
-            width={300}
-            height={100}
+            priority
+            width='0'
+            height='0'
+            sizes='100vw'
+            className='w-full h-auto'
             src={post.data.featuredImage}
             alt={`${post.data.title} image`}
           />

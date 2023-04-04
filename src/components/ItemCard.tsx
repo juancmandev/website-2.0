@@ -20,8 +20,10 @@ const ItemCard = ({
           priority
           src={featuredImage}
           style={{ borderRadius: '8px 8px 0 0' }}
-          width={280}
-          height={50}
+          width='0'
+          height='0'
+          sizes='100vw'
+          className='w-full h-auto'
           alt='Metroid Dread image example'
         />
       </header>
