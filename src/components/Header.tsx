@@ -58,7 +58,7 @@ const Header = () => {
               {navItems.map((navItem) => (
                 <li key={navItem.label} className='w-max h-max'>
                   <Link
-                    href={`/${lang}/${navItem.to}`}
+                    href={`/${lang}${navItem.to}`}
                     className='font-bold hover:underline px-[8px] py-[4px]'>
                     {navItem.label}
                   </Link>
@@ -107,7 +107,7 @@ const Header = () => {
                 key={navItem.label}
                 className='w-full h-max flex hover:bg-boxShadow'>
                 <Link
-                  href={`/${lang}/${navItem.to}`}
+                  href={`/${lang}${navItem.to}`}
                   onClick={() => setToggleSideMenu(false)}
                   className='w-full py-[12px] font-bold text-center hover:underline'>
                   {navItem.label}
