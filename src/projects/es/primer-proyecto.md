@@ -1,6 +1,6 @@
 ---
-title: 'First Post'
-subtitle: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam voluptates iure necessitatibus nobis, eum minus! Eveniet nisi provident, quod cum inventore quam eum dolorum autem.'
+title: 'Primer Proyecto'
+subtitle: "Her I'll be sharing my experience"
 date: '2022-03-2'
 tags: ['Next.js', 'React.js']
 featuredImage: '/metroid_dread.jpg'

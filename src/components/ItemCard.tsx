@@ -1,9 +1,9 @@
 import Image from 'next/image';
-import PostMetadataProps from '@/interfaces/PostMetadata.model';
+import ItemCardMetadataProps from '@/interfaces/ItemCardMetadata.model';
 import Chip from './Chip';
 import Link from 'next/link';
 
-const BlogCard = ({
+const ItemCard = ({
   featuredImage,
   title,
   date,
@@ -11,8 +11,9 @@ const BlogCard = ({
   subtitle,
   slug,
   lang,
-}: PostMetadataProps) => (
-  <Link href={`/${lang}/blog/${slug}`}>
+  type,
+}: ItemCardMetadataProps) => (
+  <Link href={`/${lang}/${type}/${slug}`}>
     <article className='bg-dark1 w-[280px] h-full rounded-[8px] shadow-boxShadow cursor-pointer group'>
       <header>
         <Image
@@ -44,4 +45,4 @@ const BlogCard = ({
   </Link>
 );
 
-export default BlogCard;
+export default ItemCard;

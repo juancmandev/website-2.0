@@ -1,5 +1,9 @@
-import BlogCard from '@/components/BlogCard';
+import ItemCard from '@/components/ItemCard';
 import { getPostEnMetadata, getPostEsMetadata } from '@/utils/getPostMetadata';
+import {
+  getProjectEnMetadata,
+  getProjectsEsMetadata,
+} from '@/utils/getProjectMetadata';
 import { getDictionary } from '@/utils/getDictionary';
 import { Locale } from '@/dictionaries/i18n-config';
 import type { Metadata } from 'next';
@@ -18,6 +22,9 @@ const Home = async ({ params: { lang } }: { params: { lang: Locale } }) => {
   const postMetadata =
     lang === 'en' ? getPostEnMetadata() : getPostEsMetadata();
   const last3Posts = postMetadata.slice(0, 3);
+  const projectsMetadata =
+    lang === 'en' ? getProjectEnMetadata() : getProjectsEsMetadata();
+  const last3Projects = projectsMetadata.slice(0, 3);
 
   return (
     <div className='grid gap-y-[200px]'>
@@ -42,7 +49,21 @@ const Home = async ({ params: { lang } }: { params: { lang: Locale } }) => {
         <ul className='mt-[32px] flex flex-col lg:flex-row gap-[12px] '>
           {last3Posts.map((post) => (
             <li key={post.slug}>
-              <BlogCard lang={lang} {...post} />
+              <ItemCard lang={lang} {...post} type='blog' />
+            </li>
+          ))}
+        </ul>
+      </section>
+
+      <section>
+        <h2 className='text-3xl text-primary'>Latest Projects</h2>
+        <p className='font-thin text-lg'>
+          {`Develop things it's fun! Here there're some of my projects`}
+        </p>
+        <ul className='mt-[32px] flex flex-col lg:flex-row gap-[12px] '>
+          {last3Projects.map((project) => (
+            <li key={project.slug}>
+              <ItemCard lang={lang} {...project} type='projects' />
             </li>
           ))}
         </ul>

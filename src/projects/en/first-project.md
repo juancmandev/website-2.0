@@ -1,10 +1,12 @@
 ---
-title: 'First Post'
+title: 'First Project'
 subtitle: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam voluptates iure necessitatibus nobis, eum minus! Eveniet nisi provident, quod cum inventore quam eum dolorum autem.'
 date: '2022-03-2'
 tags: ['Next.js', 'React.js']
 featuredImage: '/metroid_dread.jpg'
 featuredImageCaption: 'This is the banner image of this post'
+repo: 'https://github.com/juancmandev/my-website'
+url: 'https://my-website.juancman.dev/'
 ---
 
 "Cloud computing" plays a vital role in the creation of software products and services. It's also one of the most highly sought-after skills in the tech industry.

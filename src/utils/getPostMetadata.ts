@@ -1,6 +1,6 @@
 import fs from 'fs';
 import matter from 'gray-matter';
-import PostMetadataProps from '@/interfaces/PostMetadata.model';
+import PostMetadataProps from '@/interfaces/ItemCardMetadata.model';
 import { sortByKeyDesc } from './sorts';
 
 export const getPostEnMetadata = (): PostMetadataProps[] => {
