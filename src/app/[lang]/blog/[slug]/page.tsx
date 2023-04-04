@@ -3,7 +3,7 @@ import Markdown from 'markdown-to-jsx';
 import matter from 'gray-matter';
 import { getPostEnMetadata, getPostEsMetadata } from '@/utils/getPostMetadata';
 import Image from 'next/image';
-import { Locale } from '../../../../../i18n-config';
+import { Locale } from '@/dictionaries/i18n-config';
 
 const getPostContent = (slug: string, lang: string) => {
   const file = `src/posts/${lang}/${slug}.md`;
@@ -19,11 +19,18 @@ export const generateStaticParams = async ({
   params: { lang: Locale };
 }) => {
   const { lang } = params;
-  const posts = lang === 'en' ? getPostEnMetadata() : getPostEsMetadata();
 
-  return posts.map((post) => ({
-    slug: post.slug,
-  }));
+  if (lang === 'en') {
+    return getPostEnMetadata().map((post) => ({
+      slug: post.slug,
+      lang,
+    }));
+  } else if (lang === 'es') {
+    return getPostEsMetadata().map((post) => ({
+      slug: post.slug,
+      lang,
+    }));
+  }
 };
 
 const PostPage = ({

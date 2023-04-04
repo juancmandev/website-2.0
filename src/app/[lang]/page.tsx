@@ -1,11 +1,17 @@
 import BlogCard from '@/components/BlogCard';
 import { getPostEnMetadata, getPostEsMetadata } from '@/utils/getPostMetadata';
 import { getDictionary } from '@/utils/getDictionary';
-import { Locale } from '../../../i18n-config';
+import { Locale } from '@/dictionaries/i18n-config';
+import type { Metadata } from 'next';
 
-export async function generateStaticParams() {
+export const metadata: Metadata = {
+  title: 'juancmandev',
+  description: 'Learn about Frontend and Cloud technologies!',
+};
+
+export const generateStaticParams = async () => {
   return [{ lang: 'en' }, { lang: 'es' }];
-}
+};
 
 const Home = async ({ params: { lang } }: { params: { lang: Locale } }) => {
   const dictionary = await getDictionary(lang);

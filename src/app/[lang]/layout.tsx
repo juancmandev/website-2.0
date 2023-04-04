@@ -7,9 +7,9 @@ export const metadata = {
   description: `Let's dev!`,
 };
 
-export async function generateStaticParams() {
+export const generateStaticParams = async () => {
   return [{ lang: 'en' }, { lang: 'es' }];
-}
+};
 
 const RootLayout = ({ children, params }: any) => {
   return (

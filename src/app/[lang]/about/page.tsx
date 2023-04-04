@@ -1,6 +1,6 @@
-export async function generateStaticParams() {
+export const generateStaticParams = () => {
   return [{ lang: 'en' }, { lang: 'es' }];
-}
+};
 
 const About = () => {
   return (
