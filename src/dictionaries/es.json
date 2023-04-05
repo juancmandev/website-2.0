@@ -1,3 +1,19 @@
 {
-  "hello": "hola"
+  "common": {
+    "and": "y",
+    "engineer": "ingeniero"
+  },
+  "home": {
+    "hello_iam": "Hola, soy",
+    "my_web_1": "Este es mi sitio web, aquí comparti mi carrera como",
+    "latest_posts": "Últimos Posts",
+    "latest_posts_1": "Enseñar es la mejor forma de demostrar que has aprendido algo.",
+    "latest_posts_2": "Aquí están mis últimos posts, siéntete libre de leer.",
+    "latest_posts_3": "Estaré feliz si encuentras algo que pueda ayudarte en tu carrera o aprendes algo nuevo.",
+    "latest_projects": "Últimos Proyectos",
+    "latest_projects_1": "¡Es divertido crear cosas! Aquí están algunos de mis proyectos."
+  },
+  "projects": {
+    "title": "Proyectos"
+  }
 }

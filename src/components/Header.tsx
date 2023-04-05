@@ -6,21 +6,40 @@ import { HamburgerIcon, CloseIcon } from '@/assets/Icons';
 import Tippy from '@tippyjs/react';
 import 'tippy.js/dist/tippy.css';
 
+const dictionary: any = {
+  ['home']: {
+    ['en']: 'Home',
+    ['es']: 'Inicio',
+  },
+  ['blog']: {
+    ['en']: 'Blog',
+    ['es']: 'Blog',
+  },
+  ['projects']: {
+    ['en']: 'Projects',
+    ['es']: 'Proyectos',
+  },
+  ['contact']: {
+    ['en']: 'Contact',
+    ['es']: 'Contacto',
+  },
+};
+
 const navItems = [
   {
-    label: 'Home',
+    label: 'home',
     to: '/',
   },
   {
-    label: 'Blog',
+    label: 'blog',
     to: '/blog',
   },
   {
-    label: 'Projects',
+    label: 'projects',
     to: '/projects',
   },
   {
-    label: 'Contact',
+    label: 'contact',
     to: '/contact',
   },
 ];
@@ -46,7 +65,15 @@ const Header = ({ lang }: any) => {
           <section className='hidden sm:flex items-center gap-[32px]'>
             <Tippy
               placement='left'
-              content={`Change current language to ${changeLang}`}>
+              content={
+                lang === 'en'
+                  ? `Cambiar idioma al ${
+                      changeLang === 'en' ? 'Inglés' : 'Español'
+                    }`
+                  : `Change language to ${
+                      changeLang === 'en' ? 'English' : 'Spanish'
+                    }`
+              }>
               <Link href={`/${changeLang}`}>
                 <p className='text-lg'>{changeLang === 'en' ? '🇺🇸' : '🇲🇽'}</p>
               </Link>
@@ -57,7 +84,7 @@ const Header = ({ lang }: any) => {
                   <Link
                     href={`/${lang}${navItem.to}`}
                     className='font-bold hover:underline px-[8px] py-[4px]'>
-                    {navItem.label}
+                    {dictionary[navItem.label][lang]}
                   </Link>
                 </li>
               ))}
@@ -66,7 +93,9 @@ const Header = ({ lang }: any) => {
         </nav>
 
         <section className='flex sm:hidden h-max items-center'>
-          <Tippy placement='left' content='Open side menu'>
+          <Tippy
+            placement='left'
+            content={lang === 'en' ? 'Open Side Menu' : 'Abrir Menú Lateral'}>
             <button onClick={() => setToggleSideMenu(true)} id='toggle-menu'>
               <HamburgerIcon fillColor='#eee' />
             </button>
@@ -82,7 +111,9 @@ const Header = ({ lang }: any) => {
       <nav
         className={`${sideMenu} w-[200px] h-full py-[32px] -top-1 z-30 overflow-hidden bg-dark1 side-transition text-white1`}>
         <section className='w-full flex justify-center'>
-          <Tippy placement='right' content='Close side menu'>
+          <Tippy
+            placement='right'
+            content={lang === 'en' ? 'Close Side Menu' : 'Cerrar Menú Lateral'}>
             <button onClick={() => setToggleSideMenu(false)}>
               <CloseIcon fillColor='#eee' />
             </button>
@@ -91,7 +122,15 @@ const Header = ({ lang }: any) => {
         <section className='flex flex-col mt-[40px]'>
           <Tippy
             placement='left'
-            content={`Change current language to ${changeLang}`}>
+            content={
+              lang === 'en'
+                ? `Cambiar idioma al ${
+                    changeLang === 'en' ? 'Inglés' : 'Español'
+                  }`
+                : `Change language to ${
+                    changeLang === 'en' ? 'English' : 'Spanish'
+                  }`
+            }>
             <Link
               className='w-full my-[12px] text-center'
               href={`/${changeLang}`}>
@@ -107,7 +146,7 @@ const Header = ({ lang }: any) => {
                   href={`/${lang}${navItem.to}`}
                   onClick={() => setToggleSideMenu(false)}
                   className='w-full py-[12px] font-bold text-center hover:underline'>
-                  {navItem.label}
+                  {dictionary[navItem.label][lang]}
                 </Link>
               </li>
             ))}

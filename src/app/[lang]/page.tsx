@@ -27,25 +27,25 @@ const Home = async ({ params: { lang } }: { params: { lang: Locale } }) => {
   const last3Projects = projectsMetadata.slice(0, 3);
 
   return (
-    <div className='grid gap-y-[150px]'>
+    <div className='grid gap-y-[120px]'>
       <section className='grid gap-y-[4px]'>
-        <h2 className='text-3xl'>{`Hi, I'm Juan`}</h2>
+        <h2 className='text-3xl'>{dictionary.home.hello_iam} Juan</h2>
         <h1 className='text-4xl text-primary'>Frontend Engineer</h1>
         <p className='font-thin text-lg'>
-          This is my web site, here I share my career as a{' '}
-          <span className='font-normal text-primary'>Frontend</span> and{' '}
+          {dictionary.home.my_web_1}{' '}
+          <span className='font-normal text-primary'>Frontend</span>{' '}
+          {dictionary.common.and}{' '}
           <span className='font-normal text-primary'>Cloud</span> engineer.
         </p>
       </section>
 
       <section>
-        <h2 className='text-3xl text-primary'>Latest Posts</h2>
-        <p className='font-thin text-lg'>
-          The best way to demostrate that you learnt something, is sharing it.
-        </p>
-        <p className='font-thin text-lg'>
-          {`Here're my latest posts, feel free to read, I'll be happy if you found something that could help you in your career.`}
-        </p>
+        <h2 className='text-3xl text-primary'>
+          {dictionary.home.latest_posts}
+        </h2>
+        <p className='font-thin'>{dictionary.home.latest_posts_1}</p>
+        <p className='font-thin'>{dictionary.home.latest_posts_2}</p>
+        <p className='font-thin'>{dictionary.home.latest_posts_3}</p>
         <ul className='mt-[32px] flex flex-col lg:flex-row gap-[12px] '>
           {last3Posts.map((post) => (
             <li key={post.slug}>
@@ -56,10 +56,10 @@ const Home = async ({ params: { lang } }: { params: { lang: Locale } }) => {
       </section>
 
       <section>
-        <h2 className='text-3xl text-primary'>Latest Projects</h2>
-        <p className='font-thin text-lg'>
-          {`Develop things it's fun! Here there're some of my projects`}
-        </p>
+        <h2 className='text-3xl text-primary'>
+          {dictionary.home.latest_projects}
+        </h2>
+        <p className='font-thin'>{dictionary.home.latest_projects_1}</p>
         <ul className='mt-[32px] flex flex-col lg:flex-row gap-[12px] '>
           {last3Projects.map((project) => (
             <li key={project.slug}>
