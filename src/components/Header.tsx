@@ -20,8 +20,8 @@ const navItems = [
     to: '/projects',
   },
   {
-    label: 'About',
-    to: '/about',
+    label: 'Contact',
+    to: '/contact',
   },
 ];
 
