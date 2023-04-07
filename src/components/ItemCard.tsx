@@ -33,7 +33,7 @@ const ItemCard = ({
             {title}
           </h3>
           <h4 className='text-sm font-normal'>
-            {date.toLocaleDateString('en-US')}
+            {date.toLocaleDateString(lang === 'en' ? 'en-US' : 'es-MX')}
           </h4>
         </section>
         <section className='flex flex-wrap gap-[4px]'>

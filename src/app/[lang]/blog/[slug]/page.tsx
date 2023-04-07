@@ -84,7 +84,7 @@ const PostPage = ({
 
   return (
     <>
-      <header className='mb-[40px] text-center max-w-[65ch] mx-auto flex flex-col gap-[8px]'>
+      <header className='mb-[40px] text-center max-w-[65ch] mx-auto flex flex-col gap-[32px]'>
         <figure className='w-full'>
           <Image
             priority
@@ -100,10 +100,14 @@ const PostPage = ({
           </figcaption>
         </figure>
 
-        <h1 className='text-4xl font-bold'>{post.data.title}</h1>
-        <p className='text-md font-light'>
-          {new Date(post.data.date).toLocaleDateString('en-US')}
-        </p>
+        <div className='flex flex-col gap-[16px]'>
+          <h1 className='text-4xl font-bold'>{post.data.title}</h1>
+          <p className='text-md font-light'>
+            {new Date(post.data.date).toLocaleDateString(
+              lang === 'en' ? 'en-US' : 'es-MX'
+            )}
+          </p>
+        </div>
       </header>
 
       <article className='prose prose-invert mx-auto prose-a:transition-colors prose-a:no-underline prose-a:text-primary hover:prose-a:underline hover:prose-a:text-primaryLight'>
