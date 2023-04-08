@@ -1,4 +1,4 @@
-import { NextJSIcon, ReactJSIcon } from '@/assets/Icons';
+import { ReactJSIcon, TailwindCSSIcon } from '@/assets/Icons';
 import Image from 'next/image';
 
 export const tags: any = {
@@ -32,6 +32,26 @@ export const tags: any = {
       />
     ),
     backgroundColor: '#007acc',
+    borderColor: '#fff',
+  },
+  ['TailwindCSS']: {
+    label: 'TailwindCSS',
+    icon: <TailwindCSSIcon />,
+    backgroundColor: '#06b6d4',
+    borderColor: '#fff',
+  },
+  ['Vercel']: {
+    label: 'Vercel',
+    icon: (
+      <Image
+        width={32}
+        height={32}
+        style={{ marginBottom: '8px' }}
+        src='/icons/vercel-icon-dark.png'
+        alt='Vercel icon'
+      />
+    ),
+    backgroundColor: '#000',
     borderColor: '#fff',
   },
 };
