@@ -111,7 +111,10 @@ const PostPage = ({
       </header>
 
       <article className='prose prose-invert mx-auto prose-a:transition-colors prose-a:no-underline prose-a:text-primary hover:prose-a:underline hover:prose-a:text-primaryLight'>
-        <Markdown>{post.content}</Markdown>
+        <Markdown
+          options={{ overrides: { a: { props: { target: '_blank' } } } }}>
+          {post.content}
+        </Markdown>
       </article>
     </>
   );
