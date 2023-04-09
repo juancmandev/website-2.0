@@ -61,11 +61,15 @@ const Home = async ({ params: { lang } }: { params: { lang: Locale } }) => {
         </h2>
         <p className='font-thin'>{dictionary.home.latest_projects_1}</p>
         <ul className='mt-[32px] flex flex-col lg:flex-row gap-[12px] '>
-          {last3Projects.map((project) => (
-            <li key={project.slug}>
-              <ItemCard lang={lang} {...project} type='projects' />
-            </li>
-          ))}
+          {last3Projects.length > 0 ? (
+            last3Projects.map((project) => (
+              <li key={project.slug}>
+                <ItemCard lang={lang} {...project} type='projects' />
+              </li>
+            ))
+          ) : (
+            <p className='font-thin'>{dictionary.home.no_projects}</p>
+          )}
         </ul>
       </section>
     </div>
