@@ -6,8 +6,6 @@ const PUBLIC_KEY = process.env.PUBLIC_KEY as string;
 
 const sendEmail = (emailData: any) =>
   new Promise((resolve, reject) => {
-    console.log(PUBLIC_KEY);
-
     emailjs
       .send(EMAIL_JS_SERVICE_ID, TEMPLATE_ID, emailData, PUBLIC_KEY)
       .then(() => {
