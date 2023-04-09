@@ -3,7 +3,7 @@ title: 'La razón para crear una versión 2.0 de mi sitio web'
 subtitle: 'Cometí algunos errores al crear la primera versión de mi sitio web, aquí compartiré lo que he aprendido'
 tags: ['Next.js', 'TypeScript', 'TailwindCSS', 'Vercel']
 featuredImage: '/blog/website-2.0/website-2.0-header.png'
-featuredImageCaption: 'Tech Stack usado para este sitio web. Next.js, Vercel, React.js, TypeScript and TailwindCSS'
+featuredImageCaption: 'Tech Stack usado para este sitio web. Next.js, Vercel, React.js, TypeScript y TailwindCSS'
 date: '04-06-2023'
 ---
 
@@ -11,28 +11,28 @@ La primera versión de mi sitio web fue uno de mis mayores proyectos hasta ahora
 
 ---
 
-## Renderización del lado del cliente (CSR) vs. Renderización del lado del servidor (SSR) vs. Generación estática (SG)
+## Client Side Rendering (CSR) vs. Server Side Rendering (SSR) vs. Static Generation (SG)
 
 Al **desarrollar** una aplicación **web**, debes **pensar** en el tipo de **renderizado** que se debe utilizar, teniendo en cuenta los **requisitos** de los **problemas** que deseas **resolver**.
 
-### Generación del lado del cliente (CSG)
+### Generación del Lado del Cliente (CSR)
 
-Por ejemplo, una aplicación **web** como una **SaaS** para crear tareas y administrar personas tendrá **páginas dinámicas** para mostrar las tareas, actualizar las tarjetas cuando se editan o eliminan, mostrar notificaciones, etc. En esta situación, un **CSR** sería **mejor** para **renderizar** la página **cada** vez que el usuario **solicita** acceso para **mantener** los datos **actualizados**. Sin embargo, un **CSR** necesita **hidratar** la página cuando se **solicita**, lo que provoca una **carga lenta** al **principio** y utiliza **más recursos** de la PC del usuario.
+Por ejemplo, una aplicación **web** como un **SaaS** para crear tareas y administrar personas tendrá **páginas dinámicas** para mostrar las tareas, actualizar las tarjetas cuando se editan o eliminan, mostrar notificaciones, etc. En esta situación, un **CSR** sería **mejor** para **renderizar** la página **cada** vez que el usuario **solicita** acceso para **mantener** los datos **actualizados**. Sin embargo, un **CSR** necesita **hidratar** la página cuando se **solicita**, lo que provoca una **carga lenta** al **principio** y utiliza **más recursos** de la PC del usuario.
 
-### Renderización del lado del servidor (SSR)
+### Renderización del Lado del Servidor (SSR)
 
-Esto podría resolverse utilizando **SSR**, que consiste en **generar** la página en el **servidor** donde se aloja la aplicación web utilizando toda la **potencia** que un **servidor** puede proporcionar. El problema es que se requiere un **servidor**. Google Cloud proporciona opciones sin servidor como App Engine o Cloud Run, pero deberás aprender sobre estos servicios y cómo implementar el
+Esto podría resolverse utilizando **SSR**, que consiste en **generar** la página en el **servidor** donde se aloja la aplicación web utilizando toda la **potencia** que un **servidor** puede proporcionar. El problema es que se requiere un **servidor**. Google Cloud proporciona opciones sin servidor como App Engine o Cloud Run, pero deberás aprender sobre estos servicios y cómo desplegar el
 proyecto, por lo que el **conocimiento técnico** es **alto**.
 
-La **desventaja** de **CSG** y **SSR** es que, debido a que **cada página** debe ser **renderizada** en cada **solicitud**, los **rastreadores web** y los **motores de búsqueda** como Google tardarán más tiempo en obtener información sobre tu página, lo que resultará en una **prioridad SEO** baja.
+La **desventaja** de **CSR** y **SSR** es que, debido a que **cada página** debe ser **renderizada** en cada **solicitud**, los **rastreadores web** (**web crawlers**) y los **motores de búsqueda** como Google tardarán más tiempo en obtener información sobre tu página, lo que resultará en una **prioridad SEO** baja.
 
-### Generación estática (SG)
+### Generación Estática (SG)
 
-Bueno, si una **página** no requiere **buscar** datos para **cada solicitud**, entonces puedes usar **SG**, lo que significa que la **página** se **genera** cuando construyes el directorio de producción **antes** de implementarlo. La página se generará en HTML/CSS/JS una vez, y si necesitas **actualizar** los datos en esa página, deberás hacer los cambios y **implementar** el proyecto. Sí, deberás ser más cuidadoso al revisar los cambios antes de implementarlos, pero como la página ya está generada, los **rastreadores web** y el **motor de búsqueda** de Google obtendrán la **información** de tu página **más rápido**, lo que **mejorará** tu **SEO**.
+Bueno, si una **página** no requiere **buscar** datos para **cada solicitud**, entonces puedes usar **SG**, lo que significa que la **página** se **genera** cuando construyes el directorio de producción **antes** de desplegarlo. La página se generará en HTML/CSS/JS una vez, y si necesitas **actualizar** los datos en esa página, deberás hacer los cambios y **desplegar** el proyecto. Sí, deberás tener más cuidado al revisar los cambios antes de desplegarlos, pero como la página ya está generada, los **rastreadores web** y el **motor de búsqueda** de Google obtendrán la **información** de tu página **más rápido**, lo que **mejorará** tu **SEO**.
 
-## Lo interesante de Next.js
+## Lo Interesante de Next.js
 
-En el **pasado**, se requería **pensar** si usar CSG completo, SSR o SG, vinculando tu sitio web a sus respectivas secciones, como la aplicación, el blog, etc.
+En el **pasado**, se requería **pensar** si usar CSR completo, SSR o SG, vinculando tu sitio web a sus respectivas secciones, como la aplicación, el blog, etc.
 
 **[Next.js](https://nextjs.org/)** es un **meta-framework** de **Node.js** que utiliza **[React.js](https://react.dev/)** para construir la interfaz de usuario, y proporciona CSR, SSR, SG y más, por lo que puedes generar SG obteniendo datos de forma asíncrona, lo que te permite no tener que crear cada página estática.
 
@@ -52,7 +52,7 @@ Elegí usar **[TailwindCSS](https://tailwindcss.com/)** para aprender sobre esta
 
 **[Vercel](https://vercel.com/)** es la empresa detrás de Next.js, y ofrece servicios de **hosting** optimizados para aplicaciones **Node.js**, y como estoy aprendiendo sobre desarrollo en la nube, tal vez podría intentar alojar esta web en un servicio en la nube como Cloud Run, pero esta vez elijo utilizar **Vercel** para obtener las **analíticas** que son muy útiles, y como el **plan hobby** me ofrece alojamiento gratuito para proyectos pequeños.
 
-Para implementar, utilizo la **[Vercel CLI](https://vercel.com/docs/cli)**, bastante simple y directo.
+Para desplegar, utilizo la **[Vercel CLI](https://vercel.com/docs/cli)**, bastante simple y directo.
 
 ## ¡Más contenido en camino!
 

@@ -27,11 +27,15 @@ const ProjectsPage = async ({
         {dictionary.projects.title}
       </h1>
       <ul className='flex flex-wrap gap-[32px]'>
-        {projectsMetadata.map((project) => (
-          <li key={project.slug}>
-            <BlogCard lang={lang} {...project} type='projects' />
-          </li>
-        ))}
+        {projectsMetadata.length > 0 ? (
+          projectsMetadata.map((project) => (
+            <li key={project.slug}>
+              <BlogCard lang={lang} {...project} type='projects' />
+            </li>
+          ))
+        ) : (
+          <p className='font-thin'>{dictionary.home.no_projects}</p>
+        )}
       </ul>
     </>
   );

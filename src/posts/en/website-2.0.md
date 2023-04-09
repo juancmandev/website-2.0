@@ -31,13 +31,13 @@ Well, if a **page** **doesn’t** require **fetch** **data** for **each** **requ
 
 ## The cool thing about Next.js
 
-In the **past** you will require to **thing** if go **full** CSG, SSR or SG, linking your web to their respecting sections, like the app, blog, etc.
+In the **past** you will require to **think** if go **full** CSR, SSR or SG, linking your web to their respecting sections, like the app, blog, etc.
 
 **[Next.js](https://nextjs.org/)** is a **Node.js** **meta-framework** that uses **[React.js](https://react.dev/)** to build the UI, and provides with CSR, SSR, SG and more, so you can generate SG fetching async data, allowing you to don’t **need** to **create** **every** **static** **page**.
 
 Is that the **approach** **used** for **this** **web** site, **instead** of **fetch** the data on **each** **request**, I only **fetch** data **when** I **create** the **build** of the project.
 
-**Each** **article** is a SG page, but I use a **template** to keep every blog similar, using **mark** **down** syntax for the content of the blog, and with an **extension** of **TailwindCSS** I keep the styles consistent.
+**Each** **article** is a SG page, but I use a **template** to keep every blog similar, using **markdown** syntax for the content of the blog, and with an **extension** of **TailwindCSS** I keep the styles consistent.
 
 So, **Next.js** allows you to **choose** the **rendering** method for **each** **page** in your web, this feature permits to create amazing web sites in the same project, keeping consistence and with fast load times, Next.js even lazy loads each page and start loading when you hover a link like Home, Contact, etc.
 
