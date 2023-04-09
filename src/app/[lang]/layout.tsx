@@ -1,6 +1,7 @@
 import Header from '@/components/Header';
 import '@/styles/globals.css';
 import '@fontsource/roboto';
+import { Analytics } from '@vercel/analytics/react';
 
 export const metadata = {
   title: 'juancmandev',
@@ -19,6 +20,7 @@ const RootLayout = ({ children, params }: any) => {
         <main className='main overflow-auto scroll-smooth px-[20px] md:px-[80px] py-[80px]'>
           {children}
         </main>
+        <Analytics />
       </body>
     </html>
   );
