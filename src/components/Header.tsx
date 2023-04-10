@@ -94,6 +94,7 @@ const Header = ({ lang }: any) => {
 
         <section className='flex sm:hidden h-max items-center'>
           <Tippy
+            trigger='none'
             placement='left'
             content={lang === 'en' ? 'Open Side Menu' : 'Abrir Menú Lateral'}>
             <button onClick={() => setToggleSideMenu(true)} id='toggle-menu'>
