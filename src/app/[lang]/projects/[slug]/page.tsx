@@ -132,7 +132,10 @@ const ProjectPage = ({
       </header>
 
       <article className='prose prose-invert mx-auto prose-a:transition-colors prose-a:no-underline prose-a:text-primary hover:prose-a:underline hover:prose-a:text-primaryLight'>
-        <Markdown>{project.content}</Markdown>
+        <Markdown
+          options={{ overrides: { a: { props: { target: '_blank' } } } }}>
+          {project.content}
+        </Markdown>
       </article>
     </>
   );
