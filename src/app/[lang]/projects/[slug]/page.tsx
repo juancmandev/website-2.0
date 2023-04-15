@@ -8,6 +8,7 @@ import {
 import Image from 'next/image';
 import { Locale } from '@/dictionaries/i18n-config';
 import { GithubIcon, WebIcon } from '@/assets/Icons';
+import Chip from '@/components/Chip';
 
 const getProjectContent = (slug: string, lang: string) => {
   const file = `src/projects/${lang}/${slug}.md`;
@@ -108,6 +109,12 @@ const ProjectPage = ({
         <p className='text-md font-light'>
           {new Date(project.data.date).toLocaleDateString('en-US')}
         </p>
+        <section className='flex flex-wrap gap-[4px] justify-center'>
+          {project.data.tags &&
+            project.data.tags.map((tag: string) => (
+              <Chip key={tag} tag={tag} />
+            ))}
+        </section>
         {(project.data.repo || project.data.url) && (
           <div className='flex justify-center gap-[8px] my-[12px]'>
             {project.data.repo && (
