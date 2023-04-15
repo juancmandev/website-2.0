@@ -1,4 +1,9 @@
-import { ReactJSIcon, TailwindCSSIcon } from '@/assets/Icons';
+import {
+  FirebaseIcon,
+  ReactJSIcon,
+  TailwindCSSIcon,
+  ViteJSIcon,
+} from '@/assets/Icons';
 import Image from 'next/image';
 
 export const tags: any = {
@@ -52,6 +57,58 @@ export const tags: any = {
       />
     ),
     backgroundColor: '#000',
+    borderColor: '#fff',
+  },
+  ['Vite.js']: {
+    label: 'Vite.js',
+    icon: <ViteJSIcon />,
+    backgroundColor: '#BD34FE',
+    borderColor: '#fff',
+  },
+  ['MUI']: {
+    label: 'MUI',
+    icon: (
+      <Image
+        width={32}
+        height={32}
+        style={{ marginBottom: '8px' }}
+        src='/icons/mui-icon.png'
+        alt='Vercel icon'
+      />
+    ),
+    backgroundColor: '#2196f3',
+    borderColor: '#fff',
+  },
+  ['Firebase']: {
+    label: 'Firebase',
+    icon: <FirebaseIcon />,
+    backgroundColor: ' #ffa000 ',
+    borderColor: '#fff',
+  },
+  ['GCP']: {
+    label: 'GCP',
+    icon: (
+      <Image
+        width={32}
+        height={32}
+        src={'/icons/gcp-icon.png'}
+        alt='GCP icon'
+      />
+    ),
+    backgroundColor: '#de5246',
+    borderColor: '#fff',
+  },
+  ['Node.js']: {
+    label: 'Node.js',
+    icon: (
+      <Image
+        width={32}
+        height={32}
+        src={'/icons/nodejs-icon.png'}
+        alt='Node.js icon'
+      />
+    ),
+    backgroundColor: '#339933',
     borderColor: '#fff',
   },
 };

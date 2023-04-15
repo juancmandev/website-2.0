@@ -5,6 +5,7 @@ import Link from 'next/link';
 
 const ItemCard = ({
   featuredImage,
+  featuredImageCaption,
   title,
   date,
   tags,
@@ -24,7 +25,7 @@ const ItemCard = ({
           height='0'
           sizes='100vw'
           className='w-full h-auto'
-          alt='Metroid Dread image example'
+          alt={featuredImageCaption}
         />
       </header>
       <main className='p-[12px] grid gap-y-[8px]'>

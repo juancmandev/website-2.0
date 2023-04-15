@@ -4,6 +4,7 @@ import matter from 'gray-matter';
 import { getPostEnMetadata, getPostEsMetadata } from '@/utils/getPostMetadata';
 import Image from 'next/image';
 import { Locale } from '@/dictionaries/i18n-config';
+import Chip from '@/components/Chip';
 
 const getPostContent = (slug: string, lang: string) => {
   const file = `src/posts/${lang}/${slug}.md`;
@@ -107,6 +108,10 @@ const PostPage = ({
               lang === 'en' ? 'en-US' : 'es-MX'
             )}
           </p>
+          <section className='flex flex-wrap gap-[4px] justify-center'>
+            {post.data.tags &&
+              post.data.tags.map((tag: string) => <Chip key={tag} tag={tag} />)}
+          </section>
         </div>
       </header>
 
