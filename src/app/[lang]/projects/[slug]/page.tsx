@@ -74,16 +74,6 @@ export const generateMetadata = async ({
         alt: project.data.featuredImageCaption,
       },
     },
-    robots: {
-      index: true,
-      nocache: false,
-      follow: true,
-      googleBot: {
-        index: true,
-        noimageindex: false,
-        'max-image-preview': 'large',
-      },
-    },
   };
 };
 
