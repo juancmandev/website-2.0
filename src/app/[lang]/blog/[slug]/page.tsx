@@ -65,16 +65,9 @@ export const generateMetadata = async ({
       title: post.data.title,
       description: post.data.subtitle,
       creator: '@juancmandev',
-      images: [post.data.featuredImage],
-    },
-    robots: {
-      index: true,
-      nocache: false,
-      follow: true,
-      googleBot: {
-        index: true,
-        noimageindex: false,
-        'max-image-preview': 'large',
+      images: {
+        url: post.data.featuredImage,
+        alt: post.data.featuredImageCaption,
       },
     },
   };
