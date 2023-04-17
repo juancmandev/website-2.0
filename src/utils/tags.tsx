@@ -111,6 +111,35 @@ export const tags: any = {
     backgroundColor: '#339933',
     borderColor: '#fff',
   },
+  ['ChatGPT']: {
+    label: 'ChatGPT',
+    icon: (
+      <Image
+        width={32}
+        height={32}
+        src={'/icons/chatgpt-icon.png'}
+        alt='ChatGPT icon'
+        style={{ borderRadius: '50%' }}
+      />
+    ),
+    backgroundColor: '#00a67e',
+    borderColor: '#fff',
+  },
+  ['JavaScript']: {
+    label: 'JavaScript',
+    icon: (
+      <Image
+        width={32}
+        height={32}
+        src={'/icons/js-icon.png'}
+        alt='JavaScript icon'
+        style={{ borderRadius: '50%' }}
+      />
+    ),
+    backgroundColor: '#f7df1e',
+    borderColor: '#fff',
+    textColor: '#000',
+  },
 };
 
 export const tagsList = ['React.js', 'Next.js'];
