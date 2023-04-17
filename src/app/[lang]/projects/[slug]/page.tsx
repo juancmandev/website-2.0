@@ -64,6 +64,13 @@ export const generateMetadata = async ({
         },
       ],
     },
+    twitter: {
+      card: 'summary_large_image',
+      title: project.data.title,
+      description: project.data.subtitle,
+      creator: '@juancmandev',
+      images: [project.data.featuredImage],
+    },
     robots: {
       index: true,
       nocache: false,
