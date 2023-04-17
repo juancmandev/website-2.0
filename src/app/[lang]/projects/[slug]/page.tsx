@@ -69,7 +69,10 @@ export const generateMetadata = async ({
       title: project.data.title,
       description: project.data.subtitle,
       creator: '@juancmandev',
-      images: [project.data.featuredImage],
+      images: {
+        url: project.data.featuredImage,
+        alt: project.data.featuredImageCaption,
+      },
     },
     robots: {
       index: true,
