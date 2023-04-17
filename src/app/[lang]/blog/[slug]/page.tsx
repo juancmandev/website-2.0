@@ -54,23 +54,20 @@ export const generateMetadata = async ({
       images: [
         {
           url: post.data.featuredImage,
-          width: 800,
-          height: 600,
+          width: 1200,
+          height: 675,
           alt: post.data.featuredImageCaption,
         },
       ],
     },
     robots: {
-      index: false,
+      index: true,
+      nocache: false,
       follow: true,
-      nocache: true,
       googleBot: {
         index: true,
-        follow: false,
-        noimageindex: true,
-        'max-video-preview': -1,
+        noimageindex: false,
         'max-image-preview': 'large',
-        'max-snippet': -1,
       },
     },
   };
