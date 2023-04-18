@@ -23,7 +23,16 @@ Estaba revisando Twitter hasta que encontré un tweet de una persona que había 
 
 > _¿Por qué no una web app para escribir un prompt y genera código JavaScript?_
 
-Ese día trabajé todo el día en este pequeño proyecto. Usando el repo de SQL Translator para guiarme en cómo comunicarme con la API de ChatGPT. ¡Lo logré, un simple side project que resuelve un problema simple!
+Así que comencé a construir mi idea usando este tech stack:
+
+- **Next.js**: Framework web para construir la UI y como Next.js provee un directorio API para comunicarte con la API de ChatGPT
+- **MUI**: Para usar los UI components como sistema de diseño
+- **Fromik & Yup**: Para manejar el estado del formulario del prompt y crear esquemas de validación
+- **react-syntax-highlighter**: Para mostrar la respuesta de ChatGPT
+
+Usando todas estas tecnologías construí una UI simple usando el MUI Card component, entonces creé el form donde manejé todos los inputs con Formik, los inputs de tipo text y select son los por defecto de MUI, y para crear el esquema de validación usé Yup para marcar como required aquellos inputs para no enviarlos vacíos.
+
+Con la UI finalizada, comencé a crear el endpoint en el directorio de la API para consumir la API de ChatGPT, tan solo usando un fetch como en el proyecto de [@whoiskatrin](https://twitter.com/whoiskatrin?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1634973237829599233%7Ctwgr%5Eb49b9d28e6ea7383ef16ea3c8c6040656ff0c944%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fpublish.twitter.com%2F%3Fquery%3Dhttps3A2F2Ftwitter.com2Fwhoiskatrin2Fstatus2F1634973237829599233widget%3DTweet). indicando qué modelo de OpenAI utilizar, en este caso _text-davinci-003_, puedes aprender más de los esos modelos [aquí](https://platform.openai.com/docs/api-reference/models/list). Obviamente en la petición envié el prompt del user dentro de un string indicando a ChatGPT que solo me de el código, sin comentarios o resultados adicionales.
 
 ## Valor añadido
 
