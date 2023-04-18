@@ -1,4 +1,4 @@
-[Tech Stack of this web site. Next.js, Vercel, React.js, TypeScript and TailwindCSS](public/blog/website-2.0/website-2.0-header.png)
+![Tech Stack of this web site. Next.js, Vercel, React.js, TypeScript and TailwindCSS](/public/blog/website-2.0/website-2.0-header.png)
 
 # The reason to create a version 2.0 of my web site
 
