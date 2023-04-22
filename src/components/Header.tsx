@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { HamburgerIcon, CloseIcon } from '@/assets/Icons';
 import Tippy from '@tippyjs/react';
@@ -49,7 +49,7 @@ const Header = ({ lang }: any) => {
 
   const [toggleSideMenu, setToggleSideMenu] = useState(false);
 
-  const sideMenu = toggleSideMenu ? 'absolute' : 'hidden';
+  const sideMenu = toggleSideMenu ? 'open-sidebar' : 'close-sidebar';
 
   return (
     <>
@@ -106,19 +106,17 @@ const Header = ({ lang }: any) => {
 
       <div
         onClick={() => setToggleSideMenu(false)}
-        className={`${sideMenu} w-screen h-screen absolute top-0 z-20 overflow-hidden backdrop`}
+        className={`${
+          sideMenu === 'open-sidebar' ? 'absolute' : 'hidden'
+        } w-screen h-screen absolute top-0 z-20 overflow-hidden backdrop`}
       />
 
       <nav
-        className={`${sideMenu} w-[200px] h-full py-[32px] -top-1 z-30 overflow-hidden bg-dark1 side-transition text-white1`}>
+        className={`${sideMenu} fixed w-[200px] h-full py-[32px] -top-1 z-30 overflow-hidden bg-dark1 text-white1`}>
         <section className='w-full flex justify-center'>
-          <Tippy
-            placement='right'
-            content={lang === 'en' ? 'Close Side Menu' : 'Cerrar Menú Lateral'}>
-            <button onClick={() => setToggleSideMenu(false)}>
-              <CloseIcon fillColor='#eee' />
-            </button>
-          </Tippy>
+          <button onClick={() => setToggleSideMenu(false)}>
+            <CloseIcon fillColor='#eee' />
+          </button>
         </section>
         <section className='flex flex-col mt-[40px]'>
           <Tippy

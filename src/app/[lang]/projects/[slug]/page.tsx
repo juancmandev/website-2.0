@@ -86,7 +86,7 @@ const ProjectPage = ({
 
   return (
     <>
-      <header className='mb-[40px] text-center max-w-[65ch] mx-auto flex flex-col gap-[8px]'>
+      <header className='mb-[40px] max-w-[65ch] mx-auto flex flex-col gap-[16px]'>
         <figure className='w-full'>
           <Image
             priority
@@ -102,18 +102,21 @@ const ProjectPage = ({
           </figcaption>
         </figure>
 
-        <h1 className='text-4xl font-bold'>{project.data.title}</h1>
-        <p className='text-md font-light'>
-          {new Date(project.data.date).toLocaleDateString('en-US')}
-        </p>
-        <section className='flex flex-wrap gap-[4px] justify-center'>
+        <div>
+          <h1 className='text-4xl font-bold'>{project.data.title}</h1>
+          <p className='font-light'>
+            {new Date(project.data.date).toLocaleDateString('en-US')}
+          </p>
+        </div>
+
+        <section className='flex flex-wrap gap-[4px] justify-start'>
           {project.data.tags &&
             project.data.tags.map((tag: string) => (
               <Chip key={tag} tag={tag} />
             ))}
         </section>
         {(project.data.repo || project.data.url) && (
-          <div className='flex justify-center gap-[8px] my-[12px]'>
+          <div className='flex justify-start gap-[8px] my-[12px]'>
             {project.data.repo && (
               <a href={project.data.repo} target='_blank'>
                 <GithubIcon />
