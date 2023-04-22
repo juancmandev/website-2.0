@@ -16,15 +16,14 @@ const ItemCard = ({
 }: ItemCardMetadataProps) => (
   <Link href={`/${lang}/${type}/${slug}`}>
     <article className='bg-dark1 w-[280px] h-full rounded-[8px] shadow-boxShadow cursor-pointer group'>
-      <header>
+      <header className='w-[280px] overflow-hidden rounded-t-[8px]'>
         <Image
           priority
           src={featuredImage}
-          style={{ borderRadius: '8px 8px 0 0' }}
           width='0'
           height='0'
           sizes='100vw'
-          className='w-full h-auto'
+          className='w-full h-auto group-hover:scale-110 transition-all duration-300'
           alt={featuredImageCaption}
         />
       </header>

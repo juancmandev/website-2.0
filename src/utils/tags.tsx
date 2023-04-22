@@ -137,7 +137,7 @@ export const tags: any = {
       />
     ),
     backgroundColor: '#f7df1e',
-    borderColor: '#fff',
+    borderColor: '#000',
     textColor: '#000',
   },
 };

@@ -82,7 +82,7 @@ const PostPage = ({
 
   return (
     <>
-      <header className='mb-[40px] text-center max-w-[65ch] mx-auto flex flex-col gap-[32px]'>
+      <header className='mb-[40px] max-w-[65ch] mx-auto flex flex-col gap-[16px]'>
         <figure className='w-full'>
           <Image
             priority
@@ -98,18 +98,19 @@ const PostPage = ({
           </figcaption>
         </figure>
 
-        <div className='flex flex-col gap-[16px]'>
+        <div>
           <h1 className='text-4xl font-bold'>{post.data.title}</h1>
           <p className='text-md font-light'>
             {new Date(post.data.date).toLocaleDateString(
               lang === 'en' ? 'en-US' : 'es-MX'
             )}
           </p>
-          <section className='flex flex-wrap gap-[4px] justify-center'>
-            {post.data.tags &&
-              post.data.tags.map((tag: string) => <Chip key={tag} tag={tag} />)}
-          </section>
         </div>
+
+        <section className='flex flex-wrap gap-[4px] justify-start'>
+          {post.data.tags &&
+            post.data.tags.map((tag: string) => <Chip key={tag} tag={tag} />)}
+        </section>
       </header>
 
       <article className='prose prose-invert mx-auto prose-a:transition-colors prose-a:no-underline prose-a:text-primary hover:prose-a:underline hover:prose-a:text-primaryLight'>

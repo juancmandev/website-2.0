@@ -10,3 +10,13 @@
   backdrop-filter: blur(1px);
   background-color: rgba(38, 38, 38, 0.336);
 }
+
+.open-sidebar {
+  transform: translateX(0px);
+  transition: transform 300ms ease-out;
+}
+
+.close-sidebar {
+  transform: translateX(-200px);
+  transition: transform 300ms ease-out;
+}
