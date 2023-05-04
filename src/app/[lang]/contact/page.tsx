@@ -139,7 +139,7 @@ const Contact = ({
         <h2 className='text-3xl font-bold mt-[40px]'>My CV</h2>
         <p className='mt-[8px]'>{dictionary['check_cv'][lang]}</p>
         <a
-          href='/docs/Juan_Manzanero.pdf'
+          href='/docs/Juan_Manzanero_CV.pdf'
           target='_blank'
           className='w-max text-lg bg-primary px-[12px] py-[8px] mt-[20px] rounded-[4px] self-end'>
           {dictionary['open_cv'][lang]}
