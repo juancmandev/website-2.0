@@ -30,7 +30,9 @@ const Home = async ({ params: { lang } }: { params: { lang: Locale } }) => {
     <div className='grid gap-y-[120px]'>
       <section className='grid gap-y-[4px]'>
         <h2 className='text-3xl'>{dictionary.home.hello_iam} Juan</h2>
-        <h1 className='text-4xl text-primary'>Frontend Engineer</h1>
+        <h1 className='primary-gradient text-4xl font-bold'>
+          Frontend Engineer
+        </h1>
         <p className='font-thin text-lg'>
           {dictionary.home.my_web_1}{' '}
           <span className='font-normal text-primary'>Frontend</span>{' '}
