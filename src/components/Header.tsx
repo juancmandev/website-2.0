@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import Link from 'next/link';
 import { HamburgerIcon, CloseIcon } from '@/assets/Icons';
 import Tippy from '@tippyjs/react';
@@ -49,7 +49,7 @@ const Header = ({ lang }: any) => {
 
   const [toggleSideMenu, setToggleSideMenu] = useState(false);
 
-  const sideMenu = toggleSideMenu ? 'open-sidebar' : 'close-sidebar';
+  const sideMenu = !toggleSideMenu ? 'close-sidebar' : 'open-sidebar';
 
   return (
     <>
@@ -107,7 +107,7 @@ const Header = ({ lang }: any) => {
       <div
         onClick={() => setToggleSideMenu(false)}
         className={`${
-          sideMenu === 'open-sidebar' ? 'absolute' : 'hidden'
+          sideMenu === 'close-sidebar' ? 'hidden' : 'absolute'
         } w-screen h-screen absolute top-0 z-20 overflow-hidden backdrop`}
       />
 
