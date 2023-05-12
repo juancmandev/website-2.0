@@ -86,7 +86,7 @@ const ProjectPage = ({
 
   return (
     <>
-      <header className='mb-[40px] max-w-[65ch] mx-auto flex flex-col gap-[16px]'>
+      <header className='mb-10 max-w-[65ch] mx-auto flex flex-col gap-4'>
         <figure className='w-full'>
           <Image
             priority
@@ -109,14 +109,14 @@ const ProjectPage = ({
           </p>
         </div>
 
-        <section className='flex flex-wrap gap-[4px] justify-start'>
+        <section className='flex flex-wrap gap-1 justify-start'>
           {project.data.tags &&
             project.data.tags.map((tag: string) => (
               <Chip key={tag} tag={tag} />
             ))}
         </section>
         {(project.data.repo || project.data.url) && (
-          <div className='flex justify-start gap-[8px] my-[12px]'>
+          <div className='flex justify-start gap-2 my-3'>
             {project.data.repo && (
               <a href={project.data.repo} target='_blank'>
                 <GithubIcon />

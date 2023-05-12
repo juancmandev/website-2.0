@@ -15,11 +15,9 @@ export const generateStaticParams = async () => {
 const RootLayout = ({ children, params }: any) => {
   return (
     <html lang={params.lang}>
-      <body className='w-screen h-screen text-white1 bg-dark2 overflow-hidden'>
+      <body className='text-white1 bg-dark2'>
         <Header lang={params.lang} />
-        <main className='main overflow-auto scroll-smooth px-[20px] md:px-[80px] py-[80px]'>
-          {children}
-        </main>
+        <main className='px-6 md:px-20 py-20'>{children}</main>
         <Analytics />
       </body>
     </html>

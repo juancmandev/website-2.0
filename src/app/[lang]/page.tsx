@@ -27,8 +27,8 @@ const Home = async ({ params: { lang } }: { params: { lang: Locale } }) => {
   const last3Projects = projectsMetadata.slice(0, 3);
 
   return (
-    <div className='grid gap-y-[120px]'>
-      <section className='grid gap-y-[4px]'>
+    <div className='flex flex-col gap-20'>
+      <section className='flex flex-col gap-1'>
         <h2 className='text-3xl'>{dictionary.home.hello_iam} Juan</h2>
         <h1 className='primary-gradient text-4xl font-bold'>
           Frontend Engineer
@@ -48,7 +48,7 @@ const Home = async ({ params: { lang } }: { params: { lang: Locale } }) => {
         <p className='font-thin'>{dictionary.home.latest_posts_1}</p>
         <p className='font-thin'>{dictionary.home.latest_posts_2}</p>
         <p className='font-thin'>{dictionary.home.latest_posts_3}</p>
-        <ul className='mt-[32px] flex flex-col lg:flex-row gap-[12px] '>
+        <ul className='mt-8 flex flex-col lg:flex-row gap-3'>
           {last3Posts.map((post) => (
             <li key={post.slug}>
               <ItemCard lang={lang} {...post} type='blog' />
@@ -62,7 +62,7 @@ const Home = async ({ params: { lang } }: { params: { lang: Locale } }) => {
           {dictionary.home.latest_projects}
         </h2>
         <p className='font-thin'>{dictionary.home.latest_projects_1}</p>
-        <ul className='mt-[32px] flex flex-col lg:flex-row gap-[12px] '>
+        <ul className='mt-8 flex flex-col lg:flex-row gap-3'>
           {last3Projects.length > 0 ? (
             last3Projects.map((project) => (
               <li key={project.slug}>

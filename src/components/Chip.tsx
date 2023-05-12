@@ -11,7 +11,7 @@ const Chip = ({ tag }: ChipProps) => (
       borderColor: tags[tag].borderColor,
       color: tags[tag]?.textColor,
     }}
-    className={`flex items-center gap-[2px] rounded-[20px] px-[6px] py-[2px] border-[1px]`}>
+    className={`flex items-center gap-[2px] rounded-[20px] px-1 py-[2px] border-[1px]`}>
     <div className='grid place-items-center w-[20px] h-[20px] p-[1px] bg-white1 rounded-full'>
       {tags[tag].icon}
     </div>

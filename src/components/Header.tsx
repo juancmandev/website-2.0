@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { HamburgerIcon, CloseIcon } from '@/assets/Icons';
 import Tippy from '@tippyjs/react';
@@ -46,6 +46,18 @@ const navItems = [
 
 const Header = ({ lang }: any) => {
   const changeLang = lang === 'en' ? 'es' : 'en';
+  const [windowSize, setWindowSize] = useState<number[]>([0, 0]);
+
+  useEffect(() => {
+    const handleWindowResize = () =>
+      setWindowSize([window.innerWidth, window.innerHeight]);
+
+    window.addEventListener('resize', handleWindowResize);
+
+    handleWindowResize();
+
+    return () => window.removeEventListener('resize', handleWindowResize);
+  }, []);
 
   const [toggleSideMenu, setToggleSideMenu] = useState(false);
 
@@ -53,16 +65,14 @@ const Header = ({ lang }: any) => {
 
   return (
     <>
-      <header className='w-full sticky px-[20px] md:px-[80px] py-[24px] -top-1 z-1 flex justify-between items-center bg-dark1 shadow-sm shadow-boxShadow'>
+      <header className='w-full sticky p-6 md:px-20 -top-1 z-10 flex justify-between items-center bg-dark1 shadow-sm shadow-boxShadow'>
         <nav className='w-full flex justify-between items-center'>
           <section>
             <Link href={`/${lang}`}>
-              <h1 className='text-xl font-semibold hover:underline'>
-                juancmandev
-              </h1>
+              <h1 className='text-xl primary-gradient'>juancmandev</h1>
             </Link>
           </section>
-          <section className='hidden sm:flex items-center gap-[32px]'>
+          <section className='hidden sm:flex items-center gap-8'>
             <Tippy
               placement='left'
               content={
@@ -74,16 +84,19 @@ const Header = ({ lang }: any) => {
                       changeLang === 'en' ? 'English' : 'Spanish'
                     }`
               }>
-              <Link href={`/${changeLang}`}>
+              <Link
+                tabIndex={windowSize[0] < 728 ? -1 : 0}
+                href={`/${changeLang}`}>
                 <p className='text-lg'>{changeLang === 'en' ? '🇺🇸' : '🇲🇽'}</p>
               </Link>
             </Tippy>
-            <ul className='flex items-center gap-[16px]'>
+            <ul className='flex items-center gap-4'>
               {navItems.map((navItem) => (
                 <li key={navItem.label} className='w-max h-max'>
                   <Link
+                    tabIndex={windowSize[0] < 728 ? -1 : 0}
                     href={`/${lang}${navItem.to}`}
-                    className='font-bold hover:underline px-[8px] py-[4px]'>
+                    className='font-bold hover:underline focus:underline p-2 text-lg'>
                     {dictionary[navItem.label][lang]}
                   </Link>
                 </li>
@@ -112,13 +125,13 @@ const Header = ({ lang }: any) => {
       />
 
       <nav
-        className={`${sideMenu} fixed w-[200px] h-full py-[32px] -top-1 z-30 overflow-hidden bg-dark1 text-white1`}>
+        className={`${sideMenu} fixed w-[200px] h-full py-8 -top-1 z-30 overflow-hidden bg-dark1 text-white1`}>
         <section className='w-full flex justify-center'>
           <button onClick={() => setToggleSideMenu(false)}>
             <CloseIcon fillColor='#eee' />
           </button>
         </section>
-        <section className='flex flex-col mt-[40px]'>
+        <section className='flex flex-col mt-10'>
           <Tippy
             placement='left'
             content={
@@ -131,20 +144,20 @@ const Header = ({ lang }: any) => {
                   }`
             }>
             <Link
-              className='w-full my-[12px] text-center'
+              tabIndex={toggleSideMenu ? 0 : -1}
+              className='w-full my-4 text-center'
               href={`/${changeLang}`}>
               <p className='text-lg'>{changeLang === 'en' ? '🇺🇸' : '🇲🇽'}</p>
             </Link>
           </Tippy>
-          <ul className='grid gap-[4px]'>
+          <ul className='grid gap-2'>
             {navItems.map((navItem) => (
-              <li
-                key={navItem.label}
-                className='w-full h-max flex hover:bg-boxShadow'>
+              <li key={navItem.label} className='w-full h-max flex'>
                 <Link
+                  tabIndex={toggleSideMenu ? 0 : -1}
                   href={`/${lang}${navItem.to}`}
                   onClick={() => setToggleSideMenu(false)}
-                  className='w-full py-[12px] font-bold text-center hover:underline'>
+                  className='w-full py-3 font-bold text-center text-lg hover:underline hover:bg-boxShadow focus:underline focus:bg-boxShadow'>
                   {dictionary[navItem.label][lang]}
                 </Link>
               </li>
