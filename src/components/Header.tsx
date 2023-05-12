@@ -46,10 +46,7 @@ const navItems = [
 
 const Header = ({ lang }: any) => {
   const changeLang = lang === 'en' ? 'es' : 'en';
-  const [windowSize, setWindowSize] = useState([
-    window.innerWidth,
-    window.innerHeight,
-  ]);
+  const [windowSize, setWindowSize] = useState<number[]>([0, 0]);
 
   useEffect(() => {
     const handleWindowResize = () =>
