@@ -77,13 +77,13 @@ const Contact = ({
 
   return (
     <div className='max-w-[400px] mx-auto'>
-      <div className='mb-[40px]'>
+      <div className='mb-10'>
         <h1 className='text-3xl font-bold'>{dictionary['title'][lang]}</h1>
-        <p className='mt-[8px]'>{dictionary['description'][lang]}</p>
+        <p className='mt-2'>{dictionary['description'][lang]}</p>
       </div>
-      <form onSubmit={formik.handleSubmit} className='flex flex-col gap-[32px]'>
-        <div className='flex flex-col sm:flex-row gap-[16px]'>
-          <section className='flex flex-col gap-[8px]'>
+      <form onSubmit={formik.handleSubmit} className='flex flex-col gap-8'>
+        <div className='flex flex-col sm:flex-row gap-2'>
+          <section className='flex flex-col gap-2'>
             <label className='text-xl' htmlFor='name'>
               {dictionary['name'][lang]}
             </label>
@@ -97,7 +97,7 @@ const Contact = ({
               className='w-full text-lg p-[8px] bg-dark1 text-white1 border-[2px] rounded-[4px] focus:border-primary focus:outline-none border-white1'
             />
           </section>
-          <section className='flex flex-col gap-[8px]'>
+          <section className='flex flex-col gap-2'>
             <label className='text-xl' htmlFor='email'>
               {dictionary['email'][lang]}
             </label>
@@ -108,11 +108,11 @@ const Contact = ({
               value={formik.values.email}
               onChange={formik.handleChange}
               autoComplete='off'
-              className='w-full text-lg p-[8px] bg-dark1 text-white1 border-[2px] rounded-[4px] focus:border-primary focus:outline-none border-white1'
+              className='w-full text-lg p-2 bg-dark1 text-white1 border-[2px] rounded-[4px] focus:border-primary focus:outline-none border-white1'
             />
           </section>
         </div>
-        <section className='flex flex-col gap-[8px]'>
+        <section className='flex flex-col gap-2'>
           <label className='text-xl' htmlFor='message'>
             {dictionary['message'][lang]}
           </label>
@@ -123,25 +123,25 @@ const Contact = ({
             value={formik.values.message}
             onChange={formik.handleChange}
             autoComplete='off'
-            className='w-full text-lg resize-none p-[8px] bg-dark1 text-white1 border-[2px] rounded-[4px] focus:border-primary focus:outline-none border-white12'
+            className='w-full text-lg resize-none p-2 bg-dark1 text-white1 border-[2px] rounded-[4px] focus:border-primary focus:outline-none border-white12'
           />
         </section>
         <section className='flex justify-end'>
           <button
             type='submit'
-            className='text-lg bg-primary px-[12px] py-[8px] rounded-[4px]'>
+            className='text-lg bg-primary px-3 py-2 rounded-[4px]'>
             {dictionary['submit'][lang]}
           </button>
         </section>
       </form>
 
-      <section className='flex flex-col gap-[8px]'>
-        <h2 className='text-3xl font-bold mt-[40px]'>My CV</h2>
-        <p className='mt-[8px]'>{dictionary['check_cv'][lang]}</p>
+      <section className='flex flex-col gap-2'>
+        <h2 className='text-3xl font-bold mt-10'>My CV</h2>
+        <p className='mt-2'>{dictionary['check_cv'][lang]}</p>
         <a
           href='/docs/Juan_Manzanero_CV.pdf'
           target='_blank'
-          className='w-max text-lg bg-primary px-[12px] py-[8px] mt-[20px] rounded-[4px] self-end'>
+          className='w-max text-lg bg-primary px-3 py-2 mt-5 rounded-[4px] self-end'>
           {dictionary['open_cv'][lang]}
         </a>
       </section>

@@ -14,8 +14,8 @@ const ItemCard = ({
   lang,
   type,
 }: ItemCardMetadataProps) => (
-  <Link href={`/${lang}/${type}/${slug}`}>
-    <article className='bg-dark1 w-[280px] h-full rounded-[8px] shadow-boxShadow cursor-pointer group'>
+  <Link tabIndex={0} className='group' href={`/${lang}/${type}/${slug}`}>
+    <article className='bg-dark1 w-[280px] h-full rounded-[8px] shadow-boxShadow'>
       <header className='w-[280px] overflow-hidden rounded-t-[8px]'>
         <Image
           priority
@@ -23,24 +23,24 @@ const ItemCard = ({
           width='0'
           height='0'
           sizes='100vw'
-          className='w-full h-auto group-hover:scale-110 transition-all duration-300'
+          className='w-full h-auto -z-10 group-focus:scale-110 group-hover:scale-110 transition-all duration-300'
           alt={featuredImageCaption}
         />
       </header>
-      <main className='p-[12px] grid gap-y-[8px]'>
+      <main className='p-3 flex flex-col gap-2'>
         <section>
-          <h3 className='text-lg transition-colors group-hover:text-primary group-hover:underline'>
+          <h3 className='text-lg transition-colors group-focus:text-primary group-hover:text-primary group-hover:underline group-focus:underline'>
             {title}
           </h3>
           <h4 className='text-sm font-normal'>
             {date.toLocaleDateString(lang === 'en' ? 'en-US' : 'es-MX')}
           </h4>
         </section>
-        <section className='flex flex-wrap gap-[4px]'>
+        <section className='flex flex-wrap gap-1'>
           {tags && tags.map((tag) => <Chip key={tag} tag={tag} />)}
         </section>
         <section>
-          <p className='text-md font-thin'>{subtitle}</p>
+          <p className='font-thin'>{subtitle}</p>
         </section>
       </main>
     </article>
