@@ -31,14 +31,9 @@ const Home = async ({ params: { lang } }: { params: { lang: Locale } }) => {
       <section className='flex flex-col gap-1'>
         <h2 className='text-3xl'>{dictionary.home.hello_iam} Juan</h2>
         <h1 className='primary-gradient text-4xl font-bold'>
-          Frontend Engineer
+          Frontend Developer
         </h1>
-        <p className='font-thin text-lg'>
-          {dictionary.home.my_web_1}{' '}
-          <span className='font-normal text-primary'>Frontend</span>{' '}
-          {dictionary.common.and}{' '}
-          <span className='font-normal text-primary'>Cloud</span> engineer.
-        </p>
+        <p className='font-thin text-lg'>{dictionary.home.my_web_1} </p>
       </section>
 
       <section>
