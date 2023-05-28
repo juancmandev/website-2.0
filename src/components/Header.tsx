@@ -47,7 +47,17 @@ const navItems = [
 const Header = ({ lang }: any) => {
   const changeLang = lang === 'en' ? 'es' : 'en';
   const [windowSize, setWindowSize] = useState<number[]>([0, 0]);
-  const sidebar = useRef<HTMLDialogElement>(null);
+
+  useEffect(() => {
+    const handleWindowResize = () =>
+      setWindowSize([window.innerWidth, window.innerHeight]);
+
+    window.addEventListener('resize', handleWindowResize);
+
+    handleWindowResize();
+
+    return () => window.removeEventListener('resize', handleWindowResize);
+  }, []);
 
   const handleDialogClick = (
     e: React.MouseEvent<HTMLDialogElement, MouseEvent>
