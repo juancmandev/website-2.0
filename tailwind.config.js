@@ -15,6 +15,7 @@ module.exports = {
       boxShadow: 'rgba(125,125,125,0.9)',
     },
     spacing: {
+      '0': '0px',
       '1': '4px',
       '2': '8px',
       '3': '12px',

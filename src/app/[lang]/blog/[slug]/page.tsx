@@ -5,6 +5,7 @@ import { getPostEnMetadata, getPostEsMetadata } from '@/utils/getPostMetadata';
 import Image from 'next/image';
 import { Locale } from '@/dictionaries/i18n-config';
 import Chip from '@/components/Chip';
+import months from '@/utils/months';
 
 const getPostContent = (slug: string, lang: string) => {
   const file = `src/posts/${lang}/${slug}.md`;
@@ -101,8 +102,12 @@ const PostPage = ({
         <div>
           <h1 className='text-4xl font-bold'>{post.data.title}</h1>
           <p className='text-md font-light'>
-            {new Date(post.data.date).toLocaleDateString(
-              lang === 'en' ? 'en-US' : 'es-MX'
+            {lang && (
+              <span>
+                {months(lang, new Date(post.data.date).getMonth())}{' '}
+                {new Date(post.data.date).getDate()},{' '}
+                {new Date(post.data.date).getFullYear()}
+              </span>
             )}
           </p>
         </div>

@@ -2,6 +2,7 @@ import Image from 'next/image';
 import ItemCardMetadataProps from '@/interfaces/ItemCardMetadata.model';
 import Chip from './Chip';
 import Link from 'next/link';
+import months from '@/utils/months';
 
 const ItemCard = ({
   featuredImage,
@@ -33,7 +34,12 @@ const ItemCard = ({
             {title}
           </h3>
           <h4 className='text-sm font-normal'>
-            {date.toLocaleDateString(lang === 'en' ? 'en-US' : 'es-MX')}
+            {lang && (
+              <span>
+                {months(lang, date.getMonth())} {date.getDate()},{' '}
+                {date.getFullYear()}
+              </span>
+            )}
           </h4>
         </section>
         <section className='flex flex-wrap gap-1'>

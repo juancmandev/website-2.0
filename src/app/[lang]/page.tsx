@@ -31,14 +31,9 @@ const Home = async ({ params: { lang } }: { params: { lang: Locale } }) => {
       <section className='flex flex-col gap-1'>
         <h2 className='text-3xl'>{dictionary.home.hello_iam} Juan</h2>
         <h1 className='primary-gradient text-4xl font-bold'>
-          Frontend Engineer
+          Frontend Developer
         </h1>
-        <p className='font-thin text-lg'>
-          {dictionary.home.my_web_1}{' '}
-          <span className='font-normal text-primary'>Frontend</span>{' '}
-          {dictionary.common.and}{' '}
-          <span className='font-normal text-primary'>Cloud</span> engineer.
-        </p>
+        <p className='font-thin text-lg'>{dictionary.home.my_web_1} </p>
       </section>
 
       <section>
@@ -48,7 +43,7 @@ const Home = async ({ params: { lang } }: { params: { lang: Locale } }) => {
         <p className='font-thin'>{dictionary.home.latest_posts_1}</p>
         <p className='font-thin'>{dictionary.home.latest_posts_2}</p>
         <p className='font-thin'>{dictionary.home.latest_posts_3}</p>
-        <ul className='mt-8 flex flex-col lg:flex-row gap-3'>
+        <ul className='max-w-max mt-8 flex flex-col lg:flex-row gap-3'>
           {last3Posts.map((post) => (
             <li key={post.slug}>
               <ItemCard lang={lang} {...post} type='blog' />
@@ -62,7 +57,7 @@ const Home = async ({ params: { lang } }: { params: { lang: Locale } }) => {
           {dictionary.home.latest_projects}
         </h2>
         <p className='font-thin'>{dictionary.home.latest_projects_1}</p>
-        <ul className='mt-8 flex flex-col lg:flex-row gap-3'>
+        <ul className='max-w-max mt-8 flex flex-col lg:flex-row gap-3'>
           {last3Projects.length > 0 ? (
             last3Projects.map((project) => (
               <li key={project.slug}>
