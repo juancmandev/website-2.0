@@ -4,7 +4,7 @@ subtitle: 'Workarise Web App, administra tareas con tu equipo'
 tags: ['React.js', 'Vite.js', 'MUI', 'Firebase', 'GCP', 'Node.js']
 featuredImage: '/projects/workarise-banner.png'
 featuredImageCaption: 'Workarise Banner'
-date: '04-14-2023'
+date: '2023-04-14T00:00:00'
 url: 'https://workarise.com'
 ---
 

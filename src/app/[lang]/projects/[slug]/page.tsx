@@ -9,6 +9,7 @@ import Image from 'next/image';
 import { Locale } from '@/dictionaries/i18n-config';
 import { GithubIcon, WebIcon } from '@/assets/Icons';
 import Chip from '@/components/Chip';
+import months from '@/utils/months';
 
 const getProjectContent = (slug: string, lang: string) => {
   const file = `src/projects/${lang}/${slug}.md`;
@@ -105,7 +106,13 @@ const ProjectPage = ({
         <div>
           <h1 className='text-4xl font-bold'>{project.data.title}</h1>
           <p className='font-light'>
-            {new Date(project.data.date).toLocaleDateString('en-US')}
+            {lang && (
+              <span>
+                {months(lang, new Date(project.data.date).getMonth())}{' '}
+                {new Date(project.data.date).getDate()},{' '}
+                {new Date(project.data.date).getFullYear()}
+              </span>
+            )}
           </p>
         </div>
 

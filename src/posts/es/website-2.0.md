@@ -4,7 +4,7 @@ subtitle: 'Cometí algunos errores al crear la primera versión de mi sitio web,
 tags: ['Next.js', 'TypeScript', 'TailwindCSS', 'Vercel']
 featuredImage: '/blog/website-2.0/website-2.0-header.png'
 featuredImageCaption: 'Tech Stack usado para este sitio web. Next.js, Vercel, React.js, TypeScript y TailwindCSS'
-date: '04-06-2023'
+date: '2023-04-07T00:00:00'
 ---
 
 La primera versión de mi sitio web fue uno de mis mayores proyectos hasta ahora, pero ahora que tengo más experiencia como ingeniero Frontend, me doy cuenta de que no hice suficiente investigación para crear un sitio web con un blog.
