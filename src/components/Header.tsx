@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import { HamburgerIcon, CloseIcon } from '@/assets/Icons';
 import Tippy from '@tippyjs/react';
@@ -47,6 +47,23 @@ const navItems = [
 const Header = ({ lang }: any) => {
   const changeLang = lang === 'en' ? 'es' : 'en';
   const [windowSize, setWindowSize] = useState<number[]>([0, 0]);
+  const sidebar = useRef<HTMLDialogElement>(null);
+
+  const handleDialogClick = (
+    e: React.MouseEvent<HTMLDialogElement, MouseEvent>
+  ) => {
+    if (e.currentTarget.tagName !== 'DIALOG') return;
+
+    const rect = e.currentTarget.getBoundingClientRect();
+
+    const clickedInDialog =
+      rect.top <= e.clientY &&
+      e.clientY <= rect.top + rect.height &&
+      rect.left <= e.clientX &&
+      e.clientX <= rect.left + rect.width;
+
+    if (clickedInDialog === false) e.currentTarget.close();
+  };
 
   useEffect(() => {
     const handleWindowResize = () =>
@@ -58,10 +75,6 @@ const Header = ({ lang }: any) => {
 
     return () => window.removeEventListener('resize', handleWindowResize);
   }, []);
-
-  const [toggleSideMenu, setToggleSideMenu] = useState(false);
-
-  const sideMenu = !toggleSideMenu ? 'close-sidebar' : 'open-sidebar';
 
   return (
     <>
@@ -110,61 +123,58 @@ const Header = ({ lang }: any) => {
             trigger='none'
             placement='left'
             content={lang === 'en' ? 'Open Side Menu' : 'Abrir Menú Lateral'}>
-            <button onClick={() => setToggleSideMenu(true)} id='toggle-menu'>
+            <button
+              onClick={() => sidebar.current?.showModal()}
+              id='toggle-menu'>
               <HamburgerIcon fillColor='#eee' />
             </button>
           </Tippy>
         </section>
       </header>
 
-      <div
-        onClick={() => setToggleSideMenu(false)}
-        className={`${
-          sideMenu === 'close-sidebar' ? 'hidden' : 'absolute'
-        } w-screen h-screen absolute top-0 z-20 overflow-hidden backdrop`}
-      />
-
-      <nav
-        className={`${sideMenu} fixed w-[200px] h-full py-8 -top-1 z-30 overflow-hidden bg-dark1 text-white1`}>
-        <section className='w-full flex justify-center'>
-          <button onClick={() => setToggleSideMenu(false)}>
+      <dialog
+        onClick={handleDialogClick}
+        ref={sidebar}
+        className='px-0 py-8 min-h-screen ml-0 bg-dark1 text-white1'>
+        <div className='w-full flex justify-center'>
+          <button onClick={() => sidebar.current?.close()}>
             <CloseIcon fillColor='#eee' />
           </button>
-        </section>
-        <section className='flex flex-col mt-10'>
-          <Tippy
-            placement='left'
-            content={
-              lang === 'en'
-                ? `Cambiar idioma al ${
-                    changeLang === 'en' ? 'Inglés' : 'Español'
-                  }`
-                : `Change language to ${
-                    changeLang === 'en' ? 'English' : 'Spanish'
-                  }`
-            }>
-            <Link
-              tabIndex={toggleSideMenu ? 0 : -1}
-              className='w-full my-4 text-center'
-              href={`/${changeLang}`}>
-              <p className='text-lg'>{changeLang === 'en' ? '🇺🇸' : '🇲🇽'}</p>
-            </Link>
-          </Tippy>
-          <ul className='grid gap-2'>
-            {navItems.map((navItem) => (
-              <li key={navItem.label} className='w-full h-max flex'>
-                <Link
-                  tabIndex={toggleSideMenu ? 0 : -1}
-                  href={`/${lang}${navItem.to}`}
-                  onClick={() => setToggleSideMenu(false)}
-                  className='w-full py-3 font-bold text-center text-lg hover:underline hover:bg-boxShadow focus:underline focus:bg-boxShadow'>
-                  {dictionary[navItem.label][lang]}
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </section>
-      </nav>
+        </div>
+        <nav>
+          <section className='flex flex-col mt-10'>
+            <Tippy
+              placement='left'
+              content={
+                lang === 'en'
+                  ? `Cambiar idioma al ${
+                      changeLang === 'en' ? 'Inglés' : 'Español'
+                    }`
+                  : `Change language to ${
+                      changeLang === 'en' ? 'English' : 'Spanish'
+                    }`
+              }>
+              <Link
+                className='w-full my-4 py-3 text-center hover:bg-boxShadow focus:underline focus:bg-boxShadow'
+                href={`/${changeLang}`}>
+                <p className='text-2xl'>{changeLang === 'en' ? '🇺🇸' : '🇲🇽'}</p>
+              </Link>
+            </Tippy>
+            <ul className='flex flex-col gap-2'>
+              {navItems.map((navItem) => (
+                <li key={navItem.label} className='w-full h-max flex'>
+                  <Link
+                    href={`/${lang}${navItem.to}`}
+                    onClick={() => sidebar.current?.close()}
+                    className='w-full px-10 py-3 font-bold text-center text-lg hover:underline hover:bg-boxShadow focus:underline focus:bg-boxShadow'>
+                    {dictionary[navItem.label][lang]}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </section>
+        </nav>
+      </dialog>
     </>
   );
 };

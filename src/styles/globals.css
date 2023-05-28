@@ -2,25 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-.main {
-  height: calc(100vh - 80px);
-}
-
-.backdrop {
-  backdrop-filter: blur(1px);
-  background-color: rgba(38, 38, 38, 0.336);
-}
-
-.open-sidebar {
-  transform: translateX(0px);
-  transition: transform 300ms ease-out;
-}
-
-.close-sidebar {
-  transform: translateX(-200px);
-  transition: transform 300ms ease-out;
-}
-
 .primary-gradient {
   --bg-size: 400%;
   background: linear-gradient(
@@ -33,10 +14,4 @@
   background-clip: text;
   color: transparent;
   animation: move-bg 8s infinite linear;
-}
-
-@keyframes move-bg {
-  to {
-    background-position: var(--bg-size) 0;
-  }
 }
