@@ -67,7 +67,7 @@ export const generateMetadata = async ({
       description: post.data.subtitle,
       creator: '@juancmandev',
       images: {
-        url: `${post.data.featuredImage}`,
+        url: post.data.featuredImage,
         width: 1200,
         height: 675,
         alt: post.data.featuredImageCaption,
