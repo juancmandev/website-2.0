@@ -24,7 +24,7 @@ const ItemCard = ({
           width='0'
           height='0'
           sizes='100vw'
-          className='w-full h-auto -z-10 group-focus:scale-110 group-hover:scale-110 transition-all duration-300'
+          className='w-full h-auto max-h-[157.49px] -z-10 group-focus:scale-110 group-hover:scale-110 transition-all duration-300'
           alt={featuredImageCaption}
         />
       </header>

@@ -140,6 +140,13 @@ export const tags: any = {
     borderColor: '#000',
     textColor: '#000',
   },
+  ['Computing']: {
+    label: 'Computing',
+    icon: <span className='text-sm'>🖥️</span>,
+    backgroundColor: '#000',
+    borderColor: '#fff',
+    textColor: '#fff',
+  },
 };
 
 export const tagsList = ['React.js', 'Next.js'];
