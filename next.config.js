@@ -24,7 +24,7 @@ const nextConfig = {
   async rewrites() {
     return [
       {
-        source: '/*',
+        source: '/',
         destination: 'https://connect.mailerlite.com/*',
       },
     ];
