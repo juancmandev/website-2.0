@@ -89,7 +89,7 @@ const Header = ({ lang }: any) => {
 
   return (
     <>
-      <header className='w-full sticky p-6 md:px-20 -top-1 z-10 flex justify-between items-center bg-dark1 shadow-sm shadow-boxShadow'>
+      <header className='w-full sticky p-6 md:px-15 -top-1 z-10 flex justify-between items-center bg-dark1 shadow-sm shadow-boxShadow'>
         <nav className='w-full flex justify-between items-center'>
           <section>
             <Link href={`/${lang}`}>
@@ -114,13 +114,13 @@ const Header = ({ lang }: any) => {
                 <p className='text-lg'>{changeLang === 'en' ? '🇺🇸' : '🇲🇽'}</p>
               </Link>
             </Tippy>
-            <ul className='flex items-center gap-4'>
+            <ul className='flex items-center gap-8'>
               {navItems.map((navItem) => (
                 <li key={navItem.label} className='w-max h-max'>
                   <Link
                     tabIndex={windowSize[0] < 728 ? -1 : 0}
                     href={`/${lang}${navItem.to}`}
-                    className='font-bold hover:underline focus:underline p-2 text-lg'>
+                    className='font-bold hover:underline focus:underline text-lg'>
                     {dictionary[navItem.label][lang]}
                   </Link>
                 </li>
