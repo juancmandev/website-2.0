@@ -25,7 +25,7 @@ const nextConfig = {
     return [
       {
         source: '/:path*',
-        destination: 'https://connect.mailerlite.com/:path*',
+        destination: 'https://connect.mailerlite.com/api/subscribers',
       },
     ];
   },
