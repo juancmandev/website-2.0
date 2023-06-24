@@ -24,8 +24,8 @@ const nextConfig = {
   async rewrites() {
     return [
       {
-        source: '/api/:path*',
-        destination: 'https://connect.mailerlite.com/:path*',
+        source: '/*',
+        destination: 'https://connect.mailerlite.com/*',
       },
     ];
   },
