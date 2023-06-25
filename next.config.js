@@ -21,14 +21,6 @@ const nextConfig = {
     PUBLIC_KEY: process.env.PUBLIC_KEY,
     MAILER_LITE_KEY: process.env.MAILER_LITE_KEY,
   },
-  async rewrites() {
-    return [
-      {
-        source: '/:path*',
-        destination: 'https://connect.mailerlite.com/api/subscribers',
-      },
-    ];
-  },
 };
 
 module.exports = nextConfig;

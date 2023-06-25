@@ -4,7 +4,6 @@ import { useState } from 'react';
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
 import { GitHubIcon, LinkedinIcon, TwitterIcon } from '@/assets/Icons';
-import MailerLite from '@mailerlite/mailerlite-nodejs';
 
 const SOCIAL_LINKS = [
   {
@@ -24,10 +23,6 @@ const SOCIAL_LINKS = [
 export default function Footer() {
   const [submitting, setSubmitting] = useState(false);
 
-  const mailerlite = new MailerLite({
-    api_key: process.env.MAILER_LITE_KEY!,
-  });
-
   const formik = useFormik({
     initialValues: {
       email: '',
@@ -39,12 +34,20 @@ export default function Footer() {
       setSubmitting(true);
 
       try {
-        await mailerlite.subscribers.createOrUpdate({
-          email,
-          groups: ['91890469200463449'],
+        const res = await fetch('/api/mailerLite', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({ email }),
         });
+        const data = await res.json();
 
-        alert('You have successfully subscribed!');
+        if (data.status === 'ok') {
+          alert('You have successfully subscribed!');
+        } else {
+          alert('Error when trying to subscribe...');
+        }
       } catch (error) {
         alert('Error when trying to subscribe...');
       } finally {
