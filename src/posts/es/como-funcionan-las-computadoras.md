@@ -5,6 +5,7 @@ tags: ['Computing']
 featuredImage: '/blog/how-computers-works/philipp-katzenberger-iIJrUoeRoCQ-unsplash.jpg'
 featuredImageCaption: 'Una laptop abierta. Photo by Philipp Katzenberger on Unsplash'
 date: '2023-05-29T00:00:00'
+author: 'Juan Carlos Manzanero Domínguez <@juancmandev>'
 ---
 
 Hoy en día usamos, de alguna manera, una computadora en casi toda actividad de nuestras vidas, podría ser para trabajo o solo por diversión, pero si lo pensamos con cuidado, las computadoras son un invento del siglo pasado, y han cambiado nuestras vidas.

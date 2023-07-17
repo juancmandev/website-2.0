@@ -1,9 +1,10 @@
 interface IconProps {
   fillColor?: string | '#eee';
+  size?: number | string;
 }
 
-export const HamburgerIcon = (props: IconProps) => (
-  <svg fill='none' viewBox='0 0 15 15' width='32' height='32'>
+export const HamburgerIcon = ({ size }: IconProps) => (
+  <svg fill='none' viewBox='0 0 15 15' width={size} height={size}>
     <title>Menu</title>
     <path
       fill='currentColor'
@@ -14,8 +15,8 @@ export const HamburgerIcon = (props: IconProps) => (
   </svg>
 );
 
-export const CloseIcon = () => (
-  <svg fill='none' viewBox='0 0 24 24' width='32' height='32'>
+export const CloseIcon = ({ size }: IconProps) => (
+  <svg fill='none' viewBox='0 0 24 24' width={size} height={size}>
     <title>Close</title>
     <path
       fill='currentColor'
@@ -278,5 +279,18 @@ export const GitHubIcon = () => (
 export const LinkedinIcon = () => (
   <svg viewBox='0 0 1024 1024' fill='currentColor' height='28px' width='28px'>
     <path d='M880 112H144c-17.7 0-32 14.3-32 32v736c0 17.7 14.3 32 32 32h736c17.7 0 32-14.3 32-32V144c0-17.7-14.3-32-32-32zM349.3 793.7H230.6V411.9h118.7v381.8zm-59.3-434a68.8 68.8 0 1168.8-68.8c-.1 38-30.9 68.8-68.8 68.8zm503.7 434H675.1V608c0-44.3-.8-101.2-61.7-101.2-61.7 0-71.2 48.2-71.2 98v188.9H423.7V411.9h113.8v52.2h1.6c15.8-30 54.5-61.7 112.3-61.7 120.2 0 142.3 79.1 142.3 181.9v209.4z' />
+  </svg>
+);
+
+export const DateIcon = ({ size }: IconProps) => (
+  <svg fill='currentColor' viewBox='0 0 16 16' width={size} height={size}>
+    <path d='M11 6.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1z' />
+    <path d='M3.5 0a.5.5 0 01.5.5V1h8V.5a.5.5 0 011 0V1h1a2 2 0 012 2v11a2 2 0 01-2 2H2a2 2 0 01-2-2V3a2 2 0 012-2h1V.5a.5.5 0 01.5-.5zM1 4v10a1 1 0 001 1h12a1 1 0 001-1V4H1z' />
+  </svg>
+);
+
+export const PersonIcon = ({ size }: IconProps) => (
+  <svg fill='currentColor' viewBox='0 0 16 16' width={size} height={size}>
+    <path d='M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 100-6 3 3 0 000 6z' />
   </svg>
 );

@@ -7,7 +7,8 @@ export default interface ItemCardMetadataProps {
   tags: string[];
   featuredImage: string;
   featuredImageCaption: string;
-  lang?: string;
+  lang: string;
   repo?: string;
   url?: string;
+  author?: string;
 }

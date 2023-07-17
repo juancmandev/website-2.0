@@ -21,6 +21,7 @@ export const getProjectEnMetadata = (): ItemCardMetadataProps[] => {
       featuredImageCaption: matterResults.data.featuredImageCaption,
       repo: matterResults.data.repo,
       url: matterResults.data.url,
+      author: matterResults.data.author,
     };
   });
 
@@ -47,6 +48,7 @@ export const getProjectsEsMetadata = (): ItemCardMetadataProps[] => {
       featuredImageCaption: matterResults.data.featuredImageCaption,
       repo: matterResults.data.repo,
       url: matterResults.data.url,
+      author: matterResults.data.author,
     };
   });
 

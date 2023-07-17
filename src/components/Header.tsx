@@ -141,7 +141,7 @@ const Header = ({ lang }: any) => {
               className='outline-none focus:text-primary hover:text-primary'
               onClick={() => sidebar.current?.showModal()}
               id='toggle-menu'>
-              <HamburgerIcon fillColor='#eee' />
+              <HamburgerIcon size={32} />
             </button>
           </Tippy>
         </section>
@@ -155,7 +155,7 @@ const Header = ({ lang }: any) => {
           <button
             className='p-2 outline-none flex justify-center focus:text-primary hover:text-primary w-full my-4 py-3 text-center hover:bg-boxShadow focus:underline focus:bg-boxShadow'
             onClick={() => sidebar.current?.close()}>
-            <CloseIcon />
+            <CloseIcon size={32} />
           </button>
         </div>
         <nav>
