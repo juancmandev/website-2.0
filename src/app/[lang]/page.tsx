@@ -46,7 +46,7 @@ const Home = async ({ params: { lang } }: { params: { lang: Locale } }) => {
         <ul className='max-w-max mt-8 flex flex-col lg:flex-row gap-3'>
           {last3Posts.map((post) => (
             <li key={post.slug}>
-              <ItemCard lang={lang} {...post} type='blog' />
+              <ItemCard {...post} lang={lang} type='blog' />
             </li>
           ))}
         </ul>
@@ -61,7 +61,7 @@ const Home = async ({ params: { lang } }: { params: { lang: Locale } }) => {
           {last3Projects.length > 0 ? (
             last3Projects.map((project) => (
               <li key={project.slug}>
-                <ItemCard lang={lang} {...project} type='projects' />
+                <ItemCard {...project} lang={lang} type='projects' />
               </li>
             ))
           ) : (
