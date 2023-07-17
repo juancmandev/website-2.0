@@ -92,8 +92,10 @@ const Header = ({ lang }: any) => {
       <header className='w-full sticky p-6 md:px-15 -top-1 z-10 flex justify-between items-center bg-dark1 shadow-sm shadow-boxShadow'>
         <nav className='w-full flex justify-between items-center'>
           <section>
-            <Link href={`/${lang}`}>
-              <h1 className='text-xl primary-gradient'>juancmandev</h1>
+            <Link
+              className='outline-none focus:underline hover:underline text-xl text-primary focus:text-primaryLight hover:text-primaryLight'
+              href={`/${lang}`}>
+              juancmandev
             </Link>
           </section>
           <section className='hidden sm:flex items-center gap-8'>
@@ -109,6 +111,7 @@ const Header = ({ lang }: any) => {
                     }`
               }>
               <Link
+                className='outline-none focus:underline'
                 tabIndex={windowSize[0] < 728 ? -1 : 0}
                 href={`/${changeLang}`}>
                 <p className='text-lg'>{changeLang === 'en' ? '🇺🇸' : '🇲🇽'}</p>
@@ -120,7 +123,7 @@ const Header = ({ lang }: any) => {
                   <Link
                     tabIndex={windowSize[0] < 728 ? -1 : 0}
                     href={`/${lang}${navItem.to}`}
-                    className='font-bold hover:underline focus:underline text-lg'>
+                    className='outline-none font-bold hover:underline focus:underline text-lg'>
                     {dictionary[navItem.label][lang]}
                   </Link>
                 </li>
@@ -135,6 +138,7 @@ const Header = ({ lang }: any) => {
             placement='left'
             content={lang === 'en' ? 'Open Side Menu' : 'Abrir Menú Lateral'}>
             <button
+              className='outline-none focus:text-primary hover:text-primary'
               onClick={() => sidebar.current?.showModal()}
               id='toggle-menu'>
               <HamburgerIcon fillColor='#eee' />
@@ -148,8 +152,10 @@ const Header = ({ lang }: any) => {
         ref={sidebar}
         className='px-0 py-8 min-h-screen ml-0 bg-dark1 text-white1'>
         <div className='w-full flex justify-center'>
-          <button onClick={() => sidebar.current?.close()}>
-            <CloseIcon fillColor='#eee' />
+          <button
+            className='p-2 outline-none flex justify-center focus:text-primary hover:text-primary w-full my-4 py-3 text-center hover:bg-boxShadow focus:underline focus:bg-boxShadow'
+            onClick={() => sidebar.current?.close()}>
+            <CloseIcon />
           </button>
         </div>
         <nav>
@@ -166,7 +172,7 @@ const Header = ({ lang }: any) => {
                     }`
               }>
               <Link
-                className='w-full my-4 py-3 text-center hover:bg-boxShadow focus:underline focus:bg-boxShadow'
+                className='outline-none w-full my-4 py-3 text-center hover:bg-boxShadow focus:underline focus:bg-boxShadow'
                 href={`/${changeLang}`}>
                 <p className='text-2xl'>{changeLang === 'en' ? '🇺🇸' : '🇲🇽'}</p>
               </Link>
@@ -177,7 +183,7 @@ const Header = ({ lang }: any) => {
                   <Link
                     href={`/${lang}${navItem.to}`}
                     onClick={() => sidebar.current?.close()}
-                    className='w-full px-10 py-3 font-bold text-center text-lg hover:underline hover:bg-boxShadow focus:underline focus:bg-boxShadow'>
+                    className='outline-none w-full px-10 py-3 font-bold text-center text-lg hover:underline hover:bg-boxShadow focus:underline focus:bg-boxShadow'>
                     {dictionary[navItem.label][lang]}
                   </Link>
                 </li>

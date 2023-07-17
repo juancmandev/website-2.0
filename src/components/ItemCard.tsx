@@ -15,7 +15,10 @@ const ItemCard = ({
   lang,
   type,
 }: ItemCardMetadataProps) => (
-  <Link tabIndex={0} className='group' href={`/${lang}/${type}/${slug}`}>
+  <Link
+    tabIndex={0}
+    className='group outline-none'
+    href={`/${lang}/${type}/${slug}`}>
     <article className='bg-dark1 w-[280px] h-full rounded-[8px] shadow-boxShadow'>
       <header className='w-[280px] overflow-hidden rounded-t-[8px]'>
         <Image

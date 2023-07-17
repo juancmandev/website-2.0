@@ -19,7 +19,7 @@ const RootLayout = ({ children, params }: any) => {
       <body className='text-white1 bg-dark2'>
         <Header lang={params.lang} />
         <main className='min-h-screen px-6 md:px-15 py-20'>{children}</main>
-        <Footer />
+        {/* <Footer /> */}
         <Analytics />
       </body>
     </html>
