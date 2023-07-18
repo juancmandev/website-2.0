@@ -147,6 +147,34 @@ export const tags: any = {
     borderColor: '#fff',
     textColor: '#fff',
   },
+  ['Social']: {
+    label: 'Social',
+    icon: <span className='text-sm'>👥</span>,
+    backgroundColor: '#75c2f6',
+    borderColor: '#fff',
+    textColor: '#fff',
+  },
+  ['Humanity']: {
+    label: 'Humanity',
+    icon: <span className='text-sm'>🧑‍🤝‍🧑</span>,
+    backgroundColor: '#a8a196',
+    borderColor: '#fff',
+    textColor: '#fff',
+  },
+  ['Internet']: {
+    label: 'Internet',
+    icon: <span className='text-sm'>🌐</span>,
+    backgroundColor: '#068fff',
+    borderColor: '#fff',
+    textColor: '#fff',
+  },
+  ['Cyberpunk']: {
+    label: 'Cyberpunk',
+    icon: <span className='text-sm'>🤖</span>,
+    backgroundColor: '#dd58d6',
+    borderColor: '#fff',
+    textColor: '#fff',
+  },
 };
 
 export const tagsList = ['React.js', 'Next.js'];
