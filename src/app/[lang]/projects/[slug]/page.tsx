@@ -7,7 +7,7 @@ import {
 } from '@/utils/getProjectMetadata';
 import Image from 'next/image';
 import { Locale } from '@/dictionaries/i18n-config';
-import { GithubIcon, WebIcon } from '@/assets/Icons';
+import { DateIcon, GithubIcon, PersonIcon, WebIcon } from '@/assets/Icons';
 import Chip from '@/components/Chip';
 import months from '@/utils/months';
 
@@ -80,17 +80,17 @@ export const generateMetadata = async ({
   };
 };
 
-const ProjectPage = ({
+export default function ProjectPage({
   params: { slug, lang },
 }: {
   params: { slug: string; lang: Locale };
-}) => {
+}) {
   const project = getProjectContent(slug, lang);
 
   return (
     <>
-      <header className='mb-10 max-w-[65ch] mx-auto flex flex-col gap-4'>
-        <figure className='w-full'>
+      <header className='mb-10 max-w-[65ch] mx-auto flex flex-col gap-6'>
+        <figure className='w-full flex flex-col gap-2'>
           <Image
             priority
             width='0'
@@ -105,16 +105,27 @@ const ProjectPage = ({
           </figcaption>
         </figure>
 
-        <div>
+        <div className='flex flex-col gap-4'>
           <h1 className='text-4xl font-bold'>{project.data.title}</h1>
-          <p className='font-light'>
-            {lang && (
-              <span>
+          <p className='font-light flex items-center gap-2'>
+            <DateIcon size='1rem' />
+            {lang === 'en' ? (
+              <span className='mt-[2px]'>
                 {months(lang, new Date(project.data.date).getMonth())}{' '}
                 {new Date(project.data.date).getDate()},{' '}
                 {new Date(project.data.date).getFullYear()}
               </span>
+            ) : (
+              <span className='mt-[2px]'>
+                {new Date(project.data.date).getDate()} de{' '}
+                {months(lang, new Date(project.data.date).getMonth())} del{' '}
+                {new Date(project.data.date).getFullYear()}
+              </span>
             )}
+          </p>
+          <p className='flex items-center gap-1'>
+            <PersonIcon size='1rem' />
+            {project.data.author}
           </p>
         </div>
 
@@ -148,6 +159,4 @@ const ProjectPage = ({
       </article>
     </>
   );
-};
-
-export default ProjectPage;
+}

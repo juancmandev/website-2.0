@@ -28,7 +28,7 @@ const ProjectsPage = async ({
         {projectsMetadata.length > 0 ? (
           projectsMetadata.map((project) => (
             <li key={project.slug}>
-              <BlogCard lang={lang} {...project} type='projects' />
+              <BlogCard {...project} lang={lang} type='projects' />
             </li>
           ))
         ) : (

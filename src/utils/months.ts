@@ -14,18 +14,18 @@ const monthsEn = [
 ];
 
 const monthsEs = [
-  'Ene',
-  'Feb',
-  'Mar',
-  'Abr',
-  'May',
-  'Jun',
-  'Jul',
-  'Ago',
-  'Sept',
-  'Oct',
-  'Nov',
-  'Dic',
+  'Enero',
+  'Febrero',
+  'Marzo',
+  'Abril',
+  'Mayo',
+  'Junio',
+  'Julio',
+  'Agosto',
+  'Septiembre',
+  'Octobre',
+  'Noviembre',
+  'Diciembre',
 ];
 
 const months = (lang: string, monthIndex: number): string => {

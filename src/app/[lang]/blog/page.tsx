@@ -22,7 +22,7 @@ const BlogPage = ({
       <ul className='flex flex-wrap gap-8'>
         {postMetadata.map((post) => (
           <li key={post.slug}>
-            <BlogCard lang={lang} {...post} type='blog' />
+            <BlogCard {...post} lang={lang} type='blog' />
           </li>
         ))}
       </ul>

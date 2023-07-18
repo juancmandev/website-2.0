@@ -7,6 +7,7 @@ featuredImageCaption: 'Human to JS Banner'
 date: '2023-04-15T00:00:00'
 url: 'https://human-to-js.juancman.dev/'
 repo: 'https://github.com/juancmandev/human-to-js'
+author: 'Juan Carlos Manzanero Domínguez <@juancmandev>'
 ---
 
 ## Retrospectiva

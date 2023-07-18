@@ -1,3 +1,4 @@
+import Footer from '@/components/Footer';
 import Header from '@/components/Header';
 import '@/styles/globals.css';
 import '@fontsource/roboto';
@@ -17,7 +18,8 @@ const RootLayout = ({ children, params }: any) => {
     <html lang={params.lang}>
       <body className='text-white1 bg-dark2'>
         <Header lang={params.lang} />
-        <main className='px-6 md:px-20 py-20'>{children}</main>
+        <main className='min-h-screen px-6 md:px-15 py-20'>{children}</main>
+        {/* <Footer /> */}
         <Analytics />
       </body>
     </html>
