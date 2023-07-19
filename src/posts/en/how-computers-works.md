@@ -1,6 +1,6 @@
 ---
 title: 'How Computers Works'
-subtitle: 'Today we use, in some way, the computer in almost every activity in our lives, being indispensable'
+subtitle: 'Today we use, in some way, the computer in almost every activity in our lives, being indispensable.'
 tags: ['Computing']
 featuredImage: '/blog/how-computers-works/philipp-katzenberger-iIJrUoeRoCQ-unsplash.jpg'
 featuredImageCaption: 'An open laptop. Photo by Philipp Katzenberger on Unsplash'

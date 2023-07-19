@@ -111,7 +111,7 @@ const Header = ({ lang }: any) => {
                     }`
               }>
               <Link
-                className='outline-none focus:underline'
+                className='outline-none focus:underline hover:underline'
                 tabIndex={windowSize[0] < 728 ? -1 : 0}
                 href={`/${changeLang}`}>
                 <p className='text-lg'>{changeLang === 'en' ? '🇺🇸' : '🇲🇽'}</p>
