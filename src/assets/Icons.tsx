@@ -94,10 +94,10 @@ export const TailwindCSSIcon = () => (
   </svg>
 );
 
-export const ViteJSIcon = () => (
+export const ViteJSIcon = ({ size }: IconProps) => (
   <svg
-    width='16'
-    height='16'
+    width={size}
+    height={size}
     viewBox='0 0 410 404'
     fill='none'
     xmlns='http://www.w3.org/2000/svg'>
@@ -136,10 +136,10 @@ export const ViteJSIcon = () => (
   </svg>
 );
 
-export const FirebaseIcon = () => (
+export const FirebaseIcon = ({ size }: IconProps) => (
   <svg
-    width='16'
-    height='16'
+    width={size}
+    height={size}
     viewBox='0 0 111 151'
     version='1.1'
     xmlns='http://www.w3.org/2000/svg'

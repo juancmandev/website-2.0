@@ -17,8 +17,8 @@ export const tags: any = {
     label: 'Next.js',
     icon: (
       <Image
-        width={32}
-        height={32}
+        width={16}
+        height={16}
         src='/icons/nextjs-icon-light-background.png'
         alt='Next.js icon'
       />
@@ -30,8 +30,8 @@ export const tags: any = {
     label: 'TypeScript',
     icon: (
       <Image
-        width={32}
-        height={32}
+        width={16}
+        height={16}
         src='/icons/ts-logo-round-512.png'
         alt='TypeScript icon'
       />
@@ -49,8 +49,8 @@ export const tags: any = {
     label: 'Vercel',
     icon: (
       <Image
-        width={32}
-        height={32}
+        width={16}
+        height={16}
         style={{ marginBottom: '8px' }}
         src='/icons/vercel-icon-dark.png'
         alt='Vercel icon'
@@ -61,7 +61,7 @@ export const tags: any = {
   },
   ['Vite.js']: {
     label: 'Vite.js',
-    icon: <ViteJSIcon />,
+    icon: <ViteJSIcon size={12} />,
     backgroundColor: '#BD34FE',
     borderColor: '#fff',
   },
@@ -69,8 +69,8 @@ export const tags: any = {
     label: 'MUI',
     icon: (
       <Image
-        width={32}
-        height={32}
+        width={16}
+        height={16}
         style={{ marginBottom: '8px' }}
         src='/icons/mui-icon.png'
         alt='Vercel icon'
@@ -81,7 +81,7 @@ export const tags: any = {
   },
   ['Firebase']: {
     label: 'Firebase',
-    icon: <FirebaseIcon />,
+    icon: <FirebaseIcon size={12} />,
     backgroundColor: ' #ffa000 ',
     borderColor: '#fff',
   },
@@ -89,8 +89,8 @@ export const tags: any = {
     label: 'GCP',
     icon: (
       <Image
-        width={32}
-        height={32}
+        width={16}
+        height={16}
         src={'/icons/gcp-icon.png'}
         alt='GCP icon'
       />
@@ -102,8 +102,8 @@ export const tags: any = {
     label: 'Node.js',
     icon: (
       <Image
-        width={32}
-        height={32}
+        width={16}
+        height={16}
         src={'/icons/nodejs-icon.png'}
         alt='Node.js icon'
       />
@@ -115,8 +115,8 @@ export const tags: any = {
     label: 'ChatGPT',
     icon: (
       <Image
-        width={32}
-        height={32}
+        width={16}
+        height={16}
         src={'/icons/chatgpt-icon.png'}
         alt='ChatGPT icon'
         style={{ borderRadius: '50%' }}
@@ -129,8 +129,8 @@ export const tags: any = {
     label: 'JavaScript',
     icon: (
       <Image
-        width={32}
-        height={32}
+        width={16}
+        height={16}
         src={'/icons/js-icon.png'}
         alt='JavaScript icon'
         style={{ borderRadius: '50%' }}
@@ -142,35 +142,35 @@ export const tags: any = {
   },
   ['Computing']: {
     label: 'Computing',
-    icon: <span className='text-sm'>🖥️</span>,
+    icon: <span className='text-xs'>🖥️</span>,
     backgroundColor: '#000',
     borderColor: '#fff',
     textColor: '#fff',
   },
   ['Social']: {
     label: 'Social',
-    icon: <span className='text-sm'>👥</span>,
+    icon: <span className='text-xs'>👥</span>,
     backgroundColor: '#75c2f6',
     borderColor: '#fff',
     textColor: '#fff',
   },
   ['Humanity']: {
     label: 'Humanity',
-    icon: <span className='text-sm'>🧑‍🤝‍🧑</span>,
+    icon: <span className='text-xs'>🧑‍🤝‍🧑</span>,
     backgroundColor: '#a8a196',
     borderColor: '#fff',
     textColor: '#fff',
   },
   ['Internet']: {
     label: 'Internet',
-    icon: <span className='text-sm'>🌐</span>,
+    icon: <span className='text-xs'>🌐</span>,
     backgroundColor: '#068fff',
     borderColor: '#fff',
     textColor: '#fff',
   },
   ['Cyberpunk']: {
     label: 'Cyberpunk',
-    icon: <span className='text-sm'>🤖</span>,
+    icon: <span className='text-xs'>🤖</span>,
     backgroundColor: '#dd58d6',
     borderColor: '#fff',
     textColor: '#fff',
