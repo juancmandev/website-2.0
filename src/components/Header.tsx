@@ -89,8 +89,8 @@ const Header = ({ lang }: any) => {
 
   return (
     <>
-      <header className='w-full sticky p-6 md:px-15 -top-1 z-10 flex justify-between items-center bg-dark1 shadow-sm shadow-boxShadow'>
-        <nav className='w-full flex justify-between items-center'>
+      <header className='w-full sticky p-6 md:px-15 -top-1 z-10 flex justify-between items-center bg-dark1 shadow-md shadow-boxShadow'>
+        <nav className='w-full max-w-[1200px] xl:mx-auto flex justify-between items-center'>
           <section>
             <Link
               className='outline-none focus:underline hover:underline text-xl text-primary focus:text-primaryLight hover:text-primaryLight'

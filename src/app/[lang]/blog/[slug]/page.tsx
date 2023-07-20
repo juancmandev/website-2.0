@@ -7,6 +7,7 @@ import { Locale } from '@/dictionaries/i18n-config';
 import Chip from '@/components/Chip';
 import months from '@/utils/months';
 import { DateIcon, PersonIcon } from '@/assets/Icons';
+import { Metadata } from 'next';
 
 const getPostContent = (slug: string, lang: string) => {
   const file = `src/posts/${lang}/${slug}.md`;
@@ -16,11 +17,11 @@ const getPostContent = (slug: string, lang: string) => {
   return matterResult;
 };
 
-export const generateStaticParams = async ({
+export async function generateStaticParams({
   params,
 }: {
   params: { lang: Locale };
-}): Promise<any> => {
+}): Promise<any> {
   const { lang } = params;
 
   if (lang === 'en') {
@@ -34,13 +35,13 @@ export const generateStaticParams = async ({
       lang,
     }));
   }
-};
+}
 
-export const generateMetadata = async ({
+export async function generateMetadata({
   params: { slug, lang },
 }: {
   params: { slug: string; lang: Locale };
-}) => {
+}): Promise<Metadata> {
   const post = getPostContent(slug, lang);
 
   return {
@@ -52,7 +53,7 @@ export const generateMetadata = async ({
       title: post.data.title,
       description: post.data.subtitle,
       publishedTime: new Date(post.data.date).toISOString(),
-      authors: [post.data.author],
+      authors: post.data.author,
       images: [
         {
           url: post.data.featuredImage,
@@ -75,7 +76,7 @@ export const generateMetadata = async ({
       },
     },
   };
-};
+}
 
 export default function PostPage({
   params: { slug, lang },

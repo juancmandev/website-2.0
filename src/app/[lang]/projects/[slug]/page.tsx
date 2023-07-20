@@ -10,6 +10,7 @@ import { Locale } from '@/dictionaries/i18n-config';
 import { DateIcon, GithubIcon, PersonIcon, WebIcon } from '@/assets/Icons';
 import Chip from '@/components/Chip';
 import months from '@/utils/months';
+import { Metadata } from 'next';
 
 const getProjectContent = (slug: string, lang: string) => {
   const file = `src/projects/${lang}/${slug}.md`;
@@ -19,11 +20,11 @@ const getProjectContent = (slug: string, lang: string) => {
   return matterResult;
 };
 
-export const generateStaticParams = async ({
+export async function generateStaticParams({
   params,
 }: {
   params: { lang: Locale };
-}): Promise<any> => {
+}): Promise<any> {
   const { lang } = params;
 
   if (lang === 'en') {
@@ -37,13 +38,13 @@ export const generateStaticParams = async ({
       lang,
     }));
   }
-};
+}
 
-export const generateMetadata = async ({
+export async function generateMetadata({
   params: { slug, lang },
 }: {
   params: { slug: string; lang: Locale };
-}) => {
+}): Promise<Metadata> {
   const project = getProjectContent(slug, lang);
 
   return {
@@ -55,7 +56,7 @@ export const generateMetadata = async ({
       title: project.data.title,
       description: project.data.subtitle,
       publishedTime: new Date(project.data.date).toISOString(),
-      authors: ['Juan Carlos Manzanero Domínguez | @juancmandev'],
+      authors: project.data.author,
       images: [
         {
           url: project.data.featuredImage,
@@ -78,7 +79,7 @@ export const generateMetadata = async ({
       },
     },
   };
-};
+}
 
 export default function ProjectPage({
   params: { slug, lang },
