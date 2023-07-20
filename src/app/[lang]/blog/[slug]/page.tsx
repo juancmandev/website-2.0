@@ -17,7 +17,11 @@ const getPostContent = (slug: string, lang: string) => {
   return matterResult;
 };
 
-export function generateStaticParams({ params }: { params: { lang: Locale } }) {
+export async function generateStaticParams({
+  params,
+}: {
+  params: { lang: Locale };
+}): Promise<any> {
   const { lang } = params;
 
   if (lang === 'en') {
