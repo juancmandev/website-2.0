@@ -12,7 +12,7 @@ module.exports = {
       dark1: '#393e46',
       dark2: '#222831',
       white1: '#eee',
-      boxShadow: 'rgba(125,125,125,0.9)',
+      boxShadow: 'rgba(15,15,15,0.9)',
     },
     spacing: {
       '0': '0px',
