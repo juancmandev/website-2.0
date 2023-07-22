@@ -150,10 +150,10 @@ const Header = ({ lang }: any) => {
       <dialog
         onClick={handleDialogClick}
         ref={sidebar}
-        className='px-0 py-8 min-h-screen ml-0 bg-dark1 text-white1'>
+        className='px-0 py-8 min-h-screen ml-0 bg-dark1 text-white1 shadow-md shadow-boxShadow backdrop:bg-[rgba(5,_5,_5,_0.5)]'>
         <div className='w-full flex justify-center'>
           <button
-            className='p-2 outline-none flex justify-center focus:text-primary hover:text-primary w-full my-4 py-3 text-center hover:bg-boxShadow focus:underline focus:bg-boxShadow'
+            className='p-2 outline-none flex justify-center focus:text-primary hover:text-primary w-full my-4 py-3 text-center focus:underline hover:bg-[rgba(0,_0,_0,_0.2)]  focus:bg-[rgba(0,_0,_0,_0.2)]'
             onClick={() => sidebar.current?.close()}>
             <CloseIcon size={32} />
           </button>
@@ -172,7 +172,7 @@ const Header = ({ lang }: any) => {
                     }`
               }>
               <Link
-                className='outline-none w-full my-4 py-3 text-center hover:bg-boxShadow focus:underline focus:bg-boxShadow'
+                className='outline-none w-full my-4 py-3 text-center hover:underline focus:underline hover:bg-[rgba(0,_0,_0,_0.2)]  focus:bg-[rgba(0,_0,_0,_0.2)]'
                 href={`/${changeLang}`}>
                 <p className='text-2xl'>{changeLang === 'en' ? '🇺🇸' : '🇲🇽'}</p>
               </Link>
@@ -183,7 +183,7 @@ const Header = ({ lang }: any) => {
                   <Link
                     href={`/${lang}${navItem.to}`}
                     onClick={() => sidebar.current?.close()}
-                    className='outline-none w-full px-10 py-3 font-bold text-center text-lg hover:underline hover:bg-boxShadow focus:underline focus:bg-boxShadow'>
+                    className='outline-none w-full px-10 py-3 font-bold text-center text-lg hover:underline focus:underline hover:bg-[rgba(0,_0,_0,_0.2)] focus:bg-[rgba(0,_0,_0,_0.2)]'>
                     {dictionary[navItem.label][lang]}
                   </Link>
                 </li>

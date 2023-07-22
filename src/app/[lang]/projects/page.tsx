@@ -24,7 +24,7 @@ const ProjectsPage = async ({
   return (
     <>
       <h1 className='text-3xl font-bold mb-10'>{dictionary.projects.title}</h1>
-      <ul className='flex flex-wrap gap-8'>
+      <ul className='flex flex-wrap gap-6'>
         {projectsMetadata.length > 0 ? (
           projectsMetadata.map((project) => (
             <li key={project.slug}>
