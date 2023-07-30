@@ -76,7 +76,7 @@ const Contact = ({
   });
 
   return (
-    <div className='max-w-[400px] mx-auto'>
+    <div className='max-w-[400px] mx-auto min-h-screen'>
       <div className='mb-10'>
         <h1 className='text-3xl font-bold'>{dictionary['title'][lang]}</h1>
         <p className='mt-2'>{dictionary['description'][lang]}</p>
@@ -136,7 +136,7 @@ const Contact = ({
       </form>
 
       <section className='flex flex-col gap-2'>
-        <h2 className='text-3xl font-bold mt-10'>My CV</h2>
+        <h2 className='text-3xl font-bold mt-5'>My CV</h2>
         <p className='mt-2'>{dictionary['check_cv'][lang]}</p>
         <a
           href='/docs/Juan_Manzanero_CV.pdf'

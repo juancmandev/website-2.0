@@ -13,7 +13,7 @@ export default function RootLayout({ children, params }: any) {
     <html lang={params.lang}>
       <body className='text-white1 bg-dark2'>
         <Header lang={params.lang} />
-        <main className='max-w-[1200px] xl:mx-auto xl:px-0 min-h-screen px-6 md:px-15 py-20'>
+        <main className='max-w-[1200px] xl:mx-auto xl:px-0 min-h-[calc(100vh_-_76px)] px-6 md:px-15 py-20'>
           {children}
         </main>
         {/* <Footer /> */}
