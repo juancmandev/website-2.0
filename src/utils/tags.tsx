@@ -1,6 +1,7 @@
 import {
   FirebaseIcon,
   ReactJSIcon,
+  SupabaseIcon,
   TailwindCSSIcon,
   ViteJSIcon,
 } from '@/assets/Icons';
@@ -172,6 +173,20 @@ export const tags: any = {
     label: 'Cyberpunk',
     icon: <span className='text-xs'>🤖</span>,
     backgroundColor: '#dd58d6',
+    borderColor: '#fff',
+    textColor: '#fff',
+  },
+  ['Supabase']: {
+    label: 'Supabase',
+    icon: <SupabaseIcon size='12px' />,
+    backgroundColor: '#3ecf8e',
+    borderColor: '#fff',
+    textColor: '#fff',
+  },
+  ['Hackathon']: {
+    label: 'Hackathon',
+    icon: <span className='text-xs'>🧑🏻‍💻</span>,
+    backgroundColor: '#000',
     borderColor: '#fff',
     textColor: '#fff',
   },

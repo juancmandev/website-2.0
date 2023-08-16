@@ -1,0 +1,37 @@
+---
+title: 'He participado en una Hackathon'
+subtitle: 'Recientemente participé en un Hackathon de Supabase, formando un equipo con personas de otros países.'
+tags: ['Next.js', 'Supabase', 'Hackathon']
+featuredImage: '/blog/i-participated-in-a-hackathon/i-participated-in-a-hackathon-banner.png'
+featuredImageCaption: 'Tech stack utilizado: Supabase, Next.js y Shadcn/UI, Mi primera hackathon!'
+date: '2023-08-16T00:00:00'
+author: 'Juan Carlos Manzanero Domínguez <@juancmandev>'
+---
+
+Recientemente participé en un [Hackathon de Supabase](https://supabase.com/blog/supabase-lw8-hackathon), formando un equipo con personas de otros países, uno de Bangladesh y otro de Brasil, utilizando inglés para comunicarnos en Discord.
+
+La temática del Hackathon era libre, la única regla principal era utilizar Supabase para cualquier función, como autenticación, como base de datos PostgreSQL o para utilizar vectores en la inteligencia artificial. Tuvimos 10 días para construir un producto utilizando cualquier tecnología y subirlo a un repositorio en GitHub.
+
+Desarrollamos una aplicación de comercio electrónico con un modelo de productos similar a Walmart, implementando vectores para obtener mejores resultados en las búsquedas.
+
+Utilizando Supabase, implementamos autenticación y rutas protegidas, de manera que el usuario deba iniciar sesión para ver recomendaciones y más.
+
+El usuario puede agregar productos al carrito de compras y revisar sus artículos para guardarlos y ver recomendaciones, así como los artículos que se compran con frecuencia.
+
+Mi papel principal se centró en crear la interfaz de usuario utilizando Next.js 13app router, protegiendo las rutas solo para usuarios autenticados, y creando componentes reutilizables como tarjetas de producto, y por supuesto, haciendo que el diseño sea adaptable tanto para dispositivos móviles como para escritorio.
+
+Utilizamos [Shadcn/UI](https://ui.shadcn.com/), ya que estos componentes ya implementan funcionalidades con accesibilidad, como modales o barras laterales. Por ejemplo, la barra lateral que aparece cuando estás en un dispositivo móvil y lo abres con el botón en el encabezado, con una animación suave.
+
+Presentamos el proyecto a tiempo y estamos esperando los resultados. Esta es la primera vez que participo en un Hackathon y realmente lo disfruté, espero seguir contribuyendo al proyecto en GitHub.
+
+Es increíble trabajar con personas de otros países, utilizando el inglés aunque no sea nuestra lengua materna, pero con un propósito en común: crear un gran producto.
+
+Seguiré buscando participar en más Hackathones en el futuro y contribuir a proyectos de código abierto (open source) en Github, porque realmente disfruto la sensación de desarrollar algo grande con más personas.
+
+Aprendí mucho en estos pocos días, como la integración de Next.js con Supabase para autenticación y rutas protegidas, utilizando la documentación de Supabase como guía, y utilizando por primera vez Shadcn/UI, y estoy ansioso por seguir usándolo.
+
+Me llevó mucho tiempo participar en un Hackathon, ya que antes dudaba de mi experiencia, pero la realidad es que nunca estaremos listos para nuevos desafíos, porque si ya estás listo, significa que es demasiado tarde.
+
+Quiero aprender más sobre el uso de vectores para la inteligencia artificial, así que investigaré más sobre el tema, ya que la tecnología tiende a avanzar en esa dirección. Quién sabe cuál será la próxima gran tendencia tecnológica o cuándo llegará.
+
+[Puedes ver el proyecto: Grocewise aquí](https://groce-wise.vercel.app/)
