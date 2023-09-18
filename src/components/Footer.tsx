@@ -1,113 +1,56 @@
 'use client';
 
-import { useState } from 'react';
-import { useFormik } from 'formik';
-import * as Yup from 'yup';
-import { GitHubIcon, LinkedinIcon, TwitterIcon } from '@/assets/Icons';
+import { EmailIcon, GitHubIcon } from '@/assets/Icons';
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from '@/components/ui/tooltip';
 
-const SOCIAL_LINKS = [
+const socialItems = [
   {
-    icon: <TwitterIcon />,
-    href: 'https://twitter.com/juancmandev',
+    to: 'https://github.com/juancmandev/website-2.0',
+    icon: <GitHubIcon size='2rem' />,
+    label: 'Website Source Code',
   },
   {
-    icon: <GitHubIcon />,
-    href: 'https://github.com/juancmandev',
-  },
-  {
-    icon: <LinkedinIcon />,
-    href: 'https://www.linkedin.com/in/juancmandev/',
+    to: 'mailto:contact@juancman.dev',
+    icon: <EmailIcon size='2rem' />,
+    label: 'Email',
   },
 ];
 
 export default function Footer() {
-  const [submitting, setSubmitting] = useState(false);
-
-  const formik = useFormik({
-    initialValues: {
-      email: '',
-    },
-    validationSchema: Yup.object({
-      email: Yup.string().email('Invalid email address').required('Required'),
-    }),
-    onSubmit: async ({ email }) => {
-      setSubmitting(true);
-
-      try {
-        const res = await fetch('/api/mailerLite', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify({ email }),
-        });
-        const data = await res.json();
-
-        if (data.status === 'ok') {
-          alert('You have successfully subscribed!');
-        } else {
-          alert('Error when trying to subscribe...');
-        }
-      } catch (error) {
-        alert('Error when trying to subscribe...');
-      } finally {
-        setSubmitting(false);
-      }
-    },
-  });
-
   return (
-    <footer className='w-full py-10 px-6 md:px-15 bg-dark1 flex flex-col gap-10'>
-      <section className='mr-auto md:mr-0 flex flex-col md:flex-row gap-8 md:w-full'>
-        <div className='flex flex-col gap-2'>
-          <h2 className='text-2xl'>Newsletter</h2>
-          <div>
-            <p className='text-sm'>
-              {`Don't miss out on my latest posts and projects!`}
-            </p>
-            <p className='text-sm'>{`Don't worry, I won't send you spam.`}</p>
-          </div>
-        </div>
-        <form
-          onSubmit={formik.handleSubmit}
-          className='flex flex-col md:flex-row gap-2'>
-          <section className='flex flex-col gap-2'>
-            <label className='text-xl' htmlFor='email'>
-              Your Email *
-            </label>
-            <input
-              id='email'
-              type='email'
-              required
-              value={formik.values.email}
-              onChange={formik.handleChange}
-              autoComplete='off'
-              className='w-full text-lg p-2 bg-dark1 text-white1 border-2 rounded-[4px] focus:border-primary focus:outline-none border-white1'
-            />
-          </section>
-          <button
-            type='submit'
-            disabled={submitting}
-            className='outline-none text-lg md:self-end h-max bg-primary px-3 py-2 border-2 border-primary rounded-[4px] transition-colors hover:bg-primaryLight hover:border-primaryLight focus:bg-primaryLight focus:border-primaryLight active:bg-primaryDark active:border-primaryDark disabled:bg-primaryDark disabled:border-primaryDark'>
-            {submitting ? 'Subscribing...' : 'Subscribe'}
-          </button>
-        </form>
-      </section>
-      <section className='w-max flex flex-col gap-2 mr-auto md:mr-0'>
-        <h2 className='text-2xl'>Social Media</h2>
-        <ul className='flex justify-between'>
-          {SOCIAL_LINKS.map(({ icon, href }) => (
-            <li key={href}>
-              <a
-                href={href}
-                className='outline-none text-primary hover:text-primaryLight focus:text-primaryLight active:text-primaryDark transition-colors'
-                target='_blank'>
-                {icon}
-              </a>
+    <TooltipProvider>
+      <footer className='px-6 md:px-15 py-12 text-center bg-dark1 shadow-md shadow-boxShadow'>
+        <h5 className='font-light text-lg'>
+          Uncopyrighted by Juan Manzanero. 2023.
+        </h5>
+        <h6>Built with Next.js.</h6>
+        <ul className='mt-5 flex justify-center items-center gap-6'>
+          {socialItems.map((socialItem) => (
+            <li key={socialItem.label} className='inline-block w-max h-max'>
+              <Tooltip>
+                <TooltipTrigger asChild>
+                  <a
+                    href={socialItem.to}
+                    target='_blank'
+                    className='outline-none focus:underline hover:underline'>
+                    {socialItem.icon}
+                  </a>
+                </TooltipTrigger>
+                <TooltipContent
+                  side='top'
+                  className='px-2 py-1 bg-dark2 border-0'>
+                  <p>{socialItem.label}</p>
+                </TooltipContent>
+              </Tooltip>
             </li>
           ))}
         </ul>
-      </section>
-    </footer>
+      </footer>
+    </TooltipProvider>
   );
 }

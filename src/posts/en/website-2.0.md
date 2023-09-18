@@ -5,7 +5,7 @@ tags: ['Next.js', 'TypeScript', 'TailwindCSS', 'Vercel']
 featuredImage: '/blog/website-2.0/website-2.0-header.png'
 featuredImageCaption: 'Tech Stack of this website. Next.js, Vercel, React.js, TypeScript and TailwindCSS'
 date: '2023-04-07T00:00:00'
-author: 'Juan Carlos Manzanero Domínguez <@juancmandev>'
+author: 'Juan Manzanero'
 ---
 
 The first version of my website was one of my biggest projects so fat, but **now** as I’ve **more** **experience** as a **Frontend** Engineer, I realize I **didn’t** do **enough** **research** into **creating** a **web** site with a **blog**.

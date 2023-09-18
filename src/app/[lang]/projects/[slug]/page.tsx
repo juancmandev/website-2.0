@@ -7,7 +7,7 @@ import {
 } from '@/utils/getProjectMetadata';
 import Image from 'next/image';
 import { Locale } from '@/dictionaries/i18n-config';
-import { DateIcon, GithubIcon, PersonIcon, WebIcon } from '@/assets/Icons';
+import { DateIcon, GitHubIcon, PersonIcon, WebIcon } from '@/assets/Icons';
 import Chip from '@/components/Chip';
 import months from '@/utils/months';
 import { Metadata } from 'next';
@@ -140,7 +140,7 @@ export default function ProjectPage({
           <div className='flex justify-start gap-2 my-3'>
             {project.data.repo && (
               <a href={project.data.repo} target='_blank'>
-                <GithubIcon />
+                <GitHubIcon size='32px' />
               </a>
             )}
             {project.data.url && (

@@ -6,7 +6,7 @@ featuredImage: '/projects/workarise-banner.png'
 featuredImageCaption: 'Workarise Banner'
 date: '2023-04-14T00:00:00'
 url: 'https://workarise.com'
-author: 'Juan Carlos Manzanero Domínguez <@juancmandev>'
+author: 'Juan Manzanero'
 ---
 
 ## Overview

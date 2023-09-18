@@ -4,15 +4,12 @@
     "engineer": "engineer"
   },
   "home": {
-    "hello_iam": "Hello, I'm",
+    "hello_iam": "Hi, I'm",
     "no_projects": "No projects yet",
-    "my_web_1": "This is my website, where I share my career.",
+    "my_web_1": "This is my website, a piece of the Internet that I can call my home.",
+    "my_web_2": "I like to write my thoughts and learnings, like projects that I made or things that I learn from others.",
     "latest_posts": "Latest posts",
-    "latest_posts_1": "Teaching is the best way to demonstrate that you have learned something.",
-    "latest_posts_2": "Here're my latest posts, feel free to read.",
-    "latest_posts_3": "I'll be happy if you found something that could help you in your career or you learn something new.",
-    "latest_projects": "Latest projects",
-    "latest_projects_1": "It's fun to create things! Here are some of my projects."
+    "latest_projects": "Latest projects"
   },
   "projects": {
     "title": "Projects"

@@ -29,20 +29,18 @@ const Home = async ({ params: { lang } }: { params: { lang: Locale } }) => {
   return (
     <div className='flex flex-col gap-20'>
       <section className='flex flex-col gap-1'>
-        <h2 className='text-3xl'>{dictionary.home.hello_iam} Juan</h2>
+        <h2 className='text-4xl'>{dictionary.home.hello_iam} Juan Manzanero</h2>
         <h1 className='primary-gradient text-4xl font-bold'>
           Frontend Developer
         </h1>
-        <p className='font-thin text-lg'>{dictionary.home.my_web_1} </p>
+        <p className='font-thin text-lg'>{dictionary.home.my_web_1}</p>
+        <p className='font-thin text-lg'>{dictionary.home.my_web_2}</p>
       </section>
 
       <section>
         <h2 className='text-3xl text-primary'>
           {dictionary.home.latest_posts}
         </h2>
-        <p className='font-thin'>{dictionary.home.latest_posts_1}</p>
-        <p className='font-thin'>{dictionary.home.latest_posts_2}</p>
-        <p className='font-thin'>{dictionary.home.latest_posts_3}</p>
         <ul className='max-w-max mt-8 flex flex-col lg:flex-row gap-6'>
           {last3Posts.map((post) => (
             <li key={post.slug}>
@@ -56,7 +54,6 @@ const Home = async ({ params: { lang } }: { params: { lang: Locale } }) => {
         <h2 className='text-3xl text-primary'>
           {dictionary.home.latest_projects}
         </h2>
-        <p className='font-thin'>{dictionary.home.latest_projects_1}</p>
         <ul className='max-w-max mt-8 flex flex-col lg:flex-row gap-6'>
           {last3Projects.length > 0 ? (
             last3Projects.map((project) => (

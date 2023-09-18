@@ -5,7 +5,7 @@ tags: ['Next.js', 'Supabase', 'Hackathon']
 featuredImage: '/blog/i-participated-in-a-hackathon/i-participated-in-a-hackathon-banner.png'
 featuredImageCaption: 'Tech stack utilizado: Supabase, Next.js y Shadcn/UI, Mi primera hackathon!'
 date: '2023-08-16T00:00:00'
-author: 'Juan Carlos Manzanero Domínguez <@juancmandev>'
+author: 'Juan Manzanero'
 ---
 
 Recientemente participé en un [Hackathon de Supabase](https://supabase.com/blog/supabase-lw8-hackathon), formando un equipo con personas de otros países, uno de Bangladesh y otro de Brasil, utilizando inglés para comunicarnos en Discord.

@@ -5,7 +5,7 @@ tags: ['Computing']
 featuredImage: '/blog/how-computers-works/philipp-katzenberger-iIJrUoeRoCQ-unsplash.jpg'
 featuredImageCaption: 'An open laptop. Photo by Philipp Katzenberger on Unsplash'
 date: '2023-05-29T00:00:00'
-author: 'Juan Carlos Manzanero Domínguez <@juancmandev>'
+author: 'Juan Manzanero'
 ---
 
 Today we use, in some way, the computer in almost every activity in our lives, it could be for work or just fun, but if we think carefully, computers are an invention from the previous century, and have changed our lives.

@@ -5,7 +5,7 @@ tags: ['Next.js', 'Supabase', 'Hackathon']
 featuredImage: '/blog/i-participated-in-a-hackathon/i-participated-in-a-hackathon-banner.png'
 featuredImageCaption: 'Tech stack used: Supabase, Next.js and Shadcn/UI, My first hackathon!'
 date: '2023-08-16T00:00:00'
-author: 'Juan Carlos Manzanero Domínguez <@juancmandev>'
+author: 'Juan Manzanero'
 ---
 
 I recently participated in a [Supabase Hackathon](https://supabase.com/blog/supabase-lw8-hackathon), forming a team with people from other countries, one from Bangladesh and the other person from Brazil, obviously using English for communication on Discord.

@@ -7,7 +7,7 @@ featuredImageCaption:
   'Persona checando sus redes sociales. Photo by Austin Distel on Unsplash
   '
 date: '2023-07-17T00:00:00'
-author: 'Juan Carlos Manzanero Domínguez <@juancmandev>'
+author: 'Juan Manzanero'
 ---
 
 Es evidente que muchas interacciones en Internet ocurren a través de las redes sociales, lo que te permite enviar solicitudes de amistad, chatear o compartir memes y fotos. Sin embargo, la abstracción de la interacción humana mediante software ha causado muchos problemas que antes no existían.

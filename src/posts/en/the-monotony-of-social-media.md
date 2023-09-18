@@ -7,7 +7,7 @@ featuredImageCaption:
   'Person checking social media. Photo by Austin Distel on Unsplash
   '
 date: '2023-07-17T00:00:00'
-author: 'Juan Carlos Manzanero Domínguez <@juancmandev>'
+author: 'Juan Manzanero'
 ---
 
 It’s obvious, a lot of interactions on the Internet occurs through social media, letting you send friend requests, chat, or share memes and photos. However, abstracting human interaction using software has caused many problems that didn’t exist before.
