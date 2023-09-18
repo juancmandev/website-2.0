@@ -1,6 +1,5 @@
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import { Analytics } from '@vercel/analytics/react';
 import '@/styles/globals.css';
 import '@fontsource/roboto';
 
@@ -24,7 +23,6 @@ export default function RootLayout({ children, params }: IRootLayout) {
           {children}
         </main>
         <Footer />
-        <Analytics />
       </body>
     </html>
   );
