@@ -345,8 +345,8 @@ export const RSSIcon = ({ size }: IconProps) => (
     stroke='currentColor'
     strokeLinecap='round'
     strokeLinejoin='round'
-    strokeWidth={2}
     viewBox='0 0 24 24'
+    strokeWidth={2}
     width={size}
     height={size}>
     <path d='M4 11a9 9 0 019 9M4 4a16 16 0 0116 16' />
