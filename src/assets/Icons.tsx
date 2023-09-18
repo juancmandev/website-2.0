@@ -338,3 +338,18 @@ export const EmailIcon = ({ size }: IconProps) => (
     <path d='M20 8l-8 5-8-5V6l8 5 8-5m0-2H4c-1.11 0-2 .89-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6a2 2 0 00-2-2z' />
   </svg>
 );
+
+export const RSSIcon = ({ size }: IconProps) => (
+  <svg
+    fill='none'
+    stroke='currentColor'
+    strokeLinecap='round'
+    strokeLinejoin='round'
+    strokeWidth={2}
+    viewBox='0 0 24 24'
+    width={size}
+    height={size}>
+    <path d='M4 11a9 9 0 019 9M4 4a16 16 0 0116 16' />
+    <path d='M6 19 A1 1 0 0 1 5 20 A1 1 0 0 1 4 19 A1 1 0 0 1 6 19 z' />
+  </svg>
+);

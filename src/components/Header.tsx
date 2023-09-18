@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import { EmailIcon, GitHubIcon, HamburgerIcon } from '@/assets/Icons';
+import { EmailIcon, GitHubIcon, HamburgerIcon, RSSIcon } from '@/assets/Icons';
 import Tippy from '@tippyjs/react';
 import {
   Sheet,
@@ -58,6 +58,11 @@ const socialItems = [
     to: 'mailto:contact@juancman.dev',
     icon: <EmailIcon size='1.5rem' />,
     label: 'Email',
+  },
+  {
+    to: 'https://juancman.dev/feed.xml',
+    icon: <RSSIcon size='1.5rem' />,
+    label: 'RSS Feed',
   },
 ];
 

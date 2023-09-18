@@ -1,6 +1,6 @@
 'use client';
 
-import { EmailIcon, GitHubIcon } from '@/assets/Icons';
+import { EmailIcon, GitHubIcon, RSSIcon } from '@/assets/Icons';
 import {
   Tooltip,
   TooltipContent,
@@ -18,6 +18,11 @@ const socialItems = [
     to: 'mailto:contact@juancman.dev',
     icon: <EmailIcon size='2rem' />,
     label: 'Email',
+  },
+  {
+    to: 'https://juancman.dev/feed.xml',
+    icon: <RSSIcon size='1.5rem' />,
+    label: 'RSS Feed',
   },
 ];
 
