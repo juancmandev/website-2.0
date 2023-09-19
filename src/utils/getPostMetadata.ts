@@ -21,6 +21,7 @@ export const getPostEnMetadata = (): PostMetadataProps[] => {
       featuredImageCaption: matterResults.data.featuredImageCaption,
       author: matterResults.data.author,
       lang: 'en',
+      content: matterResults.content,
     };
   });
 
@@ -47,6 +48,7 @@ export const getPostEsMetadata = (): PostMetadataProps[] => {
       featuredImageCaption: matterResults.data.featuredImageCaption,
       author: matterResults.data.author,
       lang: 'es',
+      content: matterResults.content,
     };
   });
 
