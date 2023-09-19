@@ -5,7 +5,6 @@ import {
   getProjectsEsMetadata,
 } from '@/utils/getProjectMetadata';
 import { getPostEnMetadata, getPostEsMetadata } from '@/utils/getPostMetadata';
-import { log } from 'util';
 
 export async function GET() {
   const enProjects = getProjectEnMetadata();
