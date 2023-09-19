@@ -9,7 +9,7 @@ import {
 } from '@/utils/getProjectMetadata';
 
 const getPostContent = (slug: string, lang: string) => {
-  const file = `src/posts/${lang}/${slug}.md`;
+  const file = `../../src/posts/${lang}/${slug}.md`;
   const content = fs.readFileSync(file, 'utf8');
   const matterResult = matter(content);
 
