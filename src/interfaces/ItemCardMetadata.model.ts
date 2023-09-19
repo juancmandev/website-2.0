@@ -11,4 +11,5 @@ export default interface ItemCardMetadataProps {
   repo?: string;
   url?: string;
   author?: string;
+  content?: string;
 }

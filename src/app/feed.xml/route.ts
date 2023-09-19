@@ -1,3 +1,4 @@
+import showdown from 'showdown';
 import RSS from 'rss';
 import { getPostEnMetadata, getPostEsMetadata } from '@/utils/getPostMetadata';
 import {
@@ -20,9 +21,12 @@ export async function GET() {
   });
 
   enProjects.forEach((project) => {
+    const converter = new showdown.Converter();
+    const html = converter.makeHtml(project.content || '');
+
     feed.item({
       title: project.title,
-      description: project.subtitle,
+      description: html,
       url: `https://www.juancman.dev/en/projects/${project.slug}`,
       date: new Date(project.date),
       categories: project.tags,
@@ -30,9 +34,12 @@ export async function GET() {
   });
 
   esProjects.forEach((project) => {
+    const converter = new showdown.Converter();
+    const html = converter.makeHtml(project.content || '');
+
     feed.item({
       title: project.title,
-      description: project.subtitle,
+      description: html,
       url: `https://www.juancman.dev/es/projects/${project.slug}`,
       date: new Date(project.date),
       categories: project.tags,
@@ -40,9 +47,12 @@ export async function GET() {
   });
 
   enPosts.forEach((post) => {
+    const converter = new showdown.Converter();
+    const html = converter.makeHtml(post.content || '');
+
     feed.item({
       title: post.title,
-      description: post.subtitle,
+      description: html,
       url: `https://www.juancman.dev/en/blog/${post.slug}`,
       date: new Date(post.date),
       categories: post.tags,
@@ -50,9 +60,12 @@ export async function GET() {
   });
 
   esPosts.forEach((post) => {
+    const converter = new showdown.Converter();
+    const html = converter.makeHtml(post.content || '');
+
     feed.item({
       title: post.title,
-      description: post.subtitle,
+      description: html,
       url: `https://www.juancman.dev/es/blog/${post.slug}`,
       date: new Date(post.date),
       categories: post.tags,

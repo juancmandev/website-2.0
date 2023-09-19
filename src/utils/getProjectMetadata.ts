@@ -23,6 +23,7 @@ export const getProjectEnMetadata = (): ItemCardMetadataProps[] => {
       url: matterResults.data.url,
       author: matterResults.data.author,
       lang: 'en',
+      content: matterResults.content,
     };
   });
 
@@ -51,6 +52,7 @@ export const getProjectsEsMetadata = (): ItemCardMetadataProps[] => {
       url: matterResults.data.url,
       author: matterResults.data.author,
       lang: 'es',
+      content: matterResults.content,
     };
   });
 
