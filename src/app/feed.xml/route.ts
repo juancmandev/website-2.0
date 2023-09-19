@@ -5,6 +5,7 @@ import {
   getProjectsEsMetadata,
 } from '@/utils/getProjectMetadata';
 import { getPostEnMetadata, getPostEsMetadata } from '@/utils/getPostMetadata';
+import { log } from 'util';
 
 export async function GET() {
   const enProjects = getProjectEnMetadata();
@@ -72,7 +73,7 @@ export async function GET() {
     });
   });
 
-  return new Response(feed.xml(), {
+  return new Response(feed.xml({ indent: true }), {
     headers: {
       'Content-Type': 'application/atom+xml; charset=UTF-8',
     },
