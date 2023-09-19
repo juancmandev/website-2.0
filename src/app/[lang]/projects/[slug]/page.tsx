@@ -1,7 +1,25 @@
 import { Mdx } from '@/components/MdxComponent';
 import { PageProps } from '@/interfaces/ContentPage.model';
 import { Metadata } from 'next';
-import { getProjectFromParams } from '@/utils/getContent';
+import {
+  getProjectFromParams,
+  getProjectsFromParams,
+} from '@/utils/getContent';
+import { Locale } from '@/dictionaries/i18n-config';
+
+export async function generateStaticParams({
+  params,
+}: {
+  params: { lang: Locale };
+}): Promise<any> {
+  const { lang } = params;
+  const projects = await getProjectsFromParams(lang);
+
+  return projects.map((project) => ({
+    slug: project.slug,
+    lang,
+  }));
+}
 
 export async function generateMetadata(props: PageProps): Promise<Metadata> {
   const { params } = props;

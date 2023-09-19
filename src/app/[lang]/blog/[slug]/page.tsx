@@ -1,7 +1,22 @@
 import { Mdx } from '@/components/MdxComponent';
 import { PageProps } from '@/interfaces/ContentPage.model';
 import { Metadata } from 'next';
-import { getBlogFromParams } from '@/utils/getContent';
+import { getBlogFromParams, getBlogsFromParams } from '@/utils/getContent';
+import { Locale } from '@/dictionaries/i18n-config';
+
+export async function generateStaticParams({
+  params,
+}: {
+  params: { lang: Locale };
+}): Promise<any> {
+  const { lang } = params;
+  const blogs = await getBlogsFromParams(lang);
+
+  return blogs.map((blog) => ({
+    slug: blog.slug,
+    lang,
+  }));
+}
 
 export async function generateMetadata(props: PageProps): Promise<Metadata> {
   const { params } = props;
