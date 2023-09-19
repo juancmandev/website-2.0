@@ -1,42 +1,30 @@
 import BlogCard from '@/components/ItemCard';
-import { Locale } from '@/dictionaries/i18n-config';
-import { getDictionary } from '@/utils/getDictionary';
-import {
-  getProjectEnMetadata,
-  getProjectsEsMetadata,
-} from '@/utils/getProjectMetadata';
+import { PageProps } from '@/interfaces/ContentPage.model';
+import { getProjectsFromParams } from '@/utils/getContent';
 
-export const generateStaticParams = async () => {
-  return [{ lang: 'en' }, { lang: 'es' }];
-};
-
-const ProjectsPage = async ({
-  params: { lang },
-}: {
-  params: {
-    lang: Locale;
-  };
-}) => {
-  const dictionary = await getDictionary(lang);
-  const projectsMetadata =
-    lang === 'en' ? getProjectEnMetadata() : getProjectsEsMetadata();
+export default async function Page({ params }: PageProps) {
+  const projects = await getProjectsFromParams(params.lang);
 
   return (
     <>
-      <h1 className='text-3xl font-bold mb-10'>{dictionary.projects.title}</h1>
+      <h1 className='text-3xl font-bold mb-10'>Projects</h1>
       <ul className='flex flex-wrap gap-6'>
-        {projectsMetadata.length > 0 ? (
-          projectsMetadata.map((project) => (
-            <li key={project.slug}>
-              <BlogCard {...project} lang={lang} type='projects' />
-            </li>
-          ))
-        ) : (
-          <p className='font-thin'>{dictionary.home.no_projects}</p>
-        )}
+        {projects.map((project) => (
+          <li key={project.slug}>
+            <BlogCard
+              type='projects'
+              featuredImage={project.featuredImage}
+              featuredImageCaption={project.featuredImageCaption}
+              title={project.title}
+              date={project.date}
+              tags={project.tags}
+              subtitle={project.subtitle}
+              slug={project.slug}
+              lang={params.lang}
+            />
+          </li>
+        ))}
       </ul>
     </>
   );
-};
-
-export default ProjectsPage;
+}

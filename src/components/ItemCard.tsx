@@ -1,6 +1,5 @@
 import Image from 'next/image';
 import ItemCardMetadataProps from '@/interfaces/ItemCardMetadata.model';
-import Chip from './Chip';
 import Link from 'next/link';
 import months from '@/utils/months';
 import { DateIcon } from '@/assets/Icons';
@@ -52,9 +51,6 @@ const ItemCard = ({
               </span>
             )}
           </h4>
-        </section>
-        <section className='flex flex-wrap gap-1'>
-          {tags && tags.map((tag) => <Chip key={tag} tag={tag} />)}
         </section>
         <section>
           <p className='font-thin'>{subtitle}</p>

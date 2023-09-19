@@ -1,30 +1,25 @@
 import ItemCard from '@/components/ItemCard';
-import { getPostEnMetadata, getPostEsMetadata } from '@/utils/getPostMetadata';
-import {
-  getProjectEnMetadata,
-  getProjectsEsMetadata,
-} from '@/utils/getProjectMetadata';
+import { getBlogsFromParams, getProjectsFromParams } from '@/utils/getContent';
 import { getDictionary } from '@/utils/getDictionary';
 import { Locale } from '@/dictionaries/i18n-config';
 import type { Metadata } from 'next';
+import { sortByKeyDesc } from '@/utils/sorts';
 
 export const metadata: Metadata = {
   title: 'juancmandev',
   description: 'Learn about Frontend and Cloud technologies!',
 };
 
-export const generateStaticParams = async () => {
-  return [{ lang: 'en' }, { lang: 'es' }];
-};
-
-const Home = async ({ params: { lang } }: { params: { lang: Locale } }) => {
+export default async function Page({ params }: { params: { lang: Locale } }) {
+  const { lang } = params;
   const dictionary = await getDictionary(lang);
-  const postMetadata =
-    lang === 'en' ? getPostEnMetadata() : getPostEsMetadata();
-  const last3Posts = postMetadata.slice(0, 3);
-  const projectsMetadata =
-    lang === 'en' ? getProjectEnMetadata() : getProjectsEsMetadata();
-  const last3Projects = projectsMetadata.slice(0, 3);
+  const blogs = await getBlogsFromParams(lang);
+  sortByKeyDesc(blogs, 'date');
+  const last3Blogs = blogs.slice(0, 3);
+
+  const projects = await getProjectsFromParams(lang);
+  sortByKeyDesc(projects, 'date');
+  const last3Projects = projects.slice(0, 3);
 
   return (
     <div className='flex flex-col gap-20'>
@@ -42,9 +37,9 @@ const Home = async ({ params: { lang } }: { params: { lang: Locale } }) => {
           {dictionary.home.latest_posts}
         </h2>
         <ul className='max-w-max mt-8 flex flex-col lg:flex-row gap-6'>
-          {last3Posts.map((post) => (
-            <li key={post.slug}>
-              <ItemCard {...post} lang={lang} type='blog' />
+          {last3Blogs.map((blog) => (
+            <li key={blog.slug}>
+              <ItemCard {...blog} lang={lang} type='blog' />
             </li>
           ))}
         </ul>
@@ -68,6 +63,4 @@ const Home = async ({ params: { lang } }: { params: { lang: Locale } }) => {
       </section>
     </div>
   );
-};
-
-export default Home;
+}

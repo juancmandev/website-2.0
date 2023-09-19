@@ -1,10 +1,10 @@
 export default interface ItemCardMetadataProps {
   title: string;
-  date: Date;
+  date: string;
   type?: 'blog' | 'projects';
   subtitle: string;
   slug: string;
-  tags: string[];
+  tags: string;
   featuredImage: string;
   featuredImageCaption: string;
   lang: string;
