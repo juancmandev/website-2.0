@@ -1,10 +1,10 @@
 import showdown from 'showdown';
 import RSS from 'rss';
-import { getPostEnMetadata, getPostEsMetadata } from '@/utils/getPostMetadata';
 import {
   getProjectEnMetadata,
   getProjectsEsMetadata,
 } from '@/utils/getProjectMetadata';
+import { getPostEnMetadata, getPostEsMetadata } from '@/utils/getPostMetadata';
 
 export async function GET() {
   const enProjects = getProjectEnMetadata();
@@ -20,55 +20,55 @@ export async function GET() {
     pubDate: new Date(),
   });
 
-  enProjects.forEach((project) => {
+  enProjects.forEach((enProject) => {
     const converter = new showdown.Converter();
-    const html = converter.makeHtml(project.content || '');
+    const html = converter.makeHtml(enProject.content || '');
 
     feed.item({
-      title: project.title,
+      title: enProject.title,
       description: html,
-      url: `https://www.juancman.dev/en/projects/${project.slug}`,
-      date: new Date(project.date),
-      categories: project.tags,
+      url: `https://www.juancman.dev/en/projects/${enProject.slug}`,
+      date: new Date(enProject.date),
+      categories: enProject.tags,
     });
   });
 
-  esProjects.forEach((project) => {
+  esProjects.forEach((esProject) => {
     const converter = new showdown.Converter();
-    const html = converter.makeHtml(project.content || '');
+    const html = converter.makeHtml(esProject.content || '');
 
     feed.item({
-      title: project.title,
+      title: esProject.title,
       description: html,
-      url: `https://www.juancman.dev/es/projects/${project.slug}`,
-      date: new Date(project.date),
-      categories: project.tags,
+      url: `https://www.juancman.dev/es/projects/${esProject.slug}`,
+      date: new Date(esProject.date),
+      categories: esProject.tags,
     });
   });
 
-  enPosts.forEach((post) => {
+  enPosts.forEach((enPost) => {
     const converter = new showdown.Converter();
-    const html = converter.makeHtml(post.content || '');
+    const html = converter.makeHtml(enPost.content || '');
 
     feed.item({
-      title: post.title,
+      title: enPost.title,
       description: html,
-      url: `https://www.juancman.dev/en/blog/${post.slug}`,
-      date: new Date(post.date),
-      categories: post.tags,
+      url: `https://www.juancman.dev/en/blog/${enPost.slug}`,
+      date: new Date(enPost.date),
+      categories: enPost.tags,
     });
   });
 
-  esPosts.forEach((post) => {
+  esPosts.forEach((esPost) => {
     const converter = new showdown.Converter();
-    const html = converter.makeHtml(post.content || '');
+    const html = converter.makeHtml(esPost.content || '');
 
     feed.item({
-      title: post.title,
+      title: esPost.title,
       description: html,
-      url: `https://www.juancman.dev/es/blog/${post.slug}`,
-      date: new Date(post.date),
-      categories: post.tags,
+      url: `https://www.juancman.dev/es/blog/${esPost.slug}`,
+      date: new Date(esPost.date),
+      categories: esPost.tags,
     });
   });
 
