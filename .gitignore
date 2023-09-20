@@ -38,3 +38,4 @@ next-env.d.ts
 
 practice.js
 .contentlayer
+dist/
