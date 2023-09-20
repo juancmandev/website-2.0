@@ -2,17 +2,12 @@ import { withContentlayer } from 'next-contentlayer';
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  output: 'export',
+  trailingSlash: true,
+  skipTrailingSlashRedirect: true,
+  distDir: 'dist',
   images: {
     domains: ['www.juancman.dev'],
-  },
-  async redirects() {
-    return [
-      {
-        source: '/',
-        destination: '/en',
-        permanent: true,
-      },
-    ];
   },
 };
 
