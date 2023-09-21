@@ -59,11 +59,6 @@ const socialItems = [
     icon: <EmailIcon size='1.5rem' />,
     label: 'Email',
   },
-  {
-    to: 'https://juancman.dev/feed.xml',
-    icon: <RSSIcon size='1.5rem' />,
-    label: 'RSS Feed',
-  },
 ];
 
 export default function Header({ lang }: any) {
@@ -141,6 +136,23 @@ export default function Header({ lang }: any) {
                     </Tooltip>
                   </li>
                 ))}
+                <li className='flex'>
+                  <Tooltip>
+                    <TooltipTrigger asChild>
+                      <a
+                        href={`https://juancman.dev/${lang}/feed.xml`}
+                        target='_blank'
+                        className='outline-none focus:underline hover:underline'>
+                        <RSSIcon size='1.5rem' />
+                      </a>
+                    </TooltipTrigger>
+                    <TooltipContent
+                      side='bottom'
+                      className='px-2 py-1 bg-dark2 border-0'>
+                      <p>RSS Feed</p>
+                    </TooltipContent>
+                  </Tooltip>
+                </li>
               </ul>
             </section>
           </nav>
@@ -223,6 +235,23 @@ export default function Header({ lang }: any) {
                       </Tippy>
                     </li>
                   ))}
+                  <li className='flex'>
+                    <Tooltip>
+                      <TooltipTrigger asChild>
+                        <a
+                          href={`https://juancman.dev/${lang}/feed.xml`}
+                          target='_blank'
+                          className='outline-none focus:underline hover:underline'>
+                          <RSSIcon size='1.5rem' />
+                        </a>
+                      </TooltipTrigger>
+                      <TooltipContent
+                        side='bottom'
+                        className='px-2 py-1 bg-dark2 border-0'>
+                        <p>RSS Feed</p>
+                      </TooltipContent>
+                    </Tooltip>
+                  </li>
                 </ul>
               </section>
             </nav>

@@ -19,11 +19,6 @@ const socialItems = [
     icon: <EmailIcon size='2rem' />,
     label: 'Email',
   },
-  {
-    to: 'https://juancman.dev/feed.xml',
-    icon: <RSSIcon size='1.5rem' />,
-    label: 'RSS Feed',
-  },
 ];
 
 export default function Footer() {

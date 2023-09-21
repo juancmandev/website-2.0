@@ -2,8 +2,8 @@ import ItemCard from '@/components/ItemCard';
 import { getBlogsFromParams, getProjectsFromParams } from '@/utils/getContent';
 import { getDictionary } from '@/utils/getDictionary';
 import { Locale } from '@/dictionaries/i18n-config';
-import type { Metadata } from 'next';
 import { sortByKeyDesc } from '@/utils/sorts';
+import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'juancmandev',
@@ -13,6 +13,7 @@ export const metadata: Metadata = {
 export default async function Page({ params }: { params: { lang: Locale } }) {
   const { lang } = params;
   const dictionary = await getDictionary(lang);
+
   const blogs = await getBlogsFromParams(lang);
   sortByKeyDesc(blogs, 'date');
   const last3Blogs = blogs.slice(0, 3);
