@@ -9,7 +9,7 @@ export async function GET() {
   const projects = await getProjectsFromParams(lang);
 
   const feed = new RSS({
-    title: 'Juan Manzanero en Español',
+    title: 'Juan Manzanero 🇲🇽',
     description:
       'Este es mi website, un lugar de la Internet al que puedo llamar hogar.',
     site_url: `${url}/${lang}/`,
