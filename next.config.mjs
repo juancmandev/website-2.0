@@ -5,6 +5,15 @@ const nextConfig = {
   images: {
     domains: ['www.juancman.dev'],
   },
+  async redirects() {
+    return [
+      {
+        source: '/',
+        destination: '/en',
+        permanent: true,
+      },
+    ];
+  },
 };
 
 export default withContentlayer(nextConfig);

@@ -22,7 +22,7 @@ export default function RootLayout({ children, params }: IRootLayout) {
         <main className='max-w-[1200px] xl:mx-auto xl:px-0 min-h-[calc(100vh_-_76px)] px-6 md:px-12 py-30'>
           {children}
         </main>
-        <Footer />
+        <Footer lang={params.lang} />
       </body>
     </html>
   );
