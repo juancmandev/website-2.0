@@ -1,7 +1,7 @@
 import { getBlogsFromParams, getProjectsFromParams } from '@/utils/getContent';
 import RSS from 'rss';
 
-const url = 'https://juancman.dev/';
+const url = 'https://juancman.dev';
 const lang = 'es';
 
 export async function GET() {
@@ -12,7 +12,7 @@ export async function GET() {
     title: 'Juan Manzanero 🇲🇽',
     description:
       'Este es mi website, un lugar de la Internet al que puedo llamar hogar.',
-    site_url: `${url}/${lang}/`,
+    site_url: `${url}/${lang}`,
     feed_url: `${url}/${lang}/feed.xml`,
     copyright: 'Uncopyrighted by Juan Manzanero.',
     language: lang,
