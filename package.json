@@ -14,7 +14,6 @@
     "@mailerlite/mailerlite-nodejs": "1.1.0",
     "@radix-ui/react-dialog": "^1.0.4",
     "@radix-ui/react-tooltip": "^1.0.6",
-    "@tippyjs/react": "4.2.6",
     "@types/node": "18.15.11",
     "@types/react": "18.0.31",
     "@types/react-dom": "18.0.11",
