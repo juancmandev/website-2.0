@@ -71,7 +71,7 @@ export default function Header({ lang }: any) {
         <nav className='w-full max-w-[1200px] xl:mx-auto flex justify-between items-center'>
           <section>
             <Link
-              className='outline-none focus:underline hover:underline text-xl text-primary focus:text-primaryLight hover:text-primaryLight'
+              className='focus:underline hover:underline text-xl text-primary focus:text-primaryLight hover:text-primaryLight'
               href={`/${lang}`}>
               juancmandev
             </Link>
@@ -82,7 +82,8 @@ export default function Header({ lang }: any) {
                 <li key={navItem.label} className='w-max h-max'>
                   <Link
                     href={`/${lang}${navItem.to}`}
-                    className='outline-none font-bold hover:underline focus:underline text-lg'>
+                    className=' 
+                    font-bold hover:underline focus:underline text-lg'>
                     {dictionary[navItem.label][lang]}
                   </Link>
                 </li>
@@ -107,8 +108,10 @@ export default function Header({ lang }: any) {
                   <a
                     href={socialItem.to}
                     target='_blank'
-                    className='outline-none focus:underline hover:underline'>
+                    className='flex flex-col items-center gap-1  
+                    focus:underline hover:underline'>
                     {socialItem.icon}
+                    <span className='text-xs'>{socialItem.label}</span>
                   </a>
                 </li>
               ))}
@@ -117,8 +120,10 @@ export default function Header({ lang }: any) {
                   title='RSS Feed'
                   href={`https://juancman.dev/${lang}/feed.xml`}
                   target='_blank'
-                  className='outline-none focus:underline hover:underline'>
+                  className='flex flex-col items-center gap-1  
+                  focus:underline hover:underline'>
                   <RSSIcon size='1.5rem' />
+                  <span className='text-xs'>RSS</span>
                 </a>
               </li>
             </ul>
@@ -139,7 +144,8 @@ export default function Header({ lang }: any) {
           <nav>
             <section>
               <Link
-                className='outline-none text-xl cursor-default w-full px-10 py-4 font-bold text-center hover:bg-[rgba(0,_0,_0,_0.2)] focus:bg-[rgba(0,_0,_0,_0.2)] text-primary focus:text-primaryLight hover:text-primaryLight'
+                className=' 
+                text-xl cursor-default w-full px-10 py-4 font-bold text-center hover:bg-[rgba(0,_0,_0,_0.2)] focus:bg-[rgba(0,_0,_0,_0.2)] text-primary focus:text-primaryLight hover:text-primaryLight'
                 href={`/${lang}`}>
                 juancmandev
               </Link>
@@ -151,7 +157,8 @@ export default function Header({ lang }: any) {
                     <SheetClose asChild>
                       <Link
                         href={`/${lang}${navItem.to}`}
-                        className='outline-none cursor-default w-full px-10 py-3 font-bold text-center text-lg hover:bg-[rgba(0,_0,_0,_0.2)] focus:bg-[rgba(0,_0,_0,_0.2)]'>
+                        className=' 
+                        cursor-default w-full px-10 py-3 font-bold text-center text-lg hover:bg-[rgba(0,_0,_0,_0.2)] focus:bg-[rgba(0,_0,_0,_0.2)]'>
                         {dictionary[navItem.label][lang]}
                       </Link>
                     </SheetClose>
@@ -165,7 +172,8 @@ export default function Header({ lang }: any) {
                   <SheetClose asChild>
                     <Link
                       title={dictionary['change_language'][lang]}
-                      className='text-xl outline-none cursor-default w-full py-3 text-center hover:bg-[rgba(0,_0,_0,_0.2)] focus:bg-[rgba(0,_0,_0,_0.2)]'
+                      className='text-xl  
+                      cursor-default w-full py-3 text-center hover:bg-[rgba(0,_0,_0,_0.2)] focus:bg-[rgba(0,_0,_0,_0.2)]'
                       href={`/${changeLang}`}>
                       {dictionary['change_language_flag'][lang]}
                     </Link>
@@ -177,8 +185,12 @@ export default function Header({ lang }: any) {
                       <a
                         href={socialItem.to}
                         target='_blank'
-                        className='outline-none cursor-default w-full flex justify-center py-3 text-center hover:bg-[rgba(0,_0,_0,_0.2)] focus:bg-[rgba(0,_0,_0,_0.2)]'>
-                        {socialItem.icon}
+                        className=' 
+                        cursor-default w-full flex justify-center py-3 text-center hover:bg-[rgba(0,_0,_0,_0.2)] focus:bg-[rgba(0,_0,_0,_0.2)]'>
+                        <div className='flex flex-col items-center gap-1'>
+                          {socialItem.icon}
+                          <span className='text-xs'>{socialItem.label}</span>
+                        </div>
                       </a>
                     </SheetClose>
                   </li>
@@ -188,8 +200,12 @@ export default function Header({ lang }: any) {
                     title='RSS Feed'
                     href={`https://juancman.dev/${lang}/feed.xml`}
                     target='_blank'
-                    className='outline-none cursor-default w-full flex justify-center py-3 text-center hover:bg-[rgba(0,_0,_0,_0.2)] focus:bg-[rgba(0,_0,_0,_0.2)]'>
-                    <RSSIcon size='1.5rem' />
+                    className=' 
+                    cursor-default w-full flex justify-center py-3 text-center hover:bg-[rgba(0,_0,_0,_0.2)] focus:bg-[rgba(0,_0,_0,_0.2)]'>
+                    <div className='flex flex-col items-center gap-1'>
+                      <RSSIcon size='1.5rem' />
+                      <span className='text-xs'>RSS</span>
+                    </div>
                   </a>
                 </li>
               </ul>

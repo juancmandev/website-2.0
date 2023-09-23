@@ -16,11 +16,12 @@ const ItemCard = ({
   type,
 }: ItemCardMetadataProps) => (
   <Link
+    title={title}
     tabIndex={0}
     className='group outline-none shadow-boxShadow'
     href={`/${lang}/${type}/${slug}`}>
-    <article className='bg-dark1 w-[280px] h-full rounded-[8px] shadow-md shadow-boxShadow'>
-      <header className='w-[280px] overflow-hidden rounded-t-[8px]'>
+    <article className='bg-dark1 w-[280px] h-full rounded-[4px] shadow-md shadow-boxShadow'>
+      <header className='w-[280px] overflow-hidden rounded-t-[4px]'>
         <Image
           priority
           src={featuredImage}
@@ -33,7 +34,7 @@ const ItemCard = ({
       </header>
       <main className='p-3 flex flex-col gap-3'>
         <section className='flex flex-col gap-1'>
-          <h3 className='text-lg transition-colors group-focus:text-primary group-hover:text-primary group-hover:underline group-focus:underline'>
+          <h3 className='line-clamp-1 text-lg transition-colors group-focus:text-primary group-hover:text-primary group-hover:underline group-focus:underline'>
             {title}
           </h3>
           <h4 className='text-sm font-light flex items-center gap-[6px]'>

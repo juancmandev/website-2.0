@@ -1,31 +1,21 @@
 ---
 title: 'La razón para crear una versión 2.0 de mi website'
 subtitle: 'Cometí algunos errores al crear la primera versión de mi website, aquí compartiré lo que he aprendido.'
-tags: 'Next.js, TypeScript, TailwindCSS, Vercel'
+tags: 'Tech'
 featuredImage: '/blog/website-2.0/website-2.0-header.png'
 featuredImageCaption: 'Tech Stack usado para este website. Next.js, Vercel, React.js, TypeScript y TailwindCSS'
 date: '2023-04-07T00:00:00'
 author: 'Juan Manzanero'
 ---
 
-import { DateIcon, PersonIcon } from '@/assets/Icons';
+import PostData from '@/components/PostData';
 
 # La razón para crear una versión 2.0 de mi website
 
 ![Tech stack](/blog/website-2.0/website-2.0-header.png)
 _Tech Stack usado para este website. Next.js, Vercel, React.js, TypeScript y TailwindCSS_
 
-<div className='flex flex-col gap-2'>
-  <div className='flex items-end gap-2'>
-    <DateIcon size='1.5rem' />
-    <span>7 de Abril del 2023</span>
-  </div>
-
-  <div className='flex items-end gap-2'>
-    <PersonIcon size='1.5rem' />
-    <span>Juan Manzanero</span>
-  </div>
-</div>
+<PostData date='7 de Abril del 2023' author='Juan Manzanero' />
 
 ## Client Side Rendering (CSR) vs. Server Side Rendering (SSR) vs. Static Generation (SG)
 

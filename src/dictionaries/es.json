@@ -13,5 +13,9 @@
   },
   "projects": {
     "title": "Proyectos"
+  },
+  "blog": {
+    "description_1": "Dividido por secciones, aquí intento liberar mis pensamientos usando palabras.",
+    "thoughts": "Pensamientos"
   }
 }
