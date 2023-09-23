@@ -1,19 +1,19 @@
 ---
-title: 'La razón para crear una versión 2.0 de mi sitio web'
-subtitle: 'Cometí algunos errores al crear la primera versión de mi sitio web, aquí compartiré lo que he aprendido.'
+title: 'La razón para crear una versión 2.0 de mi website'
+subtitle: 'Cometí algunos errores al crear la primera versión de mi website, aquí compartiré lo que he aprendido.'
 tags: 'Next.js, TypeScript, TailwindCSS, Vercel'
 featuredImage: '/blog/website-2.0/website-2.0-header.png'
-featuredImageCaption: 'Tech Stack usado para este sitio web. Next.js, Vercel, React.js, TypeScript y TailwindCSS'
+featuredImageCaption: 'Tech Stack usado para este website. Next.js, Vercel, React.js, TypeScript y TailwindCSS'
 date: '2023-04-07T00:00:00'
 author: 'Juan Manzanero'
 ---
 
 import { DateIcon, PersonIcon } from '@/assets/Icons';
 
-# La razón para crear una versión 2.0 de mi sitio web
+# La razón para crear una versión 2.0 de mi website
 
 ![Tech stack](/blog/website-2.0/website-2.0-header.png)
-_Tech Stack usado para este sitio web. Next.js, Vercel, React.js, TypeScript y TailwindCSS_
+_Tech Stack usado para este website. Next.js, Vercel, React.js, TypeScript y TailwindCSS_
 
 <div className='flex flex-col gap-2'>
   <div className='flex items-end gap-2'>
@@ -48,21 +48,21 @@ Bueno, si una **página** no requiere **buscar** datos para **cada solicitud**, 
 
 ## Lo Interesante de Next.js
 
-En el **pasado**, se requería **pensar** si usar CSR completo, SSR o SG, vinculando tu sitio web a sus respectivas secciones, como la aplicación, el blog, etc.
+En el **pasado**, se requería **pensar** si usar CSR completo, SSR o SG, vinculando tu website a sus respectivas secciones, como la aplicación, el blog, etc.
 
 **[Next.js](https://nextjs.org/)** es un **meta-framework** de **Node.js** que utiliza **[React.js](https://react.dev/)** para construir la interfaz de usuario, y proporciona CSR, SSR, SG y más, por lo que puedes generar SG obteniendo datos de forma asíncrona, lo que te permite no tener que crear cada página estática.
 
-Este es el **enfoque** utilizado para este sitio web, en lugar de obtener los datos en cada solicitud, solo obtengo los datos cuando creo la construcción del proyecto.
+Este es el **enfoque** utilizado para este website, en lugar de obtener los datos en cada solicitud, solo obtengo los datos cuando creo la construcción del proyecto.
 
 Cada artículo es una página SG, pero utilizo una **plantilla** para mantener todos los blogs similares, utilizando la sintaxis **markdown** para el contenido del blog, y con una **extensión** de **TailwindCSS** mantengo los estilos consistentes.
 
-Así que, Next.js te permite elegir el método de renderizado para cada página de tu sitio web, esta característica permite crear sitios web increíbles en el mismo proyecto, manteniendo la coherencia y con tiempos de carga rápidos, Next.js incluso carga de forma perezosa cada página y comienza a cargarse cuando pasas el cursor sobre un enlace como Inicio, Contacto, etc.
+Así que, Next.js te permite elegir el método de renderizado para cada página de tu website, esta característica permite crear sitios web increíbles en el mismo proyecto, manteniendo la coherencia y con tiempos de carga rápidos, Next.js incluso carga de forma perezosa cada página y comienza a cargarse cuando pasas el cursor sobre un enlace como Inicio, Contacto, etc.
 
 > ¡Explicaré en más detalle la arquitectura de este proyecto en el futuro!
 
 ## **TailwindCSS vs MUI**
 
-Elegí usar **[TailwindCSS](https://tailwindcss.com/)** para aprender sobre esta biblioteca CSS, y estoy impresionado por lo **rápido** que hace el desarrollo de los estilos de un proyecto web. **MUI** proporciona **funcionalidades**, pero a veces **presenta problemas** con la **hidratación**, como en mi sitio web anterior, cuando **cargas** la página por primera vez, tarda un **tiempo** en **mostrar** todos los **estilos**, ahora ya no ocurre porque TailwindCSS es CSS puro y las páginas son estáticas.
+Elegí usar **[TailwindCSS](https://tailwindcss.com/)** para aprender sobre esta biblioteca CSS, y estoy impresionado por lo **rápido** que hace el desarrollo de los estilos de un proyecto web. **MUI** proporciona **funcionalidades**, pero a veces **presenta problemas** con la **hidratación**, como en mi website anterior, cuando **cargas** la página por primera vez, tarda un **tiempo** en **mostrar** todos los **estilos**, ahora ya no ocurre porque TailwindCSS es CSS puro y las páginas son estáticas.
 
 ## Despliegue en Vercel
 
