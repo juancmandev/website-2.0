@@ -25,7 +25,7 @@ const dictionary: any = {
 
 export default function Footer({ lang }: IFooter) {
   return (
-    <footer className='px-6 md:px-15 py-15 text-center bg-dark1 shadow-md shadow-boxShadow'>
+    <footer className='text-sm px-6 md:px-15 py-15 text-center bg-dark1 shadow-md shadow-boxShadow'>
       <p>{dictionary['h4'][lang]}</p>
       <p>{dictionary['h5'][lang]}</p>
       <p>{dictionary['h6'][lang]}</p>
