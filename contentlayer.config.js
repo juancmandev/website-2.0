@@ -134,14 +134,6 @@ export const EnProject = defineDocumentType(() => ({
       type: 'string',
       required: true,
     },
-    url: {
-      type: 'string',
-      required: false,
-    },
-    repo: {
-      type: 'string',
-      required: false,
-    },
   },
   computedFields,
 }));
@@ -178,14 +170,6 @@ export const EsProject = defineDocumentType(() => ({
     author: {
       type: 'string',
       required: true,
-    },
-    url: {
-      type: 'string',
-      required: false,
-    },
-    repo: {
-      type: 'string',
-      required: false,
     },
   },
   computedFields,

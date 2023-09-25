@@ -25,10 +25,10 @@ const dictionary: any = {
 
 export default function Footer({ lang }: IFooter) {
   return (
-    <footer className='font-light px-6 md:px-15 py-15 text-center bg-dark1 shadow-md shadow-boxShadow'>
-      <h4 className='font-light'>{dictionary['h4'][lang]}</h4>
-      <h5>{dictionary['h5'][lang]}</h5>
-      <h6>{dictionary['h6'][lang]}</h6>
+    <footer className='text-sm px-6 md:px-15 py-15 text-center bg-dark1 shadow-md shadow-boxShadow'>
+      <p>{dictionary['h4'][lang]}</p>
+      <p>{dictionary['h5'][lang]}</p>
+      <p>{dictionary['h6'][lang]}</p>
       <a
         className='text-primary hover:underline focus:underline'
         target='_blank'

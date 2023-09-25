@@ -1,9 +1,11 @@
 import BlogCard from '@/components/ItemCard';
 import { PageProps } from '@/interfaces/ContentPage.model';
 import { getProjectsFromParams } from '@/utils/getContent';
+import { sortByKeyDesc } from '@/utils/sorts';
 
 export default async function Page({ params }: PageProps) {
   const projects = await getProjectsFromParams(params.lang);
+  sortByKeyDesc(projects, 'date');
 
   return (
     <>
@@ -11,17 +13,7 @@ export default async function Page({ params }: PageProps) {
       <ul className='flex flex-wrap gap-6'>
         {projects.map((project) => (
           <li key={project.slug}>
-            <BlogCard
-              type='projects'
-              featuredImage={project.featuredImage}
-              featuredImageCaption={project.featuredImageCaption}
-              title={project.title}
-              date={project.date}
-              tags={project.tags}
-              subtitle={project.subtitle}
-              slug={project.slug}
-              lang={params.lang}
-            />
+            <BlogCard {...project} type='projects' lang={params.lang} />
           </li>
         ))}
       </ul>
