@@ -1,13 +1,13 @@
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import '@/styles/globals.css';
-import '@fontsource/roboto';
 import BackToTop from '@/components/BackToTop';
+import { Locale } from '@/dictionaries/i18n-config';
+import '@/styles/globals.css';
 
 interface IRootLayout {
   children: React.ReactNode;
   params: {
-    lang: 'en' | 'es';
+    lang: Locale;
   };
 }
 
@@ -15,7 +15,9 @@ export function generateStaticParams() {
   return [{ lang: 'en' }, { lang: 'es' }];
 }
 
-export default function RootLayout({ children, params }: IRootLayout) {
+export default function RootLayout(props: IRootLayout) {
+  const { children, params } = props;
+
   return (
     <html lang={params.lang}>
       <body className='text-white1 bg-dark2'>

@@ -9,7 +9,7 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
-      sans: ['Roboto', 'sans-serif'],
+      sans: ['Helvetica', 'Arial', 'sans-serif'],
     },
     colors: {
       primary: '#00adb5',

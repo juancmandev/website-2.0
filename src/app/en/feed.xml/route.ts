@@ -5,8 +5,8 @@ const url = 'https://juancman.dev';
 const lang = 'en';
 
 export async function GET() {
-  const blogs = await getBlogsFromParams('en');
-  const projects = await getProjectsFromParams('en');
+  const blogs = await getBlogsFromParams(lang);
+  const projects = await getProjectsFromParams(lang);
 
   const feed = new RSS({
     title: 'Juan Manzanero in English',

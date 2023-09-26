@@ -22,7 +22,11 @@ const components = {
     <h6 {...props} />
   ),
   a: ({ className, ...props }: React.HTMLAttributes<HTMLAnchorElement>) => (
-    <a {...props} target='_blank' />
+    <a
+      {...props}
+      target='_blank'
+      className='transition-colors text-primary underline hover:text-primaryLight focus:text-primaryLight'
+    />
   ),
   p: ({ className, ...props }: React.HTMLAttributes<HTMLParagraphElement>) => (
     <p {...props} />
@@ -84,7 +88,7 @@ export function Mdx({ code }: MdxProps) {
   const Component = useMDXComponent(code);
 
   return (
-    <article className='prose prose-invert mx-auto prose-a:transition-colors prose-a:no-underline prose-a:text-primary hover:prose-a:underline hover:prose-a:text-primaryLight'>
+    <article className='prose prose-invert mx-auto'>
       <Component components={components} />
     </article>
   );
