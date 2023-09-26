@@ -23,9 +23,9 @@ const dictionary: any = {
     ['en']: 'Projects',
     ['es']: 'Proyectos',
   },
-  ['contact']: {
-    ['en']: 'Contact',
-    ['es']: 'Contacto',
+  ['resources']: {
+    ['en']: 'Resources',
+    ['es']: 'Recursos',
   },
   ['change_language']: {
     ['en']: 'Cambiar idioma al Español',
@@ -47,6 +47,10 @@ const navItems = [
     label: 'projects',
     to: '/projects',
   },
+  {
+    label: 'resources',
+    to: '/resources',
+  },
 ];
 
 const socialItems = [
@@ -67,7 +71,7 @@ export default function Header({ lang }: any) {
 
   return (
     <Sheet>
-      <header className='w-full p-6 md:px-15 sticky -top-1 z-10 flex justify-between items-center bg-dark1 shadow-md shadow-boxShadow'>
+      <header className='w-full p-6 md:px-15 -top-1 z-10 flex justify-between items-center bg-dark1 shadow-md shadow-boxShadow'>
         <nav className='w-full max-w-[1200px] xl:mx-auto flex justify-between items-center'>
           <section>
             <Link
@@ -76,13 +80,13 @@ export default function Header({ lang }: any) {
               juancmandev
             </Link>
           </section>
-          <section className='hidden sm:flex items-center gap-8'>
+          <section className='hidden sm:flex items-center'>
             <ul className='flex items-center gap-8'>
               {navItems.map((navItem) => (
                 <li key={navItem.label} className='w-max h-max'>
                   <Link
                     href={`/${lang}${navItem.to}`}
-                    className='font-bold hover:underline focus:underline text-lg'>
+                    className='font-bold hover:underline focus:underline'>
                     {dictionary[navItem.label][lang]}
                   </Link>
                 </li>
@@ -90,7 +94,7 @@ export default function Header({ lang }: any) {
             </ul>
           </section>
           <section className='hidden sm:block'>
-            <ul className='flex items-center gap-6'>
+            <ul className='flex items-center gap-4'>
               <li className='flex'>
                 <Link
                   title={dictionary['change_language'][lang]}

@@ -175,9 +175,30 @@ export const EsProject = defineDocumentType(() => ({
   computedFields,
 }));
 
+export const EnResources = defineDocumentType(() => ({
+  name: 'EnResources',
+  filePathPattern: 'resources/en/content.mdx',
+  contentType: 'mdx',
+  computedFields,
+}));
+
+export const EsResources = defineDocumentType(() => ({
+  name: 'EsResources',
+  filePathPattern: 'resources/es/content.mdx',
+  contentType: 'mdx',
+  computedFields,
+}));
+
 export default makeSource({
   contentDirPath: './src/content',
-  documentTypes: [EnBlog, EsBlog, EnProject, EsProject],
+  documentTypes: [
+    EnBlog,
+    EsBlog,
+    EnProject,
+    EsProject,
+    EnResources,
+    EsResources,
+  ],
   mdx: {
     remarkPlugins: [remarkGfm],
     rehypePlugins: [

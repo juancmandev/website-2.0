@@ -3,6 +3,8 @@ import {
   allEsPosts,
   allEnProjects,
   allEsProjects,
+  allEnResources,
+  allEsResources,
 } from 'contentlayer/generated';
 import { notFound } from 'next/navigation';
 import { Locale } from '@/dictionaries/i18n-config';
@@ -43,4 +45,12 @@ export async function getProjectFromParams(slug: string, lang: Locale) {
   if (!project) notFound();
 
   return project;
+}
+
+export async function getResource(lang: Locale) {
+  const resource = lang === 'en' ? allEnResources : allEsResources;
+
+  if (!resource) notFound();
+
+  return resource[0];
 }

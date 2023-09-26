@@ -60,7 +60,7 @@ export async function generateMetadata(props: PageProps): Promise<Metadata> {
 }
 
 export default async function Page({ params }: PageProps) {
-  const post = await getProjectFromParams(params.slug, params.lang);
+  const project = await getProjectFromParams(params.slug, params.lang);
 
-  return <Mdx code={post.body.code} />;
+  return <Mdx code={project.body.code} />;
 }
