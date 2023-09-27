@@ -37,6 +37,21 @@ const projects = fs
   })
   .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 
+const projects = fs
+  .readdirSync(path.resolve(__dirname, '../content/projects/en/'))
+  .filter((file) => path.extname(file) === '.mdx')
+  .map((file) => {
+    const projectContent = fs.readFileSync(
+      `src/content/projects/en/${file}`,
+      'utf8'
+    );
+    const { data, content }: { data: any; content: string } = matter(
+      projectContent
+    );
+    return { ...data, body: content };
+  })
+  .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+
 const renderer = new marked.Renderer();
 
 renderer.link = (href, _, text) =>
