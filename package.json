@@ -7,7 +7,7 @@
     "build": "contentlayer build && next build",
     "start": "next start",
     "lint": "next lint",
-    "build-rss": "ts-node src/scripts/en-rss.ts && ts-node src/scripts/es-rss.ts"
+    "rss": "ts-node src/scripts/en-rss.ts && ts-node src/scripts/es-rss.ts"
   },
   "dependencies": {
     "@fontsource/roboto": "4.5.8",
