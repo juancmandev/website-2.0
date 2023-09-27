@@ -2,13 +2,12 @@
   "name": "website-2.0",
   "version": "0.1.0",
   "private": true,
-  "type": "module",
   "scripts": {
     "dev": "concurrently \"contentlayer dev\" \"next dev\"",
-    "build": "contentlayer build && npm run build-rss && next build",
+    "build": "contentlayer build && next build",
     "start": "next start",
     "lint": "next lint",
-    "build-rss": "ts-node --esm src/scripts/en-rss.ts && ts-node --esm src/scripts/es-rss.ts"
+    "rss": "ts-node --project ./node.tsconfig.json src/scripts/en-rss -- ts-node --project ./node.tsconfig.json src/scripts/es-rss"
   },
   "dependencies": {
     "@fontsource/roboto": "4.5.8",
