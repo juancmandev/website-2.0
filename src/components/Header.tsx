@@ -121,7 +121,7 @@ export default function Header({ lang }: any) {
               <li className='flex'>
                 <a
                   title='RSS Feed'
-                  href={`https://juancman.dev/${lang}/feed.xml`}
+                  href={`https://juancman.dev/${lang}-feed.xml`}
                   target='_blank'
                   className='flex flex-col items-center gap-1  
                   focus:underline hover:underline'>
@@ -197,7 +197,7 @@ export default function Header({ lang }: any) {
                 <li className='flex'>
                   <a
                     title='RSS Feed'
-                    href={`https://juancman.dev/${lang}/feed.xml`}
+                    href={`https://juancman.dev/${lang}-feed.xml`}
                     target='_blank'
                     className='cursor-default w-full flex justify-center py-3 text-center hover:bg-[rgba(0,_0,_0,_0.2)] focus:bg-[rgba(0,_0,_0,_0.2)]'>
                     <div className='flex flex-col items-center gap-1'>

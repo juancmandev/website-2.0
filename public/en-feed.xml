@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title><![CDATA[juancmandev]]></title>
+        <description><![CDATA[Juan Manzanero's blog]]></description>
+        <link>https://juancman.dev/en</link>
+        <generator>RSS for Node</generator>
+        <lastBuildDate>Wed, 27 Sep 2023 17:48:21 GMT</lastBuildDate>
+        <atom:link href="https://juancman.dev/en/en-feed.xml" rel="self" type="application/rss+xml"/>
+        <language><![CDATA[en]]></language>
+        <item>
+            <title><![CDATA[I participated in a Hackathon]]></title>
+            <description><![CDATA[<p>import PostData from &#39;@/components/PostData&#39;;</p>
+<h1>I participated in a Hackathon</h1>
+<p><img src="/blog/i-participated-in-a-hackathon/i-participated-in-a-hackathon-banner.png" alt="Tech Stack"><br><em>Tech stack used: Supabase, Next.js and Shadcn/UI, My first hackathon!</em></p>
+<PostData date='August 16, 2023' author='Juan Manzanero' />
+
+<p>I recently participated in a <a href="https://supabase.com/blog/supabase-lw8-hackathon" target="_blank" rel="noopener noreferrer">Supabase Hackathon</a>, forming a team with people from other countries, one from Bangladesh and the other person from Brazil, obviously using English for communication on Discord.</p>
+<p>The Hackathon thematic was free, the only main rule is to use Supabase for any feature, like authentication, as a PostgreSQL database or using vectors for AI, with 10 days to build a product using any technology and upload it in a GitHub repository.</p>
+<p>We developed an e-commerce app with a Walmart products model, implementing vectors for better search results.</p>
+<p>Using Supabase we implemented auth and protected routes so the user needs to log in to see recommendations and more.</p>
+<p>The user can add products to the shopping cart and check their items for saved it and see recommendations and which items are frequently bought.</p>
+<p>My main role was focused on creating the UI using the Next.js 13 app router, protecting routes only for authenticated users, and create reusable components such as product cards, and of course, making the layout responsive for mobile and desktop.</p>
+<p>We used <a href="https://ui.shadcn.com/" target="_blank" rel="noopener noreferrer">Shadcn/UI</a> as those components are already implemented functionalities with accessibility like modals or sidebars, like the sidebar that appears when you’re on a mobile device and open the button in the header, with a smooth animation.</p>
+<p>We submitted the project on time and waiting for the results, and this is my first time participating in a Hackathon, I really enjoy it and hope to continue contributing to the project on GitHub.</p>
+<p>It&#39;s amazing work with people from other countries, using English even if is not our native language, but with a purpose in common, create a great product.</p>
+<p>I’ll keep looking to participate in more Hackathons in the future and contribute to open source projects on Github because I really enjoy the feeling of developing something big with more people.</p>
+<p>I learned too much in these few days, like integrating Next.js with Supabase for authentication and protected routes, using the Supabase docs as a guide, and using it for the first time Shadcn/UI, and looking forward to keep using it.</p>
+<p>It took me so long to participate in a Hackathon, as before I hesitated about my experience, but the reality is we’ll never be ready for new challenges because if you’re already ready it means that’s too late.</p>
+<p>I want to learn more about using vectors for AI, so I’ll investigate more about the topic, as the tech tends to go that way, who knows what would be the next big tech trend or when.</p>
+<p><a href="https://groce-wise.vercel.app/" target="_blank" rel="noopener noreferrer">You can see the project: Grocewise here</a></p>
+]]></description>
+            <link>https://juancman.dev/en/undefined</link>
+            <guid isPermaLink="false">https://juancman.dev/en/undefined</guid>
+            <dc:creator><![CDATA[Juan Manzanero]]></dc:creator>
+            <pubDate>Wed, 16 Aug 2023 06:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[The Monotony of Social Media]]></title>
+            <description><![CDATA[<p>import PostData from &#39;@/components/PostData&#39;;</p>
+<h1>The Monotony of Social Media</h1>
+<p><img src="/blog/the-monotony-of-social-media/the-monotony-of-social-media-banner.jpg" alt="Person checking social media"><br><em>Person checking social media. Photo by <a href="https://unsplash.com/@fantasyflip?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank" rel="noopener noreferrer">Austin Distel</a> on <a href="https://unsplash.com/photos/iIJrUoeRoCQ?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank" rel="noopener noreferrer">Unsplash</a></em></p>
+<PostData date='July 17, 2023' author='Juan Manzanero' />
+
+<p>It’s obvious, a lot of interactions on the Internet occurs through social media, letting you send friend requests, chat, or share memes and photos. However, abstracting human interaction using software has caused many problems that didn’t exist before.</p>
+<p>When the Internet started, many people created their own websites because that&#39;s was the thing you must have if you want to be cool, and a lot of these websites was just blogpost-like where the users shares their hobbies like movies, sports, books, videogames, etc. This motivation made more unique and human websites, where you can meet someone and their likes or dislikes.</p>
+<p>Now, with the boom of social media in the middle of 2000&#39;s, people prefer to connect just searching for a name or looking the friends of their friends, and send friend requests to try and connect. That was cool at the start, as anything new, but the problems started when companies like Facebook (now Meta) or Google (with YouTube) needed to monetize their platforms, mostly with Ads.</p>
+<p>And of course, that means that they needed to suppress, censor or ban anything that could be harmful for society, like hate speeches or stupid challenges that could risk people&#39;s lives.</p>
+<p>But, the bat thing about this, is that they homogenize almost everyone, forcing them to act as the algorithms keeps recommending users with likes and comments, guiding the people to act like someone else, and so.</p>
+<p>Now almost everyone does mainly two things, post photos about their &quot;perfect&quot; lives or share memes, and don&#39;t get me wrong, it&#39;s ok to enter to social media and try to disconnect for your job or problems, but using this every day as instant escape instead of confronting your own problems could be harmful in the long term, isolating you from the need of socialize in real life, with real people, and thinking that everyone has a perfect life.</p>
+<p>No, EVERYONE has problems in their lives, even more than yours, but social media algorithms promotes mainly &quot;positive vibes only&quot; and all that shit that in big dose is hamrful for our minds.</p>
+<p>And don&#39;t mention the censorship and shadow-banning if you post something controversial, it could be something that should not be tolerated like incite hate to a group, or it could be something that don&#39;t everyone agrees but it could be useful think a little about it, but still being controversial.</p>
+<p>Should everyone can tell what they thinks? Yeah, always if doesn&#39;t promotes hate or hurt other people or animals.</p>
+<p>They&#39;re reports like Twitter promotes hate in the algorithm, and Meta knows that Instagram increases anxiety and depression on young people, and actually; promotes it... as all negative feelings keeps you on the social media interacting with others, as that&#39;s what those companies sell, your data and time to advertisers.</p>
+<p>I recently heard a video talking about this topic, and that would be cool if we go back as the starts of the Internet where people created content as a hobby, instead of looking for validation through likes and comments, being more authentic persons instead of products.</p>
+<p>Should software solutions replace human interactions? I think not, but it&#39;s too late for almost everyone, but if you&#39;re reading this, start changing your life first if you want to be honest with yourself.</p>
+<hr>
+<p>Blog inspired by &quot;Why does every personal website look like this now?&quot; by Eric Murphy on YouTube.</p>
+<p>Source Video:</p>
+<iframe
+  width='560'
+  height='315'
+  src='https://www.youtube-nocookie.com/embed/_x6SCSz7g5I'
+  title='YouTube video player'
+  frameBorder='0'
+  allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
+  allowFullScreen
+/>
+]]></description>
+            <link>https://juancman.dev/en/undefined</link>
+            <guid isPermaLink="false">https://juancman.dev/en/undefined</guid>
+            <dc:creator><![CDATA[Juan Manzanero]]></dc:creator>
+            <pubDate>Mon, 17 Jul 2023 06:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[How Computers Works]]></title>
+            <description><![CDATA[<p>import PostData from &#39;@/components/PostData&#39;;</p>
+<h1>How Computers Works</h1>
+<p><img src="/blog/how-computers-works/philipp-katzenberger-iIJrUoeRoCQ-unsplash.jpg" alt="Open laptop"><br><em>An open laptop. Photo by <a href="https://unsplash.com/@fantasyflip?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'" target="_blank" rel="noopener noreferrer">Philipp Katzenberger</a> on <a href="https://unsplash.com/photos/iIJrUoeRoCQ?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank" rel="noopener noreferrer">Unsplash</a></em></p>
+<PostData date='May 29, 2023' author='Juan Manzanero' />
+
+<p>Today we use, in some way, the computer in almost every activity in our lives, it could be for work or just fun, but if we think carefully, computers are an invention from the previous century, and have changed our lives.</p>
+<p>New works have appeared, new careers to study, and new problems to be solved.</p>
+<p>However, do we know how computers penetrated our lives? Do we know how a computer works? How does the Internet work?</p>
+<p>Many people use their smartphones to communicate with family and friends and to share their lives, but they don’t know how all this is possible.</p>
+<p>I’m not saying that everyone needs to be a Software Engineer or IT Expert, but knowing about this could be outstanding knowledge.</p>
+<hr>
+<h2>The power of computers</h2>
+<hr>
+<p>Computers can expand our brains, such things like sends messages to people from the other side of the Earth, to create an app that speeds up delivery.</p>
+<p>All these things are possible by flipping 0’s and 1’s, but how is this possible?</p>
+<p>If you&#39;ve watched The Imitation Code, maybe you know this story.</p>
+<h3>Computing Fundaments</h3>
+<hr>
+<p>Alan Turing was the inventor of the Turing Machine, a simple but powerful machine that can receive instructions to move along a long tape, changing the state of each slot. This three things, a head, a long tape and a set of instructions are the bases for the modern computers.</p>
+<p>The head is the Central Processing Unit (CPU), a piece of hardware that can be used for general purposes, receiving instructions (Algorithm) whose are transformed to electric pulses, understanding if electricity pass trough or not, if it&#39;s true or false, 1 or 0. All these instructions are saved in a Random Access Memory (RAM) for a quick access of the work that needs to be accomplished, and using a Read-Only Memory (ROM) to store persistent data that needs to be saved even if the computer shuts down.</p>
+<p>An algorithm&#39;s like a recipe, declaring ingredients (variables) and the steps to follow to achieve the result (functions).</p>
+<p>A variable is an identifier that points to a slot of memory in the RAM, storing a value that can be a number, a text (known as “string”), a boolean (true or false), or an object (a set of multiple variables and functions that can be instanced), etc.</p>
+<p>Functions are blocks of instructions that achieve a task, like obtaining your current location or sending a message.</p>
+<p>And maybe you are asking, how do I tell a computer how to do what I want?</p>
+<h3>Programming languages</h3>
+<hr>
+<p>If you try to speak with someone who doesn’t speak the same language as you, you try to use a translator or use gestures, something that you know that both can in some way understand, the same is for computers.</p>
+<p>Computers are powerful, but they need someone to tell them what to do, this is work for humans, and to achieve it we use programming languages. With a programming language you use a specific syntax to tell a computer your desired task, then you compile that file where you type all your instructions, when a file compiles, is transformed to a computer nature language (1’s and 0’s) and then the computer executes the task.</p>
+<p>There are different programming languages, and all of them are designed to achieve specific needs, like the programming languages C and C++, both are low-level languages, which means that are close to how a computer “speaks” and are used to control and administrate memory in high-efficient apps, or to illuminate the screen of your computer.</p>
+<p>There is Java, is a language that can create an environment when is compiled, meaning that can be used on almost every computer.</p>
+<p>JavaScript (is NOT Java or something like that) is a language that our browsers understands, with the help of JavaScript, we can access to a web page and see nice interactions when we click a button, login with a username and password, and more.</p>
+<p>JavaScript is a high-level language, that is easiest to learn than Java or C, but not that is worse or better, just resolves a different need.</p>
+<h3>The Browser</h3>
+<hr>
+<p>A powerful software that can access other computers using the Hyper Text Transfer Protocol (HTTP), it means that thanks to this protocol different computers can send and receive information to communicate, even if they’re far away. The browsers receive data in the form of a file, mainly three:</p>
+<ul>
+<li>Hyper Text Markup Language (HTML)</li>
+<li>Cascading Styles Sheet (CSS)</li>
+<li>JavaScript</li>
+</ul>
+<h3>HTML</h3>
+<p>Helps the browser to structure data like texts or images, using a markup language (tags). The browser can know where to put an input to type your email or a button to subscribe to your favorite artist.</p>
+<h3>CSS</h3>
+<p>It gives colors and forms to the HTML tags using selectors. It can be used to change page&#39;s background color, change button&#39;s rounded borders, modify text color, and everything your creativity can give.</p>
+<h3>JavaScript</h3>
+<p>Combining HTML and CSS with JavaScript creates an interactive web site, or web app (like this one). You can for example, add a button that changes the theme to dark/light, or store items in a shopping cart and show a number of items you have.</p>
+<p>For all this you need to store your files somewhere, letting people access a computer to download all these files using their browsers, that&#39;s the functionality of servers.</p>
+<p>Servers are computers that are connected to the Internet, and store files that can be downloaded or uploaded using protocols and security rules. Some companies like Google or Microsoft have multiple centers with many servers in different regions of the planet, called Data Centers, and can be used with a fee for storing your web app, these multiple Data Centers are called Cloud.</p>
+<h3>The Cloud</h3>
+<p>Administrating a powerful computer can be difficult, but if you know how to use it, you can save a lot of money instead of maintaining local computers that need to be turned on 24/7. Thanks to the cloud we can deliver the fastest apps, and we can have a 24/7 service for our customers with a marginal cost.</p>
+<h2>Computers Changed Humanity</h2>
+<hr>
+<p>Computers simplifies our daily tasks, software can be easy replicated and distributed without need of logistics like a tangible product. You just need an Internet connection to reach someone’s project.</p>
+<p>You don’t need a factory or natural resources like wood to produce paper, you need a group of engineers, UX/UI designers, digital marketers, and more IT people to reach billions of customers.</p>
+<p>The reason that computers are too powerful is that the marginal cost is minimal, you don’t need to extract something from the earth to build an app, you need a group of talented persons that uses their brains to create solutions.</p>
+]]></description>
+            <link>https://juancman.dev/en/undefined</link>
+            <guid isPermaLink="false">https://juancman.dev/en/undefined</guid>
+            <dc:creator><![CDATA[Juan Manzanero]]></dc:creator>
+            <pubDate>Mon, 29 May 2023 06:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[The reason to create a version 2.0 of my website]]></title>
+            <description><![CDATA[<p>import PostData from &#39;@/components/PostData&#39;;</p>
+<h1>The reason to create a version 2.0 of my website</h1>
+<p><img src="/blog/website-2.0/website-2.0-header.png" alt="Tech stack"><br><em>Tech Stack of this website. Next.js, Vercel, React.js, TypeScript and TailwindCSS</em></p>
+<PostData date='April 7, 2023' author='Juan Manzanero' />
+
+<p>The first version of my website was one of my biggest projects so fat, but <strong>now</strong><br>as I’ve <strong>more</strong> <strong>experience</strong> as a <strong>Frontend</strong> Engineer, I realize I <strong>didn’t</strong><br>do <strong>enough</strong> <strong>research</strong> into <strong>creating</strong> a <strong>web</strong> site with a <strong>blog</strong>.</p>
+<h2>Client Side Rendering (CSR) vs Server Side Rendering (SSR) vs Static Generation (SG)</h2>
+<p>When developing a <strong>web</strong> <strong>application</strong>, you should <strong>think</strong> <strong>about</strong> the type of <strong>rendering</strong> to use, while <strong>considering</strong> the <strong>requirements</strong> of the <strong>problems</strong> you want to <strong>solve</strong>.</p>
+<h3>Client Side Rendering (CSR)</h3>
+<p>For example, a web <strong>application</strong> like a <strong>SaaS</strong> to create tasks and manage people will have <strong>dynamic</strong> <strong>pages</strong> to show the tasks, update the cards when is edited or deleted, show notifications, etc. In this situation, a <strong>CSR</strong> would be <strong>better</strong>, to <strong>render</strong> the page <strong>each</strong> time the user <strong>request</strong> access will <strong>keep</strong> the data <strong>updated</strong>. However, a <strong>CSR</strong> needs to <strong>hydrate</strong> the page when is <strong>requested</strong>, this causes a <strong>slow</strong> <strong>first</strong> <strong>load</strong>, and uses <strong>more</strong> <strong>resources</strong> of the user’s PC.</p>
+<h3>Server Side Rendering (SSR)</h3>
+<p>This could be solved using <strong>SSR</strong>, this consist in <strong>generate</strong> the page in the <strong>Server</strong> where the web app is hosted <strong>using</strong> all the <strong>power</strong> that a <strong>server</strong> can provide. The problem is that a <strong>server</strong> is <strong>required</strong>, Google Cloud provides with serverless options like App Engine or Cloud Run, but you’ll need to learn about this services and how to deploy the project, so the <strong>technical</strong> <strong>knowledge</strong> is <strong>high</strong>.</p>
+<p>The <strong>disadvantage</strong> of <strong>CSG</strong> and <strong>SSR</strong> is that because <strong>each</strong> <strong>page</strong> <strong>must</strong> be <strong>rendered</strong> on each <strong>request</strong>, <strong>web</strong> <strong>crawlers</strong> and <strong>search</strong> <strong>engines</strong> such as Google&#39;s will take <strong>longer</strong> to <strong>obtain</strong> <strong>information</strong> about your page, resulting in a <strong>low</strong> <strong>SEO</strong> priority.</p>
+<h3>Static Generation (SG)</h3>
+<p>Well, if a <strong>page</strong> <strong>doesn’t</strong> require <strong>fetch</strong> <strong>data</strong> for <strong>each</strong> <strong>request</strong>, then you could use <strong>SG</strong>, this means that the <strong>page</strong> is <strong>generated</strong> when you <strong>build</strong> the <strong>production</strong> directory <strong>before</strong> you <strong>deploy</strong> it. The page will be generated into a HTML/CSS/JS one time, and if you need to <strong>update</strong> the <strong>data</strong> in that page you’ll need to do the <strong>changes</strong> and <strong>deploy</strong> the project. Yes, you’ll need to be more cautious when reviewing the changes before deploying, but as the page is already generated, <strong>web</strong> <strong>crawlers</strong> and the Google’s <strong>search</strong> <strong>engine</strong> will get the <strong>info</strong> in your page <strong>faster</strong>, <strong>improving</strong> your <strong>SEO</strong>.</p>
+<h2>The cool thing about Next.js</h2>
+<p>In the <strong>past</strong> you will require to <strong>think</strong> if go <strong>full</strong> CSR, SSR or SG, linking your web to their respecting sections, like the app, blog, etc.</p>
+<p><strong><a href="https://nextjs.org/" target="_blank" rel="noopener noreferrer">Next.js</a></strong> is a <strong>Node.js</strong> <strong>meta-framework</strong> that uses <strong><a href="https://react.dev/" target="_blank" rel="noopener noreferrer">React.js</a></strong> to build the UI, and provides with CSR, SSR, SG and more, so you can generate SG fetching async data, allowing you to don’t <strong>need</strong> to <strong>create</strong> <strong>every</strong> <strong>static</strong> <strong>page</strong>.</p>
+<p>Is that the <strong>approach</strong> <strong>used</strong> for <strong>this</strong> <strong>web</strong> site, <strong>instead</strong> of <strong>fetch</strong> the data on <strong>each</strong> <strong>request</strong>, I only <strong>fetch</strong> data <strong>when</strong> I <strong>create</strong> the <strong>build</strong> of the project.</p>
+<p><strong>Each</strong> <strong>article</strong> is a SG page, but I use a <strong>template</strong> to keep every blog similar, using <strong>markdown</strong> syntax for the content of the blog, and with an <strong>extension</strong> of <strong>TailwindCSS</strong> I keep the styles consistent.</p>
+<p>So, <strong>Next.js</strong> allows you to <strong>choose</strong> the <strong>rendering</strong> method for <strong>each</strong> <strong>page</strong> in your web, this feature permits to create amazing websites in the same project, keeping consistence and with fast load times, Next.js even lazy loads each page and start loading when you hover a link like Home, Contact, etc.</p>
+<blockquote>
+<p>I’ll explain in more detail the architecture of this project in the future!</p>
+</blockquote>
+<h2>TailwindCSS vs MUI</h2>
+<p>I choose to use <strong><a href="https://tailwindcss.com/" target="_blank" rel="noopener noreferrer">TailwindCSS</a></strong> to learn about this CSS library, and I’m impressed the <strong>faster</strong> that makes the development of the styles of a web project. <strong>MUI</strong> <strong>provides</strong> <strong>functionalities</strong>, but sometimes <strong>gives</strong> <strong>problems</strong> with <strong>hydration</strong> like in my previous website, when you <strong>first</strong> <strong>load</strong> the page it takes a <strong>time</strong> to <strong>show</strong> all the <strong>styles</strong>, now it no longer occurs because TailwindCSS is pure CSS and the pages are static.</p>
+<h2>Deploying on Vercel</h2>
+<p><strong><a href="https://vercel.com" target="_blank" rel="noopener noreferrer">Vercel</a></strong> is the company behind Next.js, and they provides with <strong>hosting</strong> services <strong>optimized</strong> for <strong>Node.js</strong> apps, and as I’m learning about Cloud Development maybe I could try to host this web like my previous web into a Cloud Service like Cloud Run, but this time I choose to use <strong>Vercel</strong> to get the <strong>analytics</strong> that are very useful, and as the <strong>hobby plan</strong> gives me free hosting for small projects.</p>
+<p>To deploy I use the <strong><a href="https://vercel.com/docs/cli" target="_blank" rel="noopener noreferrer">Vercel CLI</a></strong>, pretty simple and straightforward.</p>
+<h2>More content coming soon!</h2>
+<p>I’ll keep updating with posts, features and more content to share my experience, and know I’m writing this paragraph, I think the next feature it would be a newsletter to notify people when I create a new post. Time to work!</p>
+]]></description>
+            <link>https://juancman.dev/en/undefined</link>
+            <guid isPermaLink="false">https://juancman.dev/en/undefined</guid>
+            <dc:creator><![CDATA[Juan Manzanero]]></dc:creator>
+            <pubDate>Fri, 07 Apr 2023 06:00:00 GMT</pubDate>
+        </item>
+    </channel>
+</rss>

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title><![CDATA[juancmandev]]></title>
+        <description><![CDATA[Blog de Juan Manzanero]]></description>
+        <link>https://juancman.dev/es</link>
+        <generator>RSS for Node</generator>
+        <lastBuildDate>Wed, 27 Sep 2023 17:48:24 GMT</lastBuildDate>
+        <atom:link href="https://juancman.dev/es/es-feed.xml" rel="self" type="application/rss+xml"/>
+        <language><![CDATA[en]]></language>
+        <item>
+            <title><![CDATA[He participado en una Hackathon]]></title>
+            <description><![CDATA[<p>import PostData from &#39;@/components/PostData&#39;;</p>
+<h1>He participado en una Hackathon</h1>
+<p><img src="/blog/i-participated-in-a-hackathon/i-participated-in-a-hackathon-banner.png" alt="Tech Stack"><br><em>Tech stack utilizado: Supabase, Next.js and Shadcn/UI, ¡Mi primera hackathon!</em></p>
+<PostData date='16 de Agosto del 2023' author='Juan Manzanero' />
+
+<p>Recientemente participé en un <a href="https://supabase.com/blog/supabase-lw8-hackathon" target="_blank" rel="noopener noreferrer">Hackathon de Supabase</a>, formando un equipo con personas de otros países, uno de Bangladesh y otro de Brasil, utilizando inglés para comunicarnos en Discord.</p>
+<p>La temática del Hackathon era libre, la única regla principal era utilizar Supabase para cualquier función, como autenticación, como base de datos PostgreSQL o para utilizar vectores en la inteligencia artificial. Tuvimos 10 días para construir un producto utilizando cualquier tecnología y subirlo a un repositorio en GitHub.</p>
+<p>Desarrollamos una aplicación de comercio electrónico con un modelo de productos similar a Walmart, implementando vectores para obtener mejores resultados en las búsquedas.</p>
+<p>Utilizando Supabase, implementamos autenticación y rutas protegidas, de manera que el usuario deba iniciar sesión para ver recomendaciones y más.</p>
+<p>El usuario puede agregar productos al carrito de compras y revisar sus artículos para guardarlos y ver recomendaciones, así como los artículos que se compran con frecuencia.</p>
+<p>Mi papel principal se centró en crear la interfaz de usuario utilizando Next.js 13app router, protegiendo las rutas solo para usuarios autenticados, y creando componentes reutilizables como tarjetas de producto, y por supuesto, haciendo que el diseño sea adaptable tanto para dispositivos móviles como para escritorio.</p>
+<p>Utilizamos <a href="https://ui.shadcn.com/" target="_blank" rel="noopener noreferrer">Shadcn/UI</a>, ya que estos componentes ya implementan funcionalidades con accesibilidad, como modales o barras laterales. Por ejemplo, la barra lateral que aparece cuando estás en un dispositivo móvil y lo abres con el botón en el encabezado, con una animación suave.</p>
+<p>Presentamos el proyecto a tiempo y estamos esperando los resultados. Esta es la primera vez que participo en un Hackathon y realmente lo disfruté, espero seguir contribuyendo al proyecto en GitHub.</p>
+<p>Es increíble trabajar con personas de otros países, utilizando el inglés aunque no sea nuestra lengua materna, pero con un propósito en común: crear un gran producto.</p>
+<p>Seguiré buscando participar en más Hackathones en el futuro y contribuir a proyectos de código abierto (open source) en Github, porque realmente disfruto la sensación de desarrollar algo grande con más personas.</p>
+<p>Aprendí mucho en estos pocos días, como la integración de Next.js con Supabase para autenticación y rutas protegidas, utilizando la documentación de Supabase como guía, y utilizando por primera vez Shadcn/UI, y estoy ansioso por seguir usándolo.</p>
+<p>Me llevó mucho tiempo participar en un Hackathon, ya que antes dudaba de mi experiencia, pero la realidad es que nunca estaremos listos para nuevos desafíos, porque si ya estás listo, significa que es demasiado tarde.</p>
+<p>Quiero aprender más sobre el uso de vectores para la inteligencia artificial, así que investigaré más sobre el tema, ya que la tecnología tiende a avanzar en esa dirección. Quién sabe cuál será la próxima gran tendencia tecnológica o cuándo llegará.</p>
+<p><a href="https://groce-wise.vercel.app/" target="_blank" rel="noopener noreferrer">Puedes ver el proyecto: Grocewise aquí</a></p>
+]]></description>
+            <link>https://juancman.dev/es/undefined</link>
+            <guid isPermaLink="false">https://juancman.dev/es/undefined</guid>
+            <dc:creator><![CDATA[Juan Manzanero]]></dc:creator>
+            <pubDate>Wed, 16 Aug 2023 06:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[La Monotonía de las Redes Sociales]]></title>
+            <description><![CDATA[<p>import PostData from &#39;@/components/PostData&#39;;</p>
+<h1>La Monotonía de las Redes Sociales</h1>
+<p><img src="/blog/the-monotony-of-social-media/the-monotony-of-social-media-banner.jpg" alt="Persona checando sus redes sociales"><br><em>Persona checando sus redes sociales. Foto de <a href="https://unsplash.com/@austindistel?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank" rel="noopener noreferrer">Austin Distel</a> en <a href="https://unsplash.com/photos/tLZhFRLj6nY?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank" rel="noopener noreferrer">Unsplash</a></em></p>
+<PostData date='17 de Julio del 2023' author='Juan Manzanero' />
+
+<p>Es evidente que muchas interacciones en Internet ocurren a través de las redes sociales, lo que te permite enviar solicitudes de amistad, chatear o compartir memes y fotos. Sin embargo, la abstracción de la interacción humana mediante software ha causado muchos problemas que antes no existían.</p>
+<p>Cuando empezó Internet, muchas personas crearon sus propios sitios web porque eso era lo que debías tener si querías ser popular, y muchos de estos sitios web eran simplemente como blogs donde los usuarios compartían sus pasatiempos como películas, deportes, libros, videojuegos, etc. Esta motivación llevó a la creación de sitios web únicos y personales, donde podías conocer a alguien y sus gustos o disgustos.</p>
+<p>Ahora, con el auge de las redes sociales a mediados de los años 2000, la gente prefiere conectarse simplemente buscando un nombre o viendo los amigos de sus amigos, y enviar solicitudes de amistad para intentar conectarse. Al principio, esto era genial, como cualquier cosa nueva, pero los problemas comenzaron cuando empresas como Facebook (ahora Meta) o Google (con YouTube) necesitaban monetizar sus plataformas, principalmente con anuncios.</p>
+<p>Y, por supuesto, eso significa que tenían que suprimir, censurar o prohibir cualquier cosa que pudiera ser perjudicial para la sociedad, como discursos de odio o retos estúpidos que pudieran poner en peligro la vida de las personas.</p>
+<p>Pero lo malo de esto es que homogeneizan a casi todos, obligándolos a actuar como los algoritmos recomiendan usuarios con gustos y comentarios similares, guiando a las personas a actuar como alguien más, y así sucesivamente.</p>
+<p>Ahora casi todos hacen principalmente dos cosas: publicar fotos sobre sus vidas &quot;perfectas&quot; o compartir memes, y no me malinterpretes, está bien entrar en las redes sociales y tratar de desconectar de tu trabajo o problemas, pero usarlas todos los días como una vía de escape instantánea en lugar de enfrentar tus propios problemas podría ser perjudicial a largo plazo, aislándote de la necesidad de socializar en la vida real, con personas reales, y pensando que todos tienen una vida perfecta.</p>
+<p>No, TODOS tienen problemas en sus vidas, incluso más que los tuyos, pero los algoritmos de las redes sociales promueven principalmente &quot;solo vibraciones positivas&quot; y todas esas tonterías que en grandes cantidades son perjudiciales para nuestras mentes.</p>
+<p>Y no mencionemos la censura y el shadow-banning si publicas algo controvertido, puede ser algo que no se debería tolerar, como incitar al odio a un grupo, o puede ser algo en lo que no todos estén de acuerdo, pero podría ser útil reflexionar un poco al respecto, aunque sea controvertido.</p>
+<p>¿Debería todo el mundo poder expresar lo que piensa? Sí, siempre y cuando no promueva el odio o lastime a otras personas o animales.</p>
+<p>Hay informes de que Twitter promueve el odio en el algoritmo, y Meta sabe que Instagram aumenta la ansiedad y la depresión en los jóvenes, y de hecho, lo promueve... ya que todos los sentimientos negativos te mantienen en las redes sociales interactuando con los demás, ya que eso es lo que esas empresas venden, tus datos y tu tiempo a los anunciantes.</p>
+<p>Recientemente escuché un video que hablaba sobre este tema, y sería genial si volviéramos a los inicios de Internet, donde las personas creaban contenido como un pasatiempo, en lugar de buscar validación a través de los me gusta y los comentarios, siendo personas más auténticas en lugar de productos.</p>
+<p>¿Deberían las soluciones de software reemplazar las interacciones humanas? Creo que no, pero es demasiado tarde para casi todos, pero si estás leyendo esto, comienza por cambiar tu vida primero si quieres ser honesto contigo mismo.</p>
+<hr>
+<p>Blog inspirado en &quot;Why does every personal website look like this now?&quot; by Eric Murphy en YouTube.</p>
+<p>Video de origen (en inglés):</p>
+<iframe
+  width='560'
+  height='315'
+  src='https://www.youtube-nocookie.com/embed/_x6SCSz7g5I'
+  title='YouTube video player'
+  frameBorder='0'
+  allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
+  allowFullScreen
+/>
+]]></description>
+            <link>https://juancman.dev/es/undefined</link>
+            <guid isPermaLink="false">https://juancman.dev/es/undefined</guid>
+            <dc:creator><![CDATA[Juan Manzanero]]></dc:creator>
+            <pubDate>Mon, 17 Jul 2023 06:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Cómo Funcionan las Computadoras]]></title>
+            <description><![CDATA[<p>import PostData from &#39;@/components/PostData&#39;;</p>
+<h1>Cómo Funcionan las Computadoras</h1>
+<p><img src="/blog/how-computers-works/philipp-katzenberger-iIJrUoeRoCQ-unsplash.jpg" alt="Laptop abierta"><br><em>Una laptop abierta. Foto de <a href="https://unsplash.com/@fantasyflip?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'" target="_blank" rel="noopener noreferrer">Philipp Katzenberger</a> en <a href="https://unsplash.com/photos/iIJrUoeRoCQ?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank" rel="noopener noreferrer">Unsplash</a></em></p>
+<PostData date='29 de Mayo del 2023' author='Juan Manzanero' />
+
+<p>Hoy en día usamos, de alguna manera, una computadora en casi toda actividad de nuestras vidas, podría ser para trabajo o solo por diversión, pero si lo pensamos con cuidado, las computadoras son un invento del siglo pasado, y han cambiado nuestras vidas.</p>
+<p>Nuevos empleos han aparecido, nuevas carreras por estudiar, nuevos problemas por resolver.</p>
+<p>Pero, ¿realmente sabemos cómo las computadoras penetraron en nuestras vidas?, ¿realmente sabemos cómo funciona una computadora?, ¿cómo funciona Internet?</p>
+<p>Hay muchas personas que usan sus smartphones para comunicarse con su familia y amigos, para compartir sus vidas, pero no saben cómo es esto posible.</p>
+<p>No estoy diciendo que todos deberían tener una Ingeniería en Software o ser expertos en IT, pero entender nuestra actual línea temporal puede ser un conocimiento destacable a tener.</p>
+<h2>El poder de las computadoras</h2>
+<hr>
+<p>Las computadoras están hechas para expandir nuestros cerebros, desde cosas como enviar mensajes a personas del otro lado del planeta, hasta crear una app que agiliza un proceso de entrega.</p>
+<p>Todo esto se hace tan solo “girando” unos y ceros (1´s y 0´s), pero, ¿cómo es esto posible?</p>
+<p>Si ya has visto Él Código Enigma, ya sabes parte de esa historia.</p>
+<h3>Fundamentos de Computación</h3>
+<hr>
+<p>Alan Turing fue el inventor de la Máquina de Turing, una simple pero poderosa máquina que puede recibir instrucciones para moverse en una larga cinta, cambiando el estado de cada ranura. Estas 3 cosas, una cabeza, una cinta larga y un conjunto de instrucciones son las bases para las computadoras modernas.</p>
+<p>La cabeza es la Unidad de Procesamiento Central (CPU), una pieza de hardware que puede ser usada con propósitos generales, recibiendo instrucciones (Algoritmo) que son convertidos a pulsos eléctricos, entendiendo si la electricidad pasa o no, si es verdadero o falso, 1 ó 0. Todas estas instrucciones son guardadas en la Memoria Aleatoria de Acceso, Random Access Memory (RAM) para un acceso rápido del trabajo que se ha hecho. La Memoria de Solo Lectura, Read-Only Memory (ROM) es usada para guardar datos persistentes que se necesitan recuperar aunque la computadora se apague.</p>
+<p>Un algoritmo puede ser visto como una receta de cocina, declaras los ingredientes (variables) y los pasos a seguir (funciones) para obtener un resultado.</p>
+<p>Una variable es un identificador que apunta a un slot en la RAM, guardando un valor que puede ser un número, un texto (se le conoce como “string”), un booleano (true o false), un object (un conjunto de múltiples variables y funciones que puede ser instanciado), etc.</p>
+<p>Las funciones son bloques de instrucciones que cumplen una tarea, como obtener la ubicación actual o enviar un mensaje.</p>
+<p>Y te estarás preguntando, ¿cómo puedo decirle a una computadora lo que quiero hacer?</p>
+<h3>Lenguajes de programación</h3>
+<hr>
+<p>Si intentas hablar con alguien que no habla el mismo idioma que tu, intentas usar un traductor o usas gestos, algo que sabes que ambos puedan de alguna manera entender, lo mismo ocurre con las computadoras.</p>
+<p>Las computadoras son poderosas, pero necesitan a alguien que les diga qué hacer, este es el trabajo de los humanos, y para conseguirlo usamos lenguajes de programación. Con un lenguaje de programación usas una sintaxis específica para decirle a la computadora lo que quieres hacer, una vez hecho esto compilas el archivo que contiene las instrucciones que escribiste, entonces es transformado a un lenguaje que las computadoras pueden entender con mayor facilitad (1´s y 0´s) y entonces la computadora realiza la tarea.</p>
+<p>Hay diferentes lenguajes de programación, y todos ellos están diseñados para solucionar necesidades específicas. Lenguajes como C y C++ son lenguajes de bajo nivel, esto quiere decir que son muy cercanos a cómo una computadora “habla” y son usados para controlar y administrar la memoria en apps de alto rendimiento, o para iluminar las pantallas de tu computadora.</p>
+<p>Existe Java, un lenguaje que crea un entorno cuando es compilado, lo que le permite ser utilizado en casi cualquier computadora.</p>
+<p>JavaScript (NO tiene que ver con Java o algo así) es un lenguaje que los navegadores entienden, gracias a JavaScript podemos acceder a una página web y ver asombrosas interacciones cuando le damos click a un botón, inicar sesión con un username y password, y más.</p>
+<p>JavaScript es un lenguaje de alto nivel, es más fácil de aprender que Java o C, pero no por eso es mejor o peor, simplemente resuelve una necesidad diferente.</p>
+<h3>El Navegador</h3>
+<hr>
+<p>Es un poderoso software que puede acceder a otras computadoras usando el Hyper Text Transfer Protocol (HTTP), significa que gracias a este protocolo distintas computadoras pueden enviar y recibir información para comunicarse, incluso si están muy lejos. Los navegadores reciben datos en forma de archivos, principalmente tres:</p>
+<ul>
+<li>Hyper Text Markup Language (HTML)</li>
+<li>Cascading Styles Sheets (CSS)</li>
+<li>JavaScript</li>
+</ul>
+<h3>HTML</h3>
+<p>Ayuda al navegador a estructurar los datos como textos o imágenes, usando un lenguaje de marcado (mediante tags). El navegador puede reconocer dónde hay un input para escribir nuestro email, o un botón para subscribirnos a nuestro artista favorito.</p>
+<h3>CSS</h3>
+<p>Ayuda a colorear y formar los tags de HTML usando selectores. Puede ser usado para cambiar el color de fondo de la página, darle a un botón bordes redondeados, cambiar el color de texto, todo lo que tu creatividad pueda imaginar.</p>
+<h3>JavaScript</h3>
+<p>Combinando HTML y CSS con Javascript se crea un website interactivo, o aplicación web (como este). Puedes por ejemplo, añadir un botón que cambie el tema oscuro al claro, o guardar items en un carrito de compras y mostrar el número de items que tienes guardados.</p>
+<p>Para todo esto necesitas guardar tus archivos en algún sitio, permitiéndole a las personas acceder a la computadora para descargar todos estos archivos usando sus navegadores, y para eso existen los servidores.</p>
+<p>Los servidores son computadoras conectadas a Internet, guardan archivos que pueden ser descargados o subidos usando protocolos y reglas de seguridad. Algunas compañías como Google o Microsoft tienen múltiples centros con muchos servidores en diferentes regiones en el planeta, llamados Data Centers, y pueden ser usados por una tarifa para guardar tu web app, estos múltiples Data Centers se les conoce como Cloud.</p>
+<h3>La Nube</h3>
+<p>Administrar una poderosa computadora puede ser difícil, pero si sabes cómo usarla, puedes ahorrarte mucho dinero en lugar de mantener servidores locales que necesiten estar encendidos 24/7. Gracias a la Cloud podemos entregar apps más rápidas, y podemos tener un servicio 24/7 para nuestros clientes con un costo marginal.</p>
+<h2>Las Computadoras Cambiaron la Humanidad</h2>
+<hr>
+<p>Las computadoras simplifican nuestras tareas diarias, el software puede ser fácilmente replicado y distribuido sin la necesidad de logística como si lo necesita un producto tangible. Solo necesitas una conexión a Internet para acceder al proyecto de alguien.</p>
+<p>No necesitas una fábrica o un recurso natural como madera para producir papel, necesitas un grupo de ingenieros, diseñadores UX/UI, digital marketers, y otras personas enfocadas en IT para alcanzar a miles de clientes.</p>
+<p>La razón por la que las computadoras son tan poderosas es debido a que su costo marginal es mínimo, no necesitas extraer una materia prima de la tierra para construir una app, necesitas un grupo de personas talentosas que usen sus cerebros para crear soluciones.</p>
+]]></description>
+            <link>https://juancman.dev/es/undefined</link>
+            <guid isPermaLink="false">https://juancman.dev/es/undefined</guid>
+            <dc:creator><![CDATA[Juan Manzanero]]></dc:creator>
+            <pubDate>Mon, 29 May 2023 06:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[La razón para crear una versión 2.0 de mi website]]></title>
+            <description><![CDATA[<p>import PostData from &#39;@/components/PostData&#39;;</p>
+<h1>La razón para crear una versión 2.0 de mi website</h1>
+<p><img src="/blog/website-2.0/website-2.0-header.png" alt="Tech stack"><br><em>Tech Stack usado para este website. Next.js, Vercel, React.js, TypeScript y TailwindCSS</em></p>
+<PostData date='7 de Abril del 2023' author='Juan Manzanero' />
+
+<h2>Client Side Rendering (CSR) vs. Server Side Rendering (SSR) vs. Static Generation (SG)</h2>
+<p>Al <strong>desarrollar</strong> una aplicación <strong>web</strong>, debes <strong>pensar</strong> en el tipo de <strong>renderizado</strong> que se debe utilizar, teniendo en cuenta los <strong>requisitos</strong> de los <strong>problemas</strong> que deseas <strong>resolver</strong>.</p>
+<h3>Generación del Lado del Cliente (CSR)</h3>
+<p>Por ejemplo, una aplicación <strong>web</strong> como un <strong>SaaS</strong> para crear tareas y administrar personas tendrá <strong>páginas dinámicas</strong> para mostrar las tareas, actualizar las tarjetas cuando se editan o eliminan, mostrar notificaciones, etc. En esta situación, un <strong>CSR</strong> sería <strong>mejor</strong> para <strong>renderizar</strong> la página <strong>cada</strong> vez que el usuario <strong>solicita</strong> acceso para <strong>mantener</strong> los datos <strong>actualizados</strong>. Sin embargo, un <strong>CSR</strong> necesita <strong>hidratar</strong> la página cuando se <strong>solicita</strong>, lo que provoca una <strong>carga lenta</strong> al <strong>principio</strong> y utiliza <strong>más recursos</strong> de la PC del usuario.</p>
+<h3>Renderización del Lado del Servidor (SSR)</h3>
+<p>Esto podría resolverse utilizando <strong>SSR</strong>, que consiste en <strong>generar</strong> la página en el <strong>servidor</strong> donde se aloja la aplicación web utilizando toda la <strong>potencia</strong> que un <strong>servidor</strong> puede proporcionar. El problema es que se requiere un <strong>servidor</strong>. Google Cloud proporciona opciones sin servidor como App Engine o Cloud Run, pero deberás aprender sobre estos servicios y cómo desplegar el<br>proyecto, por lo que el <strong>conocimiento técnico</strong> es <strong>alto</strong>.</p>
+<p>La <strong>desventaja</strong> de <strong>CSR</strong> y <strong>SSR</strong> es que, debido a que <strong>cada página</strong> debe ser <strong>renderizada</strong> en cada <strong>solicitud</strong>, los <strong>rastreadores web</strong> (<strong>web crawlers</strong>) y los <strong>motores de búsqueda</strong> como Google tardarán más tiempo en obtener información sobre tu página, lo que resultará en una <strong>prioridad SEO</strong> baja.</p>
+<h3>Generación Estática (SG)</h3>
+<p>Bueno, si una <strong>página</strong> no requiere <strong>buscar</strong> datos para <strong>cada solicitud</strong>, entonces puedes usar <strong>SG</strong>, lo que significa que la <strong>página</strong> se <strong>genera</strong> cuando construyes el directorio de producción <strong>antes</strong> de desplegarlo. La página se generará en HTML/CSS/JS una vez, y si necesitas <strong>actualizar</strong> los datos en esa página, deberás hacer los cambios y <strong>desplegar</strong> el proyecto. Sí, deberás tener más cuidado al revisar los cambios antes de desplegarlos, pero como la página ya está generada, los <strong>rastreadores web</strong> y el <strong>motor de búsqueda</strong> de Google obtendrán la <strong>información</strong> de tu página <strong>más rápido</strong>, lo que <strong>mejorará</strong> tu <strong>SEO</strong>.</p>
+<h2>Lo Interesante de Next.js</h2>
+<p>En el <strong>pasado</strong>, se requería <strong>pensar</strong> si usar CSR completo, SSR o SG, vinculando tu website a sus respectivas secciones, como la aplicación, el blog, etc.</p>
+<p><strong><a href="https://nextjs.org/" target="_blank" rel="noopener noreferrer">Next.js</a></strong> es un <strong>meta-framework</strong> de <strong>Node.js</strong> que utiliza <strong><a href="https://react.dev/" target="_blank" rel="noopener noreferrer">React.js</a></strong> para construir la interfaz de usuario, y proporciona CSR, SSR, SG y más, por lo que puedes generar SG obteniendo datos de forma asíncrona, lo que te permite no tener que crear cada página estática.</p>
+<p>Este es el <strong>enfoque</strong> utilizado para este website, en lugar de obtener los datos en cada solicitud, solo obtengo los datos cuando creo la construcción del proyecto.</p>
+<p>Cada artículo es una página SG, pero utilizo una <strong>plantilla</strong> para mantener todos los blogs similares, utilizando la sintaxis <strong>markdown</strong> para el contenido del blog, y con una <strong>extensión</strong> de <strong>TailwindCSS</strong> mantengo los estilos consistentes.</p>
+<p>Así que, Next.js te permite elegir el método de renderizado para cada página de tu website, esta característica permite crear sitios web increíbles en el mismo proyecto, manteniendo la coherencia y con tiempos de carga rápidos, Next.js incluso carga de forma perezosa cada página y comienza a cargarse cuando pasas el cursor sobre un enlace como Inicio, Contacto, etc.</p>
+<blockquote>
+<p>¡Explicaré en más detalle la arquitectura de este proyecto en el futuro!</p>
+</blockquote>
+<h2><strong>TailwindCSS vs MUI</strong></h2>
+<p>Elegí usar <strong><a href="https://tailwindcss.com/" target="_blank" rel="noopener noreferrer">TailwindCSS</a></strong> para aprender sobre esta biblioteca CSS, y estoy impresionado por lo <strong>rápido</strong> que hace el desarrollo de los estilos de un proyecto web. <strong>MUI</strong> proporciona <strong>funcionalidades</strong>, pero a veces <strong>presenta problemas</strong> con la <strong>hidratación</strong>, como en mi website anterior, cuando <strong>cargas</strong> la página por primera vez, tarda un <strong>tiempo</strong> en <strong>mostrar</strong> todos los <strong>estilos</strong>, ahora ya no ocurre porque TailwindCSS es CSS puro y las páginas son estáticas.</p>
+<h2>Despliegue en Vercel</h2>
+<p><strong><a href="https://vercel.com/" target="_blank" rel="noopener noreferrer">Vercel</a></strong> es la empresa detrás de Next.js, y ofrece servicios de <strong>hosting</strong> optimizados para aplicaciones <strong>Node.js</strong>, y como estoy aprendiendo sobre desarrollo en la nube, tal vez podría intentar alojar esta web en un servicio en la nube como Cloud Run, pero esta vez elijo utilizar <strong>Vercel</strong> para obtener las <strong>analíticas</strong> que son muy útiles, y como el <strong>plan hobby</strong> me ofrece alojamiento gratuito para proyectos pequeños.</p>
+<p>Para desplegar, utilizo la <strong><a href="https://vercel.com/docs/cli" target="_blank" rel="noopener noreferrer">Vercel CLI</a></strong>, bastante simple y directo.</p>
+<h2>¡Más contenido en camino!</h2>
+<p>Seguiré actualizando con publicaciones, características y más contenido para compartir mi experiencia, y ahora que estoy escribiendo este párrafo, creo que la próxima característica podría ser un boletín para notificar a las personas cuando creo una nueva publicación. ¡Hora de trabajar!</p>
+]]></description>
+            <link>https://juancman.dev/es/undefined</link>
+            <guid isPermaLink="false">https://juancman.dev/es/undefined</guid>
+            <dc:creator><![CDATA[Juan Manzanero]]></dc:creator>
+            <pubDate>Fri, 07 Apr 2023 06:00:00 GMT</pubDate>
+        </item>
+    </channel>
+</rss>
