@@ -14,7 +14,9 @@ const blogs = fs
     const { data, content }: { data: any; content: string } = matter(
       postContent
     );
-    return { ...data, body: content };
+    const slug = file.replace('.mdx', '');
+
+    return { ...data, body: content, slug };
   })
   .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 
@@ -29,7 +31,9 @@ const projects = fs
     const { data, content }: { data: any; content: string } = matter(
       projectContent
     );
-    return { ...data, body: content };
+    const slug = file.replace('.mdx', '');
+
+    return { ...data, body: content, slug };
   })
   .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 

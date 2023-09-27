@@ -3,7 +3,6 @@ import { PageProps } from '@/interfaces/ContentPage.model';
 import { Metadata } from 'next';
 import { getBlogFromParams, getBlogsFromParams } from '@/utils/getContent';
 import { Locale } from '@/dictionaries/i18n-config';
-import PostData from '@/components/PostData';
 
 export async function generateStaticParams({
   params,
