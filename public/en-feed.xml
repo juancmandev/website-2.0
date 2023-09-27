@@ -4,8 +4,8 @@
         <description><![CDATA[Juan Manzanero's blog]]></description>
         <link>https://juancman.dev/en</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Wed, 27 Sep 2023 17:48:21 GMT</lastBuildDate>
-        <atom:link href="https://juancman.dev/en/en-feed.xml" rel="self" type="application/rss+xml"/>
+        <lastBuildDate>Wed, 27 Sep 2023 18:13:41 GMT</lastBuildDate>
+        <atom:link href="https://juancman.dev/en-feed.xml" rel="self" type="application/rss+xml"/>
         <language><![CDATA[en]]></language>
         <item>
             <title><![CDATA[I participated in a Hackathon]]></title>
@@ -29,8 +29,8 @@
 <p>I want to learn more about using vectors for AI, so I’ll investigate more about the topic, as the tech tends to go that way, who knows what would be the next big tech trend or when.</p>
 <p><a href="https://groce-wise.vercel.app/" target="_blank" rel="noopener noreferrer">You can see the project: Grocewise here</a></p>
 ]]></description>
-            <link>https://juancman.dev/en/undefined</link>
-            <guid isPermaLink="false">https://juancman.dev/en/undefined</guid>
+            <link>https://juancman.dev/en/blog/undefined</link>
+            <guid isPermaLink="false">https://juancman.dev/en/blog/undefined</guid>
             <dc:creator><![CDATA[Juan Manzanero]]></dc:creator>
             <pubDate>Wed, 16 Aug 2023 06:00:00 GMT</pubDate>
         </item>
@@ -66,8 +66,8 @@
   allowFullScreen
 />
 ]]></description>
-            <link>https://juancman.dev/en/undefined</link>
-            <guid isPermaLink="false">https://juancman.dev/en/undefined</guid>
+            <link>https://juancman.dev/en/blog/undefined</link>
+            <guid isPermaLink="false">https://juancman.dev/en/blog/undefined</guid>
             <dc:creator><![CDATA[Juan Manzanero]]></dc:creator>
             <pubDate>Mon, 17 Jul 2023 06:00:00 GMT</pubDate>
         </item>
@@ -129,8 +129,8 @@
 <p>You don’t need a factory or natural resources like wood to produce paper, you need a group of engineers, UX/UI designers, digital marketers, and more IT people to reach billions of customers.</p>
 <p>The reason that computers are too powerful is that the marginal cost is minimal, you don’t need to extract something from the earth to build an app, you need a group of talented persons that uses their brains to create solutions.</p>
 ]]></description>
-            <link>https://juancman.dev/en/undefined</link>
-            <guid isPermaLink="false">https://juancman.dev/en/undefined</guid>
+            <link>https://juancman.dev/en/blog/undefined</link>
+            <guid isPermaLink="false">https://juancman.dev/en/blog/undefined</guid>
             <dc:creator><![CDATA[Juan Manzanero]]></dc:creator>
             <pubDate>Mon, 29 May 2023 06:00:00 GMT</pubDate>
         </item>
@@ -168,8 +168,8 @@
 <h2>More content coming soon!</h2>
 <p>I’ll keep updating with posts, features and more content to share my experience, and know I’m writing this paragraph, I think the next feature it would be a newsletter to notify people when I create a new post. Time to work!</p>
 ]]></description>
-            <link>https://juancman.dev/en/undefined</link>
-            <guid isPermaLink="false">https://juancman.dev/en/undefined</guid>
+            <link>https://juancman.dev/en/blog/undefined</link>
+            <guid isPermaLink="false">https://juancman.dev/en/blog/undefined</guid>
             <dc:creator><![CDATA[Juan Manzanero]]></dc:creator>
             <pubDate>Fri, 07 Apr 2023 06:00:00 GMT</pubDate>
         </item>
