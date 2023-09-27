@@ -25,7 +25,7 @@ export default function BackToTop({ lang }: Props) {
   return (
     <button
       onClick={scrollToTop}
-      className='mt-30 p-3 flex mx-auto shadow-sm bg-dark1 rounded-[4px]'>
+      className='mt-30 p-3 flex mx-auto shadow-lg bg-dark1 rounded-[4px]'>
       {dictionary['back_to_top'][lang]}
     </button>
   );

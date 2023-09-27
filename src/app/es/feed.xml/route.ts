@@ -17,7 +17,6 @@ export async function GET() {
     copyright: 'Uncopyrighted by Juan Manzanero.',
     language: lang,
     pubDate: new Date(),
-    image_url: `${url}/favicon.ico`,
   });
 
   blogs.forEach((blog) => {
