@@ -1,16 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title><![CDATA[juancmandev]]></title>
+        <title><![CDATA[Juan Manzanero in English]]></title>
         <description><![CDATA[Juan Manzanero's blog]]></description>
         <link>https://juancman.dev/en</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Wed, 27 Sep 2023 18:43:25 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 27 Sep 2023 19:14:12 GMT</lastBuildDate>
         <atom:link href="https://juancman.dev/en-feed.xml" rel="self" type="application/rss+xml"/>
         <language><![CDATA[en]]></language>
         <item>
             <title><![CDATA[I participated in a Hackathon]]></title>
-            <description><![CDATA[<p>import PostData from &#39;@/components/PostData&#39;;</p>
-<h1>I participated in a Hackathon</h1>
+            <description><![CDATA[<h1>I participated in a Hackathon</h1>
 <p><img src="/blog/i-participated-in-a-hackathon/i-participated-in-a-hackathon-banner.png" alt="Tech Stack"><br><em>Tech stack used: Supabase, Next.js and Shadcn/UI, My first hackathon!</em></p>
 <PostData date='August 16, 2023' author='Juan Manzanero' />
 
@@ -31,13 +30,13 @@
 ]]></description>
             <link>https://juancman.dev/en/blog/undefined</link>
             <guid isPermaLink="false">https://juancman.dev/en/blog/undefined</guid>
+            <category><![CDATA[Tech]]></category>
             <dc:creator><![CDATA[Juan Manzanero]]></dc:creator>
             <pubDate>Wed, 16 Aug 2023 06:00:00 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[The Monotony of Social Media]]></title>
-            <description><![CDATA[<p>import PostData from &#39;@/components/PostData&#39;;</p>
-<h1>The Monotony of Social Media</h1>
+            <description><![CDATA[<h1>The Monotony of Social Media</h1>
 <p><img src="/blog/the-monotony-of-social-media/the-monotony-of-social-media-banner.jpg" alt="Person checking social media"><br><em>Person checking social media. Photo by <a href="https://unsplash.com/@fantasyflip?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank" rel="noopener noreferrer">Austin Distel</a> on <a href="https://unsplash.com/photos/iIJrUoeRoCQ?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank" rel="noopener noreferrer">Unsplash</a></em></p>
 <PostData date='July 17, 2023' author='Juan Manzanero' />
 
@@ -68,13 +67,13 @@
 ]]></description>
             <link>https://juancman.dev/en/blog/undefined</link>
             <guid isPermaLink="false">https://juancman.dev/en/blog/undefined</guid>
+            <category><![CDATA[Thoughts]]></category>
             <dc:creator><![CDATA[Juan Manzanero]]></dc:creator>
             <pubDate>Mon, 17 Jul 2023 06:00:00 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[How Computers Works]]></title>
-            <description><![CDATA[<p>import PostData from &#39;@/components/PostData&#39;;</p>
-<h1>How Computers Works</h1>
+            <description><![CDATA[<h1>How Computers Works</h1>
 <p><img src="/blog/how-computers-works/philipp-katzenberger-iIJrUoeRoCQ-unsplash.jpg" alt="Open laptop"><br><em>An open laptop. Photo by <a href="https://unsplash.com/@fantasyflip?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'" target="_blank" rel="noopener noreferrer">Philipp Katzenberger</a> on <a href="https://unsplash.com/photos/iIJrUoeRoCQ?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank" rel="noopener noreferrer">Unsplash</a></em></p>
 <PostData date='May 29, 2023' author='Juan Manzanero' />
 
@@ -131,13 +130,13 @@
 ]]></description>
             <link>https://juancman.dev/en/blog/undefined</link>
             <guid isPermaLink="false">https://juancman.dev/en/blog/undefined</guid>
+            <category><![CDATA[Tech]]></category>
             <dc:creator><![CDATA[Juan Manzanero]]></dc:creator>
             <pubDate>Mon, 29 May 2023 06:00:00 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[The reason to create a version 2.0 of my website]]></title>
-            <description><![CDATA[<p>import PostData from &#39;@/components/PostData&#39;;</p>
-<h1>The reason to create a version 2.0 of my website</h1>
+            <description><![CDATA[<h1>The reason to create a version 2.0 of my website</h1>
 <p><img src="/blog/website-2.0/website-2.0-header.png" alt="Tech stack"><br><em>Tech Stack of this website. Next.js, Vercel, React.js, TypeScript and TailwindCSS</em></p>
 <PostData date='April 7, 2023' author='Juan Manzanero' />
 
@@ -170,8 +169,77 @@
 ]]></description>
             <link>https://juancman.dev/en/blog/undefined</link>
             <guid isPermaLink="false">https://juancman.dev/en/blog/undefined</guid>
+            <category><![CDATA[Tech]]></category>
             <dc:creator><![CDATA[Juan Manzanero]]></dc:creator>
             <pubDate>Fri, 07 Apr 2023 06:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Human to JS]]></title>
+            <description><![CDATA[<h1>Human to JS</h1>
+<p><img src="/projects/human-to-js-banner.png" alt="Human to JS banner"><br><em>Human to JS diagram</em></p>
+<p><PostData
+  date='May 15, 2023'
+  author='Juan Manzanero'
+  website='https://human-to-js.juancman.dev'
+  github='https://github.com/juancmandev/human-to-js'
+/></p>
+<h2>Background</h2>
+<p>I’m always looking to grow my career by learning new technologies as well known Software Engineer; however, that could be dangerous because Software Engineer is not about using the ultimate tech stack but making things happen.</p>
+<h2>Inspiration source</h2>
+<p>I was checking Twitter until I found a tweet where a person created a side project over a weekend. That project is <a href="https://www.sqltranslate.app/" target="_blank" rel="noopener noreferrer">SQL Translator</a>, a simple UI to put text input describing a query; then you get the query into SQL, simple!</p>
+<p><a href="https://twitter.com/whoiskatrin?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1634973237829599233%7Ctwgr%5Eb49b9d28e6ea7383ef16ea3c8c6040656ff0c944%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fpublish.twitter.com%2F%3Fquery%3Dhttps3A2F2Ftwitter.com2Fwhoiskatrin2Fstatus2F1634973237829599233widget%3DTweet" target="_blank" rel="noopener noreferrer">@whoiskatrin</a> used ChatGPT API to send a prompt typed by the user, and then show SQL response into a component to copy to the clipboard. That was enough to get the deserved attention of the community. <a href="https://twitter.com/whoiskatrin/status/1634973237829599233" target="_blank" rel="noopener noreferrer">Tweet link</a></p>
+<h2>My idea</h2>
+<blockquote>
+<p><em>“Why not a web app to type a prompt to generate JavaScript code?”</em></p>
+</blockquote>
+<p>So I started to build my idea using this tech stack:</p>
+<ul>
+<li><strong>Next.js</strong>: Web framework to build the UI and Next.js provides you with an API directory to communicate with ChatGPT API</li>
+<li><strong>MUI</strong>: To use the UI components and as a design system</li>
+<li><strong>Formik &amp; Yup</strong>: To manage the state of the prompt form and create validation schemas</li>
+</ul>
+<p>Using all these technologies I build a simple UI with a MUI Card component, then I created a form where I manage all the inputs with Formik, the text and select inputs are directly from MUI, and to create the validation schema I used Yup to mark as required those fields and don’t send them empty.</p>
+<p>With the UI finished, I started creating the endpoint in the API directory to consume ChatGPT’s API, just using a fetch like <a href="https://twitter.com/whoiskatrin?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1634973237829599233%7Ctwgr%5Eb49b9d28e6ea7383ef16ea3c8c6040656ff0c944%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fpublish.twitter.com%2F%3Fquery%3Dhttps3A2F2Ftwitter.com2Fwhoiskatrin2Fstatus2F1634973237829599233widget%3DTweet" target="_blank" rel="noopener noreferrer">@whoiskatrin</a>’s project, indicating which OpenAI model to use, in this case, <em>text-davinci-003</em>, you can learn more about those models <a href="https://platform.openai.com/docs/api-reference/models/list" target="_blank" rel="noopener noreferrer">here</a>. Obviously, in that request, I send the prompt from the user into a string indicating ChatGPT to only give me the code, without comments or more results.</p>
+<h2>Added value</h2>
+<p>Yes, there’re options like GitHub Copilot that resolve that problem, that’s why I added a select option to choose if the syntax should be an arrow function or a simple function.</p>
+<p>I’ll add more features, like a TypeScript option, and use a TS Interface to use as a reference, but now I’m working on more projects!</p>
+<h2>Inspiring people!</h2>
+<p>The cool thing about side projects is that inspires people like us, we can use our tech skill that serves the bread on the table to transform ideas into products, and products into a community, as <a href="https://twitter.com/serudda" target="_blank" rel="noopener noreferrer">@Serudda</a> talks in this <a href="https://www.youtube.com/watch?v=LXgPNdw8avI&t" target="_blank" rel="noopener noreferrer">video</a> (video audio in Spanish).</p>
+]]></description>
+            <link>https://juancman.dev/en/projects/undefined</link>
+            <guid isPermaLink="false">https://juancman.dev/en/projects/undefined</guid>
+            <category><![CDATA[ChatGPT, Next.js, JavaScript, Vercel]]></category>
+            <dc:creator><![CDATA[Juan Manzanero]]></dc:creator>
+            <pubDate>Sat, 15 Apr 2023 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Workarise]]></title>
+            <description><![CDATA[<h1>Workarise</h1>
+<p><img src="/projects/workarise-banner.png" alt="Workarise Banner"><br><em>Workarise Banner</em></p>
+<p><PostData
+  date='April 14, 2023'
+  author='Juan Manzanero'
+  website='https://workarise.com'
+/></p>
+<h2>Overview</h2>
+<p><a href="http://workarise.com" target="_blank" rel="noopener noreferrer">Workarise</a> is a Team Manager Software as a Service to create task cards assigning people, set a start and due date, add attachments files, etc.</p>
+<p>You can use the Calendar to see the tasks&#39; due dates and schedule Google Meet events authorizing the use of your Google Calendar. You can edit and delete events which sync with your Google Calendar and guests&#39; Google Calendars. The Gantt provides you with a timeline to check task duration.</p>
+<p>The web app is developed with <a href="https://react.dev/" target="_blank" rel="noopener noreferrer">React.js</a>, using <a href="https://vitejs.dev/" target="_blank" rel="noopener noreferrer">Vite.js</a> to run the development environment. For functionality like modals, and popovers we use <a href="https://mui.com/" target="_blank" rel="noopener noreferrer">MUI</a>. To manage the state of components we’re using useContext.</p>
+<p>To create Google Meet events and sync the calendar we&#39;d develop a small Node.js API to use Google OAuth 2 API, as we need to prompt our users to give access to their Google Calendars.</p>
+<p>Currently, Workarise is in the first version, using <a href="https://firebase.google.com/" target="_blank" rel="noopener noreferrer">Firebase</a> to authenticate users and store raw data and files. Firebase uses <a href="https://firebase.google.com/docs/firestore" target="_blank" rel="noopener noreferrer">Firestore</a>, a NoSQL DB, however we’re developing an API using <a href="https://www.djangoproject.com/" target="_blank" rel="noopener noreferrer">Django</a> running on <a href="https://cloud.google.com/run" target="_blank" rel="noopener noreferrer">Cloud Run</a> connected to <a href="https://cloud.google.com/sql" target="_blank" rel="noopener noreferrer">Cloud SQL</a> to a MySQL instance, as we’ll be using a SQL DB in the future. Currently the web app and landing are deployed on Firebase Hosting, but we’ll move the landing page to Vercel, and it’ll be updated to use Next.js in the future to optimize SEO and publish blog posts.</p>
+<h2>My impact in Workarise</h2>
+<p>Currently, we’re developing an MVP, and everyone is working part-time on this project. I joined in December, but before there wasn’t a product that users can use, so as I was the only Frontend Engineer at that moment I taked full responsibility for delivering something that can be considered an MVP.</p>
+<p>It took me like 3 months to achieve that, I updated some dependencies of the project to improve the development flow, and I suggested using Firebase as Backend and Hosting.</p>
+<p>Thanks to all this we got our first users and feedback, so we’re working on that feedback to keep improving our app, our users like the design and simplicity!</p>
+<p>At the moment there’re 3 engineers in the team, 2 on the front (including me) and 1 on the back, but I’m helping to our Backend Engineer to deploy on GCP to production the API and DB, and I&#39;m guiding the new Frontend to deliver new features, he’d developed the responsive design and some features to complement the task cards.</p>
+<p>I’m happy to test my skills in this project, it’s not easy to take more responsibility with less than 2 years of labor experience, and it’d help me to grow a lot in these months.</p>
+<p>Even if the market doesn’t consider my years of experience as a senior, I think that doesn’t matter at all, the only thing that matters is that you can understand why you’re using code, to create solutions and reach people across their computers.</p>
+]]></description>
+            <link>https://juancman.dev/en/projects/undefined</link>
+            <guid isPermaLink="false">https://juancman.dev/en/projects/undefined</guid>
+            <category><![CDATA[React.js, Vite.js, MUI, Firebase, GCP, Node.js]]></category>
+            <dc:creator><![CDATA[Juan Manzanero]]></dc:creator>
+            <pubDate>Fri, 14 Apr 2023 00:00:00 GMT</pubDate>
         </item>
     </channel>
 </rss>

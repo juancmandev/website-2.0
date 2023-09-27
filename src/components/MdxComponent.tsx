@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import { useMDXComponent } from 'next-contentlayer/hooks';
 import cn from '@/utils/cn';
+import PostData from './PostData';
 
 const components = {
   h1: ({ className, ...props }: React.HTMLAttributes<HTMLHeadingElement>) => (
@@ -76,6 +77,9 @@ const components = {
   ),
   code: ({ className, ...props }: React.HTMLAttributes<HTMLElement>) => (
     <code {...props} />
+  ),
+  PostData: ({ date, author }: { date: string; author: string }) => (
+    <PostData date={date} author={author} />
   ),
   Image,
 };
