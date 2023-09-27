@@ -1,16 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title><![CDATA[juancmandev]]></title>
+        <title><![CDATA[Juan Manzanero en Español]]></title>
         <description><![CDATA[Blog de Juan Manzanero]]></description>
         <link>https://juancman.dev/es</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Wed, 27 Sep 2023 18:18:33 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 27 Sep 2023 19:09:26 GMT</lastBuildDate>
         <atom:link href="https://juancman.dev/es-feed.xml" rel="self" type="application/rss+xml"/>
         <language><![CDATA[es]]></language>
         <item>
             <title><![CDATA[He participado en una Hackathon]]></title>
-            <description><![CDATA[<p>import PostData from &#39;@/components/PostData&#39;;</p>
-<h1>He participado en una Hackathon</h1>
+            <description><![CDATA[<h1>He participado en una Hackathon</h1>
 <p><img src="/blog/i-participated-in-a-hackathon/i-participated-in-a-hackathon-banner.png" alt="Tech Stack"><br><em>Tech stack utilizado: Supabase, Next.js and Shadcn/UI, ¡Mi primera hackathon!</em></p>
 <PostData date='16 de Agosto del 2023' author='Juan Manzanero' />
 
@@ -31,13 +30,13 @@
 ]]></description>
             <link>https://juancman.dev/es/blog/undefined</link>
             <guid isPermaLink="false">https://juancman.dev/es/blog/undefined</guid>
+            <category><![CDATA[Tech]]></category>
             <dc:creator><![CDATA[Juan Manzanero]]></dc:creator>
             <pubDate>Wed, 16 Aug 2023 06:00:00 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[La Monotonía de las Redes Sociales]]></title>
-            <description><![CDATA[<p>import PostData from &#39;@/components/PostData&#39;;</p>
-<h1>La Monotonía de las Redes Sociales</h1>
+            <description><![CDATA[<h1>La Monotonía de las Redes Sociales</h1>
 <p><img src="/blog/the-monotony-of-social-media/the-monotony-of-social-media-banner.jpg" alt="Persona checando sus redes sociales"><br><em>Persona checando sus redes sociales. Foto de <a href="https://unsplash.com/@austindistel?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank" rel="noopener noreferrer">Austin Distel</a> en <a href="https://unsplash.com/photos/tLZhFRLj6nY?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank" rel="noopener noreferrer">Unsplash</a></em></p>
 <PostData date='17 de Julio del 2023' author='Juan Manzanero' />
 
@@ -68,13 +67,13 @@
 ]]></description>
             <link>https://juancman.dev/es/blog/undefined</link>
             <guid isPermaLink="false">https://juancman.dev/es/blog/undefined</guid>
+            <category><![CDATA[Thoughts]]></category>
             <dc:creator><![CDATA[Juan Manzanero]]></dc:creator>
             <pubDate>Mon, 17 Jul 2023 06:00:00 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[Cómo Funcionan las Computadoras]]></title>
-            <description><![CDATA[<p>import PostData from &#39;@/components/PostData&#39;;</p>
-<h1>Cómo Funcionan las Computadoras</h1>
+            <description><![CDATA[<h1>Cómo Funcionan las Computadoras</h1>
 <p><img src="/blog/how-computers-works/philipp-katzenberger-iIJrUoeRoCQ-unsplash.jpg" alt="Laptop abierta"><br><em>Una laptop abierta. Foto de <a href="https://unsplash.com/@fantasyflip?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'" target="_blank" rel="noopener noreferrer">Philipp Katzenberger</a> en <a href="https://unsplash.com/photos/iIJrUoeRoCQ?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank" rel="noopener noreferrer">Unsplash</a></em></p>
 <PostData date='29 de Mayo del 2023' author='Juan Manzanero' />
 
@@ -130,13 +129,13 @@
 ]]></description>
             <link>https://juancman.dev/es/blog/undefined</link>
             <guid isPermaLink="false">https://juancman.dev/es/blog/undefined</guid>
+            <category><![CDATA[Tech]]></category>
             <dc:creator><![CDATA[Juan Manzanero]]></dc:creator>
             <pubDate>Mon, 29 May 2023 06:00:00 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[La razón para crear una versión 2.0 de mi website]]></title>
-            <description><![CDATA[<p>import PostData from &#39;@/components/PostData&#39;;</p>
-<h1>La razón para crear una versión 2.0 de mi website</h1>
+            <description><![CDATA[<h1>La razón para crear una versión 2.0 de mi website</h1>
 <p><img src="/blog/website-2.0/website-2.0-header.png" alt="Tech stack"><br><em>Tech Stack usado para este website. Next.js, Vercel, React.js, TypeScript y TailwindCSS</em></p>
 <PostData date='7 de Abril del 2023' author='Juan Manzanero' />
 
@@ -168,6 +167,7 @@
 ]]></description>
             <link>https://juancman.dev/es/blog/undefined</link>
             <guid isPermaLink="false">https://juancman.dev/es/blog/undefined</guid>
+            <category><![CDATA[Tech]]></category>
             <dc:creator><![CDATA[Juan Manzanero]]></dc:creator>
             <pubDate>Fri, 07 Apr 2023 06:00:00 GMT</pubDate>
         </item>

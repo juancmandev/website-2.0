@@ -33,7 +33,7 @@ const renderContent = (md: string) => marked.parse(md);
 
 const main = () => {
   const feed = new RSS({
-    title: 'juancmandev',
+    title: 'Juan Manzanero in English',
     site_url: `${url}/en`,
     feed_url: `${url}/en-feed.xml`,
     language: 'en',
@@ -50,6 +50,7 @@ const main = () => {
       author: 'Juan Manzanero',
       url: link,
       guid: link,
+      categories: [blog.tags],
     });
   });
 

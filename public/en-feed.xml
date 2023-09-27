@@ -1,16 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title><![CDATA[juancmandev]]></title>
+        <title><![CDATA[Juan Manzanero in English]]></title>
         <description><![CDATA[Juan Manzanero's blog]]></description>
         <link>https://juancman.dev/en</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Wed, 27 Sep 2023 18:43:25 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 27 Sep 2023 19:09:24 GMT</lastBuildDate>
         <atom:link href="https://juancman.dev/en-feed.xml" rel="self" type="application/rss+xml"/>
         <language><![CDATA[en]]></language>
         <item>
             <title><![CDATA[I participated in a Hackathon]]></title>
-            <description><![CDATA[<p>import PostData from &#39;@/components/PostData&#39;;</p>
-<h1>I participated in a Hackathon</h1>
+            <description><![CDATA[<h1>I participated in a Hackathon</h1>
 <p><img src="/blog/i-participated-in-a-hackathon/i-participated-in-a-hackathon-banner.png" alt="Tech Stack"><br><em>Tech stack used: Supabase, Next.js and Shadcn/UI, My first hackathon!</em></p>
 <PostData date='August 16, 2023' author='Juan Manzanero' />
 
@@ -31,13 +30,13 @@
 ]]></description>
             <link>https://juancman.dev/en/blog/undefined</link>
             <guid isPermaLink="false">https://juancman.dev/en/blog/undefined</guid>
+            <category><![CDATA[Tech]]></category>
             <dc:creator><![CDATA[Juan Manzanero]]></dc:creator>
             <pubDate>Wed, 16 Aug 2023 06:00:00 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[The Monotony of Social Media]]></title>
-            <description><![CDATA[<p>import PostData from &#39;@/components/PostData&#39;;</p>
-<h1>The Monotony of Social Media</h1>
+            <description><![CDATA[<h1>The Monotony of Social Media</h1>
 <p><img src="/blog/the-monotony-of-social-media/the-monotony-of-social-media-banner.jpg" alt="Person checking social media"><br><em>Person checking social media. Photo by <a href="https://unsplash.com/@fantasyflip?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank" rel="noopener noreferrer">Austin Distel</a> on <a href="https://unsplash.com/photos/iIJrUoeRoCQ?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank" rel="noopener noreferrer">Unsplash</a></em></p>
 <PostData date='July 17, 2023' author='Juan Manzanero' />
 
@@ -68,13 +67,13 @@
 ]]></description>
             <link>https://juancman.dev/en/blog/undefined</link>
             <guid isPermaLink="false">https://juancman.dev/en/blog/undefined</guid>
+            <category><![CDATA[Thoughts]]></category>
             <dc:creator><![CDATA[Juan Manzanero]]></dc:creator>
             <pubDate>Mon, 17 Jul 2023 06:00:00 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[How Computers Works]]></title>
-            <description><![CDATA[<p>import PostData from &#39;@/components/PostData&#39;;</p>
-<h1>How Computers Works</h1>
+            <description><![CDATA[<h1>How Computers Works</h1>
 <p><img src="/blog/how-computers-works/philipp-katzenberger-iIJrUoeRoCQ-unsplash.jpg" alt="Open laptop"><br><em>An open laptop. Photo by <a href="https://unsplash.com/@fantasyflip?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'" target="_blank" rel="noopener noreferrer">Philipp Katzenberger</a> on <a href="https://unsplash.com/photos/iIJrUoeRoCQ?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank" rel="noopener noreferrer">Unsplash</a></em></p>
 <PostData date='May 29, 2023' author='Juan Manzanero' />
 
@@ -131,13 +130,13 @@
 ]]></description>
             <link>https://juancman.dev/en/blog/undefined</link>
             <guid isPermaLink="false">https://juancman.dev/en/blog/undefined</guid>
+            <category><![CDATA[Tech]]></category>
             <dc:creator><![CDATA[Juan Manzanero]]></dc:creator>
             <pubDate>Mon, 29 May 2023 06:00:00 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[The reason to create a version 2.0 of my website]]></title>
-            <description><![CDATA[<p>import PostData from &#39;@/components/PostData&#39;;</p>
-<h1>The reason to create a version 2.0 of my website</h1>
+            <description><![CDATA[<h1>The reason to create a version 2.0 of my website</h1>
 <p><img src="/blog/website-2.0/website-2.0-header.png" alt="Tech stack"><br><em>Tech Stack of this website. Next.js, Vercel, React.js, TypeScript and TailwindCSS</em></p>
 <PostData date='April 7, 2023' author='Juan Manzanero' />
 
@@ -170,6 +169,7 @@
 ]]></description>
             <link>https://juancman.dev/en/blog/undefined</link>
             <guid isPermaLink="false">https://juancman.dev/en/blog/undefined</guid>
+            <category><![CDATA[Tech]]></category>
             <dc:creator><![CDATA[Juan Manzanero]]></dc:creator>
             <pubDate>Fri, 07 Apr 2023 06:00:00 GMT</pubDate>
         </item>
