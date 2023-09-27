@@ -4,7 +4,7 @@
         <description><![CDATA[Blog de Juan Manzanero]]></description>
         <link>https://juancman.dev/es</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Wed, 27 Sep 2023 19:09:26 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 27 Sep 2023 19:14:15 GMT</lastBuildDate>
         <atom:link href="https://juancman.dev/es-feed.xml" rel="self" type="application/rss+xml"/>
         <language><![CDATA[es]]></language>
         <item>
@@ -170,6 +170,76 @@
             <category><![CDATA[Tech]]></category>
             <dc:creator><![CDATA[Juan Manzanero]]></dc:creator>
             <pubDate>Fri, 07 Apr 2023 06:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Human to JS]]></title>
+            <description><![CDATA[<h1>Human to JS</h1>
+<p><img src="/projects/human-to-js-banner.png" alt="Human to JS banner"><br><em>Human to JS diagram</em></p>
+<p><PostData
+  date='15 de Mayo del 2023'
+  author='Juan Manzanero'
+  website='https://human-to-js.juancman.dev'
+  github='https://github.com/juancmandev/human-to-js'
+/></p>
+<h2>Retrospectiva</h2>
+<p>Siempre estoy buscando crecer mi carrera aprendiendo nuevas tecnologías como buen Ingeniero en Software; sin embargo, eso puede ser peligroso ya que la Ingeniería en Software no es sobre usar el último tech stack, sino de hacer que las cosas ocurran.</p>
+<h2>Fuente de inspiración</h2>
+<p>Estaba revisando Twitter hasta que encontré un tweet de una persona que había creado un <strong>side project</strong> en un fin de semana. Ese proyecto es <a href="https://www.sqltranslate.app/" target="_blank" rel="noopener noreferrer">SQL Translator</a>, una simple UI para escribir un texto describiendo una consulta, entonces obtienes la consulta en código SQL, ¡simple!</p>
+<p><a href="https://twitter.com/whoiskatrin?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1634973237829599233%7Ctwgr%5Eb49b9d28e6ea7383ef16ea3c8c6040656ff0c944%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fpublish.twitter.com%2F%3Fquery%3Dhttps3A2F2Ftwitter.com2Fwhoiskatrin2Fstatus2F1634973237829599233widget%3DTweet" target="_blank" rel="noopener noreferrer">@woiskatring</a> usó la API de ChatGPT para enviar un prompt escrito por el user, devolviendo una respuesta en SQL dentro de un component para copiar al portapapeles. Eso fue suficiente para obtener la atención merecida por la comunidad. <a href="https://twitter.com/whoiskatrin/status/1634973237829599233" target="_blank" rel="noopener noreferrer">Tweet link</a>)</p>
+<h2>Mi idea</h2>
+<blockquote>
+<p><em>¿Por qué no una web app para escribir un prompt y genera código JavaScript?</em></p>
+</blockquote>
+<p>Así que comencé a construir mi idea usando este tech stack:</p>
+<ul>
+<li><strong>Next.js</strong>: Framework web para construir la UI y como Next.js provee un directorio API para comunicarte con la API de ChatGPT</li>
+<li><strong>MUI</strong>: Para usar los UI components como sistema de diseño</li>
+<li><strong>Fromik &amp; Yup</strong>: Para manejar el estado del formulario del prompt y crear esquemas de validación</li>
+<li><strong>react-syntax-highlighter</strong>: Para mostrar la respuesta de ChatGPT</li>
+</ul>
+<p>Usando todas estas tecnologías construí una UI simple usando el MUI Card component, entonces creé el form donde manejé todos los inputs con Formik, los inputs de tipo text y select son los por defecto de MUI, y para crear el esquema de validación usé Yup para marcar como required aquellos inputs para no enviarlos vacíos.</p>
+<p>Con la UI finalizada, comencé a crear el endpoint en el directorio de la API para consumir la API de ChatGPT, tan solo usando un fetch como en el proyecto de <a href="https://twitter.com/whoiskatrin?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1634973237829599233%7Ctwgr%5Eb49b9d28e6ea7383ef16ea3c8c6040656ff0c944%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fpublish.twitter.com%2F%3Fquery%3Dhttps3A2F2Ftwitter.com2Fwhoiskatrin2Fstatus2F1634973237829599233widget%3DTweet" target="_blank" rel="noopener noreferrer">@whoiskatrin</a>. indicando qué modelo de OpenAI utilizar, en este caso <em>text-davinci-003</em>, puedes aprender más de los esos modelos <a href="https://platform.openai.com/docs/api-reference/models/list" target="_blank" rel="noopener noreferrer">aquí</a>. Obviamente en la petición envié el prompt del user dentro de un string indicando a ChatGPT que solo me de el código, sin comentarios o resultados adicionales.</p>
+<h2>Valor añadido</h2>
+<p>Sí, hay opciones como GitHub Copilot que resuelven ese problema, y eso es por qué agregué la opción de escoger qué tipo de sintaxis usar, arrow function o simple function.</p>
+<p>Añadiré más features, como una opción para TypeScript, y usar una TS Interface para que se use como referencia, ¡pero ahora estoy trabajando en más proyectos!</p>
+<h2>Inspirando personas</h2>
+<p>Lo genial de los side projects is que inspira personas como nosotros, podemos usar nuestras habilidades técnicas que llevan el pan a la mesa para transformar ideas en productos, y productos en comunidades, tal como <a href="https://twitter.com/serudda" target="_blank" rel="noopener noreferrer">@Serudda</a> habla en este <a href="https://www.youtube.com/watch?v=LXgPNdw8avI&t" target="_blank" rel="noopener noreferrer">video</a>.</p>
+]]></description>
+            <link>https://juancman.dev/es/projects/undefined</link>
+            <guid isPermaLink="false">https://juancman.dev/es/projects/undefined</guid>
+            <category><![CDATA[ChatGPT, Next.js, JavaScript, Vercel]]></category>
+            <dc:creator><![CDATA[Juan Manzanero]]></dc:creator>
+            <pubDate>Sat, 15 Apr 2023 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Workarise]]></title>
+            <description><![CDATA[<h1>Workarise</h1>
+<p><img src="/projects/workarise-banner.png" alt="Workarise Banner"><br><em>Workarise Banner</em></p>
+<p><PostData
+  date='14 de Abril del 2023'
+  author='Juan Manzanero'
+  website='https://human-to-js.juancman.dev'
+  github='https://github.com/juancmandev/human-to-js'
+/></p>
+<h2>Descripción General</h2>
+<p><a href="https://workarise.com" target="_blank" rel="noopener noreferrer">Workarise</a> es un Software como Servicio para administrar equipos mediante task cards asignadas a personas, establece una fecha de inicio y final, agregar archivos, etc.</p>
+<p>Puedes usar el Calendario para ver las fechas de entrega de las tareas y agendar eventos de Google Meet autorizando el uso de tu Google Calendar. Puedes editar y borrar eventos los cuales se sincronizan con tu Google Calendar y el de los invitados. El Gantt te provee con una línea del tiempo para ver la duración de las tareas.</p>
+<p>La web app está desarrollada con <a href="https://react.dev/" target="_blank" rel="noopener noreferrer">React.js</a>, usando <a href="https://vitejs.dev/" target="_blank" rel="noopener noreferrer">Vite.js</a> para correr el entorno de desarrollo. Para funcionalidades como modals y popovers usamos <a href="https://mui.com/" target="_blank" rel="noopener noreferrer">MUI</a>. Para manejar el estado de los componentes usamos useContext.</p>
+<p>Para crear eventos Google Meet y sincronizar el calendario hemos desarrollado una pequeña API con Node.js para usar la API de Google OAuth 2, ya que necesitamos pedir permiso para acceder al Google Calendar del user.</p>
+<p>Actualmente, Workarise está en su primera versión, usando <a href="https://firebase.google.com/" target="_blank" rel="noopener noreferrer">Firebase</a> para autenticar a los users, guardar datos y archivos. Firebase utiliza <a href="https://firebase.google.com/docs/firestore" target="_blank" rel="noopener noreferrer">Firestore</a>, una Base de Datos NoSQL, sin embargo estamos desarrollando una API con <a href="https://www.djangoproject.com/" target="_blank" rel="noopener noreferrer">Django</a> corriendo en <a href="https://cloud.google.com/run" target="_blank" rel="noopener noreferrer">Cloud Run</a>) conectado a <a href="https://cloud.google.com/sql" target="_blank" rel="noopener noreferrer">Cloud SQL</a> a una instancia MySQL, ya que usaremos una Base de Datos SQL en el futuro. Actualmente la web app y la landing están desplegadas en Firebase Hosting, pero moveremos la landing a Vercel, y será actualizada a Next.js in el futuro para optimizar el SEO y publicar blog posts.</p>
+<h2>Mi impacto en Workarise</h2>
+<p>Actualmente, estamos desarrollando un MVP, y todos estamos a tiempo parcial en este proyecto. Me uní en Diciembre, pero antes no había un producto que los users pudieran usar, y como era el único Ingeniero Frontend en ese momento tomé toda la responsabilidad de entregar algo que pudiera considerarse un MVP.</p>
+<p>Me tomó alrededor de 3 meses para conseguir eso, actualicé algunas de las dependencias del proyecto para mejorar el flujo de desarrollo, y sugerí usar Firebase como Backend y Hosting.</p>
+<p>Gracias a todo esto obtuvimos nuestros primeros users y feedback, así que ahora estamos trabajando con ese feedback para mantener mejorando nuestra app, ¡a nuestros users les gusta el diseño y la simplicidad!</p>
+<p>Ahora mismo hay 3 engineers en el equipo, 2 en el front (incluyéndome) y 1 en el back, pero estoy ayudando a nuestra Backend Engineer para desplegar en GCP a producción la API y Base de Datos, y estoy guiando al nuevo Frontend Engineer para entregar nuevos features, él ha desarrollado el responsive design y algunos features que complementan las task cards.</p>
+<p>Estoy feliz de poner a prueba mis habilidades en este proyecto, no es fácil tomar más responsabilidad con menos de 2 años de experiencia laboral, y me ha ayudado a crecer mucho en estos meses.</p>
+<p>Incluso si el mercado no considera mis años como senior, creo que eso no importa tanto, lo único que importa es que puedas entender por qué usas código, para crear soluciones y alcanzar a las personas a través de sus computadoras.</p>
+]]></description>
+            <link>https://juancman.dev/es/projects/undefined</link>
+            <guid isPermaLink="false">https://juancman.dev/es/projects/undefined</guid>
+            <category><![CDATA[React.js, Vite.js, MUI, Firebase, GCP, Node.js]]></category>
+            <dc:creator><![CDATA[Juan Manzanero]]></dc:creator>
+            <pubDate>Fri, 14 Apr 2023 00:00:00 GMT</pubDate>
         </item>
     </channel>
 </rss>

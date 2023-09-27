@@ -18,6 +18,21 @@ const blogs = fs
   })
   .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 
+const projects = fs
+  .readdirSync(path.resolve(__dirname, '../content/projects/en/'))
+  .filter((file) => path.extname(file) === '.mdx')
+  .map((file) => {
+    const projectContent = fs.readFileSync(
+      `src/content/projects/en/${file}`,
+      'utf8'
+    );
+    const { data, content }: { data: any; content: string } = matter(
+      projectContent
+    );
+    return { ...data, body: content };
+  })
+  .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+
 const renderer = new marked.Renderer();
 
 renderer.link = (href, _, text) =>
@@ -51,6 +66,20 @@ const main = () => {
       url: link,
       guid: link,
       categories: [blog.tags],
+    });
+  });
+
+  projects.forEach((project) => {
+    const link = `${url}/en/projects/${project.slug}`;
+
+    feed.item({
+      title: project.title,
+      description: renderContent(project.body),
+      date: new Date(project?.date),
+      author: 'Juan Manzanero',
+      url: link,
+      guid: link,
+      categories: [project.tags],
     });
   });
 
