@@ -1,12 +1,9 @@
 import fs from 'fs';
 import RSS from 'rss';
 import path from 'path';
-import { fileURLToPath } from 'url';
 import { marked } from 'marked';
 import matter from 'gray-matter';
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
 const url = 'https://juancman.dev';
 
 const blogs = fs
