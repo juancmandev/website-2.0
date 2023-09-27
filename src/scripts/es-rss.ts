@@ -7,7 +7,7 @@ import matter from 'gray-matter';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
-const url = 'https://juancman.dev/es';
+const url = 'https://juancman.dev';
 
 const blogs = fs
   .readdirSync(path.resolve(__dirname, '../content/blog/es/'))
@@ -37,14 +37,14 @@ const renderContent = (md: string) => marked.parse(md);
 const main = () => {
   const feed = new RSS({
     title: 'juancmandev',
-    site_url: url,
+    site_url: `${url}/es`,
     feed_url: `${url}/es-feed.xml`,
-    language: 'en',
+    language: 'es',
     description: 'Blog de Juan Manzanero',
   });
 
   blogs.forEach((blog) => {
-    const link = `${url}/${blog.slug}`;
+    const link = `${url}/es/blog/${blog.slug}`;
 
     feed.item({
       title: blog.title,
