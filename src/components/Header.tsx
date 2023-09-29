@@ -9,6 +9,7 @@ import {
   SheetTrigger,
   SheetClose,
 } from '@/components/ui/sheet';
+import { ScrollArea } from '@/components/ui/scroll-area';
 
 const dictionary: any = {
   ['home']: {
@@ -144,71 +145,73 @@ export default function Header({ lang }: any) {
         side='right'
         className='w-max text-center px-0 pt-20 border-0 shadow-boxShadow shadow-md bg-dark1'>
         <SheetHeader>
-          <nav>
-            <section>
-              <Link
-                className='text-xl cursor-default w-full px-10 py-4 font-bold text-center hover:bg-[rgba(0,_0,_0,_0.2)] focus:bg-[rgba(0,_0,_0,_0.2)] text-primary focus:text-primaryLight hover:text-primaryLight'
-                href={`/${lang}`}>
-                juancmandev
-              </Link>
-            </section>
-            <section className='flex flex-col mt-5'>
-              <ul className='flex flex-col gap-2'>
-                {navItems.map((navItem) => (
-                  <li key={navItem.label} className='w-full h-max flex'>
+          <ScrollArea>
+            <nav className='h-[calc(100vh_-_80px)] pb-8'>
+              <section>
+                <Link
+                  href={`/${lang}`}
+                  className='text-xl cursor-default w-full px-10 py-3 font-bold text-center hover:bg-[rgba(0,_0,_0,_0.2)] focus:bg-[rgba(0,_0,_0,_0.2)] text-primary focus:text-primaryLight hover:text-primaryLight'>
+                  juancmandev
+                </Link>
+              </section>
+              <section className='flex flex-col mt-5'>
+                <ul className='flex flex-col gap-2'>
+                  {navItems.map((navItem) => (
+                    <li key={navItem.label} className='w-full h-max flex'>
+                      <SheetClose asChild>
+                        <Link
+                          href={`/${lang}${navItem.to}`}
+                          className='cursor-default w-full px-10 py-2 font-bold text-center text-lg hover:bg-[rgba(0,_0,_0,_0.2)] focus:bg-[rgba(0,_0,_0,_0.2)]'>
+                          {dictionary[navItem.label][lang]}
+                        </Link>
+                      </SheetClose>
+                    </li>
+                  ))}
+                </ul>
+              </section>
+              <section className='mt-5'>
+                <ul className='flex flex-col gap-2'>
+                  <li className='flex h-max'>
                     <SheetClose asChild>
                       <Link
-                        href={`/${lang}${navItem.to}`}
-                        className='cursor-default w-full px-10 py-3 font-bold text-center text-lg hover:bg-[rgba(0,_0,_0,_0.2)] focus:bg-[rgba(0,_0,_0,_0.2)]'>
-                        {dictionary[navItem.label][lang]}
+                        title={dictionary['change_language'][lang]}
+                        className='text-xl cursor-default w-full py-2 text-center hover:bg-[rgba(0,_0,_0,_0.2)] focus:bg-[rgba(0,_0,_0,_0.2)]'
+                        href={`/${changeLang}`}>
+                        {dictionary['change_language_flag'][lang]}
                       </Link>
                     </SheetClose>
                   </li>
-                ))}
-              </ul>
-            </section>
-            <section className='mt-5'>
-              <ul className='flex flex-col gap-2'>
-                <li className='flex h-max'>
-                  <SheetClose asChild>
-                    <Link
-                      title={dictionary['change_language'][lang]}
-                      className='text-xl cursor-default w-full py-3 text-center hover:bg-[rgba(0,_0,_0,_0.2)] focus:bg-[rgba(0,_0,_0,_0.2)]'
-                      href={`/${changeLang}`}>
-                      {dictionary['change_language_flag'][lang]}
-                    </Link>
-                  </SheetClose>
-                </li>
-                {socialItems.map((socialItem) => (
-                  <li title={socialItem.label} key={socialItem.to}>
-                    <SheetClose asChild>
-                      <a
-                        href={socialItem.to}
-                        target='_blank'
-                        className='cursor-default w-full flex justify-center py-3 text-center hover:bg-[rgba(0,_0,_0,_0.2)] focus:bg-[rgba(0,_0,_0,_0.2)]'>
-                        <div className='flex flex-col items-center gap-1'>
-                          {socialItem.icon}
-                          <span className='text-xs'>{socialItem.label}</span>
-                        </div>
-                      </a>
-                    </SheetClose>
+                  {socialItems.map((socialItem) => (
+                    <li title={socialItem.label} key={socialItem.to}>
+                      <SheetClose asChild>
+                        <a
+                          href={socialItem.to}
+                          target='_blank'
+                          className='cursor-default w-full flex justify-center py-3 text-center hover:bg-[rgba(0,_0,_0,_0.2)] focus:bg-[rgba(0,_0,_0,_0.2)]'>
+                          <div className='flex flex-col items-center gap-1'>
+                            {socialItem.icon}
+                            <span className='text-xs'>{socialItem.label}</span>
+                          </div>
+                        </a>
+                      </SheetClose>
+                    </li>
+                  ))}
+                  <li className='flex'>
+                    <a
+                      title='RSS Feed'
+                      href={`https://juancman.dev/${lang}-feed.xml`}
+                      target='_blank'
+                      className='cursor-default w-full flex justify-center py-3 text-center hover:bg-[rgba(0,_0,_0,_0.2)] focus:bg-[rgba(0,_0,_0,_0.2)]'>
+                      <div className='flex flex-col items-center gap-1'>
+                        <RSSIcon size='1.5rem' />
+                        <span className='text-xs'>RSS</span>
+                      </div>
+                    </a>
                   </li>
-                ))}
-                <li className='flex'>
-                  <a
-                    title='RSS Feed'
-                    href={`https://juancman.dev/${lang}-feed.xml`}
-                    target='_blank'
-                    className='cursor-default w-full flex justify-center py-3 text-center hover:bg-[rgba(0,_0,_0,_0.2)] focus:bg-[rgba(0,_0,_0,_0.2)]'>
-                    <div className='flex flex-col items-center gap-1'>
-                      <RSSIcon size='1.5rem' />
-                      <span className='text-xs'>RSS</span>
-                    </div>
-                  </a>
-                </li>
-              </ul>
-            </section>
-          </nav>
+                </ul>
+              </section>
+            </nav>
+          </ScrollArea>
         </SheetHeader>
       </SheetContent>
     </Sheet>
