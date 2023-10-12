@@ -13,6 +13,7 @@ export const metadata: Metadata = {
 export default async function Page({ params }: { params: { lang: Locale } }) {
   const { lang } = params;
   const dictionary = await getDictionary(lang);
+  const randomNumber = Math.floor(Math.random() * 1000);
 
   const blogs = await getBlogsFromParams(lang);
   sortByKeyDesc(blogs, 'date');
@@ -29,6 +30,7 @@ export default async function Page({ params }: { params: { lang: Locale } }) {
         <h1 className='primary-gradient text-4xl font-bold'>
           Frontend Developer
         </h1>
+        <span>{randomNumber}</span>
         <p className='font-thin text-lg'>{dictionary.home.my_web_1}</p>
         <p className='font-thin text-lg'>{dictionary.home.my_web_2}</p>
       </section>
