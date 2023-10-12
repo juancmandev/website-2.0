@@ -5,6 +5,8 @@ import {
   allEsProjects,
   allEnResources,
   allEsResources,
+  allEnMilpas,
+  allEsMilpas
 } from 'contentlayer/generated';
 import { notFound } from 'next/navigation';
 import { Locale } from '@/dictionaries/i18n-config';
@@ -53,4 +55,12 @@ export async function getResource(lang: Locale) {
   if (!resource) notFound();
 
   return resource[0];
+}
+
+export async function getMilpa(lang: Locale) {
+  const milpa = lang === 'en' ? allEnMilpas : allEsMilpas;
+
+  if (!milpa) notFound();
+
+  return milpa[0];
 }
