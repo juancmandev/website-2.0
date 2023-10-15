@@ -13,7 +13,6 @@ export const metadata: Metadata = {
 export default async function Page({ params }: { params: { lang: Locale } }) {
   const { lang } = params;
   const dictionary = await getDictionary(lang);
-
   const blogs = await getBlogsFromParams(lang);
   sortByKeyDesc(blogs, 'date');
   const last3Blogs = blogs.slice(0, 3);

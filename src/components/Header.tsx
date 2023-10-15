@@ -37,6 +37,10 @@ const dictionary: any = {
     ['en']: 'Open Side Menu',
     ['es']: 'Abrir Menú Lateral',
   },
+  ['milpa']: {
+    ['en']: 'Milpa',
+    ['es']: 'Milpa',
+  },
 };
 
 const navItems = [
@@ -51,6 +55,10 @@ const navItems = [
   {
     label: 'resources',
     to: '/resources',
+  },
+  {
+    label: 'milpa',
+    to: '/milpa',
   },
 ];
 
@@ -81,7 +89,7 @@ export default function Header({ lang }: any) {
               juancmandev
             </Link>
           </section>
-          <section className='hidden sm:flex items-center'>
+          <section className='hidden lg:flex items-center'>
             <ul className='flex items-center gap-8'>
               {navItems.map((navItem) => (
                 <li key={navItem.label} className='w-max h-max'>
@@ -94,7 +102,7 @@ export default function Header({ lang }: any) {
               ))}
             </ul>
           </section>
-          <section className='hidden sm:block'>
+          <section className='hidden lg:block'>
             <ul className='flex items-center gap-4'>
               <li className='flex'>
                 <Link
@@ -134,7 +142,7 @@ export default function Header({ lang }: any) {
           </section>
         </nav>
 
-        <section className='flex sm:hidden h-max items-center'>
+        <section className='flex lg:hidden h-max items-center'>
           <SheetTrigger title={dictionary['open_side_menu'][lang]}>
             <HamburgerIcon size={28} />
           </SheetTrigger>
