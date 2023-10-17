@@ -1,14 +1,23 @@
 import ItemCard from '@/components/ItemCard';
-import { getBlogsFromParams, getProjectsFromParams } from '@/utils/getContent';
+import {
+  getBlogsFromParams,
+  getMainPage,
+  getProjectsFromParams,
+} from '@/utils/getContent';
 import { getDictionary } from '@/utils/getDictionary';
 import { Locale } from '@/dictionaries/i18n-config';
 import { sortByKeyDesc } from '@/utils/sorts';
 import type { Metadata } from 'next';
+import { PageProps } from '@/interfaces/ContentPage.model';
 
-export const metadata: Metadata = {
-  title: 'juancmandev',
-  description: 'Learn about Frontend and Cloud technologies!',
-};
+export async function generateMetadata(props: PageProps): Promise<Metadata> {
+  const page = await getMainPage(props.params.lang);
+
+  return {
+    title: page.title,
+    description: page.description,
+  };
+}
 
 export default async function Page({ params }: { params: { lang: Locale } }) {
   const { lang } = params;

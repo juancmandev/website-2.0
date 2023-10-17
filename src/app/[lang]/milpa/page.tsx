@@ -3,8 +3,18 @@ import { getMilpa } from '@/utils/getContent';
 import { Mdx } from '@/components/MdxComponent';
 import { supabase } from '@/supabase/client';
 import MilpaThought from '@/components/MilpaThought';
+import { Metadata } from 'next';
 
 export const revalidate = 0;
+
+export async function generateMetadata(props: PageProps): Promise<Metadata> {
+  const milpa = await getMilpa(props.params.lang);
+
+  return {
+    title: milpa.title,
+    description: milpa.description,
+  };
+}
 
 export default async function MilpaPage({ params }: PageProps) {
   const milpa = await getMilpa(params.lang);

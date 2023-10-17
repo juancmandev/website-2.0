@@ -158,7 +158,7 @@ export default function Header({ lang }: any) {
               <section>
                 <Link
                   href={`/${lang}`}
-                  className='text-xl cursor-default w-full px-10 py-3 font-bold text-center hover:bg-[rgba(0,_0,_0,_0.2)] focus:bg-[rgba(0,_0,_0,_0.2)] text-primary focus:text-primaryLight hover:text-primaryLight'>
+                  className='flex text-xl cursor-default w-full px-10 py-3 font-bold text-center hover:bg-[rgba(0,_0,_0,_0.2)] focus:bg-[rgba(0,_0,_0,_0.2)] text-primary focus:text-primaryLight hover:text-primaryLight'>
                   juancmandev
                 </Link>
               </section>
