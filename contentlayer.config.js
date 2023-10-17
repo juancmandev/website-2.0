@@ -243,6 +243,20 @@ export const EsMilpa = defineDocumentType(() => ({
   computedFields,
 }));
 
+export const EnMilpa = defineDocumentType(() => ({
+  name: 'EnMilpa',
+  filePathPattern: 'milpa/en/content.mdx',
+  contentType: 'mdx',
+  computedFields,
+}));
+
+export const EsMilpa = defineDocumentType(() => ({
+  name: 'EsMilpa',
+  filePathPattern: 'milpa/es/content.mdx',
+  contentType: 'mdx',
+  computedFields,
+}));
+
 export default makeSource({
   contentDirPath: './src/content',
   documentTypes: [
