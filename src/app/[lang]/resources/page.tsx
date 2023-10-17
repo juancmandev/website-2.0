@@ -1,9 +1,9 @@
-import { PageProps } from '@/interfaces/ContentPage.model';
+import { LangProp } from '@/interfaces/ContentPage.model';
 import { getResource } from '@/utils/getContent';
 import { Mdx } from '@/components/MdxComponent';
 import { Metadata } from 'next';
 
-export async function generateMetadata(props: PageProps): Promise<Metadata> {
+export async function generateMetadata(props: LangProp): Promise<Metadata> {
   const resource = await getResource(props.params.lang);
 
   return {
@@ -12,7 +12,7 @@ export async function generateMetadata(props: PageProps): Promise<Metadata> {
   };
 }
 
-export default async function Page({ params }: PageProps) {
+export default async function Page({ params }: LangProp) {
   const resource = await getResource(params.lang);
 
   return <Mdx code={resource.body.code} />;

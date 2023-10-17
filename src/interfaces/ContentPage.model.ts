@@ -6,3 +6,9 @@ export interface PageProps {
     lang: Locale;
   };
 }
+
+export interface LangProp {
+  params: {
+    lang: Locale;
+  }
+}

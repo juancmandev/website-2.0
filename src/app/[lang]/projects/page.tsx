@@ -1,7 +1,17 @@
 import BlogCard from '@/components/ItemCard';
-import { PageProps } from '@/interfaces/ContentPage.model';
-import { getProjectsFromParams } from '@/utils/getContent';
+import { LangProp, PageProps } from '@/interfaces/ContentPage.model';
+import { getProjectsData, getProjectsFromParams } from '@/utils/getContent';
 import { sortByKeyDesc } from '@/utils/sorts';
+import { Metadata } from 'next';
+
+export async function generateMetadata(props: LangProp): Promise<Metadata> {
+  const projectsData = await getProjectsData(props.params.lang);
+
+  return {
+    title: projectsData.title,
+    description: projectsData.description,
+  };
+}
 
 export default async function Page({ params }: PageProps) {
   const projects = await getProjectsFromParams(params.lang);

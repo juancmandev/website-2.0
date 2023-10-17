@@ -1,8 +1,18 @@
 import BlogCard from '@/components/ItemCard';
-import { PageProps } from '@/interfaces/ContentPage.model';
-import { getBlogsFromParams } from '@/utils/getContent';
+import { LangProp, PageProps } from '@/interfaces/ContentPage.model';
+import { getBlogData, getBlogsFromParams } from '@/utils/getContent';
 import { sortByKeyDesc } from '@/utils/sorts';
 import { getDictionary } from '@/utils/getDictionary';
+import { Metadata } from 'next';
+
+export async function generateMetadata(props: LangProp): Promise<Metadata> {
+  const blogData = await getBlogData(props.params.lang);
+
+  return {
+    title: blogData.title,
+    description: blogData.description,
+  };
+}
 
 export default async function Page({ params }: PageProps) {
   const posts = await getBlogsFromParams(params.lang);

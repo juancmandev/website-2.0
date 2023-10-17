@@ -1,4 +1,4 @@
-import { PageProps } from '@/interfaces/ContentPage.model';
+import { LangProp } from '@/interfaces/ContentPage.model';
 import { getMilpa } from '@/utils/getContent';
 import { Mdx } from '@/components/MdxComponent';
 import { supabase } from '@/supabase/client';
@@ -7,7 +7,7 @@ import { Metadata } from 'next';
 
 export const revalidate = 0;
 
-export async function generateMetadata(props: PageProps): Promise<Metadata> {
+export async function generateMetadata(props: LangProp): Promise<Metadata> {
   const milpa = await getMilpa(props.params.lang);
 
   return {
@@ -16,7 +16,7 @@ export async function generateMetadata(props: PageProps): Promise<Metadata> {
   };
 }
 
-export default async function MilpaPage({ params }: PageProps) {
+export default async function MilpaPage({ params }: LangProp) {
   const milpa = await getMilpa(params.lang);
   const { data } = await supabase
     .from('milpa')
