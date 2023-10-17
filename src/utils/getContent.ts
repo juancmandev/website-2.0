@@ -6,10 +6,20 @@ import {
   allEnResources,
   allEsResources,
   allEnMilpas,
-  allEsMilpas
+  allEsMilpas,
+  allEnMains,
+  allEsMains
 } from 'contentlayer/generated';
 import { notFound } from 'next/navigation';
 import { Locale } from '@/dictionaries/i18n-config';
+
+export async function getMainPage(lang: Locale) {
+  const main = lang === 'en' ? allEnMains : allEsMains;
+
+  if (!main) notFound();
+
+  return main[0]
+}
 
 export async function getBlogFromParams(slug: string, lang: Locale) {
   const blog =
