@@ -179,6 +179,16 @@ export const EnResources = defineDocumentType(() => ({
   name: 'EnResources',
   filePathPattern: 'resources/en/content.mdx',
   contentType: 'mdx',
+  fields: {
+    title: {
+      type: 'string',
+      required: true,
+    },
+    description: {
+      type: 'string',
+      required: true,
+    },
+  },
   computedFields,
 }));
 
@@ -186,6 +196,16 @@ export const EsResources = defineDocumentType(() => ({
   name: 'EsResources',
   filePathPattern: 'resources/es/content.mdx',
   contentType: 'mdx',
+  fields: {
+    title: {
+      type: 'string',
+      required: true,
+    },
+    description: {
+      type: 'string',
+      required: true,
+    },
+  },
   computedFields,
 }));
 
@@ -193,6 +213,16 @@ export const EnMilpa = defineDocumentType(() => ({
   name: 'EnMilpa',
   filePathPattern: 'milpa/en/content.mdx',
   contentType: 'mdx',
+  fields: {
+    title: {
+      type: 'string',
+      required: true,
+    },
+    description: {
+      type: 'string',
+      required: true,
+    },
+  },
   computedFields,
 }));
 
@@ -200,6 +230,16 @@ export const EsMilpa = defineDocumentType(() => ({
   name: 'EsMilpa',
   filePathPattern: 'milpa/es/content.mdx',
   contentType: 'mdx',
+  fields: {
+    title: {
+      type: 'string',
+      required: true,
+    },
+    description: {
+      type: 'string',
+      required: true,
+    },
+  },
   computedFields,
 }));
 
