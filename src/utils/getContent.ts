@@ -8,7 +8,11 @@ import {
   allEnMilpas,
   allEsMilpas,
   allEnMains,
-  allEsMains
+  allEsMains,
+  allEnBlogMains,
+  allEsBlogMains,
+  allEnProjectsMains,
+  allEsProjectsMains
 } from 'contentlayer/generated';
 import { notFound } from 'next/navigation';
 import { Locale } from '@/dictionaries/i18n-config';
@@ -19,6 +23,22 @@ export async function getMainPage(lang: Locale) {
   if (!main) notFound();
 
   return main[0]
+}
+
+export async function getBlogData(lang: Locale) {
+  const blogPage = lang === 'en' ? allEnBlogMains : allEsBlogMains;
+
+  if (!blogPage) notFound();
+
+  return blogPage[0];
+}
+
+export async function getProjectsData(lang: Locale) {
+  const projectPage = lang === 'en' ? allEnProjectsMains : allEsProjectsMains;
+
+  if (!projectPage) notFound();
+
+  return projectPage[0];
 }
 
 export async function getBlogFromParams(slug: string, lang: Locale) {

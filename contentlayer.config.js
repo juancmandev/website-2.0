@@ -29,7 +29,7 @@ const computedFields = {
 
 export const EnMain = defineDocumentType(() => ({
   name: 'EnMain',
-  filePathPattern: 'main/en/content.mdx',
+  filePathPattern: 'main/en/home.mdx',
   contentType: 'mdx',
   fields: {
     title: {
@@ -46,7 +46,41 @@ export const EnMain = defineDocumentType(() => ({
 
 export const EsMain = defineDocumentType(() => ({
   name: 'EsMain',
-  filePathPattern: 'main/es/content.mdx',
+  filePathPattern: 'main/es/home.mdx',
+  contentType: 'mdx',
+  fields: {
+    title: {
+      type: 'string',
+      required: true,
+    },
+    description: {
+      type: 'string',
+      required: true,
+    }
+  },
+  computedFields
+}));
+
+export const EnBlogMain = defineDocumentType(() => ({
+  name: 'EnBlogMain',
+  filePathPattern: 'main/en/blog.mdx',
+  contentType: 'mdx',
+  fields: {
+    title: {
+      type: 'string',
+      required: true,
+    },
+    description: {
+      type: 'string',
+      required: true,
+    }
+  },
+  computedFields
+}));
+
+export const EsBlogMain = defineDocumentType(() => ({
+  name: 'EsBlogMain',
+  filePathPattern: 'main/es/blog.mdx',
   contentType: 'mdx',
   fields: {
     title: {
@@ -133,6 +167,40 @@ export const EsBlog = defineDocumentType(() => ({
     },
   },
   computedFields,
+}));
+
+export const EnProjectsMain = defineDocumentType(() => ({
+  name: 'EnProjectsMain',
+  filePathPattern: 'main/en/projects.mdx',
+  contentType: 'mdx',
+  fields: {
+    title: {
+      type: 'string',
+      required: true,
+    },
+    description: {
+      type: 'string',
+      required: true,
+    }
+  },
+  computedFields
+}));
+
+export const EsProjectsMain = defineDocumentType(() => ({
+  name: 'EsProjectsMain',
+  filePathPattern: 'main/es/projects.mdx',
+  contentType: 'mdx',
+  fields: {
+    title: {
+      type: 'string',
+      required: true,
+    },
+    description: {
+      type: 'string',
+      required: true,
+    }
+  },
+  computedFields
 }));
 
 export const EnProject = defineDocumentType(() => ({
@@ -282,8 +350,12 @@ export default makeSource({
   documentTypes: [
     EnMain,
     EsMain,
+    EnBlogMain,
+    EsBlogMain,
     EnBlog,
     EsBlog,
+    EnProjectsMain,
+    EsProjectsMain,
     EnProject,
     EsProject,
     EnResources,
