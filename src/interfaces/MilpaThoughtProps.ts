@@ -1,6 +1,6 @@
 import { Locale } from '@/dictionaries/i18n-config';
 
-export interface MilpaThoughtProps {
+export default interface MilpaThoughtProps {
   id: number;
   created_at: Date;
   lang: string;

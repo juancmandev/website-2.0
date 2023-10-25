@@ -1,4 +1,4 @@
-export default interface ItemCardMetadataProps {
+export default interface ItemCardProps {
   title: string;
   date: string;
   type?: 'blog' | 'projects';

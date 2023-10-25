@@ -1,36 +1,34 @@
-import { Mdx } from '@/components/MdxComponent';
-import { PageProps } from '@/interfaces/ContentPage.model';
+import { Mdx } from '@/components';
+import { PageProps, LangProps, StaticSlugLangProps } from '@/interfaces';
 import { Metadata } from 'next';
 import {
   getProjectFromParams,
   getProjectsFromParams,
 } from '@/utils/getContent';
-import { Locale } from '@/dictionaries/i18n-config';
 
-export async function generateStaticParams({
-  params,
-}: {
-  params: { lang: Locale };
-}): Promise<any> {
-  const { lang } = params;
-  const projects = await getProjectsFromParams(lang);
+export async function generateStaticParams(
+  props: LangProps
+): Promise<StaticSlugLangProps[]> {
+  const projects = await getProjectsFromParams(props.params.lang);
 
   return projects.map((project) => ({
     slug: project.slug,
-    lang,
+    lang: props.params.lang,
   }));
 }
 
 export async function generateMetadata(props: PageProps): Promise<Metadata> {
-  const { params } = props;
-  const project = await getProjectFromParams(params.slug, params.lang);
+  const project = await getProjectFromParams(
+    props.params.slug,
+    props.params.lang
+  );
 
   return {
     title: project.title,
     description: project.subtitle,
     openGraph: {
       type: 'article',
-      locale: params.lang,
+      locale: props.params.lang,
       title: project.title,
       description: project.subtitle,
       publishedTime: new Date(project.date).toISOString(),
@@ -59,8 +57,11 @@ export async function generateMetadata(props: PageProps): Promise<Metadata> {
   };
 }
 
-export default async function Page({ params }: PageProps) {
-  const project = await getProjectFromParams(params.slug, params.lang);
+export default async function Page(props: PageProps) {
+  const project = await getProjectFromParams(
+    props.params.slug,
+    props.params.lang
+  );
 
   return <Mdx code={project.body.code} />;
 }

@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import { useMDXComponent } from 'next-contentlayer/hooks';
 import cn from '@/utils/cn';
-import PostData from './PostData';
+import { PostData } from '@/components';
 
 const components = {
   h1: ({ className, ...props }: React.HTMLAttributes<HTMLHeadingElement>) => (
@@ -55,7 +55,7 @@ const components = {
       {...props}
       width={300}
       height={250}
-      className={`w-full h-auto ${cn('rounded-[4px]', className)}`}
+      className={`w-full h-auto ${cn('rounded-sm', className)}`}
       alt={alt}
     />
   ),
@@ -88,7 +88,7 @@ interface MdxProps {
   code: string;
 }
 
-export function Mdx({ code }: MdxProps) {
+export default function Mdx({ code }: MdxProps) {
   const Component = useMDXComponent(code);
 
   return (

@@ -1,4 +1,4 @@
-import { MilpaThoughtProps } from '@/interfaces/Milpa.model';
+import { MilpaThoughtProps } from '@/interfaces';
 import { marked } from 'marked';
 
 export default function MilpaThought(props: MilpaThoughtProps) {
@@ -12,7 +12,7 @@ export default function MilpaThought(props: MilpaThoughtProps) {
   const parseContent = renderContent(props.content);
 
   return (
-    <article className='prose prose-invert border px-4 py-2 rounded-[4px] bg-dark2'>
+    <article className='prose prose-invert border px-4 py-2 rounded-sm bg-dark2'>
       <header className='mb-2'>
         <span className='font-light text-sm'>
           {new Date(props.created_at).toLocaleDateString()}{' '}
