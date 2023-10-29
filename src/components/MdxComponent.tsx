@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import { useMDXComponent } from 'next-contentlayer/hooks';
 import cn from '@/utils/cn';
-import { PostData } from '@/components';
+import { PostData, LinkToSection, CodeBlock } from '@/components';
 
 const components = {
   h1: ({ className, ...props }: React.HTMLAttributes<HTMLHeadingElement>) => (
@@ -80,6 +80,12 @@ const components = {
   ),
   PostData: ({ date, author }: { date: string; author: string }) => (
     <PostData date={date} author={author} />
+  ),
+  LinkToSection: ({ href, label }: { href: string; label: string }) => (
+    <LinkToSection href={href} label={label} />
+  ),
+  CodeBlock: ({ code, language }: { code: string; language: string }) => (
+    <CodeBlock code={code} language={language} />
   ),
   Image,
 };

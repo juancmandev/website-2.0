@@ -5,5 +5,17 @@ import { default as ItemCard } from './ItemCard';
 import { default as Mdx } from './MdxComponent';
 import { default as MilpaThought } from './MilpaThought';
 import { default as PostData } from './PostData';
+import { default as LinkToSection } from './LinkToSection';
+import { default as CodeBlock } from './CodeBlock';
 
-export { BackToTop, Footer, Header, ItemCard, Mdx, MilpaThought, PostData };
+export {
+  BackToTop,
+  Footer,
+  Header,
+  ItemCard,
+  Mdx,
+  MilpaThought,
+  PostData,
+  LinkToSection,
+  CodeBlock,
+};
