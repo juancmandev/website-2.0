@@ -2,6 +2,7 @@ import Image from 'next/image';
 import { useMDXComponent } from 'next-contentlayer/hooks';
 import cn from '@/utils/cn';
 import { PostData, LinkToSection, CodeBlock } from '@/components';
+import { ICodeBlock } from '@/interfaces';
 
 const components = {
   h1: ({ className, ...props }: React.HTMLAttributes<HTMLHeadingElement>) => (
@@ -84,9 +85,7 @@ const components = {
   LinkToSection: ({ href, label }: { href: string; label: string }) => (
     <LinkToSection href={href} label={label} />
   ),
-  CodeBlock: ({ code, language }: { code: string; language: string }) => (
-    <CodeBlock code={code} language={language} />
-  ),
+  CodeBlock: (props: ICodeBlock) => <CodeBlock {...props} />,
   Image,
 };
 
