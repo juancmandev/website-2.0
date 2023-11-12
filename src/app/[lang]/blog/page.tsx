@@ -30,7 +30,7 @@ export default async function Page(props: PageProps) {
           <h2 className='text-2xl font-bold mb-4'>Tech</h2>
           <ul className='flex flex-wrap gap-6'>
             {posts.map((post) => {
-              if (post.tags.includes('Tech')) {
+              if (post.tags?.includes('Tech')) {
                 return (
                   <li key={post.slug}>
                     <ItemCard {...post} type='blog' lang={props.params.lang} />
@@ -47,7 +47,7 @@ export default async function Page(props: PageProps) {
           </h2>
           <ul className='flex flex-wrap gap-6'>
             {posts.map((post) => {
-              if (post.tags.includes('Thoughts')) {
+              if (post.tags?.includes('Thoughts')) {
                 return (
                   <li key={post.slug}>
                     <ItemCard {...post} type='blog' lang={props.params.lang} />

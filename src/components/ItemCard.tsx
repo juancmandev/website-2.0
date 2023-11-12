@@ -1,10 +1,10 @@
 import Image from 'next/image';
-import { ItemCardProps } from '@/interfaces';
+import { IItemCard } from '@/interfaces';
 import Link from 'next/link';
 import months from '@/utils/months';
 import { DateIcon } from '@/assets/Icons';
 
-export default function ItemCard(props: ItemCardProps) {
+export default function ItemCard(props: IItemCard) {
   return (
     <Link
       title={props.title}
@@ -15,12 +15,12 @@ export default function ItemCard(props: ItemCardProps) {
         <header className='w-[280px] overflow-hidden rounded-t-[4px]'>
           <Image
             priority
-            src={props.featuredImage}
+            src={props.image || ''}
             width='0'
             height='0'
             sizes='100vw'
             className='w-full h-auto max-h-[157.49px] -z-10 group-focus:scale-110 group-hover:scale-110 transition-all duration-300'
-            alt={props.featuredImageCaption}
+            alt={props.imageCaption || 'Image caption'}
           />
         </header>
         <main className='p-3 flex flex-col gap-3'>
@@ -32,21 +32,21 @@ export default function ItemCard(props: ItemCardProps) {
               <DateIcon size='0.875rem' />
               {props.lang === 'en' ? (
                 <span className='mt-[2px]'>
-                  {months(props.lang, new Date(props.date).getMonth())}{' '}
-                  {new Date(props.date).getDate()},{' '}
-                  {new Date(props.date).getFullYear()}
+                  {months(props.lang, new Date(props.date || '').getMonth())}{' '}
+                  {new Date(props.date || '').getDate()},{' '}
+                  {new Date(props.date || '').getFullYear()}
                 </span>
               ) : (
                 <span className='mt-[2px]'>
-                  {new Date(props.date).getDate()} de{' '}
-                  {months(props.lang, new Date(props.date).getMonth())} del{' '}
-                  {new Date(props.date).getFullYear()}
+                  {new Date(props.date || '').getDate()} de{' '}
+                  {months(props.lang, new Date(props.date || '').getMonth())}{' '}
+                  del {new Date(props.date || '').getFullYear()}
                 </span>
               )}
             </h4>
           </section>
           <section>
-            <p className='font-thin'>{props.subtitle}</p>
+            <p className='font-thin'>{props.description}</p>
           </section>
         </main>
       </article>

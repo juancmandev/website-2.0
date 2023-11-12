@@ -19,33 +19,33 @@ export async function generateMetadata(props: PageProps): Promise<Metadata> {
 
   return {
     title: blog.title,
-    description: blog.subtitle,
+    description: blog.description,
     openGraph: {
       type: 'article',
       locale: props.params.lang,
       title: blog.title,
-      description: blog.subtitle,
-      publishedTime: new Date(blog.date).toISOString(),
+      description: blog.description,
+      publishedTime: blog.date ? new Date(blog.date).toISOString() : '',
       authors: blog.author,
       images: [
         {
-          url: blog.featuredImage,
+          url: blog.image || '',
           width: 1200,
           height: 675,
-          alt: blog.featuredImageCaption,
+          alt: blog.imageCaption,
         },
       ],
     },
     twitter: {
       card: 'summary_large_image',
       title: blog.title,
-      description: blog.subtitle,
+      description: blog.description,
       creator: '@juancmandev',
       images: {
         width: 1200,
         height: 675,
-        url: blog.featuredImage,
-        alt: blog.featuredImageCaption,
+        url: blog.image || '',
+        alt: blog.imageCaption,
       },
     },
   };

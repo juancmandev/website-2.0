@@ -102,31 +102,27 @@ export const EnBlog = defineDocumentType(() => ({
   fields: {
     title: {
       type: 'string',
-      required: true,
     },
-    subtitle: {
+    description: {
       type: 'string',
-      required: true,
     },
     tags: {
-      type: 'string',
-      required: true,
+      type: 'list',
+      of: {
+        type: 'string',
+      },
     },
-    featuredImage: {
+    image: {
       type: 'string',
-      required: true,
     },
-    featuredImageCaption: {
+    imageCaption: {
       type: 'string',
-      required: true,
     },
     date: {
-      type: 'string',
-      required: true,
+      type: 'date',
     },
     author: {
       type: 'string',
-      required: true,
     },
   },
   computedFields,
@@ -139,31 +135,27 @@ export const EsBlog = defineDocumentType(() => ({
   fields: {
     title: {
       type: 'string',
-      required: true,
     },
-    subtitle: {
+    description: {
       type: 'string',
-      required: true,
     },
     tags: {
-      type: 'string',
-      required: true,
+      type: 'list',
+      of: {
+        type: 'string',
+      },
     },
-    featuredImage: {
+    image: {
       type: 'string',
-      required: true,
     },
-    featuredImageCaption: {
+    imageCaption: {
       type: 'string',
-      required: true,
     },
     date: {
-      type: 'string',
-      required: true,
+      type: 'date',
     },
     author: {
       type: 'string',
-      required: true,
     },
   },
   computedFields,
@@ -210,31 +202,27 @@ export const EnProject = defineDocumentType(() => ({
   fields: {
     title: {
       type: 'string',
-      required: true,
     },
-    subtitle: {
+    description: {
       type: 'string',
-      required: true,
     },
     tags: {
-      type: 'string',
-      required: true,
+      type: 'list',
+      of: {
+        type: 'string',
+      },
     },
-    featuredImage: {
+    image: {
       type: 'string',
-      required: true,
     },
-    featuredImageCaption: {
+    imageCaption: {
       type: 'string',
-      required: true,
     },
     date: {
-      type: 'string',
-      required: true,
+      type: 'date',
     },
     author: {
       type: 'string',
-      required: true,
     },
   },
   computedFields,
@@ -247,31 +235,27 @@ export const EsProject = defineDocumentType(() => ({
   fields: {
     title: {
       type: 'string',
-      required: true,
     },
-    subtitle: {
+    description: {
       type: 'string',
-      required: true,
     },
     tags: {
-      type: 'string',
-      required: true,
+      type: 'list',
+      of: {
+        type: 'string',
+      },
     },
-    featuredImage: {
+    image: {
       type: 'string',
-      required: true,
     },
-    featuredImageCaption: {
+    imageCaption: {
       type: 'string',
-      required: true,
     },
     date: {
-      type: 'string',
-      required: true,
+      type: 'date',
     },
     author: {
       type: 'string',
-      required: true,
     },
   },
   computedFields,
