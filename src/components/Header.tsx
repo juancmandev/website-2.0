@@ -10,8 +10,13 @@ import {
   SheetClose,
 } from '@/components/ui/sheet';
 import { ScrollArea } from '@/components/ui/scroll-area';
+import { Locale } from '@/dictionaries/i18n-config';
 
-const dictionary: any = {
+const dictionary: {
+  [key: string]: {
+    [key: string]: string;
+  };
+} = {
   ['home']: {
     ['en']: 'Home',
     ['es']: 'Inicio',
@@ -75,8 +80,12 @@ const socialItems = [
   },
 ];
 
-export default function Header({ lang }: any) {
-  const changeLang = lang === 'en' ? 'es' : 'en';
+interface IHeader {
+  lang: Locale;
+}
+
+export default function Header(props: IHeader) {
+  const changeLang = props.lang === 'en' ? 'es' : 'en';
 
   return (
     <Sheet>
@@ -85,7 +94,7 @@ export default function Header({ lang }: any) {
           <section>
             <Link
               className='focus:underline hover:underline text-xl text-primary focus:text-primaryLight hover:text-primaryLight'
-              href={`/${lang}`}>
+              href={`/${props.lang}`}>
               juancmandev
             </Link>
           </section>
@@ -94,9 +103,9 @@ export default function Header({ lang }: any) {
               {navItems.map((navItem) => (
                 <li key={navItem.label} className='w-max h-max'>
                   <Link
-                    href={`/${lang}${navItem.to}`}
+                    href={`/${props.lang}${navItem.to}`}
                     className='font-bold hover:underline focus:underline'>
-                    {dictionary[navItem.label][lang]}
+                    {dictionary[navItem.label][props.lang]}
                   </Link>
                 </li>
               ))}
@@ -106,10 +115,10 @@ export default function Header({ lang }: any) {
             <ul className='flex items-center gap-4'>
               <li className='flex'>
                 <Link
-                  title={dictionary['change_language'][lang]}
+                  title={dictionary['change_language'][props.lang]}
                   className='px-2 text-xl focus:underline hover:underline'
                   href={`/${changeLang}`}>
-                  {dictionary['change_language_flag'][lang]}
+                  {dictionary['change_language_flag'][props.lang]}
                 </Link>
               </li>
               {socialItems.map((socialItem) => (
@@ -130,7 +139,7 @@ export default function Header({ lang }: any) {
               <li className='flex'>
                 <a
                   title='RSS Feed'
-                  href={`https://juancman.dev/${lang}-feed.xml`}
+                  href={`https://juancman.dev/${props.lang}-feed.xml`}
                   target='_blank'
                   className='flex flex-col items-center gap-1  
                   focus:underline hover:underline'>
@@ -143,7 +152,7 @@ export default function Header({ lang }: any) {
         </nav>
 
         <section className='flex lg:hidden h-max items-center'>
-          <SheetTrigger title={dictionary['open_side_menu'][lang]}>
+          <SheetTrigger title={dictionary['open_side_menu'][props.lang]}>
             <HamburgerIcon size={28} />
           </SheetTrigger>
         </section>
@@ -157,7 +166,7 @@ export default function Header({ lang }: any) {
             <nav className='h-[calc(100vh_-_200px)] pb-8'>
               <section>
                 <Link
-                  href={`/${lang}`}
+                  href={`/${props.lang}`}
                   className='flex text-xl cursor-default w-full px-10 py-3 font-bold text-center hover:bg-[rgba(0,_0,_0,_0.2)] focus:bg-[rgba(0,_0,_0,_0.2)] text-primary focus:text-primaryLight hover:text-primaryLight'>
                   juancmandev
                 </Link>
@@ -168,9 +177,9 @@ export default function Header({ lang }: any) {
                     <li key={navItem.label} className='w-full h-max flex'>
                       <SheetClose asChild>
                         <Link
-                          href={`/${lang}${navItem.to}`}
+                          href={`/${props.lang}${navItem.to}`}
                           className='cursor-default w-full px-10 py-2 font-bold text-center text-lg hover:bg-[rgba(0,_0,_0,_0.2)] focus:bg-[rgba(0,_0,_0,_0.2)]'>
-                          {dictionary[navItem.label][lang]}
+                          {dictionary[navItem.label][props.lang]}
                         </Link>
                       </SheetClose>
                     </li>
@@ -182,10 +191,10 @@ export default function Header({ lang }: any) {
                   <li className='flex h-max'>
                     <SheetClose asChild>
                       <Link
-                        title={dictionary['change_language'][lang]}
+                        title={dictionary['change_language'][props.lang]}
                         className='text-xl cursor-default w-full py-2 text-center hover:bg-[rgba(0,_0,_0,_0.2)] focus:bg-[rgba(0,_0,_0,_0.2)]'
                         href={`/${changeLang}`}>
-                        {dictionary['change_language_flag'][lang]}
+                        {dictionary['change_language_flag'][props.lang]}
                       </Link>
                     </SheetClose>
                   </li>
@@ -207,7 +216,7 @@ export default function Header({ lang }: any) {
                   <li className='flex'>
                     <a
                       title='RSS Feed'
-                      href={`https://juancman.dev/${lang}-feed.xml`}
+                      href={`https://juancman.dev/${props.lang}-feed.xml`}
                       target='_blank'
                       className='cursor-default w-full flex justify-center py-3 text-center hover:bg-[rgba(0,_0,_0,_0.2)] focus:bg-[rgba(0,_0,_0,_0.2)]'>
                       <div className='flex flex-col items-center gap-1'>

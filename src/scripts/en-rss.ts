@@ -11,9 +11,8 @@ const blogs = fs
   .filter((file) => path.extname(file) === '.mdx')
   .map((file) => {
     const postContent = fs.readFileSync(`src/content/blog/en/${file}`, 'utf8');
-    const { data, content }: { data: any; content: string } = matter(
-      postContent
-    );
+    const { data, content }: { data: any; content: string } =
+      matter(postContent);
     const slug = file.replace('.mdx', '');
 
     return { ...data, body: content, slug };
@@ -28,9 +27,8 @@ const projects = fs
       `src/content/projects/en/${file}`,
       'utf8'
     );
-    const { data, content }: { data: any; content: string } = matter(
-      projectContent
-    );
+    const { data, content }: { data: any; content: string } =
+      matter(projectContent);
     const slug = file.replace('.mdx', '');
 
     return { ...data, body: content, slug };

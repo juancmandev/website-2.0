@@ -12,7 +12,7 @@ import {
   allEnBlogMains,
   allEsBlogMains,
   allEnProjectsMains,
-  allEsProjectsMains
+  allEsProjectsMains,
 } from 'contentlayer/generated';
 import { notFound } from 'next/navigation';
 import { Locale } from '@/dictionaries/i18n-config';
@@ -22,7 +22,7 @@ export async function getMainPage(lang: Locale) {
 
   if (!main) notFound();
 
-  return main[0]
+  return main[0];
 }
 
 export async function getBlogData(lang: Locale) {

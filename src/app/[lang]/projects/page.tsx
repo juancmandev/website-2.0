@@ -1,10 +1,10 @@
-import BlogCard from '@/components/ItemCard';
-import { LangProp, PageProps } from '@/interfaces/ContentPage.model';
+import { ItemCard } from '@/components';
+import { LangProps, PageProps } from '@/interfaces';
 import { getProjectsData, getProjectsFromParams } from '@/utils/getContent';
 import { sortByKeyDesc } from '@/utils/sorts';
 import { Metadata } from 'next';
 
-export async function generateMetadata(props: LangProp): Promise<Metadata> {
+export async function generateMetadata(props: LangProps): Promise<Metadata> {
   const projectsData = await getProjectsData(props.params.lang);
 
   return {
@@ -13,8 +13,8 @@ export async function generateMetadata(props: LangProp): Promise<Metadata> {
   };
 }
 
-export default async function Page({ params }: PageProps) {
-  const projects = await getProjectsFromParams(params.lang);
+export default async function Page(props: PageProps) {
+  const projects = await getProjectsFromParams(props.params.lang);
   sortByKeyDesc(projects, 'date');
 
   return (
@@ -23,7 +23,7 @@ export default async function Page({ params }: PageProps) {
       <ul className='flex flex-wrap gap-6'>
         {projects.map((project) => (
           <li key={project.slug}>
-            <BlogCard {...project} type='projects' lang={params.lang} />
+            <ItemCard {...project} type='projects' lang={props.params.lang} />
           </li>
         ))}
       </ul>

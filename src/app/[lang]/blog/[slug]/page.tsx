@@ -1,63 +1,58 @@
-import { Mdx } from '@/components/MdxComponent';
-import { PageProps } from '@/interfaces/ContentPage.model';
+import { Mdx } from '@/components';
+import { LangProps, PageProps, StaticSlugLangProps } from '@/interfaces';
 import { Metadata } from 'next';
 import { getBlogFromParams, getBlogsFromParams } from '@/utils/getContent';
-import { Locale } from '@/dictionaries/i18n-config';
 
-export async function generateStaticParams({
-  params,
-}: {
-  params: { lang: Locale };
-}): Promise<any> {
-  const { lang } = params;
-  const blogs = await getBlogsFromParams(lang);
+export async function generateStaticParams(
+  props: LangProps
+): Promise<StaticSlugLangProps[]> {
+  const blogs = await getBlogsFromParams(props.params.lang);
 
   return blogs.map((blog) => ({
     slug: blog.slug,
-    lang,
+    lang: props.params.lang,
   }));
 }
 
 export async function generateMetadata(props: PageProps): Promise<Metadata> {
-  const { params } = props;
-  const blog = await getBlogFromParams(params.slug, params.lang);
+  const blog = await getBlogFromParams(props.params.slug, props.params.lang);
 
   return {
     title: blog.title,
-    description: blog.subtitle,
+    description: blog.description,
     openGraph: {
       type: 'article',
-      locale: params.lang,
+      locale: props.params.lang,
       title: blog.title,
-      description: blog.subtitle,
-      publishedTime: new Date(blog.date).toISOString(),
+      description: blog.description,
+      publishedTime: blog.date ? new Date(blog.date).toISOString() : '',
       authors: blog.author,
       images: [
         {
-          url: blog.featuredImage,
+          url: blog.image || '',
           width: 1200,
           height: 675,
-          alt: blog.featuredImageCaption,
+          alt: blog.imageCaption,
         },
       ],
     },
     twitter: {
       card: 'summary_large_image',
       title: blog.title,
-      description: blog.subtitle,
+      description: blog.description,
       creator: '@juancmandev',
       images: {
         width: 1200,
         height: 675,
-        url: blog.featuredImage,
-        alt: blog.featuredImageCaption,
+        url: blog.image || '',
+        alt: blog.imageCaption,
       },
     },
   };
 }
 
-export default async function Page({ params }: PageProps) {
-  const post = await getBlogFromParams(params.slug, params.lang);
+export default async function Page(props: PageProps) {
+  const post = await getBlogFromParams(props.params.slug, props.params.lang);
 
   return <Mdx code={post.body.code} />;
 }

@@ -1,11 +1,11 @@
-import BlogCard from '@/components/ItemCard';
-import { LangProp, PageProps } from '@/interfaces/ContentPage.model';
+import { ItemCard } from '@/components';
+import { LangProps, PageProps } from '@/interfaces';
 import { getBlogData, getBlogsFromParams } from '@/utils/getContent';
 import { sortByKeyDesc } from '@/utils/sorts';
 import { getDictionary } from '@/utils/getDictionary';
 import { Metadata } from 'next';
 
-export async function generateMetadata(props: LangProp): Promise<Metadata> {
+export async function generateMetadata(props: LangProps): Promise<Metadata> {
   const blogData = await getBlogData(props.params.lang);
 
   return {
@@ -14,11 +14,11 @@ export async function generateMetadata(props: LangProp): Promise<Metadata> {
   };
 }
 
-export default async function Page({ params }: PageProps) {
-  const posts = await getBlogsFromParams(params.lang);
+export default async function Page(props: PageProps) {
+  const posts = await getBlogsFromParams(props.params.lang);
   sortByKeyDesc(posts, 'date');
 
-  const dictionary = await getDictionary(params.lang);
+  const dictionary = await getDictionary(props.params.lang);
 
   return (
     <>
@@ -30,10 +30,10 @@ export default async function Page({ params }: PageProps) {
           <h2 className='text-2xl font-bold mb-4'>Tech</h2>
           <ul className='flex flex-wrap gap-6'>
             {posts.map((post) => {
-              if (post.tags.includes('Tech')) {
+              if (post.tags?.includes('Tech')) {
                 return (
                   <li key={post.slug}>
-                    <BlogCard {...post} type='blog' lang={params.lang} />
+                    <ItemCard {...post} type='blog' lang={props.params.lang} />
                   </li>
                 );
               }
@@ -47,10 +47,10 @@ export default async function Page({ params }: PageProps) {
           </h2>
           <ul className='flex flex-wrap gap-6'>
             {posts.map((post) => {
-              if (post.tags.includes('Thoughts')) {
+              if (post.tags?.includes('Thoughts')) {
                 return (
                   <li key={post.slug}>
-                    <BlogCard {...post} type='blog' lang={params.lang} />
+                    <ItemCard {...post} type='blog' lang={props.params.lang} />
                   </li>
                 );
               }

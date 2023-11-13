@@ -45,6 +45,14 @@ module.exports = {
       '25': '100px',
       '30': '120px',
     },
+    borderRadius: {
+      none: '0',
+      sm: '4px',
+      DEFAULT: '8px',
+      md: '12px',
+      lg: '16px',
+      full: '9999px',
+    },
     container: {
       center: true,
       padding: '2rem',

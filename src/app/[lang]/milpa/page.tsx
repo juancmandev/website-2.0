@@ -1,13 +1,12 @@
-import { LangProp } from '@/interfaces/ContentPage.model';
+import { LangProps } from '@/interfaces';
 import { getMilpa } from '@/utils/getContent';
-import { Mdx } from '@/components/MdxComponent';
+import { Mdx, MilpaThought } from '@/components';
 import { supabase } from '@/supabase/client';
-import MilpaThought from '@/components/MilpaThought';
 import { Metadata } from 'next';
 
 export const revalidate = 0;
 
-export async function generateMetadata(props: LangProp): Promise<Metadata> {
+export async function generateMetadata(props: LangProps): Promise<Metadata> {
   const milpa = await getMilpa(props.params.lang);
 
   return {
@@ -16,8 +15,8 @@ export async function generateMetadata(props: LangProp): Promise<Metadata> {
   };
 }
 
-export default async function MilpaPage({ params }: LangProp) {
-  const milpa = await getMilpa(params.lang);
+export default async function MilpaPage(props: LangProps) {
+  const milpa = await getMilpa(props.params.lang);
   const { data } = await supabase
     .from('milpa')
     .select('*')
@@ -30,7 +29,11 @@ export default async function MilpaPage({ params }: LangProp) {
       <div className='mt-20 max-w-[65ch] mx-auto flex flex-col gap-10'>
         {data ? (
           data.map((milpa) => (
-            <MilpaThought key={milpa.id} {...milpa} pageLang={params.lang} />
+            <MilpaThought
+              key={milpa.id}
+              {...milpa}
+              pageLang={props.params.lang}
+            />
           ))
         ) : (
           <p>Not found</p>

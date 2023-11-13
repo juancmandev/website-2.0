@@ -4,10 +4,56 @@
         <description><![CDATA[Juan Manzanero's blog]]></description>
         <link>https://juancman.dev/en</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Wed, 27 Sep 2023 19:27:26 GMT</lastBuildDate>
-
+        <lastBuildDate>Mon, 13 Nov 2023 00:12:17 GMT</lastBuildDate>
         <atom:link href="https://juancman.dev/en-feed.xml" rel="self" type="application/rss+xml"/>
         <language><![CDATA[en]]></language>
+        <item>
+            <title><![CDATA[Peddler App]]></title>
+            <description><![CDATA[<h1>Peddler App</h1>
+<p><img src="/blog/peddler-app/peddler-app-banner.png" alt="Peddler App provisional logo"><br><em>Peddler App provisional logo</em></p>
+<PostData date='November 12, 2023' author='Juan Manzanero' />
+
+<h2>The idea</h2>
+<p>You hear the ice cream man in his truck, you try to catch him, but the guy is already far away.</p>
+<p>Why not get a notification on your phone when the ice cream man is near you? So you can just tap the notification and request the ice cream man to go to your location.</p>
+<p>That&#39;s the purpose of this app.</p>
+<h2>Overwhelming for me</h2>
+<p>I&#39;d never developed a big app just by myself, but I want to try and see what happens.</p>
+<p>I want to follow the Indie Hacker way, sharing in public the progress, and getting feedback from the community.</p>
+<p>This post is the first step before designing in Figma or even creating the landing page, so I want to hear if you&#39;re interested, why you&#39;re not, or what would be great for the app.</p>
+<h2>Starting small</h2>
+<p>I really want to start small, launching a Minimum Viable Product (MVP), with the next features:</p>
+<ul>
+<li>User registration and login</li>
+<li>Two types of users, peddlers and customers</li>
+<li>Peddlers<ul>
+<li>If the user is a peddler (wants to sell), redirect to the peddler form</li>
+<li>Peddlers can create a profile with the name of their company and products that offer, for example ice cream, candy, etc</li>
+<li>Once the registration is finished, peddlers can start routes</li>
+<li>The app gets the location of the peddler, showing it on a map</li>
+<li>The backend will detect if the peddler enters a radius of a customer, and send a push notification to the customer</li>
+<li>Once the peddler has a request, the app will show the location of the requesting customer on the map</li>
+<li>The peddler can go to the destination, and fulfill the transaction</li>
+</ul>
+</li>
+<li>Customers<ul>
+<li>Customers can just create a profile with their name or alias, and set locations, for example: house</li>
+<li>Once a peddler is near, the backend will send a notification to the customer</li>
+<li>If the customer taps and confirms the notification</li>
+</ul>
+</li>
+</ul>
+<p>Of course, customers would change notifications settings and more, but that&#39;s the core idea.</p>
+<p>For the MVP I don&#39;t want to implement in-app payments, but of course, it could be a future feature.</p>
+<h2>What do you think?</h2>
+<p>Please tell me what you think, you can email me at <a href="mailto:contact@juancman.dev" target="_blank" rel="noopener noreferrer">contact@juancman.dev</a></p>
+]]></description>
+            <link>https://juancman.dev/en/blog/peddler-app</link>
+            <guid isPermaLink="false">https://juancman.dev/en/blog/peddler-app</guid>
+            <category><![CDATA[Tech,SideProject]]></category>
+            <dc:creator><![CDATA[Juan Manzanero]]></dc:creator>
+            <pubDate>Sun, 12 Nov 2023 06:00:00 GMT</pubDate>
+        </item>
         <item>
             <title><![CDATA[I participated in a Hackathon]]></title>
             <description><![CDATA[<h1>I participated in a Hackathon</h1>
@@ -31,9 +77,9 @@
 ]]></description>
             <link>https://juancman.dev/en/blog/i-participated-in-a-hackathon</link>
             <guid isPermaLink="false">https://juancman.dev/en/blog/i-participated-in-a-hackathon</guid>
-            <category><![CDATA[Tech]]></category>
+            <category><![CDATA[Tech,Hobby,Hackathon]]></category>
             <dc:creator><![CDATA[Juan Manzanero]]></dc:creator>
-            <pubDate>Wed, 16 Aug 2023 06:00:00 GMT</pubDate>
+            <pubDate>Wed, 16 Aug 2023 05:00:00 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[The Monotony of Social Media]]></title>
@@ -70,7 +116,7 @@
             <guid isPermaLink="false">https://juancman.dev/en/blog/the-monotony-of-social-media</guid>
             <category><![CDATA[Thoughts]]></category>
             <dc:creator><![CDATA[Juan Manzanero]]></dc:creator>
-            <pubDate>Mon, 17 Jul 2023 06:00:00 GMT</pubDate>
+            <pubDate>Mon, 17 Jul 2023 05:00:00 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[How Computers Works]]></title>
@@ -131,9 +177,9 @@
 ]]></description>
             <link>https://juancman.dev/en/blog/how-computers-works</link>
             <guid isPermaLink="false">https://juancman.dev/en/blog/how-computers-works</guid>
-            <category><![CDATA[Tech]]></category>
+            <category><![CDATA[Tech,Informatic]]></category>
             <dc:creator><![CDATA[Juan Manzanero]]></dc:creator>
-            <pubDate>Mon, 29 May 2023 06:00:00 GMT</pubDate>
+            <pubDate>Mon, 29 May 2023 05:00:00 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[The reason to create a version 2.0 of my website]]></title>
@@ -172,7 +218,7 @@
             <guid isPermaLink="false">https://juancman.dev/en/blog/website-2.0</guid>
             <category><![CDATA[Tech]]></category>
             <dc:creator><![CDATA[Juan Manzanero]]></dc:creator>
-            <pubDate>Fri, 07 Apr 2023 06:00:00 GMT</pubDate>
+            <pubDate>Fri, 07 Apr 2023 05:00:00 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[Human to JS]]></title>
@@ -209,9 +255,9 @@
 ]]></description>
             <link>https://juancman.dev/en/projects/human-to-js</link>
             <guid isPermaLink="false">https://juancman.dev/en/projects/human-to-js</guid>
-            <category><![CDATA[ChatGPT, Next.js, JavaScript, Vercel]]></category>
+            <category><![CDATA[ChatGPT,Next.js,JavaScript,Vercel]]></category>
             <dc:creator><![CDATA[Juan Manzanero]]></dc:creator>
-            <pubDate>Sat, 15 Apr 2023 00:00:00 GMT</pubDate>
+            <pubDate>Fri, 14 Apr 2023 23:00:00 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[Workarise]]></title>
@@ -238,9 +284,9 @@
 ]]></description>
             <link>https://juancman.dev/en/projects/workarise</link>
             <guid isPermaLink="false">https://juancman.dev/en/projects/workarise</guid>
-            <category><![CDATA[React.js, Vite.js, MUI, Firebase, GCP, Node.js]]></category>
+            <category><![CDATA[React.js,Vite.js,MUI,Firebase,GCP,Node.js]]></category>
             <dc:creator><![CDATA[Juan Manzanero]]></dc:creator>
-            <pubDate>Fri, 14 Apr 2023 00:00:00 GMT</pubDate>
+            <pubDate>Thu, 13 Apr 2023 23:00:00 GMT</pubDate>
         </item>
     </channel>
 </rss>
