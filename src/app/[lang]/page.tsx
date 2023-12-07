@@ -34,7 +34,7 @@ export default async function Page(props: LangProps) {
       <section className='flex flex-col gap-1'>
         <h2 className='text-4xl'>{dictionary.home.hello_iam} Juan Manzanero</h2>
         <h1 className='primary-gradient text-4xl font-bold'>
-          Frontend Developer
+          Full Stack Developer
         </h1>
         <p className='font-thin text-lg'>{dictionary.home.my_web_1}</p>
         <p className='font-thin text-lg'>{dictionary.home.my_web_2}</p>

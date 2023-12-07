@@ -25,14 +25,15 @@ const dictionary: any = {
 
 export default function Footer(props: IFooter) {
   return (
-    <footer className='font-light text-sm px-6 md:px-15 py-15 text-center bg-dark1 shadow-md shadow-boxShadow'>
+    <footer className='font-light text-sm px-6 md:px-16 py-10 text-center bg-dark1 shadow-md shadow-boxShadow'>
       <p>{dictionary['h4'][props.lang]}</p>
       <p>{dictionary['h5'][props.lang]}</p>
       <p>{dictionary['h6'][props.lang]}</p>
       <a
         className='transition-colors text-primary underline hover:text-primaryLight focus:text-primaryLight'
         target='_blank'
-        href='https://github.com/juancmandev/website-2.0'>
+        href='https://github.com/juancmandev/website-2.0'
+      >
         {dictionary['source_code'][props.lang]}
       </a>
     </footer>

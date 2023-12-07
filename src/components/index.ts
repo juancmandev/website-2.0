@@ -1,12 +1,13 @@
-import { default as BackToTop } from './BackToTop';
-import { default as Footer } from './Footer';
-import { default as Header } from './Header';
-import { default as ItemCard } from './ItemCard';
-import { default as Mdx } from './MdxComponent';
-import { default as MilpaThought } from './MilpaThought';
-import { default as PostData } from './PostData';
-import { default as LinkToSection } from './LinkToSection';
-import { default as CodeBlock } from './CodeBlock';
+import { default as BackToTop } from './back-to-top';
+import { default as Footer } from './footer';
+import { default as Header } from './header';
+import { default as ItemCard } from './item-card';
+import { default as Mdx } from './mdx-component';
+import { default as MilpaThought } from './milpa-thought';
+import { default as PostData } from './pot-data';
+import { default as LinkToSection } from './link-to-section';
+import { default as CodeBlock } from './code-block';
+import { default as MobileMenu } from './mobile-menu';
 
 export {
   BackToTop,
@@ -18,4 +19,5 @@ export {
   PostData,
   LinkToSection,
   CodeBlock,
+  MobileMenu,
 };
