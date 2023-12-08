@@ -11,7 +11,7 @@ export default function RootLayout(props: IRootLayout) {
     <html lang={props.params.lang}>
       <body className='text-white1 bg-dark2'>
         <Header lang={props.params.lang} />
-        <main className='max-w-[1200px] xl:mx-auto xl:px-0 min-h-[calc(100vh_-_76px)] px-6 md:px-12 pt-36 pb-20'>
+        <main className='max-w-[1200px] xl:mx-auto xl:px-0 min-h-[calc(100vh_-_76px)] px-6 md:px-12 pt-40 md:pt-48 pb-20'>
           {props.children}
           <BackToTop lang={props.params.lang} />
         </main>
