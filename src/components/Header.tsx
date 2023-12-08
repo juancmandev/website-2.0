@@ -14,7 +14,7 @@ export default function Header(props: IHeader) {
   const changeLang = props.lang === 'en' ? 'es' : 'en';
 
   return (
-    <header className='w-full fixed p-6 md:px-15 -top-1 z-10 flex justify-between items-center bg-dark1 shadow-md shadow-boxShadow'>
+    <header className='w-full fixed px-6 py-5 md:px-15 -top-1 z-10 flex justify-between items-center bg-dark1 shadow-md shadow-boxShadow'>
       <nav className='w-full max-w-[1200px] xl:mx-auto flex justify-between items-center'>
         <section>
           <Link
