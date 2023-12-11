@@ -1,11 +1,11 @@
 import { Mdx } from '@/components';
-import { LangProps, PageProps, StaticSlugLangProps } from '@/interfaces';
+import { TParamsLang, TPage, TSlugLang } from '@/types';
 import { Metadata } from 'next';
 import { getBlogFromParams, getBlogsFromParams } from '@/utils/getContent';
 
 export async function generateStaticParams(
-  props: LangProps
-): Promise<StaticSlugLangProps[]> {
+  props: TParamsLang
+): Promise<TSlugLang[]> {
   const blogs = await getBlogsFromParams(props.params.lang);
 
   return blogs.map((blog) => ({
@@ -14,7 +14,7 @@ export async function generateStaticParams(
   }));
 }
 
-export async function generateMetadata(props: PageProps): Promise<Metadata> {
+export async function generateMetadata(props: TPage): Promise<Metadata> {
   const blog = await getBlogFromParams(props.params.slug, props.params.lang);
 
   return {
@@ -51,7 +51,7 @@ export async function generateMetadata(props: PageProps): Promise<Metadata> {
   };
 }
 
-export default async function Page(props: PageProps) {
+export default async function Page(props: TPage) {
   const post = await getBlogFromParams(props.params.slug, props.params.lang);
 
   return <Mdx code={post.body.code} />;

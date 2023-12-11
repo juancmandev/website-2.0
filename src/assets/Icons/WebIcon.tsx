@@ -1,13 +1,14 @@
-import { IconProps } from '@/interfaces';
+import { TIcon } from '@/types';
 
-export default function WebIcon(props: IconProps) {
+export default function WebIcon(props: TIcon) {
   return (
     <svg
       version='1.1'
       width={props.size}
       height={props.size}
       viewBox='0 0 1000 1000'
-      enableBackground='new 0 0 1000 1000'>
+      enableBackground='new 0 0 1000 1000'
+    >
       <g>
         <path
           fill='#eee'

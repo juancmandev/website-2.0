@@ -1,9 +1,9 @@
-import { LangProps } from '@/interfaces';
+import { TParamsLang } from '@/types';
 import { getResource } from '@/utils/getContent';
 import { Mdx } from '@/components';
 import { Metadata } from 'next';
 
-export async function generateMetadata(props: LangProps): Promise<Metadata> {
+export async function generateMetadata(props: TParamsLang): Promise<Metadata> {
   const resource = await getResource(props.params.lang);
 
   return {
@@ -12,7 +12,7 @@ export async function generateMetadata(props: LangProps): Promise<Metadata> {
   };
 }
 
-export default async function Page(props: LangProps) {
+export default async function Page(props: TParamsLang) {
   const resource = await getResource(props.params.lang);
 
   return <Mdx code={resource.body.code} />;

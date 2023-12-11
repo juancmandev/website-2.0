@@ -1,12 +1,12 @@
 import { Header, Footer, BackToTop } from '@/components';
-import { IRootLayout } from '@/interfaces';
+import { TRootLayout } from '@/types';
 import '@/styles/globals.css';
 
 export function generateStaticParams() {
   return [{ lang: 'en' }, { lang: 'es' }];
 }
 
-export default function RootLayout(props: IRootLayout) {
+export default function RootLayout(props: TRootLayout) {
   return (
     <html lang={props.params.lang}>
       <body className='text-white1 bg-dark2'>

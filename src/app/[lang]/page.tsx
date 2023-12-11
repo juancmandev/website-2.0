@@ -7,9 +7,9 @@ import {
 import { getDictionary } from '@/utils/getDictionary';
 import { sortByKeyDesc } from '@/utils/sorts';
 import type { Metadata } from 'next';
-import { LangProps, PageProps } from '@/interfaces';
+import { TParamsLang, TPage } from '@/types';
 
-export async function generateMetadata(props: PageProps): Promise<Metadata> {
+export async function generateMetadata(props: TPage): Promise<Metadata> {
   const page = await getMainPage(props.params.lang);
 
   return {
@@ -18,7 +18,7 @@ export async function generateMetadata(props: PageProps): Promise<Metadata> {
   };
 }
 
-export default async function Page(props: LangProps) {
+export default async function Page(props: TParamsLang) {
   const dictionary = await getDictionary(props.params.lang);
 
   const blogs = await getBlogsFromParams(props.params.lang);

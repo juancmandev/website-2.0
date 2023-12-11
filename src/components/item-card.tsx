@@ -1,16 +1,17 @@
 import Image from 'next/image';
-import { IItemCard } from '@/interfaces';
+import { TItemCard } from '@/types';
 import Link from 'next/link';
 import months from '@/utils/months';
 import { DateIcon } from '@/assets/Icons';
 
-export default function ItemCard(props: IItemCard) {
+export default function ItemCard(props: TItemCard) {
   return (
     <Link
       title={props.title}
       tabIndex={0}
       className='group outline-none shadow-boxShadow'
-      href={`/${props.lang}/${props.type}/${props.slug}`}>
+      href={`/${props.lang}/${props.type}/${props.slug}`}
+    >
       <article className='bg-dark1 w-[280px] h-full rounded-sm shadow-md shadow-boxShadow'>
         <header className='w-[280px] overflow-hidden rounded-t-[4px]'>
           <Image

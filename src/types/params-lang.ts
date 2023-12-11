@@ -1,8 +1,9 @@
 import { Locale } from '@/dictionaries/i18n-config';
 
-export default interface IRootLayout {
-  children: React.ReactNode;
+type TParamsLang = {
   params: {
     lang: Locale;
   };
-}
+};
+
+export default TParamsLang;

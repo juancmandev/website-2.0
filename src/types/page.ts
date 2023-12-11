@@ -1,7 +1,10 @@
 import { Locale } from '@/dictionaries/i18n-config';
 
-export default interface LangProps {
+type TPage = {
   params: {
+    slug: string;
     lang: Locale;
   };
-}
+};
+
+export default TPage;

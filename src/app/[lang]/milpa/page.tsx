@@ -1,4 +1,4 @@
-import { LangProps } from '@/interfaces';
+import { TParamsLang } from '@/types';
 import { getMilpa } from '@/utils/getContent';
 import { Mdx, MilpaThought } from '@/components';
 import { supabase } from '@/supabase/client';
@@ -6,7 +6,7 @@ import { Metadata } from 'next';
 
 export const revalidate = 0;
 
-export async function generateMetadata(props: LangProps): Promise<Metadata> {
+export async function generateMetadata(props: TParamsLang): Promise<Metadata> {
   const milpa = await getMilpa(props.params.lang);
 
   return {
@@ -15,7 +15,7 @@ export async function generateMetadata(props: LangProps): Promise<Metadata> {
   };
 }
 
-export default async function MilpaPage(props: LangProps) {
+export default async function MilpaPage(props: TParamsLang) {
   const milpa = await getMilpa(props.params.lang);
   const { data } = await supabase
     .from('milpa')

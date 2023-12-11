@@ -1,10 +1,10 @@
 import { ItemCard } from '@/components';
-import { LangProps, PageProps } from '@/interfaces';
+import { TParamsLang, TPage } from '@/types';
 import { getProjectsData, getProjectsFromParams } from '@/utils/getContent';
 import { sortByKeyDesc } from '@/utils/sorts';
 import { Metadata } from 'next';
 
-export async function generateMetadata(props: LangProps): Promise<Metadata> {
+export async function generateMetadata(props: TParamsLang): Promise<Metadata> {
   const projectsData = await getProjectsData(props.params.lang);
 
   return {
@@ -13,7 +13,7 @@ export async function generateMetadata(props: LangProps): Promise<Metadata> {
   };
 }
 
-export default async function Page(props: PageProps) {
+export default async function Page(props: TPage) {
   const projects = await getProjectsFromParams(props.params.lang);
   sortByKeyDesc(projects, 'date');
 

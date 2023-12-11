@@ -1,6 +1,6 @@
-import { IconProps } from '@/interfaces';
+import { TIcon } from '@/types';
 
-export default function GitHubIcon(props: IconProps) {
+export default function GitHubIcon(props: TIcon) {
   return (
     <svg width={props.size} height={props.size} viewBox='0 0 24 24'>
       <path

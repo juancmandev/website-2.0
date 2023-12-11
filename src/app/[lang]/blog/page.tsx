@@ -1,11 +1,11 @@
 import { ItemCard } from '@/components';
-import { LangProps, PageProps } from '@/interfaces';
+import { TPage, TParamsLang } from '@/types';
 import { getBlogData, getBlogsFromParams } from '@/utils/getContent';
 import { sortByKeyDesc } from '@/utils/sorts';
 import { getDictionary } from '@/utils/getDictionary';
 import { Metadata } from 'next';
 
-export async function generateMetadata(props: LangProps): Promise<Metadata> {
+export async function generateMetadata(props: TParamsLang): Promise<Metadata> {
   const blogData = await getBlogData(props.params.lang);
 
   return {
@@ -14,7 +14,7 @@ export async function generateMetadata(props: LangProps): Promise<Metadata> {
   };
 }
 
-export default async function Page(props: PageProps) {
+export default async function Page(props: TPage) {
   const posts = await getBlogsFromParams(props.params.lang);
   sortByKeyDesc(posts, 'date');
 

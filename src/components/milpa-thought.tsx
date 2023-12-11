@@ -1,7 +1,7 @@
-import { MilpaThoughtProps } from '@/interfaces';
+import { TMilpa } from '@/types';
 import { marked } from 'marked';
 
-export default function MilpaThought(props: MilpaThoughtProps) {
+export default function MilpaThought(props: TMilpa) {
   const renderer = new marked.Renderer();
   marked.setOptions({
     gfm: true,

@@ -1,6 +1,8 @@
 import { Locale } from '@/dictionaries/i18n-config';
 
-export default interface StaticSlugLangProps {
+type TSlugLang = {
   slug: string;
   lang: Locale;
-}
+};
+
+export default TSlugLang;

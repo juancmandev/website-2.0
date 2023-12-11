@@ -4,9 +4,9 @@ import { useState } from 'react';
 import { Copy, CopyCheck } from 'lucide-react';
 import SyntaxHighlighter from 'react-syntax-highlighter';
 import { atomOneDark } from 'react-syntax-highlighter/dist/esm/styles/hljs';
-import { ICodeBlock } from '@/interfaces';
+import { TCodeBlock } from '@/types';
 
-export default function CodeBlock(props: ICodeBlock) {
+export default function CodeBlock(props: TCodeBlock) {
   const [isCopied, setIsCopied] = useState(false);
 
   const copyToClipboard = () => {
@@ -25,7 +25,8 @@ export default function CodeBlock(props: ICodeBlock) {
         <span>{props.title}</span>
         <button
           onClick={copyToClipboard}
-          title={isCopied ? 'Copied!' : 'Copy to clipboard'}>
+          title={isCopied ? 'Copied!' : 'Copy to clipboard'}
+        >
           {isCopied ? <CopyCheck size='1.6rem' /> : <Copy size='1.6rem' />}
         </button>
       </header>
@@ -35,7 +36,8 @@ export default function CodeBlock(props: ICodeBlock) {
           backgroundColor: 'transparent',
         }}
         language={props.language}
-        style={atomOneDark}>
+        style={atomOneDark}
+      >
         {props.code}
       </SyntaxHighlighter>
     </div>

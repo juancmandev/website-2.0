@@ -1,4 +1,4 @@
-export default interface IItemCard {
+type TItemCard = {
   title?: string;
   date?: string;
   type?: 'blog' | 'projects';
@@ -12,4 +12,6 @@ export default interface IItemCard {
   url?: string;
   author?: string;
   content?: string;
-}
+};
+
+export default TItemCard;

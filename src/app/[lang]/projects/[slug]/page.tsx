@@ -1,14 +1,15 @@
 import { Mdx } from '@/components';
-import { PageProps, LangProps, StaticSlugLangProps } from '@/interfaces';
+import { TParamsLang, TPage } from '@/types';
 import { Metadata } from 'next';
 import {
   getProjectFromParams,
   getProjectsFromParams,
 } from '@/utils/getContent';
+import { TSlugLang } from '@/types';
 
 export async function generateStaticParams(
-  props: LangProps
-): Promise<StaticSlugLangProps[]> {
+  props: TParamsLang
+): Promise<TSlugLang[]> {
   const projects = await getProjectsFromParams(props.params.lang);
 
   return projects.map((project) => ({
@@ -17,7 +18,7 @@ export async function generateStaticParams(
   }));
 }
 
-export async function generateMetadata(props: PageProps): Promise<Metadata> {
+export async function generateMetadata(props: TPage): Promise<Metadata> {
   const project = await getProjectFromParams(
     props.params.slug,
     props.params.lang
@@ -57,7 +58,7 @@ export async function generateMetadata(props: PageProps): Promise<Metadata> {
   };
 }
 
-export default async function Page(props: PageProps) {
+export default async function Page(props: TPage) {
   const project = await getProjectFromParams(
     props.params.slug,
     props.params.lang

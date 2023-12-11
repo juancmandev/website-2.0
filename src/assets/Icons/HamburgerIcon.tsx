@@ -1,6 +1,6 @@
-import { IconProps } from '@/interfaces';
+import { TIcon } from '@/types';
 
-export default function HamburgerIcon(props: IconProps) {
+export default function HamburgerIcon(props: TIcon) {
   return (
     <svg fill='none' viewBox='0 0 15 15' width={props.size} height={props.size}>
       <path
