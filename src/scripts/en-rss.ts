@@ -3,6 +3,7 @@ import RSS from 'rss';
 import path from 'path';
 import { marked } from 'marked';
 import matter from 'gray-matter';
+import { TContent } from '@/types';
 
 const url = 'https://juancman.dev';
 
@@ -15,7 +16,7 @@ const blogs = fs
       matter(postContent);
     const slug = file.replace('.mdx', '');
 
-    return { ...data, body: content, slug };
+    return { ...(data as TContent), body: content, slug };
   })
   .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 
@@ -31,7 +32,7 @@ const projects = fs
       matter(projectContent);
     const slug = file.replace('.mdx', '');
 
-    return { ...data, body: content, slug };
+    return { ...(data as TContent), body: content, slug };
   })
   .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 
@@ -63,11 +64,11 @@ const main = () => {
     feed.item({
       title: blog.title,
       description: renderContent(blog.body),
-      date: new Date(blog?.date),
-      author: 'Juan Manzanero',
+      date: new Date(blog.date),
+      author: blog.author,
       url: link,
       guid: link,
-      categories: [blog.tags],
+      categories: blog.tags,
     });
   });
 
@@ -77,11 +78,11 @@ const main = () => {
     feed.item({
       title: project.title,
       description: renderContent(project.body),
-      date: new Date(project?.date),
-      author: 'Juan Manzanero',
+      date: new Date(project.date),
+      author: project.author,
       url: link,
       guid: link,
-      categories: [project.tags],
+      categories: project.tags,
     });
   });
 

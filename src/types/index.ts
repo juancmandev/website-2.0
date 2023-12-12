@@ -6,6 +6,7 @@ import { default as TSlugLang } from './slug-lang';
 import { default as TIcon } from './icon';
 import { default as TCodeBlock } from './code-block';
 import { default as TParamsLang } from './params-lang';
+import { default as TContent } from './content';
 
 export type {
   TPage,
@@ -16,4 +17,5 @@ export type {
   TIcon,
   TCodeBlock,
   TParamsLang,
+  TContent,
 };
