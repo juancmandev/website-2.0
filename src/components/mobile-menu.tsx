@@ -50,7 +50,7 @@ export default function MobileMenu(props: TLocale) {
                     <li key={navItem.label} className='w-full h-max flex'>
                       <SheetClose asChild>
                         <Link
-                          href={navItem.to}
+                          href={`${props.locale}${navItem.to}`}
                           className='cursor-default w-full px-10 py-2 font-bold text-center hover:bg-background/50 focus:bg-background/50'
                         >
                           {t(`header.${navItem.label}`)}

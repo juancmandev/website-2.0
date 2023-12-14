@@ -30,7 +30,7 @@ export default function Header(props: THeader) {
             {navItems.map((navItem) => (
               <li key={navItem.label} className='w-max h-max'>
                 <Link
-                  href={navItem.to}
+                  href={`${props.locale}${navItem.to}`}
                   className='font-bold hover:underline focus:underline'
                 >
                   {t(`header.${navItem.label}`)}
