@@ -8,6 +8,7 @@ import { default as PostData } from './post-data';
 import { default as LinkToSection } from './link-to-section';
 import { default as CodeBlock } from './code-block';
 import { default as MobileMenu } from './mobile-menu';
+import { default as ChangeLanguage } from './change-language';
 
 export {
   BackToTop,
@@ -20,4 +21,5 @@ export {
   LinkToSection,
   CodeBlock,
   MobileMenu,
+  ChangeLanguage,
 };

@@ -1,10 +1,11 @@
 'use client';
 
 import Link from 'next/link';
-import { RSSIcon } from '@/assets/Icons';
+import { Rss } from 'lucide-react';
 import { navItems, socialItems } from '@/utils';
 import MobileMenu from './mobile-menu';
 import { useTranslations } from 'next-intl';
+import { ChangeLanguage } from '@/components';
 
 type THeader = {
   locale: 'en' | 'es';
@@ -13,10 +14,8 @@ type THeader = {
 export default function Header(props: THeader) {
   const t = useTranslations();
 
-  const changeLang = props.locale === 'en' ? 'es' : 'en';
-
   return (
-    <header className='w-full fixed px-6 py-5 md:px-15 -top-1 z-10 flex justify-between items-center bg-dark1 shadow-md shadow-boxShadow'>
+    <header className='w-full fixed px-6 py-4 md:px-15 -top-1 z-10 flex justify-between items-center bg-secondary shadow-2xl'>
       <nav className='w-full max-w-[1200px] xl:mx-auto flex justify-between items-center'>
         <section>
           <Link
@@ -43,13 +42,7 @@ export default function Header(props: THeader) {
         <section className='hidden lg:block'>
           <ul className='flex items-center gap-4'>
             <li className='flex'>
-              <Link
-                title={t('header.change_language')}
-                className='px-2 text-xl focus:underline hover:underline'
-                href={`/${changeLang}`}
-              >
-                {t(`header.${props.locale}`)}
-              </Link>
+              <ChangeLanguage locale={props.locale} />
             </li>
             {socialItems.map((socialItem) => (
               <li title={socialItem.label} key={socialItem.to} className='flex'>
@@ -72,7 +65,7 @@ export default function Header(props: THeader) {
                 className='flex flex-col items-center gap-1  
                   focus:underline hover:underline'
               >
-                <RSSIcon size='1.5rem' />
+                <Rss />
                 <span className='text-xs'>RSS</span>
               </a>
             </li>

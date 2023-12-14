@@ -1,6 +1,7 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
+import { Button } from './ui/button';
 
 const isBrowser = () => typeof window !== 'undefined'; //The approach recommended by Next.js
 
@@ -13,11 +14,12 @@ export default function BackToTop() {
   };
 
   return (
-    <button
+    <Button
+      variant='secondary'
       onClick={scrollToTop}
-      className='mt-20 p-3 flex mx-auto shadow-lg bg-dark1 rounded-sm'
+      className='mt-20 flex mx-auto bg-destructive-foreground'
     >
       {t('back_to_top')}
-    </button>
+    </Button>
   );
 }

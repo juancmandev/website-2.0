@@ -1,38 +1,23 @@
+import { getTranslations } from 'next-intl/server';
+
 type TFooter = {
   locale: 'en' | 'es';
 };
 
-const dictionary: any = {
-  ['h4']: {
-    ['en']: 'Uncopyrighted by Juan Manzanero. 2023.',
-    ['es']: 'Uncopyrigth por Juan Manzanero. 2023.',
-  },
-  ['h5']: {
-    ['en']: 'The content of this website is written without AI.',
-    ['es']: 'El contenido de este website está escrito sin AI.',
-  },
-  ['h6']: {
-    ['en']: 'Built handcrafted with Next.js.',
-    ['es']: 'Construido a mano con Next.js.',
-  },
-  ['source_code']: {
-    ['en']: 'Website Source Code',
-    ['es']: 'Source Code del website',
-  },
-};
+export default async function Footer(props: TFooter) {
+  const t = await getTranslations({ locale: props.locale });
 
-export default function Footer(props: TFooter) {
   return (
-    <footer className='font-light text-sm px-6 md:px-16 py-10 text-center bg-dark1 shadow-md shadow-boxShadow'>
-      <p>{dictionary['h4'][props.locale]}</p>
-      <p>{dictionary['h5'][props.locale]}</p>
-      <p>{dictionary['h6'][props.locale]}</p>
+    <footer className='text-sm px-6 md:px-16 py-10 text-center bg-secondary'>
+      <p>{t('footer.h4')}</p>
+      <p>{t('footer.h5')}</p>
+      <p>{t('footer.h6')}</p>
       <a
-        className='transition-colors text-primary underline hover:text-primaryLight focus:text-primaryLight'
         target='_blank'
         href='https://github.com/juancmandev/website-2.0'
+        className='transition-colors text-primary underline hover:text-primaryLight focus:text-primaryLight'
       >
-        {dictionary['source_code'][props.locale]}
+        {t('footer.source_code')}
       </a>
     </footer>
   );

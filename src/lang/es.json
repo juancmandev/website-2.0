@@ -44,5 +44,11 @@
     "milpa": "Milpa",
     "en": "🇲🇽",
     "es": "🇺🇸"
+  },
+  "footer": {
+    "h4": "Uncopyrigth por Juan Manzanero. 2023.",
+    "h5": "El contenido de este website está escrito sin AI.",
+    "h6": "Construido a mano con Next.js.",
+    "source_code": "Construido a mano con Next.js."
   }
 }

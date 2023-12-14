@@ -34,11 +34,11 @@ export default async function Page(props: TParamsLocale) {
     <div className='flex flex-col gap-20'>
       <section className='flex flex-col gap-1'>
         <h2 className='text-4xl'>{t('home.hello_iam')} Juan Manzanero</h2>
-        <h1 className='primary-gradient text-4xl font-bold'>
+        <h1 className='text-primary text-4xl font-bold'>
           Full Stack Developer
         </h1>
-        <p className='font-thin text-lg'>{t('home.my_web_1')}</p>
-        <p className='font-thin text-lg'>{t('home.my_web_2')}</p>
+        <p className='text-lg'>{t('home.my_web_1')}</p>
+        <p className='text-lg'>{t('home.my_web_2')}</p>
       </section>
 
       <section>

@@ -1,4 +1,4 @@
-import { EmailIcon, GitHubIcon } from '@/assets/Icons';
+import { Mail, Github } from 'lucide-react';
 
 export const navItems = [
   {
@@ -22,12 +22,12 @@ export const navItems = [
 export const socialItems = [
   {
     to: 'https://github.com/juancmandev',
-    icon: <GitHubIcon size='1.5rem' />,
+    icon: <Github />,
     label: 'GitHub',
   },
   {
     to: 'mailto:contact@juancman.dev',
-    icon: <EmailIcon size='1.5rem' />,
+    icon: <Mail />,
     label: 'Email',
   },
 ];
