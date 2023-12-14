@@ -1,23 +1,20 @@
 import { ItemCard } from '@/components';
 import { TParamsLocale, TPage } from '@/types';
-import { getAllContent, getContent } from '@/utils/getContent';
+import { getAllContent } from '@/utils/getContent';
 import { sortByKeyDesc } from '@/utils/sorts';
 import { Metadata } from 'next';
+import { getTranslations } from 'next-intl/server';
 
 export async function generateMetadata(
   props: TParamsLocale
 ): Promise<Metadata> {
-  const projectsData = await getContent(
-    props.params.locale,
-    'main',
-    'projects'
-  );
-
-  if (!projectsData) return {};
+  const t = await getTranslations({
+    locale: props.params.locale,
+  });
 
   return {
-    title: projectsData.title,
-    description: projectsData.description,
+    title: t('metadata.projects.title'),
+    description: t('metadata.projects.description'),
   };
 }
 

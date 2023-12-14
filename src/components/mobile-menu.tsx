@@ -11,19 +11,21 @@ import {
 
 import { Button } from './ui/button';
 import { HamburgerIcon, RSSIcon } from '@/assets/Icons';
-import { dictionary, navItems, socialItems } from '@/utils';
+import { navItems, socialItems } from '@/utils';
 import Link from 'next/link';
+import { useTranslations } from 'next-intl';
 
 type TLocale = {
   locale: 'en' | 'es';
 };
 
 export default function MobileMenu(props: TLocale) {
+  const t = useTranslations();
   const changeLang = props.locale === 'en' ? 'es' : 'en';
 
   return (
     <Sheet>
-      <SheetTrigger asChild title={dictionary['open_side_menu'][props.locale]}>
+      <SheetTrigger asChild title={t('header.open_menu')}>
         <Button className='p-2' variant='ghost'>
           <HamburgerIcon size={28} />
         </Button>
@@ -49,10 +51,10 @@ export default function MobileMenu(props: TLocale) {
                     <li key={navItem.label} className='w-full h-max flex'>
                       <SheetClose asChild>
                         <Link
-                          href={`/${props.locale}${navItem.to}`}
+                          href={navItem.to}
                           className='cursor-default w-full px-10 py-2 font-bold text-center hover:bg-[rgba(0,_0,_0,_0.2)] focus:bg-[rgba(0,_0,_0,_0.2)]'
                         >
-                          {dictionary[navItem.label][props.locale]}
+                          {t(`header.${navItem.label}`)}
                         </Link>
                       </SheetClose>
                     </li>
@@ -64,11 +66,11 @@ export default function MobileMenu(props: TLocale) {
                   <li className='flex h-max'>
                     <SheetClose asChild>
                       <Link
-                        title={dictionary['change_language'][props.locale]}
+                        title={t('header.change_language')}
                         className='text-xl cursor-default w-full py-2 text-center hover:bg-[rgba(0,_0,_0,_0.2)] focus:bg-[rgba(0,_0,_0,_0.2)]'
                         href={`/${changeLang}`}
                       >
-                        {dictionary['change_language_flag'][props.locale]}
+                        {t(`header.${props.locale}`)}
                       </Link>
                     </SheetClose>
                   </li>

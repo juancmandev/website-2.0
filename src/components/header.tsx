@@ -2,14 +2,17 @@
 
 import Link from 'next/link';
 import { RSSIcon } from '@/assets/Icons';
-import { dictionary, navItems, socialItems } from '@/utils';
+import { navItems, socialItems } from '@/utils';
 import MobileMenu from './mobile-menu';
+import { useTranslations } from 'next-intl';
 
 type THeader = {
   locale: 'en' | 'es';
 };
 
 export default function Header(props: THeader) {
+  const t = useTranslations();
+
   const changeLang = props.locale === 'en' ? 'es' : 'en';
 
   return (
@@ -28,10 +31,10 @@ export default function Header(props: THeader) {
             {navItems.map((navItem) => (
               <li key={navItem.label} className='w-max h-max'>
                 <Link
-                  href={`/${props.locale}${navItem.to}`}
+                  href={navItem.to}
                   className='font-bold hover:underline focus:underline'
                 >
-                  {dictionary[navItem.label][props.locale]}
+                  {t(`header.${navItem.label}`)}
                 </Link>
               </li>
             ))}
@@ -41,11 +44,11 @@ export default function Header(props: THeader) {
           <ul className='flex items-center gap-4'>
             <li className='flex'>
               <Link
-                title={dictionary['change_language'][props.locale]}
+                title={t('header.change_language')}
                 className='px-2 text-xl focus:underline hover:underline'
                 href={`/${changeLang}`}
               >
-                {dictionary['change_language_flag'][props.locale]}
+                {t(`header.${props.locale}`)}
               </Link>
             </li>
             {socialItems.map((socialItem) => (

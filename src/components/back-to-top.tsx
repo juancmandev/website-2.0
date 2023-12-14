@@ -1,19 +1,11 @@
 'use client';
 
-type THeader = {
-  locale: 'en' | 'es';
-};
-
-const dictionary: any = {
-  ['back_to_top']: {
-    ['en']: 'Back to top',
-    ['es']: 'Volver arriba',
-  },
-};
+import { useTranslations } from 'next-intl';
 
 const isBrowser = () => typeof window !== 'undefined'; //The approach recommended by Next.js
 
-export default function BackToTop({ locale }: THeader) {
+export default function BackToTop() {
+  const t = useTranslations();
   const scrollToTop = () => {
     if (!isBrowser()) return;
 
@@ -25,7 +17,7 @@ export default function BackToTop({ locale }: THeader) {
       onClick={scrollToTop}
       className='mt-20 p-3 flex mx-auto shadow-lg bg-dark1 rounded-sm'
     >
-      {dictionary['back_to_top'][locale]}
+      {t('back_to_top')}
     </button>
   );
 }

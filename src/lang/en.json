@@ -1,11 +1,23 @@
 {
+  "metadata": {
+    "home": {
+      "title": "juancmandev",
+      "description": "A pice of the Internet that I can call my home."
+    },
+    "blog": {
+      "title": "Blog",
+      "description": "Long format about thoughts and more stuff."
+    },
+    "projects": {
+      "title": "Projects",
+      "description": " Personal projects, explaining what I did and how."
+    }
+  },
   "common": {
     "and": "and",
     "engineer": "engineer"
   },
   "home": {
-    "title": "juancmandev",
-    "description": "A pice of the Internet that I can call my home.",
     "hello_iam": "Hi, I'm",
     "no_projects": "No projects yet",
     "my_web_1": "This is my website, a piece of the Internet that I can call my home.",
@@ -19,5 +31,16 @@
   "blog": {
     "description_1": "Divided by topics, here I try to release my thoughts using words.",
     "thoughts": "Thoughts"
+  },
+  "back_to_top": "Back to top",
+  "header": {
+    "open_menu": "Open menu",
+    "change_language": "Cambiar idioma al Español",
+    "blog": "Blog",
+    "projects": "Projects",
+    "resources": "Resources",
+    "milpa": "Milpa",
+    "en": "🇲🇽",
+    "es": "🇺🇸"
   }
 }
