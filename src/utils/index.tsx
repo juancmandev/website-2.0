@@ -1,4 +1,4 @@
-import { EmailIcon, GitHubIcon, HamburgerIcon, RSSIcon } from '@/assets/Icons';
+import { EmailIcon, GitHubIcon } from '@/assets/Icons';
 
 export const dictionary: {
   [key: string]: {

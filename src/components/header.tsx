@@ -2,16 +2,15 @@
 
 import Link from 'next/link';
 import { RSSIcon } from '@/assets/Icons';
-import { Locale } from '@/dictionaries/i18n-config';
 import { dictionary, navItems, socialItems } from '@/utils';
 import MobileMenu from './mobile-menu';
 
-interface IHeader {
-  lang: Locale;
-}
+type THeader = {
+  locale: 'en' | 'es';
+};
 
-export default function Header(props: IHeader) {
-  const changeLang = props.lang === 'en' ? 'es' : 'en';
+export default function Header(props: THeader) {
+  const changeLang = props.locale === 'en' ? 'es' : 'en';
 
   return (
     <header className='w-full fixed px-6 py-5 md:px-15 -top-1 z-10 flex justify-between items-center bg-dark1 shadow-md shadow-boxShadow'>
@@ -19,7 +18,7 @@ export default function Header(props: IHeader) {
         <section>
           <Link
             className='focus:underline hover:underline text-xl text-primary focus:text-primaryLight hover:text-primaryLight'
-            href={`/${props.lang}`}
+            href={`/${props.locale}`}
           >
             juancmandev
           </Link>
@@ -29,10 +28,10 @@ export default function Header(props: IHeader) {
             {navItems.map((navItem) => (
               <li key={navItem.label} className='w-max h-max'>
                 <Link
-                  href={`/${props.lang}${navItem.to}`}
+                  href={`/${props.locale}${navItem.to}`}
                   className='font-bold hover:underline focus:underline'
                 >
-                  {dictionary[navItem.label][props.lang]}
+                  {dictionary[navItem.label][props.locale]}
                 </Link>
               </li>
             ))}
@@ -42,11 +41,11 @@ export default function Header(props: IHeader) {
           <ul className='flex items-center gap-4'>
             <li className='flex'>
               <Link
-                title={dictionary['change_language'][props.lang]}
+                title={dictionary['change_language'][props.locale]}
                 className='px-2 text-xl focus:underline hover:underline'
                 href={`/${changeLang}`}
               >
-                {dictionary['change_language_flag'][props.lang]}
+                {dictionary['change_language_flag'][props.locale]}
               </Link>
             </li>
             {socialItems.map((socialItem) => (
@@ -65,7 +64,7 @@ export default function Header(props: IHeader) {
             <li className='flex'>
               <a
                 title='RSS Feed'
-                href={`https://juancman.dev/${props.lang}-feed.xml`}
+                href={`https://juancman.dev/${props.locale}-feed.xml`}
                 target='_blank'
                 className='flex flex-col items-center gap-1  
                   focus:underline hover:underline'
@@ -78,7 +77,7 @@ export default function Header(props: IHeader) {
         </section>
       </nav>
       <section className='flex lg:hidden h-max items-center'>
-        <MobileMenu lang={props.lang} />
+        <MobileMenu locale={props.locale} />
       </section>
     </header>
   );

@@ -1,8 +1,6 @@
-import { Locale } from '@/dictionaries/i18n-config';
-
-interface IFooter {
-  lang: Locale;
-}
+type TFooter = {
+  locale: 'en' | 'es';
+};
 
 const dictionary: any = {
   ['h4']: {
@@ -23,18 +21,18 @@ const dictionary: any = {
   },
 };
 
-export default function Footer(props: IFooter) {
+export default function Footer(props: TFooter) {
   return (
     <footer className='font-light text-sm px-6 md:px-16 py-10 text-center bg-dark1 shadow-md shadow-boxShadow'>
-      <p>{dictionary['h4'][props.lang]}</p>
-      <p>{dictionary['h5'][props.lang]}</p>
-      <p>{dictionary['h6'][props.lang]}</p>
+      <p>{dictionary['h4'][props.locale]}</p>
+      <p>{dictionary['h5'][props.locale]}</p>
+      <p>{dictionary['h6'][props.locale]}</p>
       <a
         className='transition-colors text-primary underline hover:text-primaryLight focus:text-primaryLight'
         target='_blank'
         href='https://github.com/juancmandev/website-2.0'
       >
-        {dictionary['source_code'][props.lang]}
+        {dictionary['source_code'][props.locale]}
       </a>
     </footer>
   );

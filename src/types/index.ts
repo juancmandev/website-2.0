@@ -5,7 +5,7 @@ import { default as TMilpa } from './milpa';
 import { default as TSlugLang } from './slug-lang';
 import { default as TIcon } from './icon';
 import { default as TCodeBlock } from './code-block';
-import { default as TParamsLang } from './params-lang';
+import { default as TParamsLocale } from './params-locale';
 import { default as TContent } from './content';
 
 export type {
@@ -16,6 +16,6 @@ export type {
   TSlugLang,
   TIcon,
   TCodeBlock,
-  TParamsLang,
+  TParamsLocale,
   TContent,
 };

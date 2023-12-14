@@ -4,11 +4,11 @@
         <description><![CDATA[Blog de Juan Manzanero]]></description>
         <link>https://juancman.dev/es</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Tue, 12 Dec 2023 22:05:46 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 13 Dec 2023 23:55:22 GMT</lastBuildDate>
         <atom:link href="https://juancman.dev/es-feed.xml" rel="self" type="application/rss+xml"/>
         <language><![CDATA[es]]></language>
         <item>
-            <title><![CDATA[The Monotony of Social Media]]></title>
+            <title><![CDATA[Rewind 2023]]></title>
             <link>https://juancman.dev/es/blog/rewind-2023</link>
             <guid isPermaLink="false">https://juancman.dev/es/blog/rewind-2023</guid>
             <category><![CDATA[Thoughts]]></category>

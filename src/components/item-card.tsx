@@ -3,6 +3,7 @@ import { TItemCard } from '@/types';
 import Link from 'next/link';
 import months from '@/utils/months';
 import { DateIcon } from '@/assets/Icons';
+import { formatDate } from '@/utils/formatDate';
 
 export default function ItemCard(props: TItemCard) {
   return (
@@ -39,9 +40,7 @@ export default function ItemCard(props: TItemCard) {
                 </span>
               ) : (
                 <span className='mt-[2px]'>
-                  {new Date(props.date || '').getDate()} de{' '}
-                  {months(props.lang, new Date(props.date || '').getMonth())}{' '}
-                  del {new Date(props.date || '').getFullYear()}
+                  {formatDate(props.date!, props.lang as 'en' | 'es')}
                 </span>
               )}
             </h4>

@@ -1,9 +1,7 @@
-import { Locale } from '@/dictionaries/i18n-config';
-
 type TRootLayout = {
   children: React.ReactNode;
   params: {
-    lang: Locale;
+    locale: 'en' | 'es';
   };
 };
 

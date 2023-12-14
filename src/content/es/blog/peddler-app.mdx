@@ -1,0 +1,61 @@
+---
+title: Peddler App
+description: Escuchas al heladero en su camión, intentas alcanzarlo, pero el tipo ya está lejos.
+tags:
+  - Tech
+  - SideProject
+image: '/blog/peddler-app/peddler-app-banner.png'
+imageCaption: Peddler App provisional logo
+date: 11/12/2023
+author: Juan Manzanero
+---
+
+# Peddler App
+
+![Peddler App provisional logo](/blog/peddler-app/peddler-app-banner.png)
+_Peddler App provisional logo_
+
+<PostData date='November 12, 2023' author='Juan Manzanero' />
+
+## La idea
+
+Escuchas al heladero en su camión, intentas alcanzarlo, pero el tipo ya está lejos.
+
+¿Por qué no recibir una notificación en tu teléfono cuando el heladero esté cerca de ti? Así puedes tocar la notificación y solicitar al heladero que vaya a tu ubicación.
+
+Ese es el propósito de esta aplicación.
+
+## Abrumador para mí
+
+Nunca había desarrollado una gran aplicación por mi cuenta, pero quiero intentarlo y ver qué sucede.
+
+Quiero seguir el camino del Indie Hacker, compartiendo en público el progreso y obteniendo comentarios de la comunidad.
+
+Esta publicación es el primer paso antes de diseñar en Figma o incluso crear la página de inicio, por lo que quiero saber si estás interesado, por qué no lo estás o qué sería genial para la aplicación.
+
+## Empezar pequeño
+
+Realmente quiero empezar pequeño, lanzando un Producto Mínimo Viable (MVP), con las siguientes características:
+
+- Registro e inicio de sesión de usuarios
+- Dos tipos de usuarios, vendedores ambulantes y clientes
+- Vendedores ambulantes
+  - Si el usuario es un vendedor ambulante (quiere vender), redirigir al formulario del vendedor
+  - Los vendedores ambulantes pueden crear un perfil con el nombre de su empresa y los productos que ofrecen, por ejemplo, helados, dulces, etc.
+  - Una vez que se completa el registro, los vendedores ambulantes pueden comenzar rutas
+  - La aplicación obtiene la ubicación del vendedor ambulante, mostrándola en un mapa
+  - El backend detectará si el vendedor ambulante entra en un radio de un cliente y enviará una notificación push al cliente
+  - Una vez que el vendedor ambulante recibe una solicitud, la aplicación mostrará la ubicación del cliente que lo solicitó en el mapa
+  - El vendedor ambulante puede ir al destino y completar la transacción
+- Clientes
+  - Los clientes pueden simplemente crear un perfil con su nombre o alias y establecer ubicaciones, por ejemplo: casa
+  - Cuando un vendedor ambulante esté cerca, el backend enviará una notificación al cliente
+  - Si el cliente toca y confirma la notificación
+
+Por supuesto, los clientes podrían cambiar la configuración de las notificaciones y más, pero esa es la idea central.
+
+Para el MVP, no quiero implementar pagos dentro de la aplicación, pero, por supuesto, podría ser una característica futura.
+
+## ¿Qué opinas?
+
+Por favor, dime qué piensas, puedes enviarme un correo electrónico a [contact@juancman.dev](mailto:contact@juancman.dev)

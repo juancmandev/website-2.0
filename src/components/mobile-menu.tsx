@@ -10,21 +10,20 @@ import {
 } from '@/components/ui/sheet';
 
 import { Button } from './ui/button';
-import { Locale } from '@/dictionaries/i18n-config';
 import { HamburgerIcon, RSSIcon } from '@/assets/Icons';
 import { dictionary, navItems, socialItems } from '@/utils';
 import Link from 'next/link';
 
-type Props = {
-  lang: Locale;
+type TLocale = {
+  locale: 'en' | 'es';
 };
 
-export default function MobileMenu(props: Props) {
-  const changeLang = props.lang === 'en' ? 'es' : 'en';
+export default function MobileMenu(props: TLocale) {
+  const changeLang = props.locale === 'en' ? 'es' : 'en';
 
   return (
     <Sheet>
-      <SheetTrigger asChild title={dictionary['open_side_menu'][props.lang]}>
+      <SheetTrigger asChild title={dictionary['open_side_menu'][props.locale]}>
         <Button className='p-2' variant='ghost'>
           <HamburgerIcon size={28} />
         </Button>
@@ -38,7 +37,7 @@ export default function MobileMenu(props: Props) {
             <nav className='h-[calc(100vh_-_100px)]'>
               <section>
                 <Link
-                  href={`/${props.lang}`}
+                  href={`/${props.locale}`}
                   className='flex text-lg cursor-default w-full px-10 py-2 font-bold text-center hover:bg-[rgba(0,_0,_0,_0.2)] focus:bg-[rgba(0,_0,_0,_0.2)] text-primary focus:text-primaryLight hover:text-primaryLight'
                 >
                   juancmandev
@@ -50,10 +49,10 @@ export default function MobileMenu(props: Props) {
                     <li key={navItem.label} className='w-full h-max flex'>
                       <SheetClose asChild>
                         <Link
-                          href={`/${props.lang}${navItem.to}`}
+                          href={`/${props.locale}${navItem.to}`}
                           className='cursor-default w-full px-10 py-2 font-bold text-center hover:bg-[rgba(0,_0,_0,_0.2)] focus:bg-[rgba(0,_0,_0,_0.2)]'
                         >
-                          {dictionary[navItem.label][props.lang]}
+                          {dictionary[navItem.label][props.locale]}
                         </Link>
                       </SheetClose>
                     </li>
@@ -65,11 +64,11 @@ export default function MobileMenu(props: Props) {
                   <li className='flex h-max'>
                     <SheetClose asChild>
                       <Link
-                        title={dictionary['change_language'][props.lang]}
+                        title={dictionary['change_language'][props.locale]}
                         className='text-xl cursor-default w-full py-2 text-center hover:bg-[rgba(0,_0,_0,_0.2)] focus:bg-[rgba(0,_0,_0,_0.2)]'
                         href={`/${changeLang}`}
                       >
-                        {dictionary['change_language_flag'][props.lang]}
+                        {dictionary['change_language_flag'][props.locale]}
                       </Link>
                     </SheetClose>
                   </li>
@@ -92,7 +91,7 @@ export default function MobileMenu(props: Props) {
                   <li className='flex'>
                     <a
                       title='RSS Feed'
-                      href={`https://juancman.dev/${props.lang}-feed.xml`}
+                      href={`https://juancman.dev/${props.locale}-feed.xml`}
                       target='_blank'
                       className='cursor-default w-full flex justify-center py-3 text-center hover:bg-[rgba(0,_0,_0,_0.2)] focus:bg-[rgba(0,_0,_0,_0.2)]'
                     >

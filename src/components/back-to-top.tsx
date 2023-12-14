@@ -1,10 +1,8 @@
 'use client';
 
-import { Locale } from '@/dictionaries/i18n-config';
-
-interface Props {
-  lang: Locale;
-}
+type THeader = {
+  locale: 'en' | 'es';
+};
 
 const dictionary: any = {
   ['back_to_top']: {
@@ -15,7 +13,7 @@ const dictionary: any = {
 
 const isBrowser = () => typeof window !== 'undefined'; //The approach recommended by Next.js
 
-export default function BackToTop({ lang }: Props) {
+export default function BackToTop({ locale }: THeader) {
   const scrollToTop = () => {
     if (!isBrowser()) return;
 
@@ -25,8 +23,9 @@ export default function BackToTop({ lang }: Props) {
   return (
     <button
       onClick={scrollToTop}
-      className='mt-20 p-3 flex mx-auto shadow-lg bg-dark1 rounded-sm'>
-      {dictionary['back_to_top'][lang]}
+      className='mt-20 p-3 flex mx-auto shadow-lg bg-dark1 rounded-sm'
+    >
+      {dictionary['back_to_top'][locale]}
     </button>
   );
 }

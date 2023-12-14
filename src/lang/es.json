@@ -1,0 +1,25 @@
+{
+  "common": {
+    "and": "y",
+    "engineer": "ingeniero",
+    "change_language": "Change language to English",
+    "change_language_flag": "🇺🇸"
+  },
+  "home": {
+    "title": "juancmandev",
+    "description": "Un pedazo de Internet que puedo llamar mi hogar",
+    "hello_iam": "Hola, soy",
+    "no_projects": "No hay proyectos disponibles",
+    "my_web_1": "Este es mi website, un pedazo de la Internet que puedo llamar mi hogar.",
+    "my_web_2": "Me gusta compartir mis pensamientos y aprendizajes, como los proyectos que he hecho o cosas que aprendo de otros.",
+    "latest_posts": "Últimos Posts",
+    "latest_projects": "Últimos Proyectos"
+  },
+  "projects": {
+    "title": "Proyectos"
+  },
+  "blog": {
+    "description_1": "Dividido por secciones, aquí intento liberar mis pensamientos usando palabras.",
+    "thoughts": "Pensamientos"
+  }
+}

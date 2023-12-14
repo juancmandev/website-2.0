@@ -8,10 +8,10 @@ import { TContent } from '@/types';
 const url = 'https://juancman.dev';
 
 const blogs = fs
-  .readdirSync(path.resolve(__dirname, '../content/blog/es/'))
+  .readdirSync(path.resolve(__dirname, '../content/es/blog/'))
   .filter((file) => path.extname(file) === '.mdx')
   .map((file) => {
-    const postContent = fs.readFileSync(`src/content/blog/es/${file}`, 'utf8');
+    const postContent = fs.readFileSync(`src/content/es/blog/${file}`, 'utf8');
     const { data, content }: { data: any; content: string } =
       matter(postContent);
     const slug = file.replace('.mdx', '');
@@ -21,11 +21,11 @@ const blogs = fs
   .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 
 const projects = fs
-  .readdirSync(path.resolve(__dirname, '../content/projects/es/'))
+  .readdirSync(path.resolve(__dirname, '../content/es/projects/'))
   .filter((file) => path.extname(file) === '.mdx')
   .map((file) => {
     const projectContent = fs.readFileSync(
-      `src/content/projects/es/${file}`,
+      `src/content/es/projects/${file}`,
       'utf8'
     );
     const { data, content }: { data: any; content: string } =

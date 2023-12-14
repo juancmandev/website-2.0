@@ -1,96 +1,51 @@
-import {
-  allEnPosts,
-  allEsPosts,
-  allEnProjects,
-  allEsProjects,
-  allEnResources,
-  allEsResources,
-  allEnMilpas,
-  allEsMilpas,
-  allEnMains,
-  allEsMains,
-  allEnBlogMains,
-  allEsBlogMains,
-  allEnProjectsMains,
-  allEsProjectsMains,
-} from 'contentlayer/generated';
-import { notFound } from 'next/navigation';
-import { Locale } from '@/dictionaries/i18n-config';
+import { allEnContents, allEsContents } from 'contentlayer/generated';
 
-export async function getMainPage(lang: Locale) {
-  const main = lang === 'en' ? allEnMains : allEsMains;
+export async function getAllContent(locale: 'en' | 'es', type: string) {
+  let content: typeof allEnContents | typeof allEsContents;
 
-  if (!main) notFound();
+  switch (locale) {
+    case 'en':
+      content = allEnContents.filter((c) =>
+        new RegExp(`en/${type}/*`).test(c._id)
+      );
+      break;
+    case 'es':
+      content = allEsContents.filter((c) =>
+        new RegExp(`es/${type}/*`).test(c._id)
+      );
+      break;
+  }
 
-  return main[0];
+  if (!content) return;
+
+  return content;
 }
 
-export async function getBlogData(lang: Locale) {
-  const blogPage = lang === 'en' ? allEnBlogMains : allEsBlogMains;
+type TContent = (typeof allEnContents)[number] | (typeof allEsContents)[number];
 
-  if (!blogPage) notFound();
+export async function getContent(
+  locale: 'en' | 'es',
+  type: string,
+  slug: string
+) {
+  let content: TContent | undefined;
 
-  return blogPage[0];
-}
+  switch (locale) {
+    case 'en':
+      content =
+        allEnContents.find((c) =>
+          new RegExp(`en/${type}/${slug}`).test(c._id)
+        ) || undefined;
+      break;
+    case 'es':
+      content =
+        allEsContents.find((c) =>
+          new RegExp(`es/${type}/${slug}`).test(c._id)
+        ) || undefined;
+      break;
+  }
 
-export async function getProjectsData(lang: Locale) {
-  const projectPage = lang === 'en' ? allEnProjectsMains : allEsProjectsMains;
+  if (!content) return;
 
-  if (!projectPage) notFound();
-
-  return projectPage[0];
-}
-
-export async function getBlogFromParams(slug: string, lang: Locale) {
-  const blog =
-    lang === 'en'
-      ? allEnPosts.find((p) => p.slug === slug)
-      : allEsPosts.find((p) => p.slug === slug);
-
-  if (!blog) notFound();
-
-  return blog;
-}
-
-export async function getBlogsFromParams(lang: Locale) {
-  const blog = lang === 'en' ? allEnPosts : allEsPosts;
-
-  if (!blog) notFound();
-
-  return blog;
-}
-
-export async function getProjectsFromParams(lang: Locale) {
-  const blog = lang === 'en' ? allEnProjects : allEsProjects;
-
-  if (!blog) notFound();
-
-  return blog;
-}
-
-export async function getProjectFromParams(slug: string, lang: Locale) {
-  const project =
-    lang === 'en'
-      ? allEnProjects.find((p) => p.slug === slug)
-      : allEsProjects.find((p) => p.slug === slug);
-
-  if (!project) notFound();
-
-  return project;
-}
-
-export async function getResource(lang: Locale) {
-  const resource = lang === 'en' ? allEnResources : allEsResources;
-
-  if (!resource) notFound();
-
-  return resource[0];
-}
-
-export async function getMilpa(lang: Locale) {
-  const milpa = lang === 'en' ? allEnMilpas : allEsMilpas;
-
-  if (!milpa) notFound();
-
-  return milpa[0];
+  return content;
 }
