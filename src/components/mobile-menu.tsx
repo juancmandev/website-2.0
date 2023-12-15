@@ -37,14 +37,16 @@ export default function MobileMenu(props: TLocale) {
           <ScrollArea>
             <nav className='h-[calc(100vh_-_100px)]'>
               <section>
-                <Button
-                  asChild
-                  size={null}
-                  variant='link'
-                  className='w-full flex px-10 py-2 text-primary cursor-default rounded-none text-lg hover:bg-background/50 focus:bg-background/50 hover:no-underline'
-                >
-                  <Link href={`/${props.locale}`}>juancmandev</Link>
-                </Button>
+                <SheetClose asChild>
+                  <Button
+                    asChild
+                    size={null}
+                    variant='link'
+                    className='w-full flex px-10 py-2 text-primary cursor-default rounded-none text-lg hover:bg-background/50 focus:bg-background/50 hover:no-underline'
+                  >
+                    <Link href={`/${props.locale}`}>juancmandev</Link>
+                  </Button>
+                </SheetClose>
               </section>
               <section className='flex flex-col mt-1'>
                 <ul className='flex flex-col gap-1'>
