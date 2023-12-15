@@ -2,6 +2,7 @@ import { Header, Footer, BackToTop } from '@/components';
 import { localesList } from '@/lang/locales';
 import { TRootLayout } from '@/types';
 import { NextIntlClientProvider } from 'next-intl';
+import { unstable_setRequestLocale } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 
 export function generateStaticParams() {
@@ -15,6 +16,8 @@ export default async function RootLayout(props: TRootLayout) {
   } catch (error) {
     notFound();
   }
+
+  unstable_setRequestLocale(props.params.locale);
 
   return (
     <html lang={props.params.locale}>
