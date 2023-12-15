@@ -25,36 +25,42 @@ export default function MobileMenu(props: TLocale) {
   return (
     <Sheet>
       <SheetTrigger asChild title={t('header.open_menu')}>
-        <Button className='p-2' variant='ghost'>
+        <Button size='icon' variant='ghost'>
           <MenuIcon />
         </Button>
       </SheetTrigger>
       <SheetContent
         side='right'
-        className='w-max text-center px-0 pt-14 bg-secondary border-0 shadow-2xl'
+        className='w-max px-0 pt-14 bg-secondary border-0 shadow-2xl'
       >
         <SheetHeader>
           <ScrollArea>
             <nav className='h-[calc(100vh_-_100px)]'>
               <section>
-                <Link
-                  href={`/${props.locale}`}
-                  className='flex text-lg cursor-default w-full px-10 py-2 font-bold text-center hover:bg-background/50 focus:bg-background/50 text-primary'
+                <Button
+                  asChild
+                  size={null}
+                  variant='link'
+                  className='w-full flex px-10 py-2 text-primary cursor-default rounded-none text-lg hover:bg-background/50 focus:bg-background/50 hover:no-underline'
                 >
-                  juancmandev
-                </Link>
+                  <Link href={`/${props.locale}`}>juancmandev</Link>
+                </Button>
               </section>
               <section className='flex flex-col mt-1'>
                 <ul className='flex flex-col gap-1'>
                   {navItems.map((navItem) => (
                     <li key={navItem.label} className='w-full h-max flex'>
                       <SheetClose asChild>
-                        <Link
-                          href={`${props.locale}${navItem.to}`}
-                          className='cursor-default w-full px-10 py-2 font-bold text-center hover:bg-background/50 focus:bg-background/50'
+                        <Button
+                          asChild
+                          size={null}
+                          variant='link'
+                          className='w-full px-10 py-3 cursor-default rounded-none hover:bg-background/50 focus:bg-background/50 hover:no-underline'
                         >
-                          {t(`header.${navItem.label}`)}
-                        </Link>
+                          <Link href={`${props.locale}${navItem.to}`}>
+                            {t(`header.${navItem.label}`)}
+                          </Link>
+                        </Button>
                       </SheetClose>
                     </li>
                   ))}
@@ -72,31 +78,36 @@ export default function MobileMenu(props: TLocale) {
                   {socialItems.map((socialItem) => (
                     <li title={socialItem.label} key={socialItem.to}>
                       <SheetClose asChild>
-                        <a
-                          href={socialItem.to}
-                          target='_blank'
-                          className='cursor-default w-full flex justify-center py-1 text-center hover:bg-background/50 focus:bg-background/50'
+                        <Button
+                          asChild
+                          size={null}
+                          variant='link'
+                          className='w-full cursor-default py-2 grid justify-items-center gap-0.5 rounded-none hover:bg-background/50 focus:bg-background/50 hover:no-underline'
                         >
-                          <div className='flex flex-col items-center gap-1'>
+                          <a target='_blank' href={socialItem.to}>
                             {socialItem.icon}
                             <span className='text-xs'>{socialItem.label}</span>
-                          </div>
-                        </a>
+                          </a>
+                        </Button>
                       </SheetClose>
                     </li>
                   ))}
                   <li className='flex'>
-                    <a
-                      title='RSS Feed'
-                      href={`https://juancman.dev/${props.locale}-feed.xml`}
-                      target='_blank'
-                      className='cursor-default w-full flex justify-center py-3 text-center hover:bg-background/50 focus:bg-background/50'
+                    <Button
+                      asChild
+                      size={null}
+                      variant='link'
+                      className='w-full cursor-default py-2 grid justify-items-center gap-0.5 rounded-none hover:bg-background/50 focus:bg-background/50 hover:no-underline'
                     >
-                      <div className='flex flex-col items-center gap-1'>
-                        <Rss />
+                      <a
+                        target='_blank'
+                        title='RSS Feed'
+                        href={`https://juancman.dev/${props.locale}-feed.xml`}
+                      >
+                        <Rss className='w-4' />
                         <span className='text-xs'>RSS</span>
-                      </div>
-                    </a>
+                      </a>
+                    </Button>
                   </li>
                 </ul>
               </section>

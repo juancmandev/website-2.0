@@ -22,12 +22,12 @@ export const navItems = [
 export const socialItems = [
   {
     to: 'https://github.com/juancmandev',
-    icon: <Github />,
+    icon: <Github className='w-4' />,
     label: 'GitHub',
   },
   {
     to: 'mailto:contact@juancman.dev',
-    icon: <Mail />,
+    icon: <Mail className='w-4' />,
     label: 'Email',
   },
 ];

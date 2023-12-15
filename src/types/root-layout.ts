@@ -1,7 +1,9 @@
+import { locales } from '@/lang/locales';
+
 type TRootLayout = {
   children: React.ReactNode;
   params: {
-    locale: 'en' | 'es';
+    locale: locales;
   };
 };
 

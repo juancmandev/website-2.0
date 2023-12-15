@@ -1,6 +1,8 @@
+import { locales } from '@/lang/locales';
+
 type TParamsLocale = {
   params: {
-    locale: 'en' | 'es';
+    locale: locales;
   };
 };
 

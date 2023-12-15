@@ -1,4 +1,4 @@
-export const sortByKeyDesc = (array: any[], key: string) => {
+export function sortByKeyDesc(array: any[], key: string) {
   array.sort((a: any, b: any) => {
     const keyA = a[key];
     const keyB = b[key];
@@ -8,4 +8,4 @@ export const sortByKeyDesc = (array: any[], key: string) => {
 
     return 0;
   });
-};
+}

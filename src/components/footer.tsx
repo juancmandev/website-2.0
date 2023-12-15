@@ -1,11 +1,9 @@
-import { getTranslations } from 'next-intl/server';
+'use client';
 
-type TFooter = {
-  locale: 'en' | 'es';
-};
+import { useTranslations } from 'next-intl';
 
-export default async function Footer(props: TFooter) {
-  const t = await getTranslations({ locale: props.locale });
+export default function Footer() {
+  const t = useTranslations();
 
   return (
     <footer className='text-sm px-6 md:px-16 py-10 text-center bg-secondary'>

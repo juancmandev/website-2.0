@@ -1,6 +1,7 @@
+import { locales } from '@/lang/locales';
 import months from './months';
 
-export function formatDate(date: string, locale: 'en' | 'es') {
+export function formatDate(date: string, locale: locales) {
   if (locale === 'en') {
     return `${months(locale, new Date(date).getMonth())} 
     ${new Date(date).getDate()}, 

@@ -1,10 +1,11 @@
 import { Header, Footer, BackToTop } from '@/components';
+import { localesList } from '@/lang/locales';
 import { TRootLayout } from '@/types';
 import { NextIntlClientProvider } from 'next-intl';
 import { notFound } from 'next/navigation';
 
 export function generateStaticParams() {
-  return [{ lang: 'en' }, { lang: 'es' }];
+  return localesList.map((locale) => ({ locale }));
 }
 
 export default async function RootLayout(props: TRootLayout) {
@@ -24,7 +25,7 @@ export default async function RootLayout(props: TRootLayout) {
             {props.children}
             <BackToTop />
           </main>
-          <Footer locale={props.params.locale} />
+          <Footer />
         </NextIntlClientProvider>
       </body>
     </html>

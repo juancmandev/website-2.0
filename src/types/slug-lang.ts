@@ -1,6 +1,8 @@
+import { locales } from '@/lang/locales';
+
 type TSlugLang = {
   slug: string;
-  locale: 'en' | 'es';
+  locale: locales;
 };
 
 export default TSlugLang;
