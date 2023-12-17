@@ -4,16 +4,53 @@
         <description><![CDATA[Juan Manzanero's blog]]></description>
         <link>https://juancman.dev/en</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Wed, 13 Dec 2023 23:55:19 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 17 Dec 2023 02:10:42 GMT</lastBuildDate>
         <atom:link href="https://juancman.dev/en-feed.xml" rel="self" type="application/rss+xml"/>
         <language><![CDATA[en]]></language>
         <item>
-            <title><![CDATA[Rewind 2023]]></title>
-            <link>https://juancman.dev/en/blog/rewind-2023</link>
-            <guid isPermaLink="false">https://juancman.dev/en/blog/rewind-2023</guid>
+            <title><![CDATA[Rewind 2023 and future plans]]></title>
+            <description><![CDATA[<h1>Rewind 2023 and future plans</h1>
+<p><img src="/blog/rewind-2023-and-future-plans/banner.jpg" alt="A sunset with a sign"><br><em>Photo by <a href="https://unsplash.com/@soymeraki?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash" target="_blank" rel="noopener noreferrer">Javier Allegue Barros</a> on <a href="https://unsplash.com/photos/silhouette-of-road-signage-during-golden-hour-C7B-ExXpOIE?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash" target="_blank" rel="noopener noreferrer">Unsplash</a></em></p>
+<PostData date='December 16, 2023' author='Juan Manzanero' />
+
+<p>I hope you are having a good time this holiday.</p>
+<p>Life is a succession of choices, and in retrospect, I&#39;m happy that this year I made the right ones.</p>
+<h2>In retrospect about my career this 2023</h2>
+<p>I grew up drastically as a Full Stack Developer, learning new libraries and establishing my tech stack.</p>
+<p>I even started hacking (not the thing you hear in the news), creating side projects looking to create solutions.</p>
+<p>I updated this website, creating new functionalities for content creation.</p>
+<p>Now I have more confidence in my skills, ready to keep growing up and taking on new challenges.</p>
+<h2>Futures plans for my career this 2024</h2>
+<p>I want to start freelancing, I&#39;ll be creating templates and demo projects for selling my services as a Frontend Developer mainly, but I&#39;ll keep learning about backend and cloud, as well as keep practicing my English to enter the USA or European markets.</p>
+<p>Maybe I&#39;ll not achieve this in 2024, but I must keep growing, as each year passes, I&#39;ll be more prepared.</p>
+<p>I&#39;ll check if I could contribute to an Open Source project, as almost every tool that I use is an Open Source one, I couldn&#39;t be here without if not with the help of Open Source projects.</p>
+<p>Honestly, my true wish is to work full time in a Software as a Service startup, or any startup with a focus on Software.</p>
+<p>The good thing that is I keep growing professionally, and I expect (and will) the next year I&#39;ll reach more milestones.</p>
+<p>And of course, I&#39;ll continue hacking (in a creative way, not stealing info or criminal things) with side projects, creating an extra incoming source will be great for my finances.</p>
+<h2>Retrospect of 2023 personally and more</h2>
+<p>This year I rediscovered the hobby of reading, and I really enjoy it.</p>
+<p>I discovered my new favorite book, <strong>Ready Player One</strong>, it was a really exciting and great lecture, the next year I&#39;ll read the sequel.</p>
+<p>I also started reading <strong>Ikigai</strong>, to keep acquiring good habits for a long and happy life, and seek a purpose in life.</p>
+<p>Another book I started reading is <strong>The Little Book of Common Sense Investing</strong>, as I already had a good habit of saving, but I want my money to keep growing more for a dignified retirement.</p>
+<p>I&#39;m spending less time on social media, <a href="https://www.juancman.dev/en/blog/the-monotony-of-social-media" target="_blank" rel="noopener noreferrer">even I wrote an article about this</a>, doing things that <strong>I really want to do</strong> instead.</p>
+<p>Is really horrible how much time social media steals from us, keeping us away from doing things that we really enjoy.</p>
+<p>I&#39;m doing moderate exercise, but indoors, I want to go outdoors too, I need more solar light.</p>
+<p>I&#39;m happy spending my time with my family, even if the majority of the time I&#39;m working or studying, I keep contact with my loved ones, and continue doing it, clearly.</p>
+<h2>Future plans for 2024 personally and more</h2>
+<p>I&#39;ll keep reading, I&#39;ll write more on this website.</p>
+<p>I want to acquire new habits, like pixel art.</p>
+<p>And I&#39;m retaking an old hobby, <strong>GameDev</strong>.</p>
+<p>As Unity is doing questionable things, I&#39;ll be using <a href="https://godotengine.org/" target="_blank" rel="noopener noreferrer">Godot</a> instead.</p>
+<p>I don&#39;t have in mind a big project or something like that, just retake to develop simple videogames demos, it would be great to launch a little videogame, but a complete one.</p>
+<p>Trust me, is really, <strong>REALLY</strong> challenging to develop videogames, so instead of overwhelming myself, I&#39;ll keep my <strong>ambitions simple</strong>, but <strong>constant</strong>.</p>
+<h3>Happy holidays!</h3>
+<p><img src="/blog/rewind-2023-and-future-plans/2023-complete!.png" alt="2023 complete image!"></p>
+]]></description>
+            <link>https://juancman.dev/en/blog/rewind-2023-and-future-plans</link>
+            <guid isPermaLink="false">https://juancman.dev/en/blog/rewind-2023-and-future-plans</guid>
             <category><![CDATA[Thoughts]]></category>
             <dc:creator><![CDATA[Juan Manzanero]]></dc:creator>
-            <pubDate>Wed, 20 Dec 2023 06:00:00 GMT</pubDate>
+            <pubDate>Sat, 16 Dec 2023 06:00:00 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[Peddler App]]></title>
@@ -237,7 +274,7 @@
             <description><![CDATA[<h1>Human to JS</h1>
 <p><img src="/projects/human-to-js-banner.png" alt="Human to JS banner"><br><em>Human to JS diagram</em></p>
 <p><PostData
-  date='15 de Mayo del 2023'
+  date='14 de Abril del 2023'
   author='Juan Manzanero'
   website='https://human-to-js.juancman.dev'
   github='https://github.com/juancmandev/human-to-js'
@@ -273,14 +310,14 @@
             <category><![CDATA[JavaScript]]></category>
             <category><![CDATA[Vercel]]></category>
             <dc:creator><![CDATA[Juan Manzanero]]></dc:creator>
-            <pubDate>Fri, 14 Apr 2023 23:00:00 GMT</pubDate>
+            <pubDate>Fri, 14 Apr 2023 05:00:00 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[Workarise]]></title>
             <description><![CDATA[<h1>Workarise</h1>
 <p><img src="/projects/workarise-banner.png" alt="Workarise Banner"><br><em>Workarise Banner</em></p>
 <p><PostData
-  date='14 de Abril del 2023'
+  date='13 de Abril del 2023'
   author='Juan Manzanero'
   website='https://human-to-js.juancman.dev'
   github='https://github.com/juancmandev/human-to-js'
@@ -308,7 +345,7 @@
             <category><![CDATA[GCP]]></category>
             <category><![CDATA[Node.js]]></category>
             <dc:creator><![CDATA[Juan Manzanero]]></dc:creator>
-            <pubDate>Thu, 13 Apr 2023 23:00:00 GMT</pubDate>
+            <pubDate>Thu, 13 Apr 2023 05:00:00 GMT</pubDate>
         </item>
     </channel>
 </rss>
