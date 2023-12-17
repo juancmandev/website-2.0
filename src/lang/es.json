@@ -43,7 +43,12 @@
     "resources": "Recursos",
     "milpa": "Milpa",
     "en": "🇲🇽",
-    "es": "🇺🇸"
+    "es": "🇺🇸",
+    "home_link": "/es",
+    "blog_link": "/es/blog",
+    "projects_link": "/es/projects",
+    "resources_link": "/es/resources",
+    "milpa_link": "/es/milpa"
   },
   "footer": {
     "h4": "Uncopyrigth por Juan Manzanero. 2023.",

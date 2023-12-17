@@ -33,6 +33,7 @@
     "next": "^14.0.1",
     "next-contentlayer": "^0.3.4",
     "next-intl": "^3.3.2",
+    "next-themes": "^0.2.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-syntax-highlighter": "^15.5.0",

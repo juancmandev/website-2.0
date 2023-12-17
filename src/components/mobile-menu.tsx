@@ -44,7 +44,7 @@ export default function MobileMenu(props: TLocale) {
                     variant='link'
                     className='w-full flex px-10 py-2 text-primary cursor-default rounded-none text-lg hover:bg-background/50 focus:bg-background/50 hover:no-underline'
                   >
-                    <Link href={`/${props.locale}`}>juancmandev</Link>
+                    <Link href={t('header.home_link')}>juancmandev</Link>
                   </Button>
                 </SheetClose>
               </section>
@@ -59,7 +59,7 @@ export default function MobileMenu(props: TLocale) {
                           variant='link'
                           className='w-full px-10 py-3 cursor-default rounded-none hover:bg-background/50 focus:bg-background/50 hover:no-underline'
                         >
-                          <Link href={`${props.locale}${navItem.to}`}>
+                          <Link href={t(`header.${navItem.label}_link`)}>
                             {t(`header.${navItem.label}`)}
                           </Link>
                         </Button>

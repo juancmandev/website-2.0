@@ -1,5 +1,3 @@
-'use client';
-
 import Link from 'next/link';
 import { Rss } from 'lucide-react';
 import { navItems, socialItems } from '@/utils';
@@ -20,7 +18,7 @@ export default function Header(props: THeader) {
       <nav className='w-full max-w-[1200px] xl:mx-auto flex justify-between items-center'>
         <section>
           <Button asChild variant='link' className='text-primary text-lg'>
-            <Link href={`/${props.locale}`}>juancmandev</Link>
+            <Link href={t('header.home_link')}>juancmandev</Link>
           </Button>
         </section>
         <section className='hidden lg:flex items-center'>
@@ -28,7 +26,7 @@ export default function Header(props: THeader) {
             {navItems.map((navItem) => (
               <li key={navItem.label} className='w-max h-max'>
                 <Button asChild variant='link' className='px-2'>
-                  <Link href={`${props.locale}${navItem.to}`}>
+                  <Link href={t(`header.${navItem.label}_link`)}>
                     {t(`header.${navItem.label}`)}
                   </Link>
                 </Button>

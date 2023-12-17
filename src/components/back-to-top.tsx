@@ -17,7 +17,7 @@ export default function BackToTop() {
     <Button
       variant='secondary'
       onClick={scrollToTop}
-      className='mt-20 flex mx-auto bg-destructive-foreground'
+      className='mt-20 flex mx-auto'
     >
       {t('back_to_top')}
     </Button>
