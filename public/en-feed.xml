@@ -3,8 +3,13 @@
         <title><![CDATA[Juan Manzanero in English]]></title>
         <description><![CDATA[Juan Manzanero's blog]]></description>
         <link>https://juancman.dev/en</link>
+        <image>
+            <url>https://juancman.dev/logo.png</url>
+            <title>Juan Manzanero in English</title>
+            <link>https://juancman.dev/en</link>
+        </image>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Sun, 17 Dec 2023 02:10:42 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 17 Dec 2023 19:22:22 GMT</lastBuildDate>
         <atom:link href="https://juancman.dev/en-feed.xml" rel="self" type="application/rss+xml"/>
         <language><![CDATA[en]]></language>
         <item>

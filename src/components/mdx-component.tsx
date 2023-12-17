@@ -27,7 +27,7 @@ const components = {
     <a
       {...props}
       target='_blank'
-      className='transition-colors text-primary underline hover:text-primaryLight focus:text-primaryLight'
+      className='transition-colors text-primary underline'
     />
   ),
   p: ({ className, ...props }: React.HTMLAttributes<HTMLParagraphElement>) => (
@@ -54,10 +54,13 @@ const components = {
     // eslint-disable-next-line @next/next/no-img-element
     <img
       {...props}
-      width={300}
-      height={250}
-      className={`w-full h-auto ${cn('rounded-md', className)}`}
-      alt={alt}
+      width={578.5}
+      height={385.967}
+      className={`w-full max-w-[578.5px] h-auto max-h-[385.967] ${cn(
+        'rounded-md',
+        className
+      )}`}
+      alt={alt || 'Image'}
     />
   ),
   hr: ({ ...props }) => <hr className='my-4 md:my-8' {...props} />,

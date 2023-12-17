@@ -56,6 +56,7 @@ const main = () => {
     feed_url: `${url}/es-feed.xml`,
     language: 'es',
     description: 'Blog de Juan Manzanero',
+    image_url: `${url}/logo.png`,
   });
 
   blogs.forEach((blog) => {
