@@ -56,7 +56,7 @@ const components = {
       {...props}
       width={300}
       height={250}
-      className={`w-full h-auto ${cn('rounded-sm', className)}`}
+      className={`w-full h-auto ${cn('rounded-md', className)}`}
       alt={alt}
     />
   ),
