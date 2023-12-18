@@ -11,7 +11,11 @@ export default function Footer() {
       <p>{t('footer.h4')}</p>
       <p>{t('footer.h5')}</p>
       <p>{t('footer.h6')}</p>
-      <Button asChild variant='link' className='flex text-primary underline'>
+      <Button
+        asChild
+        variant='link'
+        className='w-max mx-auto flex text-primary underline'
+      >
         <a target='_blank' href='https://github.com/juancmandev/website-2.0'>
           {t('footer.source_code')}
         </a>

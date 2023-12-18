@@ -3,6 +3,7 @@ import { useMDXComponent } from 'next-contentlayer/hooks';
 import cn from '@/utils/cn';
 import { PostData, LinkToSection, CodeBlock } from '@/components';
 import { TCodeBlock } from '@/types';
+import { Button } from './ui/button';
 
 const components = {
   h1: ({ className, ...props }: React.HTMLAttributes<HTMLHeadingElement>) => (
@@ -24,11 +25,9 @@ const components = {
     <h6 {...props} />
   ),
   a: ({ className, ...props }: React.HTMLAttributes<HTMLAnchorElement>) => (
-    <a
-      {...props}
-      target='_blank'
-      className='transition-colors text-primary underline'
-    />
+    <Button size={null} asChild variant='link' className='p-0 text-primary'>
+      <a {...props} target='_blank' />
+    </Button>
   ),
   p: ({ className, ...props }: React.HTMLAttributes<HTMLParagraphElement>) => (
     <p {...props} />
@@ -82,8 +81,18 @@ const components = {
   code: ({ className, ...props }: React.HTMLAttributes<HTMLElement>) => (
     <code {...props} />
   ),
-  PostData: ({ date, author }: { date: string; author: string }) => (
-    <PostData date={date} author={author} />
+  PostData: ({
+    date,
+    author,
+    website,
+    github,
+  }: {
+    date: string;
+    author: string;
+    website?: string;
+    github?: string;
+  }) => (
+    <PostData date={date} author={author} website={website} github={github} />
   ),
   LinkToSection: ({ href, label }: { href: string; label: string }) => (
     <LinkToSection href={href} label={label} />

@@ -41,7 +41,7 @@ export default async function Page(props: TPage) {
           <li key={portfolioItem.slug}>
             <ItemCard
               {...portfolioItem}
-              type='projects'
+              type='portfolio'
               lang={props.params.locale}
             />
           </li>

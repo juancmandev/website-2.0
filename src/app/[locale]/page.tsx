@@ -62,7 +62,7 @@ export default async function Page(props: TParamsLocale) {
                 <ItemCard
                   {...project}
                   lang={props.params.locale}
-                  type='projects'
+                  type='portfolio'
                 />
               </li>
             ))

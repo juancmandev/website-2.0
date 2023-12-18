@@ -1,4 +1,5 @@
 import { Calendar, User2, Globe, Github } from 'lucide-react';
+import { Button } from './ui/button';
 
 interface Props {
   date: string;
@@ -9,33 +10,35 @@ interface Props {
 
 export default function PostData(props: Props) {
   return (
-    <div className='flex flex-col gap-4'>
-      <div className='flex items-center gap-2'>
+    <section className='flex flex-col gap-4'>
+      <div className='flex items-center gap-1'>
         <Calendar />
         <span>{props.date}</span>
       </div>
 
-      <div className='flex items-center gap-2'>
+      <div className='flex items-center gap-1'>
         <User2 />
         <span>{props.author}</span>
       </div>
 
-      <div className='flex items-center gap-4'>
+      <div className='flex items-center gap-6'>
         {props.website && (
-          <a title='Web of this project' href={props.website} target='_blank'>
-            <Globe />
-          </a>
+          <Button asChild variant='link' className='p-0 flex gap-1'>
+            <a href={props.website} target='_blank'>
+              <Globe />
+              <span>Website</span>
+            </a>
+          </Button>
         )}
         {props.github && (
-          <a
-            title='Source Code of this project'
-            href={props.github}
-            target='_blank'
-          >
-            <Github />
-          </a>
+          <Button asChild variant='link' className='p-0 flex gap-1'>
+            <a href={props.github} target='_blank'>
+              <Github />
+              <span>GitHub</span>
+            </a>
+          </Button>
         )}
       </div>
-    </div>
+    </section>
   );
 }

@@ -1,7 +1,7 @@
 type TItemCard = {
   title?: string;
   date?: string;
-  type?: 'blog' | 'projects';
+  type?: 'blog' | 'portfolio';
   description?: string;
   slug: string;
   tags?: string[];
