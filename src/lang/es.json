@@ -8,9 +8,9 @@
       "title": "Blog",
       "description": "Formato largo sobre pensamientos y más cosas."
     },
-    "projects": {
-      "title": "Proyectos",
-      "description": "Proyectos personales, explicando qué hice y cómo."
+    "portfolio": {
+      "title": "Portfolio",
+      "description": "Revisa mis proyectos."
     }
   },
   "common": {
@@ -27,8 +27,8 @@
     "latest_posts": "Últimos Posts",
     "latest_projects": "Últimos Proyectos"
   },
-  "projects": {
-    "title": "Proyectos"
+  "portfolio": {
+    "title": "Portfolio"
   },
   "blog": {
     "description_1": "Dividido por secciones, aquí intento liberar mis pensamientos usando palabras.",
@@ -39,14 +39,14 @@
     "open_menu": "Abrir menú",
     "change_language": "Change language to English",
     "blog": "Blog",
-    "projects": "Proyectos",
+    "portfolio": "Portfolio",
     "resources": "Recursos",
     "milpa": "Milpa",
     "en": "🇲🇽",
     "es": "🇺🇸",
     "home_link": "/es",
     "blog_link": "/es/blog",
-    "projects_link": "/es/projects",
+    "projects_link": "/es/portfolio",
     "resources_link": "/es/resources",
     "milpa_link": "/es/milpa"
   },
@@ -54,6 +54,6 @@
     "h4": "Uncopyrigth por Juan Manzanero. 2023.",
     "h5": "El contenido de este website está escrito sin AI.",
     "h6": "Construido a mano con Next.js.",
-    "source_code": "Construido a mano con Next.js."
+    "source_code": "Website Source Code"
   }
 }

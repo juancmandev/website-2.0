@@ -7,67 +7,67 @@ import { TSlugLang } from '@/types';
 export async function generateStaticParams(
   props: TParamsLocale
 ): Promise<TSlugLang[]> {
-  const projects = await getAllContent(props.params.locale, 'projects');
+  const portfolio = await getAllContent(props.params.locale, 'portfolio');
 
-  if (!projects) return [];
+  if (!portfolio) return [];
 
-  return projects.map((project) => ({
-    slug: project.slug,
+  return portfolio.map((portfolioItem) => ({
+    slug: portfolioItem.slug,
     locale: props.params.locale,
   }));
 }
 
 export async function generateMetadata(props: TPage): Promise<Metadata> {
-  const project = await getContent(
+  const portfolio = await getContent(
     props.params.locale,
-    'projects',
+    'portfolio',
     props.params.slug
   );
 
-  if (!project) return {};
+  if (!portfolio) return {};
 
   return {
-    title: project.title,
-    description: project.description,
+    title: portfolio.title,
+    description: portfolio.description,
     openGraph: {
       type: 'article',
       locale: props.params.locale,
-      title: project.title,
-      description: project.description,
-      publishedTime: new Date(project.date || '').toISOString(),
-      authors: project.author,
+      title: portfolio.title,
+      description: portfolio.description,
+      publishedTime: new Date(portfolio.date || '').toISOString(),
+      authors: portfolio.author,
       images: [
         {
-          url: project.image || '',
+          url: portfolio.image || '',
           width: 1200,
           height: 675,
-          alt: project.imageCaption,
+          alt: portfolio.imageCaption,
         },
       ],
     },
     twitter: {
       card: 'summary_large_image',
-      title: project.title,
-      description: project.description,
+      title: portfolio.title,
+      description: portfolio.description,
       creator: '@juancmandev',
       images: {
         width: 1200,
         height: 675,
-        url: project.image || '',
-        alt: project.imageCaption,
+        url: portfolio.image || '',
+        alt: portfolio.imageCaption,
       },
     },
   };
 }
 
 export default async function Page(props: TPage) {
-  const project = await getContent(
+  const portfolio = await getContent(
     props.params.locale,
-    'projects',
+    'portfolio',
     props.params.slug
   );
 
-  if (!project) return null;
+  if (!portfolio) return null;
 
-  return <Mdx code={project.body.code} />;
+  return <Mdx code={portfolio.body.code} />;
 }

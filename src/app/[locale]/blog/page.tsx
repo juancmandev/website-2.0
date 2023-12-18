@@ -30,8 +30,10 @@ export default async function Page(props: TPage) {
 
   return (
     <>
-      <h1 className='text-4xl font-bold mb-2'>Blog</h1>
-      <p className='mb-8'>{t('blog.description_1')}</p>
+      <section className='mb-10'>
+        <h1 className='text-3xl font-bold mb-5'>{t('metadata.blog.title')}</h1>
+        <p>{t('metadata.blog.description')}</p>
+      </section>
       <div className='flex flex-col gap-10'>
         <section>
           <h2 className='text-2xl font-bold mb-4'>Tech</h2>

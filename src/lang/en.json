@@ -8,9 +8,9 @@
       "title": "Blog",
       "description": "Long format about thoughts and more stuff."
     },
-    "projects": {
-      "title": "Projects",
-      "description": " Personal projects, explaining what I did and how."
+    "portfolio": {
+      "title": "Portfolio",
+      "description": "Check my projects."
     }
   },
   "common": {
@@ -25,8 +25,8 @@
     "latest_posts": "Latest posts",
     "latest_projects": "Latest projects"
   },
-  "projects": {
-    "title": "Projects"
+  "portfolio": {
+    "title": "Portfolio"
   },
   "blog": {
     "description_1": "Divided by topics, here I try to release my thoughts using words.",
@@ -37,14 +37,14 @@
     "open_menu": "Open menu",
     "change_language": "Cambiar idioma al Español",
     "blog": "Blog",
-    "projects": "Projects",
+    "portfolio": "Portfolio",
     "resources": "Resources",
     "milpa": "Milpa",
     "en": "🇲🇽",
     "es": "🇺🇸",
     "home_link": "/en",
     "blog_link": "/en/blog",
-    "projects_link": "/en/projects",
+    "portfolio_link": "/en/portfolio",
     "resources_link": "/en/resources",
     "milpa_link": "/en/milpa"
   },

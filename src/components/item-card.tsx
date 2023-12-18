@@ -9,7 +9,7 @@ export default function ItemCard(props: TItemCard) {
     <Link
       title={props.title}
       tabIndex={0}
-      className='group outline-none'
+      className='group outline-card'
       href={`/${props.lang}/${props.type}/${props.slug}`}
     >
       <article className='w-[280px] h-full rounded-md shadow-xl bg-secondary'>

@@ -26,7 +26,7 @@ export default async function Page(props: TParamsLocale) {
   sortByKeyDesc(blogs!, 'date');
   const last3Blogs = blogs && blogs.slice(0, 3);
 
-  const projects = await getAllContent(props.params.locale, 'projects');
+  const projects = await getAllContent(props.params.locale, 'portfolio');
   sortByKeyDesc(projects!, 'date');
   const last3Projects = projects && projects.slice(0, 3);
 

@@ -2,6 +2,7 @@
 
 import { useTranslations } from 'next-intl';
 import Link from 'next/link';
+import { Button } from './ui/button';
 
 type TChangeLanguage = {
   locale: 'en' | 'es';
@@ -12,12 +13,14 @@ export default function ChangeLanguage(props: TChangeLanguage) {
   const changeLang = props.locale === 'en' ? 'es' : 'en';
 
   return (
-    <Link
-      title={t('header.change_language')}
-      className='w-full flex justify-center px-2 text-xl'
-      href={`/${changeLang}`}
+    <Button
+      asChild
+      variant='link'
+      className='px-2 text-xl flex justify-center items-center'
     >
-      {t(`header.${props.locale}`)}
-    </Link>
+      <Link title={t('header.change_language')} href={`/${changeLang}`}>
+        {t(`header.${props.locale}`)}
+      </Link>
+    </Button>
   );
 }

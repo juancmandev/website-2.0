@@ -6,8 +6,8 @@ export const navItems = [
     to: '/blog',
   },
   {
-    label: 'projects',
-    to: '/projects',
+    label: 'portfolio',
+    to: '/portfolio',
   },
   {
     label: 'resources',

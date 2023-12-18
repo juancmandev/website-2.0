@@ -21,7 +21,7 @@ module.exports = {
     extend: {
       colors: {
         border: '#eee',
-        input: '#393e46',
+        input: '#00adb5',
         ring: '#00adb5',
         background: '#222831',
         foreground: '#eee',
