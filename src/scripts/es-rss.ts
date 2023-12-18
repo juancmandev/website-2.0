@@ -20,12 +20,12 @@ const blogs = fs
   })
   .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 
-const projects = fs
-  .readdirSync(path.resolve(__dirname, '../content/es/projects/'))
+const portfolio = fs
+  .readdirSync(path.resolve(__dirname, '../content/es/portfolio/'))
   .filter((file) => path.extname(file) === '.mdx')
   .map((file) => {
     const projectContent = fs.readFileSync(
-      `src/content/es/projects/${file}`,
+      `src/content/es/portfolio/${file}`,
       'utf8'
     );
     const { data, content }: { data: any; content: string } =
@@ -73,17 +73,17 @@ const main = () => {
     });
   });
 
-  projects.forEach((project) => {
-    const link = `${url}/es/projects/${project.slug}`;
+  portfolio.forEach((portfolioProject) => {
+    const link = `${url}/es/portfolio/${portfolioProject.slug}`;
 
     feed.item({
-      title: project.title,
-      description: renderContent(project.body),
-      date: new Date(project.date),
-      author: project.author,
+      title: portfolioProject.title,
+      description: renderContent(portfolioProject.body),
+      date: new Date(portfolioProject.date),
+      author: portfolioProject.author,
       url: link,
       guid: link,
-      categories: project.tags,
+      categories: portfolioProject.tags,
     });
   });
 

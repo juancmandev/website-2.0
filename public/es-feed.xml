@@ -4,12 +4,12 @@
         <description><![CDATA[Blog de Juan Manzanero]]></description>
         <link>https://juancman.dev/es</link>
         <image>
-            <url>https://juancman.dev/favicon.ico</url>
+            <url>https://juancman.dev/logo.png</url>
             <title>Juan Manzanero en Español</title>
             <link>https://juancman.dev/es</link>
         </image>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Sun, 17 Dec 2023 19:22:25 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 18 Dec 2023 19:45:02 GMT</lastBuildDate>
         <atom:link href="https://juancman.dev/es-feed.xml" rel="self" type="application/rss+xml"/>
         <language><![CDATA[es]]></language>
         <item>
@@ -273,6 +273,69 @@
             <pubDate>Fri, 07 Apr 2023 05:00:00 GMT</pubDate>
         </item>
         <item>
+            <title><![CDATA[Next Inlt Blog Template]]></title>
+            <description><![CDATA[<h1>Next Inlt Blog Template</h1>
+<p><img src="/portfolio/next-intl-blog-template/banner.png" alt="Next Intl Blog Template banner"><br><em>Next Intl Blog Template banner</em></p>
+<p><PostData
+  date='18 de Diciembre del 2023'
+  author='Juan Manzanero'
+  website='https://next-intl-blog-template.vercel.app/es'
+  github='https://github.com/juancmandev/next-intl-blog-template'
+/></p>
+<h2>Introducción</h2>
+<p>Recientemente actualicé este website, y como sabrás, es un website con <strong>contenido en Inglés y Español</strong>.</p>
+<p>No estoy usando un plugin de traducción, en su lugar escribo cada palabra en ambos idiomas.</p>
+<p>Gracias a Next.js y <a href="https://next-intl-docs.vercel.app/" target="_blank" rel="noopener noreferrer">next-intl</a> puedo lograr esto, renderizando rutas para cada idioma en el website, accediendo a un diccionario que contiene el contenido traducido por mí.</p>
+<p>Para los archivos .mdx, creé un directorio para cada idioma, y dentro de esos directorios contiene el contenido en ambos idiomas también.</p>
+<h2>Cómo usar</h2>
+<p>Este template es una extensión de <a href="https://next-intl-docs.vercel.app/" target="_blank" rel="noopener noreferrer">next-intl</a>, revisa la <a href="https://next-intl-docs.vercel.app/docs/getting-started" target="_blank" rel="noopener noreferrer">guía de inicio</a> para aprender lo básico, el propósito del template es crear un layout simple para futuras personalizaciones.</p>
+<h3>Agregar o quitar locales</h3>
+<p>Puedes agregar o remover locales en el archivo <em>src/lang/locales.ts</em>.</p>
+<p>&lt;CodeBlock title=&#39;src/lang/locales.ts&#39; language=&#39;typescript&#39; code={`export type locales = &#39;en&#39; | &#39;es&#39;;</p>
+<p>export const localesList: locales[] = [&#39;en&#39;, &#39;es&#39;];<br>`} /&gt;</p>
+<p>Solo agrega o remueve un locale de la constante <em>locales</em>, y agrega o remueve el locale de la lista.</p>
+<p>El primer item de la lista debe ser el locale por defecto.</p>
+<p>La lista es usada para la generación estática de las rutas en <em>{<code>src/app/[locale]/layout.tsx</code>}</em>.</p>
+<p>&lt;CodeBlock title=&#39;src/app/[locale]/layout.tsx&#39; language=&#39;typescript&#39; code={`import { localesList } from &#39;@/lang/locales&#39;;</p>
+<p>export function generateStaticParams() {<br>  return localesList.map((locale) =&gt; ({ locale }));<br>}`} /&gt;</p>
+<p>Recuerda actualizar el matcher en <em>src/middleware.ts</em>.</p>
+<p>&lt;CodeBlock title=&#39;src/middleware.ts&#39; language=&#39;typescript&#39; code={`//...</p>
+<p>export const config = {<br>  matcher: [&#39;/&#39;, &#39;/(en|es)/:path*&#39;],<br>};<br>`} /&gt;</p>
+<p>Y por supuesto, actualiza los archivos <em>{<code>src/lang/[locale].json</code>}</em>.</p>
+<h3>Crear contenido</h3>
+<p>Usa <em>{<code>src/content/[locale]</code>}</em> para crear contenido, en el directorio <em>{<code>/[locale]/</code>}</em> crea un directorio para cada propósito, por ejemplo: <em>{<code>/[locale]/blog</code>}</em>.</p>
+<p>Dentro crea el archivo .mdx con un nombre único, el nombre será usado como slug para crear la página estática para ese post.</p>
+<p>Para crear una sección de blog, usarás la función <em>getAllContent</em> en tu ruta, por ejemplo: <em>{<code>src/app/[locale]/blog/[slug]/page.tsx</code>}</em>.</p>
+<p>&lt;CodeBlock title={<code>src/app/[locale]/blog/[slug]/page.tsx</code>} language=&#39;typescript&#39; code={`import { Mdx } from &#39;@/components&#39;;<br>import { TParamsLocale, TPage, TSlugLang } from &#39;@/types&#39;;<br>import { Metadata } from &#39;next&#39;;<br>import { getAllContent, getContent } from &#39;@/utils/getContent&#39;;</p>
+<p>export async function generateStaticParams(<br>  props: TParamsLocale<br>): Promise&lt;TSlugLang[]&gt; {<br>  const blogs = await getAllContent(props.params.locale, &#39;blog&#39;);</p>
+<p>  if (!blogs) return [];</p>
+<p>  return blogs.map((blog) =&gt; ({<br>    slug: blog.slug,<br>    locale: props.params.locale,<br>  }));<br>}</p>
+<p>//...<br>`} /&gt;</p>
+<p>Esto creará una página estática para cada post de blog.</p>
+<p>Puedes obtener la metadata del archivo .mdx también.</p>
+<p>&lt;CodeBlock title={<code>src/app/[locale]/blog/[slug]/page.tsx</code>} language=&#39;typescript&#39; code={`//...</p>
+<p>export async function generateMetadata(props: TPage): Promise<Metadata> {<br>  const blog = await getContent(props.params.locale, &#39;blog&#39;, props.params.slug);</p>
+<p>  if (!blog) return {};</p>
+<p>  return {<br>    title: blog.title,<br>    //...<br>  };<br>}</p>
+<p>//...`} /&gt;</p>
+<p>Entonces, renderiza el contenido usando el componente <em>Mdx</em>.</p>
+<p>&lt;CodeBlock title=&#39;src/app/[locale]/blog/[slug]/page.tsx&#39; language=&#39;typescript&#39; code={`//...</p>
+<p>export default async function Page(props: TPage) {<br>  const post = await getContent(props.params.locale, &#39;blog&#39;, props.params.slug);</p>
+<p>  if (!post) return null;</p>
+<p>  return <Mdx code={post.body.code} />;<br>}<br>`} /&gt;</p>
+<p><a href="https://github.com/juancmandev/next-intl-blog-template" target="_blank" rel="noopener noreferrer">Puedes hacer un fork de este template aquí</a></p>
+<h2>Contacto</h2>
+<p>Si te interesa <strong>trabajar juntos</strong> en un website con internacionalización con Next.js, envíame un correo a <a href="mailto:contact@juancman.dev" target="_blank" rel="noopener noreferrer">contact@juancman.dev</a></p>
+]]></description>
+            <link>https://juancman.dev/es/portfolio/next-intl-blog-template</link>
+            <guid isPermaLink="false">https://juancman.dev/es/portfolio/next-intl-blog-template</guid>
+            <category><![CDATA[Next.js]]></category>
+            <category><![CDATA[next-intl]]></category>
+            <category><![CDATA[tailwindcss]]></category>
+            <dc:creator><![CDATA[Juan Manzanero]]></dc:creator>
+            <pubDate>Mon, 18 Dec 2023 06:00:00 GMT</pubDate>
+        </item>
+        <item>
             <title><![CDATA[Human to JS]]></title>
             <description><![CDATA[<h1>Human to JS</h1>
 <p><img src="/projects/human-to-js-banner.png" alt="Human to JS banner"><br><em>Human to JS diagram</em></p>
@@ -306,8 +369,8 @@
 <h2>Inspirando personas</h2>
 <p>Lo genial de los side projects is que inspira personas como nosotros, podemos usar nuestras habilidades técnicas que llevan el pan a la mesa para transformar ideas en productos, y productos en comunidades, tal como <a href="https://twitter.com/serudda" target="_blank" rel="noopener noreferrer">@Serudda</a> habla en este <a href="https://www.youtube.com/watch?v=LXgPNdw8avI&t" target="_blank" rel="noopener noreferrer">video</a>.</p>
 ]]></description>
-            <link>https://juancman.dev/es/projects/human-to-js</link>
-            <guid isPermaLink="false">https://juancman.dev/es/projects/human-to-js</guid>
+            <link>https://juancman.dev/es/portfolio/human-to-js</link>
+            <guid isPermaLink="false">https://juancman.dev/es/portfolio/human-to-js</guid>
             <category><![CDATA[ChatGPT]]></category>
             <category><![CDATA[Next.js]]></category>
             <category><![CDATA[JavaScript]]></category>
@@ -318,7 +381,7 @@
         <item>
             <title><![CDATA[Workarise]]></title>
             <description><![CDATA[<h1>Workarise</h1>
-<p><img src="/projects/workarise-banner.png" alt="Workarise Banner"><br><em>Workarise Banner</em></p>
+<p><img src="/portfolio/workarise/banner.png" alt="Workarise Banner"><br><em>Workarise Banner</em></p>
 <p><PostData
   date='13 de Abril del 2023'
   author='Juan Manzanero'
@@ -339,8 +402,8 @@
 <p>Estoy feliz de poner a prueba mis habilidades en este proyecto, no es fácil tomar más responsabilidad con menos de 2 años de experiencia laboral, y me ha ayudado a crecer mucho en estos meses.</p>
 <p>Incluso si el mercado no considera mis años como senior, creo que eso no importa tanto, lo único que importa es que puedas entender por qué usas código, para crear soluciones y alcanzar a las personas a través de sus computadoras.</p>
 ]]></description>
-            <link>https://juancman.dev/es/projects/workarise</link>
-            <guid isPermaLink="false">https://juancman.dev/es/projects/workarise</guid>
+            <link>https://juancman.dev/es/portfolio/workarise</link>
+            <guid isPermaLink="false">https://juancman.dev/es/portfolio/workarise</guid>
             <category><![CDATA[React.js]]></category>
             <category><![CDATA[Vite.js]]></category>
             <category><![CDATA[MUI]]></category>
