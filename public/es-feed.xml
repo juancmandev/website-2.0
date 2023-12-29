@@ -9,7 +9,7 @@
             <link>https://juancman.dev/es</link>
         </image>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Mon, 18 Dec 2023 19:45:02 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 29 Dec 2023 03:37:30 GMT</lastBuildDate>
         <atom:link href="https://juancman.dev/es-feed.xml" rel="self" type="application/rss+xml"/>
         <language><![CDATA[es]]></language>
         <item>
@@ -156,11 +156,11 @@
 <p>Blog inspirado en &quot;Why does every personal website look like this now?&quot; by Eric Murphy en YouTube.</p>
 <p>Video de origen (en inglés):</p>
 <iframe
-  width='560'
-  height='315'
+  width='100%'
+  height='320'
+  className='rounded-md'
   src='https://www.youtube-nocookie.com/embed/_x6SCSz7g5I'
   title='YouTube video player'
-  frameBorder='0'
   allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
   allowFullScreen
 />
@@ -338,7 +338,7 @@
         <item>
             <title><![CDATA[Human to JS]]></title>
             <description><![CDATA[<h1>Human to JS</h1>
-<p><img src="/projects/human-to-js-banner.png" alt="Human to JS banner"><br><em>Human to JS diagram</em></p>
+<p><img src="/portfolio/human-to-js/banner.png" alt="Human to JS banner"><br><em>Human to JS diagram</em></p>
 <p><PostData
   date='14 de Abril del 2023'
   author='Juan Manzanero'

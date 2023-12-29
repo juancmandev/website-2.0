@@ -17,7 +17,7 @@ export default function Header(props: THeader) {
     <header className='w-full fixed px-6 py-4 md:px-15 -top-1 z-10 flex justify-between items-center bg-secondary shadow-2xl'>
       <nav className='w-full max-w-[1200px] xl:mx-auto flex justify-between items-center'>
         <section>
-          <Button asChild variant='link' className='text-primary text-lg'>
+          <Button asChild variant='link' className='text-primary text-lg px-0'>
             <Link href={t('header.home_link')}>juancmandev</Link>
           </Button>
         </section>
