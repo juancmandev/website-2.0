@@ -24,7 +24,7 @@ export default async function RootLayout(props: TRootLayout) {
       <body>
         <NextIntlClientProvider messages={messages}>
           <Header locale={props.params.locale} />
-          <main className='max-w-[1200px] xl:mx-auto xl:px-0 min-h-[calc(100vh_-_76px)] px-6 md:px-12 pt-40 md:pt-48 pb-20'>
+          <main className='max-w-[1200px] xl:mx-auto min-h-[calc(100vh_-_76px)] px-6 xl:px-0 py-20'>
             {props.children}
             <BackToTop />
           </main>

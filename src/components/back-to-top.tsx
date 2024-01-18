@@ -2,6 +2,7 @@
 
 import { useTranslations } from 'next-intl';
 import { Button } from './ui/button';
+import { ChevronUpIcon } from 'lucide-react';
 
 const isBrowser = () => typeof window !== 'undefined'; //The approach recommended by Next.js
 
@@ -15,11 +16,13 @@ export default function BackToTop() {
 
   return (
     <Button
-      variant='secondary'
+      title={t('back_to_top')}
+      variant='default'
       onClick={scrollToTop}
-      className='mt-20 flex mx-auto'
+      size='icon'
+      className='fixed top-[calc(100%_-_56px)] left-[calc(100%_-_56px)] rounded-full shadow-md '
     >
-      {t('back_to_top')}
+      <ChevronUpIcon className='w-5' />
     </Button>
   );
 }

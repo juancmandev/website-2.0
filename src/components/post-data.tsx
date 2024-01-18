@@ -10,7 +10,7 @@ interface Props {
 
 export default function PostData(props: Props) {
   return (
-    <section className='flex flex-col gap-4'>
+    <section className='flex flex-col gap-4 mb-10'>
       <div className='flex items-center gap-1'>
         <Calendar />
         <span>{props.date}</span>

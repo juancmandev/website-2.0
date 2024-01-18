@@ -21,7 +21,7 @@ export default function CodeBlock(props: TCodeBlock) {
   };
 
   return (
-    <div className='p-0 bg-secondary rounded-md shadow-lg'>
+    <pre className='p-0 bg-secondary rounded-md shadow-lg'>
       <header className='px-4 py-3 flex justify-between items-center border-b-[0.5px] border-border'>
         <span>{props.title}</span>
         <Button asChild variant='link' size='icon'>
@@ -43,6 +43,6 @@ export default function CodeBlock(props: TCodeBlock) {
       >
         {props.code}
       </SyntaxHighlighter>
-    </div>
+    </pre>
   );
 }
