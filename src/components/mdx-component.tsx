@@ -3,6 +3,12 @@ import { useMDXComponent } from 'next-contentlayer/hooks';
 import cn from '@/utils/cn';
 import { PostData, LinkToSection, CodeBlock } from '@/components';
 import { TCodeBlock } from '@/types';
+import React from 'react';
+import Link from 'next/link';
+
+interface IAnchor extends React.HTMLAttributes<HTMLAnchorElement> {
+  href: string;
+}
 
 const components = {
   h1: ({ className, ...props }: React.HTMLAttributes<HTMLHeadingElement>) => (
@@ -23,9 +29,12 @@ const components = {
   h6: ({ className, ...props }: React.HTMLAttributes<HTMLHeadingElement>) => (
     <h6 {...props} />
   ),
-  a: ({ className, ...props }: React.HTMLAttributes<HTMLAnchorElement>) => (
-    <a {...props} target='_blank' className='text-primary' />
-  ),
+  a: ({ ...props }: IAnchor | any) =>
+    props.href.startsWith('/') || props.href.startsWith('#') ? (
+      <Link {...props} />
+    ) : (
+      <a {...props} target='_blank' className='text-primary outline-ring' />
+    ),
   p: ({ className, ...props }: React.HTMLAttributes<HTMLParagraphElement>) => (
     <p {...props} />
   ),
@@ -73,10 +82,13 @@ const components = {
     <td {...props} />
   ),
   pre: ({ className, ...props }: React.HTMLAttributes<HTMLPreElement>) => (
-    <pre {...props} />
+    <pre className='p-0' {...props} />
   ),
   code: ({ className, ...props }: React.HTMLAttributes<HTMLElement>) => (
-    <code {...props} />
+    <code
+      className='w-full p-4 overflow-x-auto rounded-md shadow-md bg-secondary'
+      {...props}
+    />
   ),
   PostData: (props: {
     date: string;
