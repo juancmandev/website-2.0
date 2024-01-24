@@ -5,6 +5,7 @@ import MobileMenu from './mobile-menu';
 import { useTranslations } from 'next-intl';
 import { ChangeLanguage } from '@/components';
 import { Button } from './ui/button';
+import Image from 'next/image';
 
 type THeader = {
   locale: 'en' | 'es';
@@ -14,11 +15,24 @@ export default function Header(props: THeader) {
   const t = useTranslations();
 
   return (
-    <header className='w-full px-6 py-4 md:px-15 flex justify-between items-center bg-secondary shadow-lg'>
+    <header className='w-full p-6 md:px-15 flex justify-between items-center '>
       <nav className='w-full max-w-[1200px] xl:mx-auto flex justify-between items-center'>
         <section>
-          <Button asChild variant='link' className='text-primary text-lg px-0'>
-            <Link href={t('header.home_link')}>juancmandev</Link>
+          <Button
+            asChild
+            size='icon'
+            variant='link'
+            className='px-0 rounded-full'
+          >
+            <Link href={t('header.home_link')}>
+              <Image
+                priority
+                width={40}
+                height={40}
+                src='/logo.png'
+                alt='juancmandev logo'
+              />
+            </Link>
           </Button>
         </section>
         <section className='hidden lg:flex items-center'>
