@@ -15,7 +15,7 @@ export default function Header(props: THeader) {
   const t = useTranslations();
 
   return (
-    <header className='w-full p-6 md:px-15 flex justify-between items-center '>
+    <header className='w-full p-6 md:px-15 flex justify-between items-center'>
       <nav className='w-full max-w-[1200px] xl:mx-auto flex justify-between items-center'>
         <section>
           <Button
