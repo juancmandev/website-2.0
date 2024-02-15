@@ -1,6 +1,7 @@
 import { TParamsLocale } from '@/types';
 import { getContent } from '@/utils/getContent';
-import { Mdx, MilpaThought } from '@/components';
+import Mdx from '@/components/mdx-component';
+import MilpaThought from '@/components/milpa-thought';
 import { supabase } from '@/supabase/client';
 import { Metadata } from 'next';
 
@@ -32,7 +33,7 @@ export default async function MilpaPage(props: TParamsLocale) {
     <>
       <Mdx code={milpa.body.code} />
 
-      <div className='mt-20 max-w-[65ch] mx-auto flex flex-col gap-10'>
+      <div className="mt-20 max-w-[65ch] mx-auto flex flex-col gap-10">
         {data ? (
           data.map((milpa) => (
             <MilpaThought

@@ -1,3 +1,3 @@
-export type locales = 'en' | 'es';
+export type TLocales = 'en' | 'es';
 
-export const localesList: locales[] = ['en', 'es'];
+export const localesList: TLocales[] = ['en', 'es'];

@@ -53,7 +53,7 @@ const main = () => {
   const feed = new RSS({
     title: 'Juan Manzanero in English',
     site_url: `${url}/en`,
-    feed_url: `${url}/en-feed.xml`,
+    feed_url: `${url}/feed-en.xml`,
     language: 'en',
     description: "Juan Manzanero's blog",
     image_url: `${url}/logo.png`,
@@ -89,7 +89,7 @@ const main = () => {
 
   const rss = feed.xml({ indent: true });
 
-  fs.writeFileSync(path.join(__dirname, '../../public/en-feed.xml'), rss);
+  fs.writeFileSync(path.join(__dirname, '../../public/feed-en.xml'), rss);
 };
 
 main();

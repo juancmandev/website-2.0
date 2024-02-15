@@ -1,7 +1,7 @@
-import { locales } from '@/lang/locales';
+import { TLocales } from '@/lang/locales';
 import { allEnContents, allEsContents } from 'contentlayer/generated';
 
-export async function getAllContent(locale: locales, type: string) {
+export async function getAllContent(locale: TLocales, type: string) {
   let content: typeof allEnContents | typeof allEsContents;
 
   switch (locale) {

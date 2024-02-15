@@ -1,9 +1,9 @@
-import { locales } from '@/lang/locales';
+import { TLocales } from '@/lang/locales';
 
 type TPage = {
   params: {
     slug: string;
-    locale: locales;
+    locale: TLocales;
   };
 };
 

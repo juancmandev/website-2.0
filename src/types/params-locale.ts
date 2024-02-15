@@ -1,8 +1,8 @@
-import { locales } from '@/lang/locales';
+import { TLocales } from '@/lang/locales';
 
 type TParamsLocale = {
   params: {
-    locale: locales;
+    locale: TLocales;
   };
 };
 

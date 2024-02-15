@@ -1,7 +1,7 @@
-import { locales } from '@/lang/locales';
+import { TLocales } from '@/lang/locales';
 import months from './months';
 
-export function formatDate(date: string, locale: locales) {
+export function formatDate(date: string, locale: TLocales) {
   if (locale === 'en') {
     return `${months(locale, new Date(date).getMonth())} 
     ${new Date(date).getDate()}, 

@@ -1,4 +1,4 @@
-import { Mdx } from '@/components';
+import Mdx from '@/components/mdx-component';
 import { TParamsLocale, TPage } from '@/types';
 import { Metadata } from 'next';
 import { getAllContent, getContent } from '@/utils/getContent';

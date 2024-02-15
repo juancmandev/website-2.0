@@ -17,22 +17,22 @@ author: Juan Manzanero
 # Build a fullstack web app
 
 ![Banner with the tech stack used in this tutorial, Next.js, TailwindCSS, shadcn/ui, Prisma, PostgreSQL and Auth.js](/portfolio/build-a-fullstack-app/banner.png)
-*Tech stack used in this tutorial*
+_Tech stack used in this tutorial_
 
 <PostData
-  date='January 18, 2024'
-  author='Juan Manzanero'
-  github='https://github.com/juancmandev/fullstack-app'
+  date="January 18, 2024"
+  author="Juan Manzanero"
+  github="https://github.com/juancmandev/fullstack-app"
 />
 
 ## Content
 
 1. [Introduction](#1-introduction)
 2. [Initial setup](#2-initial-setup)
-    1. [Install shadcn/ui](#21-install-shadcnui)
-    2. [Create a PostgreSQL database using Docker](#22-create-a-postgresql-database-using-docker)
-    3. [Install Prisma](#23-install-prisma)
-    4. [Config Auth.js](#24-config-authjs)
+   1. [Install shadcn/ui](#21-install-shadcnui)
+   2. [Create a PostgreSQL database using Docker](#22-create-a-postgresql-database-using-docker)
+   3. [Install Prisma](#23-install-prisma)
+   4. [Config Auth.js](#24-config-authjs)
 3. [Improve your UI](#3-improve-your-ui)
 4. [Add CRUD functionality](#4-add-crud-functionality)
 5. [Conclusion](#5-conclusion)
@@ -58,6 +58,7 @@ Let's start creating a new Next.js project, in your **terminal** run:
 ```bash
 npx create-next-app@latest
 ```
+
 Make sure to mark **Yes** the following options:
 
 - Would you like to use **TypeScript**?
@@ -325,18 +326,18 @@ export default function SigninForm() {
   }
 
   return (
-    <form className='mt-5 space-y-4' action={handleSubmit}>
-      <section className='flex flex-col gap-2'>
-        <label htmlFor='email'>Email</label>
+    <form className="mt-5 space-y-4" action={handleSubmit}>
+      <section className="flex flex-col gap-2">
+        <label htmlFor="email">Email</label>
         <input
-          id='email'
-          type='email'
-          name='email'
+          id="email"
+          type="email"
+          name="email"
           onChange={(e) => setEmail(e.target.value)}
-          className='w-max p-1 border border-slate-400'
+          className="w-max p-1 border border-slate-400"
         />
       </section>
-      <button type='submit'>Sign in</button>
+      <button type="submit">Sign in</button>
     </form>
   );
 }
@@ -449,21 +450,21 @@ export default function SigninForm() {
 
   return (
     <Form {...form}>
-      <form className='space-y-4' onSubmit={form.handleSubmit(onSubmit)}>
+      <form className="space-y-4" onSubmit={form.handleSubmit(onSubmit)}>
         <FormField
           control={form.control}
-          name='email'
+          name="email"
           render={({ field }) => (
             <FormItem>
               <FormLabel>Email</FormLabel>
               <FormControl>
-                <Input placeholder='address@example.com' {...field} />
+                <Input placeholder="address@example.com" {...field} />
               </FormControl>
               <FormMessage />
             </FormItem>
           )}
         />
-        <Button className='w-full' type='submit'>
+        <Button className="w-full" type="submit">
           Send magic link
         </Button>
       </form>
@@ -554,23 +555,23 @@ export default function CreatePost(props: SessionProps) {
       <DialogTrigger asChild>
         <Button>Create post</Button>
       </DialogTrigger>
-      <DialogContent className='max-w-[300px]'>
-        <DialogHeader className='text-left'>
+      <DialogContent className="max-w-[300px]">
+        <DialogHeader className="text-left">
           <DialogTitle>Create post</DialogTitle>
           <DialogDescription>
             Please <strong>do not</strong> post <strong>NSFW</strong> content.
           </DialogDescription>
         </DialogHeader>
         <Form {...form}>
-          <form className='space-y-4' onSubmit={form.handleSubmit(onSubmit)}>
+          <form className="space-y-4" onSubmit={form.handleSubmit(onSubmit)}>
             <FormField
               control={form.control}
-              name='title'
+              name="title"
               render={({ field }) => (
                 <FormItem>
                   <FormLabel>Title</FormLabel>
                   <FormControl>
-                    <Input placeholder='Hi there!' {...field} />
+                    <Input placeholder="Hi there!" {...field} />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
@@ -578,13 +579,13 @@ export default function CreatePost(props: SessionProps) {
             />
             <FormField
               control={form.control}
-              name='content'
+              name="content"
               render={({ field }) => (
                 <FormItem>
                   <FormLabel>Content</FormLabel>
                   <FormControl>
                     <Textarea
-                      placeholder='Testing this great app!'
+                      placeholder="Testing this great app!"
                       {...field}
                     />
                   </FormControl>
@@ -592,7 +593,7 @@ export default function CreatePost(props: SessionProps) {
                 </FormItem>
               )}
             />
-            <Button className='w-full' type='submit'>
+            <Button className="w-full" type="submit">
               Post
             </Button>
           </form>
@@ -626,7 +627,7 @@ export default async function Home() {
 
   return (
     <>
-      <h1 className='mb-5 font-bold text-xl'>Home</h1>
+      <h1 className="mb-5 font-bold text-xl">Home</h1>
       {session ? (
         <>
           <CreatePost session={session} />
@@ -636,8 +637,8 @@ export default async function Home() {
           <p>You are not logged in</p>
         </>
       )}
-      <h3 className='text-lg font-semibold mt-10'>Posts</h3>
-      <ul className='mt-5 space-y-2.5'>
+      <h3 className="text-lg font-semibold mt-10">Posts</h3>
+      <ul className="mt-5 space-y-2.5">
         {posts.length > 0 ? (
           posts.map((post) => (
             <li key={post.id}>
@@ -664,18 +665,18 @@ import { TPostProps } from './types';
 
 export default function PostItem(props: TPostProps) {
   return (
-    <article className='w-max p-2 border border-slate-500 rounded-md'>
-      <header className='flex justify-between items-center'>
-        <h2 className='font-bold text-lg'>{props.title}</h2>
+    <article className="w-max p-2 border border-slate-500 rounded-md">
+      <header className="flex justify-between items-center">
+        <h2 className="font-bold text-lg">{props.title}</h2>
         {props.session?.user?.id === props.authorId && (
-          <section className='space-x-2'>
+          <section className="space-x-2">
             <EditPost {...props} />
             <DeletePost {...props} />
           </section>
         )}
       </header>
       <p>{props.content}</p>
-      <span className='text-sm'>
+      <span className="text-sm">
         Posted by {props.author?.email || 'anon'} at{' '}
         {new Date(props.createdAt).toLocaleString()}
       </span>
@@ -767,27 +768,27 @@ export default function EditPost(props: TPostProps) {
   return (
     <Dialog open={open} onOpenChange={setOpen}>
       <DialogTrigger asChild>
-        <Button variant='secondary' size='icon'>
+        <Button variant="secondary" size="icon">
           <Edit />
         </Button>
       </DialogTrigger>
-      <DialogContent className='max-w-[300px]'>
-        <DialogHeader className='text-left'>
+      <DialogContent className="max-w-[300px]">
+        <DialogHeader className="text-left">
           <DialogTitle>Edit post</DialogTitle>
           <DialogDescription>
             Please <strong>do not</strong> post <strong>NSFW</strong> content.
           </DialogDescription>
         </DialogHeader>
         <Form {...form}>
-          <form className='space-y-4' onSubmit={form.handleSubmit(onSubmit)}>
+          <form className="space-y-4" onSubmit={form.handleSubmit(onSubmit)}>
             <FormField
               control={form.control}
-              name='title'
+              name="title"
               render={({ field }) => (
                 <FormItem>
                   <FormLabel>Title</FormLabel>
                   <FormControl>
-                    <Input placeholder='Hi there!' {...field} />
+                    <Input placeholder="Hi there!" {...field} />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
@@ -795,13 +796,13 @@ export default function EditPost(props: TPostProps) {
             />
             <FormField
               control={form.control}
-              name='content'
+              name="content"
               render={({ field }) => (
                 <FormItem>
                   <FormLabel>Content</FormLabel>
                   <FormControl>
                     <Textarea
-                      placeholder='Testing this great app!'
+                      placeholder="Testing this great app!"
                       {...field}
                     />
                   </FormControl>
@@ -810,7 +811,7 @@ export default function EditPost(props: TPostProps) {
               )}
             />
             <DialogClose asChild>
-              <Button className='w-full' type='submit'>
+              <Button className="w-full" type="submit">
                 Edit post
               </Button>
             </DialogClose>
@@ -873,29 +874,29 @@ export default function DeletePost(props: TPostProps) {
   return (
     <Dialog>
       <DialogTrigger asChild>
-        <Button variant='destructive' size='icon'>
+        <Button variant="destructive" size="icon">
           <LucideTrash2 />
         </Button>
       </DialogTrigger>
-      <DialogContent className='max-w-[300px]'>
-        <DialogHeader className='text-left'>
+      <DialogContent className="max-w-[300px]">
+        <DialogHeader className="text-left">
           <DialogTitle>Delete post</DialogTitle>
           <DialogDescription>
             Are you sure you want to <strong>delete</strong> this post? This
             action cannot be undone.
           </DialogDescription>
         </DialogHeader>
-        <footer className='flex flex-col gap-2'>
+        <footer className="flex flex-col gap-2">
           <DialogClose asChild>
-            <Button variant='secondary' className='w-full'>
+            <Button variant="secondary" className="w-full">
               No, keep post
             </Button>
           </DialogClose>
           <DialogClose asChild>
             <Button
               onClick={handleDelete}
-              variant='destructive'
-              className='w-full'
+              variant="destructive"
+              className="w-full"
             >
               Yes, delete post
             </Button>
@@ -964,10 +965,10 @@ export default async function Navbar() {
   const session = await getServerSession(authOptions);
 
   return (
-    <nav className='w-full p-4 border-b flex justify-between items-center'>
+    <nav className="w-full p-4 border-b flex justify-between items-center">
       <section>
-        <Button variant='link' className='px-0 font-semibold text-lg'>
-          <Link href='/'>Fullstack app</Link>
+        <Button variant="link" className="px-0 font-semibold text-lg">
+          <Link href="/">Fullstack app</Link>
         </Button>
       </section>
       <section>
@@ -975,7 +976,7 @@ export default async function Navbar() {
           <SignOut />
         ) : (
           <Button asChild>
-            <Link href='/auth'>Sign in</Link>
+            <Link href="/auth">Sign in</Link>
           </Button>
         )}
       </section>
@@ -1000,16 +1001,15 @@ interface Props extends React.PropsWithChildren {}
 
 export default function RootLayout(props: Props) {
   return (
-    <html lang='en'>
+    <html lang="en">
       <body className={inter.className}>
         <Navbar />
-        <main className='px-4 py-8'>{props.children}</main>
+        <main className="px-4 py-8">{props.children}</main>
         <Toaster />
       </body>
     </html>
   );
 }
-
 ```
 
 ## 4. Add CRUD functionality
@@ -1202,7 +1202,6 @@ export async function DELETE(req: NextRequest) {
 Try creating a post in the home.
 
 The page will refresh and you'll see the post, as you created it, only you can edit or delete it.
-
 
 ## 5. Conclusion
 

@@ -1,9 +1,9 @@
 import './globals.css';
 
-export default function RootLayout({
-  children,
-}: {
+type props = {
   children: React.ReactNode;
-}) {
+};
+
+export default function RootLayout({ children }: props) {
   return children;
 }

@@ -1,4 +1,4 @@
-import { locales } from '@/lang/locales';
+import { TLocales } from '@/lang/locales';
 
 type TMilpa = {
   id: number;
@@ -6,7 +6,7 @@ type TMilpa = {
   lang: string;
   content: string;
   tags: string[];
-  pageLang: locales;
+  pageLang: TLocales;
 };
 
 export default TMilpa;
