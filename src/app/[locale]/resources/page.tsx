@@ -1,6 +1,6 @@
 import { TParamsLocale } from '@/types';
 import { getContent } from '@/utils/getContent';
-import { Mdx } from '@/components';
+import Mdx from '@/components/mdx-component';
 import { Metadata } from 'next';
 
 export async function generateMetadata(

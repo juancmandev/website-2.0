@@ -1,4 +1,4 @@
-import { ItemCard } from '@/components';
+import ItemCard from '@/components/item-card';
 import { TPage, TParamsLocale } from '@/types';
 import { getAllContent } from '@/utils/getContent';
 import { sortByKeyDesc } from '@/utils/sorts';
@@ -30,21 +30,21 @@ export default async function Page(props: TPage) {
 
   return (
     <>
-      <section className='mb-10'>
-        <h1 className='text-3xl font-bold mb-5'>{t('metadata.blog.title')}</h1>
+      <section className="mb-10">
+        <h1 className="text-3xl font-bold mb-5">{t('metadata.blog.title')}</h1>
         <p>{t('metadata.blog.description')}</p>
       </section>
-      <div className='flex flex-col gap-10'>
+      <div className="flex flex-col gap-10">
         <section>
-          <h2 className='text-2xl font-bold mb-4'>Tech</h2>
-          <ul className='flex flex-wrap gap-6'>
+          <h2 className="text-2xl font-bold mb-4">Tech</h2>
+          <ul className="flex flex-wrap gap-6">
             {posts.map((post) => {
               if (post.tags?.includes('Tech')) {
                 return (
                   <li key={post.slug}>
                     <ItemCard
                       {...post}
-                      type='blog'
+                      type="blog"
                       lang={props.params.locale}
                     />
                   </li>
@@ -54,15 +54,15 @@ export default async function Page(props: TPage) {
           </ul>
         </section>
         <section>
-          <h2 className='text-2xl font-bold mb-4'>{t('blog.thoughts')}</h2>
-          <ul className='flex flex-wrap gap-6'>
+          <h2 className="text-2xl font-bold mb-4">{t('blog.thoughts')}</h2>
+          <ul className="flex flex-wrap gap-6">
             {posts.map((post) => {
               if (post.tags?.includes('Thoughts')) {
                 return (
                   <li key={post.slug}>
                     <ItemCard
                       {...post}
-                      type='blog'
+                      type="blog"
                       lang={props.params.locale}
                     />
                   </li>

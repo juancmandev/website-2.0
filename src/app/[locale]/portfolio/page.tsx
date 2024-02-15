@@ -1,4 +1,4 @@
-import { ItemCard } from '@/components';
+import ItemCard from '@/components/item-card';
 import { TParamsLocale, TPage } from '@/types';
 import { getAllContent } from '@/utils/getContent';
 import { sortByKeyDesc } from '@/utils/sorts';
@@ -30,18 +30,18 @@ export default async function Page(props: TPage) {
 
   return (
     <>
-      <section className='mb-10'>
-        <h1 className='text-3xl font-bold mb-5'>
+      <section className="mb-10">
+        <h1 className="text-3xl font-bold mb-5">
           {t('metadata.portfolio.title')}
         </h1>
         <p>{t('metadata.portfolio.description')}</p>
       </section>
-      <ul className='flex flex-wrap gap-6'>
+      <ul className="flex flex-wrap gap-6">
         {portfolio.map((portfolioItem) => (
           <li key={portfolioItem.slug}>
             <ItemCard
               {...portfolioItem}
-              type='portfolio'
+              type="portfolio"
               lang={props.params.locale}
             />
           </li>

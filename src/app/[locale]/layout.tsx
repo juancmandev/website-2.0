@@ -1,4 +1,6 @@
-import { Header, Footer, BackToTop } from '@/components';
+import BackToTop from '@/components/back-to-top';
+import Footer from '@/components/footer';
+import Header from '@/components/header';
 import { localesList } from '@/lang/locales';
 import { TRootLayout } from '@/types';
 import { NextIntlClientProvider } from 'next-intl';
@@ -11,6 +13,7 @@ export function generateStaticParams() {
 
 export default async function RootLayout(props: TRootLayout) {
   let messages;
+
   try {
     messages = (await import(`@/lang/${props.params.locale}.json`)).default;
   } catch (error) {
@@ -24,7 +27,7 @@ export default async function RootLayout(props: TRootLayout) {
       <body>
         <NextIntlClientProvider messages={messages}>
           <Header locale={props.params.locale} />
-          <main className='max-w-[1200px] xl:mx-auto min-h-[calc(100vh_-_76px)] px-6 xl:px-0 pt-4 pb-20'>
+          <main className="max-w-[1200px] xl:mx-auto min-h-[calc(100vh_-_76px)] px-6 xl:px-0 pt-4 pb-20">
             {props.children}
             <BackToTop />
           </main>
