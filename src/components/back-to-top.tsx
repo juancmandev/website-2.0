@@ -1,13 +1,11 @@
 'use client';
 
-import { useTranslations } from 'next-intl';
 import { Button } from './ui/button';
 import { ChevronUpIcon } from 'lucide-react';
 
 const isBrowser = () => typeof window !== 'undefined'; //The approach recommended by Next.js
 
 export default function BackToTop() {
-  const t = useTranslations();
   const scrollToTop = () => {
     if (!isBrowser()) return;
 
@@ -16,7 +14,7 @@ export default function BackToTop() {
 
   return (
     <Button
-      title={t('back_to_top')}
+      title='Back to top'
       variant='default'
       onClick={scrollToTop}
       size='icon'

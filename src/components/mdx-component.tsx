@@ -2,8 +2,6 @@ import Image from 'next/image';
 import { useMDXComponent } from 'next-contentlayer/hooks';
 import cn from '@/utils/cn';
 import PostData from './post-data';
-import CodeBlock from './code-block';
-import { TCodeBlock } from '@/types';
 import React from 'react';
 import Link from 'next/link';
 
@@ -34,7 +32,7 @@ const components = {
     props.href.startsWith('/') || props.href.startsWith('#') ? (
       <Link {...props} />
     ) : (
-      <a {...props} target="_blank" className="text-primary outline-ring" />
+      <a {...props} target='_blank' className='text-primary outline-ring' />
     ),
   p: ({ className, ...props }: React.HTMLAttributes<HTMLParagraphElement>) => (
     <p {...props} />
@@ -69,7 +67,7 @@ const components = {
       alt={alt || 'Image'}
     />
   ),
-  hr: ({ ...props }) => <hr className="my-4 md:my-8" {...props} />,
+  hr: ({ ...props }) => <hr className='my-4 md:my-8' {...props} />,
   table: ({ className, ...props }: React.HTMLAttributes<HTMLTableElement>) => (
     <table {...props} />
   ),
@@ -83,11 +81,11 @@ const components = {
     <td {...props} />
   ),
   pre: ({ className, ...props }: React.HTMLAttributes<HTMLPreElement>) => (
-    <pre className="p-0" {...props} />
+    <pre className='p-0' {...props} />
   ),
   code: ({ className, ...props }: React.HTMLAttributes<HTMLElement>) => (
     <code
-      className="w-full p-4 overflow-x-auto rounded-md shadow-md bg-secondary"
+      className='w-full p-4 overflow-x-auto rounded-md shadow-md bg-secondary'
       {...props}
     />
   ),
@@ -97,7 +95,6 @@ const components = {
     website?: string;
     github?: string;
   }) => <PostData {...props} />,
-  CodeBlock: (props: TCodeBlock) => <CodeBlock {...props} />,
   Image,
 };
 
@@ -109,7 +106,7 @@ export default function Mdx({ code }: MdxProps) {
   const Component = useMDXComponent(code);
 
   return (
-    <article className="prose prose-invert mx-auto">
+    <article className='prose prose-invert mx-auto'>
       <Component components={components} />
     </article>
   );

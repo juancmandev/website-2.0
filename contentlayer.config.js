@@ -1,5 +1,4 @@
 import { defineDocumentType, makeSource } from 'contentlayer/source-files';
-import rehypeAutolinkHeadings from 'rehype-autolink-headings';
 import rehypePrettyCode from 'rehype-pretty-code';
 import rehypeSlug from 'rehype-slug';
 import remarkGfm from 'remark-gfm';
@@ -27,42 +26,9 @@ const computedFields = {
   },
 };
 
-export const EnContent = defineDocumentType(() => ({
-  name: 'EnContent',
-  filePathPattern: 'en/**/*.mdx',
-  contentType: 'mdx',
-  fields: {
-    title: {
-      type: 'string',
-    },
-    description: {
-      type: 'string',
-    },
-    tags: {
-      type: 'list',
-      of: {
-        type: 'string',
-      },
-    },
-    image: {
-      type: 'string',
-    },
-    imageCaption: {
-      type: 'string',
-    },
-    date: {
-      type: 'date',
-    },
-    author: {
-      type: 'string',
-    },
-  },
-  computedFields,
-}));
-
-export const EsContent = defineDocumentType(() => ({
-  name: 'EsContent',
-  filePathPattern: 'es/**/*.mdx',
+export const Content = defineDocumentType(() => ({
+  name: 'Content',
+  filePathPattern: '**/*.mdx',
   contentType: 'mdx',
   fields: {
     title: {
@@ -94,21 +60,12 @@ export const EsContent = defineDocumentType(() => ({
 }));
 
 export default makeSource({
-  contentDirPath: './src/content',
-  documentTypes: [EnContent, EsContent],
+  contentDirPath: './content/',
+  documentTypes: [Content],
   mdx: {
     remarkPlugins: [remarkGfm],
     rehypePlugins: [
       rehypeSlug,
-      [
-        rehypeAutolinkHeadings,
-        {
-          properties: {
-            className: ['subheading-anchor'],
-            ariaLabel: 'Link to section',
-          },
-        },
-      ],
       [
         rehypePrettyCode,
         {
