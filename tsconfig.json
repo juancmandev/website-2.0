@@ -52,10 +52,7 @@
     "plugins": [
       [
         "remark-frontmatter",
-        [
-          "toml",
-          "yaml"
-        ]
+        ["toml", "yaml"]
       ],
       "remark-gfm"
     ]

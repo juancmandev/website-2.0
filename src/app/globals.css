@@ -3,13 +3,21 @@
 @tailwind utilities;
 
 @layer base {
-}
-
-@layer base {
   * {
     @apply border-border;
   }
   body {
     @apply bg-background text-foreground;
+  }
+  [data-rehype-pretty-code-fragment] {
+    @apply bg-secondary rounded-md relative;
+  }
+  div [data-rehype-pretty-code-title] {
+    @apply border-b-[0.5px] px-4 py-2 border-border/60 italic;
+  }
+  [data-rehype-pretty-code-fragment] code {
+    @apply grid min-w-full break-words rounded-none border-0 bg-secondary p-4;
+    counter-reset: line;
+    box-decoration-break: clone;
   }
 }

@@ -39,7 +39,7 @@ _Tech stack used in this tutorial_
 
 ## 1. Introduction
 
-In this tutorial, we'll develop a fullstack web app with the following tech stack:
+In this tutorial, we will `develop` a fullstack web app with the following tech stack:
 
 - [Next.js](https://nextjs.org/) as meta-framework
 - [TailwindCSS](https://tailwindcss.com/) for styling
@@ -55,7 +55,7 @@ We'll learn some of the fundamentals of this tech stack, like using **server com
 
 Let's start creating a new Next.js project, in your **terminal** run:
 
-```bash
+```bash title="Terminal"
 npx create-next-app@latest
 ```
 
@@ -67,7 +67,7 @@ Make sure to mark **Yes** the following options:
 - Would you like to use **'src/' directory**?
 - Would you like to use **App Router**? (recommended)
 
-```bash
+```bash title="Terminal"
 > What is your project named? my-app
 > Would you like to use TypeScript? No / Yes
 > Would you like to use ESLint? No / Yes
@@ -80,7 +80,7 @@ Make sure to mark **Yes** the following options:
 
 Wait until the dependencies installation is completed, then access to the project folder:
 
-```bash
+```bash title="Terminal"
 cd my-app
 ```
 
@@ -92,7 +92,7 @@ This components will help us a lot building the **UI** along with TailwindCSS.
 
 First, initialize shadcn/ui:
 
-```bash
+```bash title="Terminal"
 npx shadcn-ui@latest init
 ```
 
@@ -106,13 +106,13 @@ Make sure to have [Docker](https://www.docker.com/) installed in your machine.
 
 First you need to pull a PostgreSQL image from Docker Hub:
 
-```bash
+```bash title="Terminal"
 docker pull postgres
 ```
 
 Then, create a container with the image:
 
-```bash
+```bash title="Terminal"
 docker run --name my-postgres -e POSTGRES_PASSWORD=password -p 5432:5432 -d postgres
 ```
 
@@ -120,13 +120,13 @@ docker run --name my-postgres -e POSTGRES_PASSWORD=password -p 5432:5432 -d post
 
 Install Prisma using your dependency manager, in this case **npm**:
 
-```bash
+```bash title="Terminal"
 npm install prisma -D
 ```
 
 Now initialize Prisma:
 
-```bash
+```bash title="Terminal"
 npx prisma init
 ```
 
