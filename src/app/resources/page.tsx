@@ -3,13 +3,13 @@ import Mdx from '@/components/mdx-component';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Resources',
-  description: 'Content I consume for inspiration and entertainment.',
+  title: 'juancmandev | Resources',
+  description:
+    'Here you can find websites, YouTube channels, courses and more stuff that I consume or find interesting.',
 };
 
 export default async function Page() {
   const resource = await getContent('resources', 'content');
-  console.log(resource);
 
   if (!resource) return null;
 

@@ -6,6 +6,12 @@ export default function Footer() {
       <p>Uncopyrighted by Juan Manzanero. 2024.</p>
       <p>The content of this website is written without AI.</p>
       <p>Built handcrafted with Next.js.</p>
+      <p>
+        Last build:{' '}
+        {new Date(
+          process.env.NEXT_PUBLIC_LAST_UPDATED_AT || '-'
+        ).toLocaleDateString()}
+      </p>
       <Button
         size={null}
         asChild

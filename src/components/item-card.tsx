@@ -30,8 +30,8 @@ export default function ItemCard(props: Props) {
           <Image
             priority
             src={props.image || ''}
-            width={280}
-            height={157.48}
+            width={640}
+            height={427}
             className='w-full h-auto max-h-[157.48px] -z-10 group-focus:scale-110 group-hover:scale-110 transition-all duration-300'
             alt={props.imageCaption || 'Image caption'}
           />

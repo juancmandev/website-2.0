@@ -1,8 +1,8 @@
-import { allContents } from 'contentlayer/generated';
+import { allContents, Content } from 'contentlayer/generated';
 
 export async function getAllContent(type: string) {
-  const content = allContents.filter((c: any) =>
-    new RegExp(`${type}/*`).test(c._id)
+  const content = allContents.filter((c: Content) =>
+    new RegExp(`${type}/`).test(c._id)
   );
 
   if (!content) return;
@@ -11,7 +11,7 @@ export async function getAllContent(type: string) {
 }
 
 export async function getContent(type: string, slug: string) {
-  const content = allContents.find((c: any) =>
+  const content = allContents.find((c: Content) =>
     new RegExp(`${type}/${slug}`).test(c._id)
   );
 

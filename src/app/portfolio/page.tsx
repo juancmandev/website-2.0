@@ -3,7 +3,10 @@ import { getAllContent } from '@/utils/getContent';
 import { sortByKeyDesc } from '@/utils/sorts';
 import { Metadata } from 'next';
 
-export const metadata: Metadata = {};
+export const metadata: Metadata = {
+  title: 'juancmandev | Portfolio',
+  description: 'Check my projects.',
+};
 
 export default async function Page() {
   const portfolio = await getAllContent('portfolio');

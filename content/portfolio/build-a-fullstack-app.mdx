@@ -39,7 +39,7 @@ _Tech stack used in this tutorial_
 
 ## 1. Introduction
 
-In this tutorial, we will `develop` a fullstack web app with the following tech stack:
+In this tutorial, we will develop a fullstack web app with the following tech stack:
 
 - [Next.js](https://nextjs.org/) as meta-framework
 - [TailwindCSS](https://tailwindcss.com/) for styling
@@ -68,7 +68,7 @@ Make sure to mark **Yes** the following options:
 - Would you like to use **App Router**? (recommended)
 
 ```bash title="Terminal"
-> What is your project named? my-app
+> What is your project named? fullstack-app
 > Would you like to use TypeScript? No / Yes
 > Would you like to use ESLint? No / Yes
 > Would you like to use Tailwind CSS? No / Yes
@@ -78,10 +78,10 @@ Make sure to mark **Yes** the following options:
 > What import alias would you like configured? @/*
 ```
 
-Wait until the dependencies installation is completed, then access to the project folder:
+Wait until the dependencies installation is completed, then access to the project directory:
 
 ```bash title="Terminal"
-cd my-app
+cd fullstack-app
 ```
 
 Open your code editor of your preference.
@@ -130,13 +130,13 @@ Now initialize Prisma:
 npx prisma init
 ```
 
-A new ./prisma direcotry will be created in the root of your project, with a schema.prisma file.
+A new `./prisma` direcotry will be created in the root of your project, with a schema.prisma file.
 
 You'll create your schemas in this file.
 
 Add this model as an example:
 
-```prisma title="next.config.js"
+```prisma title="prisma/schema.prisma"
 model User {
   id        Int      @id @default(autoincrement())
   createdAt DateTime @default(now())
@@ -145,9 +145,9 @@ model User {
 }
 ```
 
-Update your .env file with the following:
+Update your `.env` file with the following:
 
-```env
+```env title=".env"
 DATABASE_URL="postgresql://postgres:password@localhost:5432/postgres?schema=public"
 ```
 
@@ -155,7 +155,7 @@ In the URL is your username (by default is postgres), your password (in this cas
 
 Create your first migration to test if Prisma can connect to your local database:
 
-```bash
+```bash title="Terminal"
 npx prisma migrate dev --name init
 ```
 
@@ -167,8 +167,7 @@ If everything is ok, you'll see a new /migrations directory with a new file insi
 
 Add this models to your **prisma schema**:
 
-```prisma
-
+```prisma title="prisma/schema.prisma"
 model Account {
   id                String  @id @default(cuid())
   userId            String
@@ -217,19 +216,19 @@ model VerificationToken {
 
 These models are for **Auth.js**, now we can install it with the prisma adapter:
 
-```bash
+```bash title="Terminal"
 npm install @prisma/client @auth/prisma-adapter
 ```
 
 Instal nodemailer too, as we'll use magic links for authentication:
 
-```bash
+```bash title="Terminal"
 npm install nodemailer -D
 ```
 
-Now create a **src/utils/db.ts** and initialize **prisma**:
+Now create a `src/utils/db.ts` and initialize **prisma**:
 
-```ts
+```ts title="src/utils/db.ts"
 import { PrismaClient } from '@prisma/client';
 
 const prismaClientSingleton = () => {
@@ -247,9 +246,9 @@ export default prisma;
 if (process.env.NODE_ENV !== 'production') globalThis.prisma = prisma;
 ```
 
-Then, create a **src/utils/auth.ts** file to config **Auth.js**:
+Then, create a `src/utils/auth.ts` file to config **Auth.js**:
 
-```ts
+```ts title="src/utils/auth.ts"
 import type { NextAuthOptions } from 'next-auth';
 import { PrismaAdapter } from '@auth/prisma-adapter';
 import EmailProvider from 'next-auth/providers/email';
@@ -292,9 +291,9 @@ Create an account and get the next credentials in your .env file:
 - EMAIL_FROM: onboarding@resend(dot)dev
 - EMAIL_SERVER_PASSWORD: yor api key
 
-Now, create a **src/pages/api/auth/[...nextauth]/route.ts** file:
+Now, create a `src/pages/api/auth/[...nextauth]/route.ts` file:
 
-```ts
+```ts title="src/pages/api/auth/[...nextauth]/route.ts"
 import { authOptions } from '@/libs/auth';
 import NextAuth from 'next-auth/next';
 
@@ -307,9 +306,9 @@ This file is for handling the authentication in our app.
 
 You can now authenticate users with a magic link sent by email.
 
-Create a **src/app/auth/signin-form.tsx** file:
+Create a `src/app/auth/signin-form.tsx` file:
 
-```tsx
+```tsx title="src/app/auth/signin-form.tsx"
 'use client';
 
 import { useState } from 'react';
@@ -343,9 +342,9 @@ export default function SigninForm() {
 }
 ```
 
-Import it to your **src/app/auth/page.tsx** file:
+Import it to your `src/app/auth/page.tsx` file:
 
-```tsx
+```tsx title="src/app/auth/page.tsx"
 import { authOptions } from '@/libs/auth';
 import { getServerSession } from 'next-auth';
 import { redirect } from 'next/navigation';
@@ -376,41 +375,41 @@ Let's create a short posts like app.
 
 First, add some shadcn/ui components and update your components, we'll create new components too:
 
-```bash
+```bash title="Terminal"
 npx shadcn-ui@latest add button
 ```
 
-```bash
+```bash title="Terminal"
 npx shadcn-ui@latest add dialog
 ```
 
-```bash
+```bash title="Terminal"
 npx shadcn-ui@latest add input
 ```
 
-```bash
+```bash title="Terminal"
 npx shadcn-ui@latest add textarea
 ```
 
-```bash
+```bash title="Terminal"
 npx shadcn-ui@latest add form
 ```
 
-```bash
+```bash title="Terminal"
 npx shadcn-ui@latest add label
 ```
 
-```bash
+```bash title="Terminal"
 npx shadcn-ui@latest add sonner
 ```
 
 We'll add the endpoints URL for these components, but we'll create them later.
 
-**src/app/auth/signin-form.tsx**
+`src/app/auth/signin-form.tsx`
 
 Here we'll update the UI and add form validation.
 
-```tsx
+```tsx title="src/app/auth/signin-form.tsx"
 'use client';
 
 import { signIn } from 'next-auth/react';
@@ -473,11 +472,11 @@ export default function SigninForm() {
 }
 ```
 
-**src/components/post/create.tsx**
+`src/components/post/create.tsx`
 
 Update UI components and form validation.
 
-```tsx
+```tsx title="src/components/post/create.tsx"
 'use client';
 
 import { useState } from 'react';
@@ -604,11 +603,11 @@ export default function CreatePost(props: SessionProps) {
 }
 ```
 
-**src/app/page.tsx**
+`src/app/page.tsx`
 
 Fetch data from Prisma, as this page is a server component, we can fetch it directly.
 
-```tsx
+```tsx title="src/app/page.tsx"
 import { authOptions } from '@/libs/auth';
 import { getServerSession } from 'next-auth';
 import prisma from '@/libs/db';
@@ -654,9 +653,9 @@ export default async function Home() {
 }
 ```
 
-**src/components/post/item.tsx**
+`src/components/post/item.tsx`
 
-```tsx
+```tsx title="src/components/post/item.tsx"
 'use client';
 
 import DeletePost from './delete';
@@ -685,11 +684,11 @@ export default function PostItem(props: TPostProps) {
 }
 ```
 
-**src/components/post/edit.tsx**
+`src/components/post/edit.tsx`
 
 Create a button icon for opening a dialog rendering the post data for editing, add validation and fetch to the API endpoint.
 
-```tsx
+```tsx title="src/components/post/edit.tsx"
 'use client';
 
 import { useState } from 'react';
@@ -823,11 +822,11 @@ export default function EditPost(props: TPostProps) {
 }
 ```
 
-**src/components/post/delete.tsx**
+`src/components/post/delete.tsx`
 
 Create a button icon for opening a dialog for deleting the post, add validation and fetch to the API endpoint.
 
-```tsx
+```tsx title="src/components/post/delete.tsx"
 'use client';
 
 import { LucideTrash2 } from 'lucide-react';
@@ -908,9 +907,9 @@ export default function DeletePost(props: TPostProps) {
 }
 ```
 
-**src/components/post/types.ts**
+`src/components/post/types.ts`
 
-```ts
+```ts title="src/components/post/types.ts"
 type SessionProps = {
   session: any;
 };
@@ -935,11 +934,11 @@ type TPostProps = {
 export type { SessionProps, TPostProps };
 ```
 
-**src/components/sign-out.tsx**
+`src/components/sign-out.tsx`
 
 A simple sign out button.
 
-```tsx
+```tsx title="src/components/sign-out.tsx"
 'use client';
 
 import { signOut } from 'next-auth/react';
@@ -950,11 +949,11 @@ export default function SignOut() {
 }
 ```
 
-**src/components/navbar.tsx**
+`src/components/navbar.tsx`
 
 Render the sign out or sign in button depending if the user is logged in or not.
 
-```tsx
+```tsx title="src/components/navbar.tsx"
 import Link from 'next/link';
 import { Button } from './ui/button';
 import { getServerSession } from 'next-auth';
@@ -985,11 +984,11 @@ export default async function Navbar() {
 }
 ```
 
-**src/app/layout.tsx**
+`src/app/layout.tsx`
 
 Add your **Navbar** and **Toaster** components and some styles.
 
-```tsx
+```tsx title="src/app/layout.tsx"
 import { Inter } from 'next/font/google';
 import Navbar from '@/components/navbar';
 import { Toaster } from '@/components/ui/sonner';
@@ -1016,11 +1015,11 @@ export default function RootLayout(props: Props) {
 
 Now we can add Create, Read, Update and Delete functionality to our app.
 
-**prisma/schema.prisma**
+`prisma/schema.prisma`
 
 Update your Prisma schema adding to User model a relationship with Post model:
 
-```prisma
+```prisma title="prisma/schema.prisma"
 generator client {
   provider = "prisma-client-js"
 }
@@ -1089,13 +1088,13 @@ model Post {
 
 Generate a new Prisma migration:
 
-```bash
+```bash title="Terminal"
 npx prisma migrate dev --name add-posts
 ```
 
-Now, create a **src/app/api/posts/route.ts** file with a **POST**, **PUT** and **DELETE** async functions:
+Now, create a `src/app/api/posts/route.ts` file with a **POST**, **PUT** and **DELETE** async functions:
 
-```ts
+```ts title="src/app/api/posts/route.ts"
 import prisma from '@/libs/db';
 import { NextRequest, NextResponse } from 'next/server';
 

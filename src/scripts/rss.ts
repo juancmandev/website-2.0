@@ -23,10 +23,7 @@ const portfolio = fs
   .readdirSync(path.resolve(__dirname, '../../content/portfolio/'))
   .filter((file) => path.extname(file) === '.mdx')
   .map((file) => {
-    const projectContent = fs.readFileSync(
-      `src/content/es/portfolio/${file}`,
-      'utf8'
-    );
+    const projectContent = fs.readFileSync(`content/portfolio/${file}`, 'utf8');
     const { data, content }: { data: any; content: string } =
       matter(projectContent);
     const slug = file.replace('.mdx', '');

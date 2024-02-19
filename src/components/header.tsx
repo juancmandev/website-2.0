@@ -1,9 +1,11 @@
+import dynamic from 'next/dynamic';
 import Link from 'next/link';
-import { Rss } from 'lucide-react';
 import { navItems, socialItems } from '@/utils';
-import MobileMenu from './mobile-menu';
 import { Button } from './ui/button';
 import Image from 'next/image';
+// import { Rss } from 'lucide-react';
+
+const MobileMenu = dynamic(() => import('@/components/mobile-menu'));
 
 export default function Header() {
   return (

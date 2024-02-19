@@ -1,5 +1,5 @@
 ---
-title: Next Inlt Blog Template
+title: Next Intl Blog Template
 description: Start your blog in multiple languages!
 tags:
   - Next.js
@@ -11,7 +11,7 @@ date: 12/18/2023
 author: Juan Manzanero
 ---
 
-# Next Inlt Blog Template
+# Next Intl Blog Template
 
 ![Next Intl Blog Template banner](/portfolio/next-intl-blog-template/banner.png)
 _Next Intl Blog Template banner_
@@ -39,30 +39,31 @@ This template is an extension of [next-intl](https://next-intl-docs.vercel.app/)
 
 ### Add or remove locales
 
-You can add or remove locales in the _src/lang/locales.ts_ file.
+You can add or remove locales in the `src/lang/locales.ts` file.
 
-```ts
+```ts title="src/lang/locales.ts"
 export type locales = 'en' | 'es';
 
 export const localesList: locales[] = ['en', 'es'];
 ```
 
-Just add or remove a locale from the _locales_ const, and add or remove it from the list.
+Just add or remove a locale from the `locales` const, and add or remove it from the list.
 
-The first item in the _localesList_ must be the default locale.
+The first item in the `localesList` must be the default locale.
 
-The list is used for static generation of the routes in _{`src/app/[locale]/layout.tsx`}_.
+The list is used for static generation of the routes in `src/app/[locale]/layout.tsx`.
 
-```ts
+```ts title="src/app/[locale]/layout.tsx"
 import { localesList } from '@/lang/locales';
 
 export function generateStaticParams() {
   return localesList.map((locale) => ({ locale }));
+}
 ```
 
-Remember to update the matcher in _src/middleware.ts_.
+Remember to update the matcher in `src/middleware.ts`.
 
-```ts
+```ts title="src/middleware.ts"
 //...
 
 export const config = {
@@ -70,17 +71,17 @@ export const config = {
 };
 ```
 
-And of course, update your _{`src/lang/[locale].json`}_ files.
+And of course, update your `src/lang/[locale].json` files.
 
 ### Content creation
 
-Use _{`src/content/[locale]`}_ for create content, in the _{`/[locale]/`}_ directory ceate the directory for each purpouse, for example: _{`/[locale]/blog`}_.
+Use `src/content/[locale]` for create content, in the `/[locale]/` directory ceate the directory for each purpouse, for example: `/[locale]/blog`.
 
 Inside create the .mdx file with an unique name, the name will be used as the slug for create the static page for that post.
 
-For create a blog section, you'll use the _getAllContent_ function in your route, for example: _{`src/app/[locale]/blog/[slug]/page.tsx`}_.
+For create a blog section, you'll use the _getAllContent_ function in your route, for example: `src/app/[locale]/blog/[slug]/page.tsx`.
 
-```tsx
+```tsx title="src/app/[locale]/blog/[slug]/page.tsx"
 import { Mdx } from '@/components';
 import { TParamsLocale, TPage, TSlugLang } from '@/types';
 import { Metadata } from 'next';
@@ -106,7 +107,7 @@ This will create each static page for each blog post.
 
 You can get the metadata of the .mdx file too.
 
-```tsx
+```tsx title="src/app/[locale]/blog/[slug]/page.tsx"
 //...
 
 export async function generateMetadata(props: TPage): Promise<Metadata> {
@@ -125,7 +126,7 @@ export async function generateMetadata(props: TPage): Promise<Metadata> {
 
 Then, render the content using the _Mdx_ component.
 
-```tsx
+```tsx title="src/app/[locale]/blog/[slug]/page.tsx"
 //...
 
 export default async function Page(props: TPage) {

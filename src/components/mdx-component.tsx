@@ -1,10 +1,12 @@
+import dynamic from 'next/dynamic';
 import Image from 'next/image';
 import { useMDXComponent } from 'next-contentlayer/hooks';
 import cn from '@/utils/cn';
 import PostData from './post-data';
 import React from 'react';
 import Link from 'next/link';
-import CopyButton from './copy-button';
+
+const CopyButton = dynamic(() => import('@/components/copy-button'));
 
 interface IAnchor extends React.HTMLAttributes<HTMLAnchorElement> {
   href: string;
@@ -89,13 +91,13 @@ const components = {
     __rawString__?: string;
   }) => (
     <>
-      <pre className='m-0 p-0' {...props} />
+      <pre className={`m-0 p-0`} {...props} />
       {__rawString__ && <CopyButton value={__rawString__} />}
     </>
   ),
   code: ({ className, ...props }: React.HTMLAttributes<HTMLElement>) => (
     <code
-      className='p-1 font-normal rounded-md bg-secondary after:content-[""] before:content-[""]'
+      className='w-full p-1 bg-[#282c34] border border-border/20 font-normal rounded-md after:content-none before:content-none'
       {...props}
     />
   ),
