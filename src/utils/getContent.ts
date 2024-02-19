@@ -1,50 +1,19 @@
-import { TLocales } from '@/lang/locales';
-import { allEnContents, allEsContents } from 'contentlayer/generated';
+import { allContents, Content } from 'contentlayer/generated';
 
-export async function getAllContent(locale: TLocales, type: string) {
-  let content: typeof allEnContents | typeof allEsContents;
-
-  switch (locale) {
-    case 'en':
-      content = allEnContents.filter((c) =>
-        new RegExp(`en/${type}/*`).test(c._id)
-      );
-      break;
-    case 'es':
-      content = allEsContents.filter((c) =>
-        new RegExp(`es/${type}/*`).test(c._id)
-      );
-      break;
-  }
+export async function getAllContent(type: string) {
+  const content = allContents.filter((c: Content) =>
+    new RegExp(`${type}/`).test(c._id)
+  );
 
   if (!content) return;
 
   return content;
 }
 
-type TContent = (typeof allEnContents)[number] | (typeof allEsContents)[number];
-
-export async function getContent(
-  locale: 'en' | 'es',
-  type: string,
-  slug: string
-) {
-  let content: TContent | undefined;
-
-  switch (locale) {
-    case 'en':
-      content =
-        allEnContents.find((c) =>
-          new RegExp(`en/${type}/${slug}`).test(c._id)
-        ) || undefined;
-      break;
-    case 'es':
-      content =
-        allEsContents.find((c) =>
-          new RegExp(`es/${type}/${slug}`).test(c._id)
-        ) || undefined;
-      break;
-  }
+export async function getContent(type: string, slug: string) {
+  const content = allContents.find((c: Content) =>
+    new RegExp(`${type}/${slug}`).test(c._id)
+  );
 
   if (!content) return;
 

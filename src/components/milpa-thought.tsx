@@ -1,7 +1,13 @@
-import { TMilpa } from '@/types';
 import { marked } from 'marked';
 
-export default function MilpaThought(props: TMilpa) {
+type Props = {
+  id: number;
+  created_at: Date;
+  content: string;
+  tags: string[];
+};
+
+export default function MilpaThought(props: Props) {
   const renderer = new marked.Renderer();
   marked.setOptions({
     gfm: true,

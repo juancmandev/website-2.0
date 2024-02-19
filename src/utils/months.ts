@@ -1,4 +1,4 @@
-const monthsEn = [
+const months = [
   'January',
   'February',
   'March',
@@ -12,24 +12,5 @@ const monthsEn = [
   'November',
   'December',
 ];
-
-const monthsEs = [
-  'Enero',
-  'Febrero',
-  'Marzo',
-  'Abril',
-  'Mayo',
-  'Junio',
-  'Julio',
-  'Agosto',
-  'Septiembre',
-  'Octobre',
-  'Noviembre',
-  'Diciembre',
-];
-
-const months = (lang: string, monthIndex: number): string => {
-  return lang === 'en' ? monthsEn[monthIndex] : monthsEs[monthIndex];
-};
 
 export default months;
