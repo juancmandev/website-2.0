@@ -39,7 +39,7 @@ export default function MobileMenu() {
                           variant='link'
                           className='w-full px-10 py-3 cursor-default rounded-none hover:bg-background/50 focus:bg-background/50 hover:no-underline'
                         >
-                          <Link className='capitalize' href={navItem.label}>
+                          <Link className='capitalize' href={navItem.to}>
                             {navItem.label}
                           </Link>
                         </Button>
