@@ -34,7 +34,7 @@ export default function Header() {
             {navItems.map((navItem) => (
               <li key={navItem.label} className='w-max h-max'>
                 <Button asChild variant='link' className='px-2'>
-                  <Link className='capitalize' href={navItem.label}>
+                  <Link className='capitalize' href={navItem.to}>
                     {navItem.label}
                   </Link>
                 </Button>
