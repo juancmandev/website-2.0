@@ -1,73 +1,64 @@
+import dynamic from 'next/dynamic';
 import Link from 'next/link';
-import { Rss } from 'lucide-react';
 import { navItems, socialItems } from '@/utils';
-import MobileMenu from './mobile-menu';
-import { useTranslations } from 'next-intl';
-import ChangeLanguage from '@/components/change-language';
 import { Button } from './ui/button';
 import Image from 'next/image';
+// import { Rss } from 'lucide-react';
 
-type THeader = {
-  locale: 'en' | 'es';
-};
+const MobileMenu = dynamic(() => import('@/components/mobile-menu'));
 
-export default function Header(props: THeader) {
-  const t = useTranslations();
-
+export default function Header() {
   return (
-    <header className="w-full p-6 md:px-15 flex justify-between items-center">
-      <nav className="w-full max-w-[1200px] xl:mx-auto flex justify-between items-center">
+    <header className='w-full p-6 md:px-15 flex justify-between items-center'>
+      <nav className='w-full max-w-[1200px] xl:mx-auto flex justify-between items-center'>
         <section>
           <Button
             asChild
-            size="icon"
-            variant="link"
-            className="px-0 rounded-full"
+            size='icon'
+            variant='link'
+            className='px-0 rounded-full'
           >
-            <Link href={t('header.home_link')}>
+            <Link href='/'>
               <Image
                 priority
                 width={40}
                 height={40}
-                src="/logo.png"
-                alt="juancmandev logo"
+                src='/logo.png'
+                alt='juancmandev logo'
               />
             </Link>
           </Button>
         </section>
-        <section className="hidden lg:flex items-center">
-          <ul className="flex items-center gap-4">
+        <section className='hidden lg:flex items-center'>
+          <ul className='flex items-center gap-4'>
             {navItems.map((navItem) => (
-              <li key={navItem.label} className="w-max h-max">
-                <Button asChild variant="link" className="px-2">
-                  <Link href={t(`header.${navItem.label}_link`)}>
-                    {t(`header.${navItem.label}`)}
+              <li key={navItem.label} className='w-max h-max'>
+                <Button asChild variant='link' className='px-2'>
+                  <Link className='capitalize' href={navItem.label}>
+                    {navItem.label}
                   </Link>
                 </Button>
               </li>
             ))}
           </ul>
         </section>
-        <section className="hidden lg:block">
-          <ul className="flex items-center gap-2">
-            <li className="flex">
-              <ChangeLanguage locale={props.locale} />
-            </li>
+        <section className='hidden lg:block'>
+          <ul className='flex items-center gap-2'>
             {socialItems.map((socialItem) => (
-              <li title={socialItem.label} key={socialItem.to} className="flex">
+              <li title={socialItem.label} key={socialItem.to} className='flex'>
                 <Button
                   asChild
                   size={null}
-                  variant="link"
-                  className="px-1 grid justify-items-center"
+                  variant='link'
+                  className='px-1 grid justify-items-center'
                 >
                   <a
                     title={socialItem.label}
                     href={socialItem.to}
-                    target="_blank"
+                    target='_blank'
                   >
                     {socialItem.icon}
-                    <span className="text-xs">{socialItem.label}</span>
+                    <span className='text-xs'>{socialItem.label}</span>
                   </a>
                 </Button>
               </li>
@@ -92,8 +83,8 @@ export default function Header(props: THeader) {
           </ul>
         </section>
       </nav>
-      <section className="flex lg:hidden h-max items-center">
-        <MobileMenu locale={props.locale} />
+      <section className='flex lg:hidden h-max items-center'>
+        <MobileMenu />
       </section>
     </header>
   );

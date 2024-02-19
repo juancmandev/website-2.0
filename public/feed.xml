@@ -1,0 +1,1517 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title><![CDATA[juancmandev]]></title>
+        <description><![CDATA[Welcome to juancmandev's website]]></description>
+        <link>https://juancman.dev</link>
+        <image>
+            <url>https://juancman.dev/logo.png</url>
+            <title>juancmandev</title>
+            <link>https://juancman.dev</link>
+        </image>
+        <generator>RSS for Node</generator>
+        <lastBuildDate>Mon, 19 Feb 2024 00:44:09 GMT</lastBuildDate>
+        <atom:link href="https://juancman.dev/feed.xml" rel="self" type="application/rss+xml"/>
+        <language><![CDATA[en]]></language>
+        <item>
+            <title><![CDATA[Rewind 2023 and future plans]]></title>
+            <description><![CDATA[<h1>Rewind 2023 and future plans</h1>
+<p><img src="/blog/rewind-2023-and-future-plans/banner.jpg" alt="A sunset with a sign"><br><em>Photo by <a href="https://unsplash.com/@soymeraki?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash" target="_blank" rel="noopener noreferrer">Javier Allegue Barros</a> on <a href="https://unsplash.com/photos/silhouette-of-road-signage-during-golden-hour-C7B-ExXpOIE?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash" target="_blank" rel="noopener noreferrer">Unsplash</a></em></p>
+<PostData date='December 16, 2023' author='Juan Manzanero' />
+
+<p>I hope you are having a good time this holiday.</p>
+<p>Life is a succession of choices, and in retrospect, I&#39;m happy that this year I made the right ones.</p>
+<h2>In retrospect about my career this 2023</h2>
+<p>I grew up drastically as a Full Stack Developer, learning new libraries and establishing my tech stack.</p>
+<p>I even started hacking (not the thing you hear in the news), creating side projects looking to create solutions.</p>
+<p>I updated this website, creating new functionalities for content creation.</p>
+<p>Now I have more confidence in my skills, ready to keep growing up and taking on new challenges.</p>
+<h2>Futures plans for my career this 2024</h2>
+<p>I want to start freelancing, I&#39;ll be creating templates and demo projects for selling my services as a Frontend Developer mainly, but I&#39;ll keep learning about backend and cloud, as well as keep practicing my English to enter the USA or European markets.</p>
+<p>Maybe I&#39;ll not achieve this in 2024, but I must keep growing, as each year passes, I&#39;ll be more prepared.</p>
+<p>I&#39;ll check if I could contribute to an Open Source project, as almost every tool that I use is an Open Source one, I couldn&#39;t be here without if not with the help of Open Source projects.</p>
+<p>Honestly, my true wish is to work full time in a Software as a Service startup, or any startup with a focus on Software.</p>
+<p>The good thing that is I keep growing professionally, and I expect (and will) the next year I&#39;ll reach more milestones.</p>
+<p>And of course, I&#39;ll continue hacking (in a creative way, not stealing info or criminal things) with side projects, creating an extra incoming source will be great for my finances.</p>
+<h2>Retrospect of 2023 personally and more</h2>
+<p>This year I rediscovered the hobby of reading, and I really enjoy it.</p>
+<p>I discovered my new favorite book, <strong>Ready Player One</strong>, it was a really exciting and great lecture, the next year I&#39;ll read the sequel.</p>
+<p>I also started reading <strong>Ikigai</strong>, to keep acquiring good habits for a long and happy life, and seek a purpose in life.</p>
+<p>Another book I started reading is <strong>The Little Book of Common Sense Investing</strong>, as I already had a good habit of saving, but I want my money to keep growing more for a dignified retirement.</p>
+<p>I&#39;m spending less time on social media, <a href="https://www.juancman.dev/en/blog/the-monotony-of-social-media" target="_blank" rel="noopener noreferrer">even I wrote an article about this</a>, doing things that <strong>I really want to do</strong> instead.</p>
+<p>Is really horrible how much time social media steals from us, keeping us away from doing things that we really enjoy.</p>
+<p>I&#39;m doing moderate exercise, but indoors, I want to go outdoors too, I need more solar light.</p>
+<p>I&#39;m happy spending my time with my family, even if the majority of the time I&#39;m working or studying, I keep contact with my loved ones, and continue doing it, clearly.</p>
+<h2>Future plans for 2024 personally and more</h2>
+<p>I&#39;ll keep reading, I&#39;ll write more on this website.</p>
+<p>I want to acquire new habits, like pixel art.</p>
+<p>And I&#39;m retaking an old hobby, <strong>GameDev</strong>.</p>
+<p>As Unity is doing questionable things, I&#39;ll be using <a href="https://godotengine.org/" target="_blank" rel="noopener noreferrer">Godot</a> instead.</p>
+<p>I don&#39;t have in mind a big project or something like that, just retake to develop simple videogames demos, it would be great to launch a little videogame, but a complete one.</p>
+<p>Trust me, is really, <strong>REALLY</strong> challenging to develop videogames, so instead of overwhelming myself, I&#39;ll keep my <strong>ambitions simple</strong>, but <strong>constant</strong>.</p>
+<h3>Happy holidays!</h3>
+<p><img src="/blog/rewind-2023-and-future-plans/2023-complete!.png" alt="2023 complete image!"></p>
+]]></description>
+            <link>https://juancman.dev/blog/rewind-2023-and-future-plans</link>
+            <guid isPermaLink="false">https://juancman.dev/blog/rewind-2023-and-future-plans</guid>
+            <category><![CDATA[Thoughts]]></category>
+            <dc:creator><![CDATA[Juan Manzanero]]></dc:creator>
+            <pubDate>Sat, 16 Dec 2023 06:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Peddler App]]></title>
+            <description><![CDATA[<h1>Peddler App</h1>
+<p><img src="/blog/peddler-app/peddler-app-banner.png" alt="Peddler App provisional logo"><br><em>Peddler App provisional logo</em></p>
+<PostData date='November 12, 2023' author='Juan Manzanero' />
+
+<h2>The idea</h2>
+<p>You hear the ice cream man in his truck, you try to catch him, but the guy is already far away.</p>
+<p>Why not get a notification on your phone when the ice cream man is near you? So you can just tap the notification and request the ice cream man to go to your location.</p>
+<p>That&#39;s the purpose of this app.</p>
+<h2>Overwhelming for me</h2>
+<p>I&#39;d never developed a big app just by myself, but I want to try and see what happens.</p>
+<p>I want to follow the Indie Hacker way, sharing in public the progress, and getting feedback from the community.</p>
+<p>This post is the first step before designing in Figma or even creating the landing page, so I want to hear if you&#39;re interested, why you&#39;re not, or what would be great for the app.</p>
+<h2>Starting small</h2>
+<p>I really want to start small, launching a Minimum Viable Product (MVP), with the next features:</p>
+<ul>
+<li>User registration and login</li>
+<li>Two types of users, peddlers and customers</li>
+<li>Peddlers<ul>
+<li>If the user is a peddler (wants to sell), redirect to the peddler form</li>
+<li>Peddlers can create a profile with the name of their company and products that offer, for example ice cream, candy, etc</li>
+<li>Once the registration is finished, peddlers can start routes</li>
+<li>The app gets the location of the peddler, showing it on a map</li>
+<li>The backend will detect if the peddler enters a radius of a customer, and send a push notification to the customer</li>
+<li>Once the peddler has a request, the app will show the location of the requesting customer on the map</li>
+<li>The peddler can go to the destination, and fulfill the transaction</li>
+</ul>
+</li>
+<li>Customers<ul>
+<li>Customers can just create a profile with their name or alias, and set locations, for example: house</li>
+<li>Once a peddler is near, the backend will send a notification to the customer</li>
+<li>If the customer taps and confirms the notification</li>
+</ul>
+</li>
+</ul>
+<p>Of course, customers would change notifications settings and more, but that&#39;s the core idea.</p>
+<p>For the MVP I don&#39;t want to implement in-app payments, but of course, it could be a future feature.</p>
+<h2>What do you think?</h2>
+<p>Please tell me what you think, you can email me at <a href="mailto:contact@juancman.dev" target="_blank" rel="noopener noreferrer">contact@juancman.dev</a></p>
+]]></description>
+            <link>https://juancman.dev/blog/peddler-app</link>
+            <guid isPermaLink="false">https://juancman.dev/blog/peddler-app</guid>
+            <category><![CDATA[Tech]]></category>
+            <category><![CDATA[SideProject]]></category>
+            <dc:creator><![CDATA[Juan Manzanero]]></dc:creator>
+            <pubDate>Sun, 12 Nov 2023 06:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[I participated in a Hackathon]]></title>
+            <description><![CDATA[<h1>I participated in a Hackathon</h1>
+<p><img src="/blog/i-participated-in-a-hackathon/i-participated-in-a-hackathon-banner.png" alt="Tech Stack"><br><em>Tech stack used: Supabase, Next.js and Shadcn/UI, My first hackathon!</em></p>
+<PostData date='August 16, 2023' author='Juan Manzanero' />
+
+<p>I recently participated in a <a href="https://supabase.com/blog/supabase-lw8-hackathon" target="_blank" rel="noopener noreferrer">Supabase Hackathon</a>, forming a team with people from other countries, one from Bangladesh and the other person from Brazil, obviously using English for communication on Discord.</p>
+<p>The Hackathon thematic was free, the only main rule is to use Supabase for any feature, like authentication, as a PostgreSQL database or using vectors for AI, with 10 days to build a product using any technology and upload it in a GitHub repository.</p>
+<p>We developed an e-commerce app with a Walmart products model, implementing vectors for better search results.</p>
+<p>Using Supabase we implemented auth and protected routes so the user needs to log in to see recommendations and more.</p>
+<p>The user can add products to the shopping cart and check their items for saved it and see recommendations and which items are frequently bought.</p>
+<p>My main role was focused on creating the UI using the Next.js 13 app router, protecting routes only for authenticated users, and create reusable components such as product cards, and of course, making the layout responsive for mobile and desktop.</p>
+<p>We used <a href="https://ui.shadcn.com/" target="_blank" rel="noopener noreferrer">Shadcn/UI</a> as those components are already implemented functionalities with accessibility like modals or sidebars, like the sidebar that appears when you’re on a mobile device and open the button in the header, with a smooth animation.</p>
+<p>We submitted the project on time and waiting for the results, and this is my first time participating in a Hackathon, I really enjoy it and hope to continue contributing to the project on GitHub.</p>
+<p>It&#39;s amazing work with people from other countries, using English even if is not our native language, but with a purpose in common, create a great product.</p>
+<p>I’ll keep looking to participate in more Hackathons in the future and contribute to open source projects on Github because I really enjoy the feeling of developing something big with more people.</p>
+<p>I learned too much in these few days, like integrating Next.js with Supabase for authentication and protected routes, using the Supabase docs as a guide, and using it for the first time Shadcn/UI, and looking forward to keep using it.</p>
+<p>It took me so long to participate in a Hackathon, as before I hesitated about my experience, but the reality is we’ll never be ready for new challenges because if you’re already ready it means that’s too late.</p>
+<p>I want to learn more about using vectors for AI, so I’ll investigate more about the topic, as the tech tends to go that way, who knows what would be the next big tech trend or when.</p>
+<p><a href="https://groce-wise.vercel.app/" target="_blank" rel="noopener noreferrer">You can see the project: Grocewise here</a></p>
+]]></description>
+            <link>https://juancman.dev/blog/i-participated-in-a-hackathon</link>
+            <guid isPermaLink="false">https://juancman.dev/blog/i-participated-in-a-hackathon</guid>
+            <category><![CDATA[Tech]]></category>
+            <category><![CDATA[Hobby]]></category>
+            <category><![CDATA[Hackathon]]></category>
+            <dc:creator><![CDATA[Juan Manzanero]]></dc:creator>
+            <pubDate>Wed, 16 Aug 2023 06:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[The Monotony of Social Media]]></title>
+            <description><![CDATA[<h1>The Monotony of Social Media</h1>
+<p><img src="/blog/the-monotony-of-social-media/the-monotony-of-social-media-banner.jpg" alt="Person checking social media"><br><em>Person checking social media. Photo by <a href="https://unsplash.com/@fantasyflip?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank" rel="noopener noreferrer">Austin Distel</a> on <a href="https://unsplash.com/photos/iIJrUoeRoCQ?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank" rel="noopener noreferrer">Unsplash</a></em></p>
+<PostData date='July 17, 2023' author='Juan Manzanero' />
+
+<p>It’s obvious, a lot of interactions on the Internet occurs through social media, letting you send friend requests, chat, or share memes and photos. However, abstracting human interaction using software has caused many problems that didn’t exist before.</p>
+<p>When the Internet started, many people created their own websites because that&#39;s was the thing you must have if you want to be cool, and a lot of these websites was just blogpost-like where the users shares their hobbies like movies, sports, books, videogames, etc. This motivation made more unique and human websites, where you can meet someone and their likes or dislikes.</p>
+<p>Now, with the boom of social media in the middle of 2000&#39;s, people prefer to connect just searching for a name or looking the friends of their friends, and send friend requests to try and connect. That was cool at the start, as anything new, but the problems started when companies like Facebook (now Meta) or Google (with YouTube) needed to monetize their platforms, mostly with Ads.</p>
+<p>And of course, that means that they needed to suppress, censor or ban anything that could be harmful for society, like hate speeches or stupid challenges that could risk people&#39;s lives.</p>
+<p>But, the bat thing about this, is that they homogenize almost everyone, forcing them to act as the algorithms keeps recommending users with likes and comments, guiding the people to act like someone else, and so.</p>
+<p>Now almost everyone does mainly two things, post photos about their &quot;perfect&quot; lives or share memes, and don&#39;t get me wrong, it&#39;s ok to enter to social media and try to disconnect for your job or problems, but using this every day as instant escape instead of confronting your own problems could be harmful in the long term, isolating you from the need of socialize in real life, with real people, and thinking that everyone has a perfect life.</p>
+<p>No, EVERYONE has problems in their lives, even more than yours, but social media algorithms promotes mainly &quot;positive vibes only&quot; and all that shit that in big dose is hamrful for our minds.</p>
+<p>And don&#39;t mention the censorship and shadow-banning if you post something controversial, it could be something that should not be tolerated like incite hate to a group, or it could be something that don&#39;t everyone agrees but it could be useful think a little about it, but still being controversial.</p>
+<p>Should everyone can tell what they thinks? Yeah, always if doesn&#39;t promotes hate or hurt other people or animals.</p>
+<p>They&#39;re reports like Twitter promotes hate in the algorithm, and Meta knows that Instagram increases anxiety and depression on young people, and actually; promotes it... as all negative feelings keeps you on the social media interacting with others, as that&#39;s what those companies sell, your data and time to advertisers.</p>
+<p>I recently heard a video talking about this topic, and that would be cool if we go back as the starts of the Internet where people created content as a hobby, instead of looking for validation through likes and comments, being more authentic persons instead of products.</p>
+<p>Should software solutions replace human interactions? I think not, but it&#39;s too late for almost everyone, but if you&#39;re reading this, start changing your life first if you want to be honest with yourself.</p>
+<hr>
+<p>Blog inspired by &quot;Why does every personal website look like this now?&quot; by Eric Murphy on YouTube.</p>
+<p>Source Video:</p>
+<iframe
+  width='100%'
+  height='320'
+  className='rounded-md'
+  src='https://www.youtube-nocookie.com/embed/_x6SCSz7g5I'
+  title='YouTube video player'
+  allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
+  allowFullScreen
+/>
+]]></description>
+            <link>https://juancman.dev/blog/the-monotony-of-social-media</link>
+            <guid isPermaLink="false">https://juancman.dev/blog/the-monotony-of-social-media</guid>
+            <category><![CDATA[Thoughts]]></category>
+            <dc:creator><![CDATA[Juan Manzanero]]></dc:creator>
+            <pubDate>Mon, 17 Jul 2023 06:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[How Computers Works]]></title>
+            <description><![CDATA[<h1>How Computers Works</h1>
+<p><img src="/blog/how-computers-works/philipp-katzenberger-iIJrUoeRoCQ-unsplash.jpg" alt="Open laptop"><br><em>An open laptop. Photo by <a href="https://unsplash.com/@fantasyflip?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'" target="_blank" rel="noopener noreferrer">Philipp Katzenberger</a> on <a href="https://unsplash.com/photos/iIJrUoeRoCQ?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank" rel="noopener noreferrer">Unsplash</a></em></p>
+<PostData date='May 29, 2023' author='Juan Manzanero' />
+
+<p>Today we use, in some way, the computer in almost every activity in our lives, it could be for work or just fun, but if we think carefully, computers are an invention from the previous century, and have changed our lives.</p>
+<p>New works have appeared, new careers to study, and new problems to be solved.</p>
+<p>However, do we know how computers penetrated our lives? Do we know how a computer works? How does the Internet work?</p>
+<p>Many people use their smartphones to communicate with family and friends and to share their lives, but they don’t know how all this is possible.</p>
+<p>I’m not saying that everyone needs to be a Software Engineer or IT Expert, but knowing about this could be outstanding knowledge.</p>
+<hr>
+<h2>The power of computers</h2>
+<hr>
+<p>Computers can expand our brains, such things like sends messages to people from the other side of the Earth, to create an app that speeds up delivery.</p>
+<p>All these things are possible by flipping 0’s and 1’s, but how is this possible?</p>
+<p>If you&#39;ve watched The Imitation Code, maybe you know this story.</p>
+<h3>Computing Fundaments</h3>
+<hr>
+<p>Alan Turing was the inventor of the Turing Machine, a simple but powerful machine that can receive instructions to move along a long tape, changing the state of each slot. This three things, a head, a long tape and a set of instructions are the bases for the modern computers.</p>
+<p>The head is the Central Processing Unit (CPU), a piece of hardware that can be used for general purposes, receiving instructions (Algorithm) whose are transformed to electric pulses, understanding if electricity pass trough or not, if it&#39;s true or false, 1 or 0. All these instructions are saved in a Random Access Memory (RAM) for a quick access of the work that needs to be accomplished, and using a Read-Only Memory (ROM) to store persistent data that needs to be saved even if the computer shuts down.</p>
+<p>An algorithm&#39;s like a recipe, declaring ingredients (variables) and the steps to follow to achieve the result (functions).</p>
+<p>A variable is an identifier that points to a slot of memory in the RAM, storing a value that can be a number, a text (known as “string”), a boolean (true or false), or an object (a set of multiple variables and functions that can be instanced), etc.</p>
+<p>Functions are blocks of instructions that achieve a task, like obtaining your current location or sending a message.</p>
+<p>And maybe you are asking, how do I tell a computer how to do what I want?</p>
+<h3>Programming languages</h3>
+<hr>
+<p>If you try to speak with someone who doesn’t speak the same language as you, you try to use a translator or use gestures, something that you know that both can in some way understand, the same is for computers.</p>
+<p>Computers are powerful, but they need someone to tell them what to do, this is work for humans, and to achieve it we use programming languages. With a programming language you use a specific syntax to tell a computer your desired task, then you compile that file where you type all your instructions, when a file compiles, is transformed to a computer nature language (1’s and 0’s) and then the computer executes the task.</p>
+<p>There are different programming languages, and all of them are designed to achieve specific needs, like the programming languages C and C++, both are low-level languages, which means that are close to how a computer “speaks” and are used to control and administrate memory in high-efficient apps, or to illuminate the screen of your computer.</p>
+<p>There is Java, is a language that can create an environment when is compiled, meaning that can be used on almost every computer.</p>
+<p>JavaScript (is NOT Java or something like that) is a language that our browsers understands, with the help of JavaScript, we can access to a web page and see nice interactions when we click a button, login with a username and password, and more.</p>
+<p>JavaScript is a high-level language, that is easiest to learn than Java or C, but not that is worse or better, just resolves a different need.</p>
+<h3>The Browser</h3>
+<hr>
+<p>A powerful software that can access other computers using the Hyper Text Transfer Protocol (HTTP), it means that thanks to this protocol different computers can send and receive information to communicate, even if they’re far away. The browsers receive data in the form of a file, mainly three:</p>
+<ul>
+<li>Hyper Text Markup Language (HTML)</li>
+<li>Cascading Styles Sheet (CSS)</li>
+<li>JavaScript</li>
+</ul>
+<h3>HTML</h3>
+<p>Helps the browser to structure data like texts or images, using a markup language (tags). The browser can know where to put an input to type your email or a button to subscribe to your favorite artist.</p>
+<h3>CSS</h3>
+<p>It gives colors and forms to the HTML tags using selectors. It can be used to change page&#39;s background color, change button&#39;s rounded borders, modify text color, and everything your creativity can give.</p>
+<h3>JavaScript</h3>
+<p>Combining HTML and CSS with JavaScript creates an interactive web site, or web app (like this one). You can for example, add a button that changes the theme to dark/light, or store items in a shopping cart and show a number of items you have.</p>
+<p>For all this you need to store your files somewhere, letting people access a computer to download all these files using their browsers, that&#39;s the functionality of servers.</p>
+<p>Servers are computers that are connected to the Internet, and store files that can be downloaded or uploaded using protocols and security rules. Some companies like Google or Microsoft have multiple centers with many servers in different regions of the planet, called Data Centers, and can be used with a fee for storing your web app, these multiple Data Centers are called Cloud.</p>
+<h3>The Cloud</h3>
+<p>Administrating a powerful computer can be difficult, but if you know how to use it, you can save a lot of money instead of maintaining local computers that need to be turned on 24/7. Thanks to the cloud we can deliver the fastest apps, and we can have a 24/7 service for our customers with a marginal cost.</p>
+<h2>Computers Changed Humanity</h2>
+<hr>
+<p>Computers simplifies our daily tasks, software can be easy replicated and distributed without need of logistics like a tangible product. You just need an Internet connection to reach someone’s project.</p>
+<p>You don’t need a factory or natural resources like wood to produce paper, you need a group of engineers, UX/UI designers, digital marketers, and more IT people to reach billions of customers.</p>
+<p>The reason that computers are too powerful is that the marginal cost is minimal, you don’t need to extract something from the earth to build an app, you need a group of talented persons that uses their brains to create solutions.</p>
+]]></description>
+            <link>https://juancman.dev/blog/how-computers-works</link>
+            <guid isPermaLink="false">https://juancman.dev/blog/how-computers-works</guid>
+            <category><![CDATA[Tech]]></category>
+            <category><![CDATA[Informatic]]></category>
+            <dc:creator><![CDATA[Juan Manzanero]]></dc:creator>
+            <pubDate>Mon, 29 May 2023 06:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[The reason to create a version 2.0 of my website]]></title>
+            <description><![CDATA[<h1>The reason to create a version 2.0 of my website</h1>
+<p><img src="/blog/website-2.0/website-2.0-header.png" alt="Tech stack"><br><em>Tech Stack of this website. Next.js, Vercel, React.js, TypeScript and TailwindCSS</em></p>
+<PostData date='April 7, 2023' author='Juan Manzanero' />
+
+<p>The first version of my website was one of my biggest projects so fat, but <strong>now</strong><br>as I’ve <strong>more</strong> <strong>experience</strong> as a <strong>Frontend</strong> Engineer, I realize I <strong>didn’t</strong><br>do <strong>enough</strong> <strong>research</strong> into <strong>creating</strong> a <strong>web</strong> site with a <strong>blog</strong>.</p>
+<h2>Client Side Rendering (CSR) vs Server Side Rendering (SSR) vs Static Generation (SG)</h2>
+<p>When developing a <strong>web</strong> <strong>application</strong>, you should <strong>think</strong> <strong>about</strong> the type of <strong>rendering</strong> to use, while <strong>considering</strong> the <strong>requirements</strong> of the <strong>problems</strong> you want to <strong>solve</strong>.</p>
+<h3>Client Side Rendering (CSR)</h3>
+<p>For example, a web <strong>application</strong> like a <strong>SaaS</strong> to create tasks and manage people will have <strong>dynamic</strong> <strong>pages</strong> to show the tasks, update the cards when is edited or deleted, show notifications, etc. In this situation, a <strong>CSR</strong> would be <strong>better</strong>, to <strong>render</strong> the page <strong>each</strong> time the user <strong>request</strong> access will <strong>keep</strong> the data <strong>updated</strong>. However, a <strong>CSR</strong> needs to <strong>hydrate</strong> the page when is <strong>requested</strong>, this causes a <strong>slow</strong> <strong>first</strong> <strong>load</strong>, and uses <strong>more</strong> <strong>resources</strong> of the user’s PC.</p>
+<h3>Server Side Rendering (SSR)</h3>
+<p>This could be solved using <strong>SSR</strong>, this consist in <strong>generate</strong> the page in the <strong>Server</strong> where the web app is hosted <strong>using</strong> all the <strong>power</strong> that a <strong>server</strong> can provide. The problem is that a <strong>server</strong> is <strong>required</strong>, Google Cloud provides with serverless options like App Engine or Cloud Run, but you’ll need to learn about this services and how to deploy the project, so the <strong>technical</strong> <strong>knowledge</strong> is <strong>high</strong>.</p>
+<p>The <strong>disadvantage</strong> of <strong>CSG</strong> and <strong>SSR</strong> is that because <strong>each</strong> <strong>page</strong> <strong>must</strong> be <strong>rendered</strong> on each <strong>request</strong>, <strong>web</strong> <strong>crawlers</strong> and <strong>search</strong> <strong>engines</strong> such as Google&#39;s will take <strong>longer</strong> to <strong>obtain</strong> <strong>information</strong> about your page, resulting in a <strong>low</strong> <strong>SEO</strong> priority.</p>
+<h3>Static Generation (SG)</h3>
+<p>Well, if a <strong>page</strong> <strong>doesn’t</strong> require <strong>fetch</strong> <strong>data</strong> for <strong>each</strong> <strong>request</strong>, then you could use <strong>SG</strong>, this means that the <strong>page</strong> is <strong>generated</strong> when you <strong>build</strong> the <strong>production</strong> directory <strong>before</strong> you <strong>deploy</strong> it. The page will be generated into a HTML/CSS/JS one time, and if you need to <strong>update</strong> the <strong>data</strong> in that page you’ll need to do the <strong>changes</strong> and <strong>deploy</strong> the project. Yes, you’ll need to be more cautious when reviewing the changes before deploying, but as the page is already generated, <strong>web</strong> <strong>crawlers</strong> and the Google’s <strong>search</strong> <strong>engine</strong> will get the <strong>info</strong> in your page <strong>faster</strong>, <strong>improving</strong> your <strong>SEO</strong>.</p>
+<h2>The cool thing about Next.js</h2>
+<p>In the <strong>past</strong> you will require to <strong>think</strong> if go <strong>full</strong> CSR, SSR or SG, linking your web to their respecting sections, like the app, blog, etc.</p>
+<p><strong><a href="https://nextjs.org/" target="_blank" rel="noopener noreferrer">Next.js</a></strong> is a <strong>Node.js</strong> <strong>meta-framework</strong> that uses <strong><a href="https://react.dev/" target="_blank" rel="noopener noreferrer">React.js</a></strong> to build the UI, and provides with CSR, SSR, SG and more, so you can generate SG fetching async data, allowing you to don’t <strong>need</strong> to <strong>create</strong> <strong>every</strong> <strong>static</strong> <strong>page</strong>.</p>
+<p>Is that the <strong>approach</strong> <strong>used</strong> for <strong>this</strong> <strong>web</strong> site, <strong>instead</strong> of <strong>fetch</strong> the data on <strong>each</strong> <strong>request</strong>, I only <strong>fetch</strong> data <strong>when</strong> I <strong>create</strong> the <strong>build</strong> of the project.</p>
+<p><strong>Each</strong> <strong>article</strong> is a SG page, but I use a <strong>template</strong> to keep every blog similar, using <strong>markdown</strong> syntax for the content of the blog, and with an <strong>extension</strong> of <strong>TailwindCSS</strong> I keep the styles consistent.</p>
+<p>So, <strong>Next.js</strong> allows you to <strong>choose</strong> the <strong>rendering</strong> method for <strong>each</strong> <strong>page</strong> in your web, this feature permits to create amazing websites in the same project, keeping consistence and with fast load times, Next.js even lazy loads each page and start loading when you hover a link like Home, Contact, etc.</p>
+<blockquote>
+<p>I’ll explain in more detail the architecture of this project in the future!</p>
+</blockquote>
+<h2>TailwindCSS vs MUI</h2>
+<p>I choose to use <strong><a href="https://tailwindcss.com/" target="_blank" rel="noopener noreferrer">TailwindCSS</a></strong> to learn about this CSS library, and I’m impressed the <strong>faster</strong> that makes the development of the styles of a web project. <strong>MUI</strong> <strong>provides</strong> <strong>functionalities</strong>, but sometimes <strong>gives</strong> <strong>problems</strong> with <strong>hydration</strong> like in my previous website, when you <strong>first</strong> <strong>load</strong> the page it takes a <strong>time</strong> to <strong>show</strong> all the <strong>styles</strong>, now it no longer occurs because TailwindCSS is pure CSS and the pages are static.</p>
+<h2>Deploying on Vercel</h2>
+<p><strong><a href="https://vercel.com" target="_blank" rel="noopener noreferrer">Vercel</a></strong> is the company behind Next.js, and they provides with <strong>hosting</strong> services <strong>optimized</strong> for <strong>Node.js</strong> apps, and as I’m learning about Cloud Development maybe I could try to host this web like my previous web into a Cloud Service like Cloud Run, but this time I choose to use <strong>Vercel</strong> to get the <strong>analytics</strong> that are very useful, and as the <strong>hobby plan</strong> gives me free hosting for small projects.</p>
+<p>To deploy I use the <strong><a href="https://vercel.com/docs/cli" target="_blank" rel="noopener noreferrer">Vercel CLI</a></strong>, pretty simple and straightforward.</p>
+<h2>More content coming soon!</h2>
+<p>I’ll keep updating with posts, features and more content to share my experience, and know I’m writing this paragraph, I think the next feature it would be a newsletter to notify people when I create a new post. Time to work!</p>
+]]></description>
+            <link>https://juancman.dev/blog/website-2.0</link>
+            <guid isPermaLink="false">https://juancman.dev/blog/website-2.0</guid>
+            <category><![CDATA[Tech]]></category>
+            <dc:creator><![CDATA[Juan Manzanero]]></dc:creator>
+            <pubDate>Fri, 07 Apr 2023 06:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Build a fullstack web app]]></title>
+            <description><![CDATA[<h1>Build a fullstack web app</h1>
+<p><img src="/portfolio/build-a-fullstack-app/banner.png" alt="Banner with the tech stack used in this tutorial, Next.js, TailwindCSS, shadcn/ui, Prisma, PostgreSQL and Auth.js"><br><em>Tech stack used in this tutorial</em></p>
+<p><PostData
+  date='January 18, 2024'
+  author='Juan Manzanero'
+  github='https://github.com/juancmandev/fullstack-app'
+/></p>
+<h2>Content</h2>
+<ol>
+<li><a href="#1-introduction" target="_blank" rel="noopener noreferrer">Introduction</a></li>
+<li><a href="#2-initial-setup" target="_blank" rel="noopener noreferrer">Initial setup</a><ol>
+<li><a href="#21-install-shadcnui" target="_blank" rel="noopener noreferrer">Install shadcn/ui</a></li>
+<li><a href="#22-create-a-postgresql-database-using-docker" target="_blank" rel="noopener noreferrer">Create a PostgreSQL database using Docker</a></li>
+<li><a href="#23-install-prisma" target="_blank" rel="noopener noreferrer">Install Prisma</a></li>
+<li><a href="#24-config-authjs" target="_blank" rel="noopener noreferrer">Config Auth.js</a></li>
+</ol>
+</li>
+<li><a href="#3-improve-your-ui" target="_blank" rel="noopener noreferrer">Improve your UI</a></li>
+<li><a href="#4-add-crud-functionality" target="_blank" rel="noopener noreferrer">Add CRUD functionality</a></li>
+<li><a href="#5-conclusion" target="_blank" rel="noopener noreferrer">Conclusion</a></li>
+</ol>
+<h2>1. Introduction</h2>
+<p>In this tutorial, we will develop a fullstack web app with the following tech stack:</p>
+<ul>
+<li><a href="https://nextjs.org/" target="_blank" rel="noopener noreferrer">Next.js</a> as meta-framework</li>
+<li><a href="https://tailwindcss.com/" target="_blank" rel="noopener noreferrer">TailwindCSS</a> for styling</li>
+<li><a href="https://ui.shadcn.com/" target="_blank" rel="noopener noreferrer">shadcn/ui</a> for UI components</li>
+<li><a href="https://www.prisma.io/" target="_blank" rel="noopener noreferrer">Prisma</a> as ORM</li>
+<li><a href="https://www.postgresql.org/" target="_blank" rel="noopener noreferrer">PostgreSQL</a> as database</li>
+<li><a href="https://authjs.dev/" target="_blank" rel="noopener noreferrer">Auth.js</a> for authentication</li>
+<li><a href="https://www.docker.com/" target="_blank" rel="noopener noreferrer">Docker</a> for creating an intance of a PostgreSQL database locally</li>
+</ul>
+<p>We&#39;ll learn some of the fundamentals of this tech stack, like using <strong>server components</strong> in Next.js, or creating <strong>API endpoints</strong> using the <strong>app router</strong>.</p>
+<h2>2. Initial setup</h2>
+<p>Let&#39;s start creating a new Next.js project, in your <strong>terminal</strong> run:</p>
+<pre><code class="language-bash">npx create-next-app@latest
+</code></pre>
+<p>Make sure to mark <strong>Yes</strong> the following options:</p>
+<ul>
+<li>Would you like to use <strong>TypeScript</strong>?</li>
+<li>Would you like to use <strong>ESLint</strong>?</li>
+<li>Would you like to use <strong>Tailwind CSS</strong>?</li>
+<li>Would you like to use <strong>&#39;src/&#39; directory</strong>?</li>
+<li>Would you like to use <strong>App Router</strong>? (recommended)</li>
+</ul>
+<pre><code class="language-bash">&gt; What is your project named? fullstack-app
+&gt; Would you like to use TypeScript? No / Yes
+&gt; Would you like to use ESLint? No / Yes
+&gt; Would you like to use Tailwind CSS? No / Yes
+&gt; Would you like to use `src/` directory? No / Yes
+&gt; Would you like to use App Router? (recommended) No / Yes
+&gt; Would you like to customize the default import alias (@/*)? No / Yes
+&gt; What import alias would you like configured? @/*
+</code></pre>
+<p>Wait until the dependencies installation is completed, then access to the project directory:</p>
+<pre><code class="language-bash">cd fullstack-app
+</code></pre>
+<p>Open your code editor of your preference.</p>
+<h3>2.1 Install shadcn/ui</h3>
+<p>This components will help us a lot building the <strong>UI</strong> along with TailwindCSS.</p>
+<p>First, initialize shadcn/ui:</p>
+<pre><code class="language-bash">npx shadcn-ui@latest init
+</code></pre>
+<p>Make sure to config shadcn/ui according your project configuration.</p>
+<p>You can check the <a href="https://ui.shadcn.com/docs" target="_blank" rel="noopener noreferrer">shadcn/ui docs</a> for every component that you could need, each components is installed individually.</p>
+<h3>2.2 Create a PostgreSQL database using Docker</h3>
+<p>Make sure to have <a href="https://www.docker.com/" target="_blank" rel="noopener noreferrer">Docker</a> installed in your machine.</p>
+<p>First you need to pull a PostgreSQL image from Docker Hub:</p>
+<pre><code class="language-bash">docker pull postgres
+</code></pre>
+<p>Then, create a container with the image:</p>
+<pre><code class="language-bash">docker run --name my-postgres -e POSTGRES_PASSWORD=password -p 5432:5432 -d postgres
+</code></pre>
+<h3>2.3 Install Prisma</h3>
+<p>Install Prisma using your dependency manager, in this case <strong>npm</strong>:</p>
+<pre><code class="language-bash">npm install prisma -D
+</code></pre>
+<p>Now initialize Prisma:</p>
+<pre><code class="language-bash">npx prisma init
+</code></pre>
+<p>A new <code>./prisma</code> direcotry will be created in the root of your project, with a schema.prisma file.</p>
+<p>You&#39;ll create your schemas in this file.</p>
+<p>Add this model as an example:</p>
+<pre><code class="language-prisma">model User {
+  id        Int      @id @default(autoincrement())
+  createdAt DateTime @default(now())
+  email     String   @unique
+  name      String?
+}
+</code></pre>
+<p>Update your <code>.env</code> file with the following:</p>
+<pre><code class="language-env">DATABASE_URL=&quot;postgresql://postgres:password@localhost:5432/postgres?schema=public&quot;
+</code></pre>
+<p>In the URL is your username (by default is postgres), your password (in this case password), the host (by default is localhost), the port (by default is 5432), the database name (by default is postgres) and the schema (by default is public).</p>
+<p>Create your first migration to test if Prisma can connect to your local database:</p>
+<pre><code class="language-bash">npx prisma migrate dev --name init
+</code></pre>
+<p>If everything is ok, you&#39;ll see a new /migrations directory with a new file inside.</p>
+<blockquote>
+<p>If you have an error, make sure you can connect to your local DB. Delete, and create the container again if necessary.</p>
+</blockquote>
+<h3>2.4 Config Auth.js</h3>
+<p>Add this models to your <strong>prisma schema</strong>:</p>
+<pre><code class="language-prisma">model Account {
+  id                String  @id @default(cuid())
+  userId            String
+  type              String
+  provider          String
+  providerAccountId String
+  refresh_token     String? @db.Text
+  access_token      String? @db.Text
+  expires_at        Int?
+  token_type        String?
+  scope             String?
+  id_token          String? @db.Text
+  session_state     String?
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([provider, providerAccountId])
+}
+
+model Session {
+  id           String   @id @default(cuid())
+  sessionToken String   @unique
+  userId       String
+  expires      DateTime
+  user         User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+model User {
+  id            String    @id @default(cuid())
+  name          String?
+  email         String?   @unique
+  emailVerified DateTime?
+  image         String?
+  accounts      Account[]
+  sessions      Session[]
+}
+
+model VerificationToken {
+  identifier String
+  token      String   @unique
+  expires    DateTime
+
+  @@unique([identifier, token])
+}
+</code></pre>
+<p>These models are for <strong>Auth.js</strong>, now we can install it with the prisma adapter:</p>
+<pre><code class="language-bash">npm install @prisma/client @auth/prisma-adapter
+</code></pre>
+<p>Instal nodemailer too, as we&#39;ll use magic links for authentication:</p>
+<pre><code class="language-bash">npm install nodemailer -D
+</code></pre>
+<p>Now create a <code>src/utils/db.ts</code> and initialize <strong>prisma</strong>:</p>
+<pre><code class="language-ts">import { PrismaClient } from &#39;@prisma/client&#39;;
+
+const prismaClientSingleton = () =&gt; {
+  return new PrismaClient();
+};
+
+declare global {
+  var prisma: undefined | ReturnType&lt;typeof prismaClientSingleton&gt;;
+}
+
+const prisma = globalThis.prisma ?? prismaClientSingleton();
+
+export default prisma;
+
+if (process.env.NODE_ENV !== &#39;production&#39;) globalThis.prisma = prisma;
+</code></pre>
+<p>Then, create a <code>src/utils/auth.ts</code> file to config <strong>Auth.js</strong>:</p>
+<pre><code class="language-ts">import type { NextAuthOptions } from &#39;next-auth&#39;;
+import { PrismaAdapter } from &#39;@auth/prisma-adapter&#39;;
+import EmailProvider from &#39;next-auth/providers/email&#39;;
+import prisma from &#39;@/libs/db&#39;;
+import { Adapter } from &#39;next-auth/adapters&#39;;
+
+export const authOptions = {
+  adapter: PrismaAdapter(prisma) as Adapter,
+  providers: [
+    EmailProvider({
+      server: {
+        host: process.env.EMAIL_SERVER_HOST,
+        port: process.env.EMAIL_SERVER_PORT,
+        auth: {
+          user: process.env.EMAIL_SERVER_USER,
+          pass: process.env.EMAIL_SERVER_PASSWORD,
+        },
+      },
+      from: process.env.EMAIL_FROM,
+    }),
+  ],
+  callbacks: {
+    session: async ({ session, user }) =&gt; {
+      return {
+        ...session,
+        user: user,
+      };
+    },
+  },
+} satisfies NextAuthOptions;
+</code></pre>
+<p>This config is for using an email provider, for this project we&#39;ll use <a href="https://resend.com/" target="_blank" rel="noopener noreferrer">Resend</a>.</p>
+<p>Create an account and get the next credentials in your .env file:</p>
+<ul>
+<li>EMAIL_SERVER_HOST: smtp.resend.com</li>
+<li>EMAIL_SERVER_PORT: 465</li>
+<li>EMAIL_SERVER_USER: resend</li>
+<li>EMAIL_FROM: onboarding@resend(dot)dev</li>
+<li>EMAIL_SERVER_PASSWORD: yor api key</li>
+</ul>
+<p>Now, create a <code>src/pages/api/auth/[...nextauth]/route.ts</code> file:</p>
+<pre><code class="language-ts">import { authOptions } from &#39;@/libs/auth&#39;;
+import NextAuth from &#39;next-auth/next&#39;;
+
+const handler = NextAuth(authOptions);
+
+export { handler as GET, handler as POST };
+</code></pre>
+<p>This file is for handling the authentication in our app.</p>
+<p>You can now authenticate users with a magic link sent by email.</p>
+<p>Create a <code>src/app/auth/signin-form.tsx</code> file:</p>
+<pre><code class="language-tsx">&#39;use client&#39;;
+
+import { useState } from &#39;react&#39;;
+import { signIn } from &#39;next-auth/react&#39;;
+
+export default function SigninForm() {
+  const [email, setEmail] = useState&lt;null | string&gt;(null);
+
+  async function handleSubmit() {
+    await signIn(&#39;email&#39;, {
+      email,
+      callbackUrl: `${window.location.origin}`,
+    });
+  }
+
+  return (
+    &lt;form className=&#39;mt-5 space-y-4&#39; action={handleSubmit}&gt;
+      &lt;section className=&#39;flex flex-col gap-2&#39;&gt;
+        &lt;label htmlFor=&#39;email&#39;&gt;Email&lt;/label&gt;
+        &lt;input
+          id=&#39;email&#39;
+          type=&#39;email&#39;
+          name=&#39;email&#39;
+          onChange={(e) =&gt; setEmail(e.target.value)}
+          className=&#39;w-max p-1 border border-slate-400&#39;
+        /&gt;
+      &lt;/section&gt;
+      &lt;button type=&#39;submit&#39;&gt;Sign in&lt;/button&gt;
+    &lt;/form&gt;
+  );
+}
+</code></pre>
+<p>Import it to your <code>src/app/auth/page.tsx</code> file:</p>
+<pre><code class="language-tsx">import { authOptions } from &#39;@/libs/auth&#39;;
+import { getServerSession } from &#39;next-auth&#39;;
+import { redirect } from &#39;next/navigation&#39;;
+import SigninForm from &#39;./form&#39;;
+
+export default async function Signin() {
+  const session = await getServerSession(authOptions);
+
+  if (session) {
+    return redirect(&#39;/&#39;);
+  }
+
+  return (
+    &lt;&gt;
+      &lt;h1&gt;Sign in&lt;/h1&gt;
+
+      &lt;SigninForm /&gt;
+    &lt;/&gt;
+  );
+}
+</code></pre>
+<p>As you can see, you can redirect users if they&#39;re not authenticated getting the session with <strong>getServerSession</strong>.</p>
+<h2>3. Improve your UI</h2>
+<p>Let&#39;s create a short posts like app.</p>
+<p>First, add some shadcn/ui components and update your components, we&#39;ll create new components too:</p>
+<pre><code class="language-bash">npx shadcn-ui@latest add button
+</code></pre>
+<pre><code class="language-bash">npx shadcn-ui@latest add dialog
+</code></pre>
+<pre><code class="language-bash">npx shadcn-ui@latest add input
+</code></pre>
+<pre><code class="language-bash">npx shadcn-ui@latest add textarea
+</code></pre>
+<pre><code class="language-bash">npx shadcn-ui@latest add form
+</code></pre>
+<pre><code class="language-bash">npx shadcn-ui@latest add label
+</code></pre>
+<pre><code class="language-bash">npx shadcn-ui@latest add sonner
+</code></pre>
+<p>We&#39;ll add the endpoints URL for these components, but we&#39;ll create them later.</p>
+<p><code>src/app/auth/signin-form.tsx</code></p>
+<p>Here we&#39;ll update the UI and add form validation.</p>
+<pre><code class="language-tsx">&#39;use client&#39;;
+
+import { signIn } from &#39;next-auth/react&#39;;
+import { Button } from &#39;@/components/ui/button&#39;;
+import {
+  Form,
+  FormControl,
+  FormField,
+  FormItem,
+  FormLabel,
+  FormMessage,
+} from &#39;@/components/ui/form&#39;;
+import { Input } from &#39;@/components/ui/input&#39;;
+import { Textarea } from &#39;@/components/ui/textarea&#39;;
+import { useForm } from &#39;react-hook-form&#39;;
+import * as z from &#39;zod&#39;;
+import { zodResolver } from &#39;@hookform/resolvers/zod&#39;;
+
+const formSchema = z.object({
+  email: z.string().email(),
+});
+
+export default function SigninForm() {
+  const form = useForm&lt;z.infer&lt;typeof formSchema&gt;&gt;({
+    resolver: zodResolver(formSchema),
+    defaultValues: {
+      email: &#39;&#39;,
+    },
+  });
+
+  async function onSubmit({ email }: z.infer&lt;typeof formSchema&gt;) {
+    await signIn(&#39;email&#39;, {
+      email,
+      callbackUrl: `${window.location.origin}`,
+    });
+  }
+
+  return (
+    &lt;Form {...form}&gt;
+      &lt;form className=&#39;space-y-4&#39; onSubmit={form.handleSubmit(onSubmit)}&gt;
+        &lt;FormField
+          control={form.control}
+          name=&#39;email&#39;
+          render={({ field }) =&gt; (
+            &lt;FormItem&gt;
+              &lt;FormLabel&gt;Email&lt;/FormLabel&gt;
+              &lt;FormControl&gt;
+                &lt;Input placeholder=&#39;address@example.com&#39; {...field} /&gt;
+              &lt;/FormControl&gt;
+              &lt;FormMessage /&gt;
+            &lt;/FormItem&gt;
+          )}
+        /&gt;
+        &lt;Button className=&#39;w-full&#39; type=&#39;submit&#39;&gt;
+          Send magic link
+        &lt;/Button&gt;
+      &lt;/form&gt;
+    &lt;/Form&gt;
+  );
+}
+</code></pre>
+<p><code>src/components/post/create.tsx</code></p>
+<p>Update UI components and form validation.</p>
+<pre><code class="language-tsx">&#39;use client&#39;;
+
+import { useState } from &#39;react&#39;;
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from &#39;@/components/ui/dialog&#39;;
+import { Button } from &#39;@/components/ui/button&#39;;
+import {
+  Form,
+  FormControl,
+  FormField,
+  FormItem,
+  FormLabel,
+  FormMessage,
+} from &#39;@/components/ui/form&#39;;
+import { Input } from &#39;@/components/ui/input&#39;;
+import { Textarea } from &#39;@/components/ui/textarea&#39;;
+import { useForm } from &#39;react-hook-form&#39;;
+import * as z from &#39;zod&#39;;
+import { zodResolver } from &#39;@hookform/resolvers/zod&#39;;
+import { useRouter } from &#39;next/navigation&#39;;
+import { toast } from &#39;sonner&#39;;
+import { SessionProps } from &#39;./types&#39;;
+
+const formSchema = z.object({
+  title: z.string().min(1).max(100),
+  content: z.string().min(1),
+});
+
+export default function CreatePost(props: SessionProps) {
+  const [open, setOpen] = useState(false);
+  const router = useRouter();
+  const form = useForm&lt;z.infer&lt;typeof formSchema&gt;&gt;({
+    resolver: zodResolver(formSchema),
+    defaultValues: {
+      title: &#39;&#39;,
+      content: &#39;&#39;,
+    },
+  });
+
+  async function onSubmit(values: z.infer&lt;typeof formSchema&gt;) {
+    try {
+      const res = await fetch(&#39;/api/posts&#39;, {
+        method: &#39;POST&#39;,
+        headers: { &#39;Content-Type&#39;: &#39;application/json&#39; },
+        body: JSON.stringify({
+          ...values,
+          authorId: props.session.user?.id,
+        }),
+      });
+      const json = await res.json();
+
+      if (!res.ok) {
+        toast(json.message);
+
+        return;
+      }
+
+      toast(&#39;Post created!&#39;);
+      form.reset();
+      setOpen(false);
+      router.refresh();
+    } catch (error) {
+      console.error(error);
+    }
+  }
+
+  return (
+    &lt;Dialog open={open} onOpenChange={setOpen}&gt;
+      &lt;DialogTrigger asChild&gt;
+        &lt;Button&gt;Create post&lt;/Button&gt;
+      &lt;/DialogTrigger&gt;
+      &lt;DialogContent className=&#39;max-w-[300px]&#39;&gt;
+        &lt;DialogHeader className=&#39;text-left&#39;&gt;
+          &lt;DialogTitle&gt;Create post&lt;/DialogTitle&gt;
+          &lt;DialogDescription&gt;
+            Please &lt;strong&gt;do not&lt;/strong&gt; post &lt;strong&gt;NSFW&lt;/strong&gt; content.
+          &lt;/DialogDescription&gt;
+        &lt;/DialogHeader&gt;
+        &lt;Form {...form}&gt;
+          &lt;form className=&#39;space-y-4&#39; onSubmit={form.handleSubmit(onSubmit)}&gt;
+            &lt;FormField
+              control={form.control}
+              name=&#39;title&#39;
+              render={({ field }) =&gt; (
+                &lt;FormItem&gt;
+                  &lt;FormLabel&gt;Title&lt;/FormLabel&gt;
+                  &lt;FormControl&gt;
+                    &lt;Input placeholder=&#39;Hi there!&#39; {...field} /&gt;
+                  &lt;/FormControl&gt;
+                  &lt;FormMessage /&gt;
+                &lt;/FormItem&gt;
+              )}
+            /&gt;
+            &lt;FormField
+              control={form.control}
+              name=&#39;content&#39;
+              render={({ field }) =&gt; (
+                &lt;FormItem&gt;
+                  &lt;FormLabel&gt;Content&lt;/FormLabel&gt;
+                  &lt;FormControl&gt;
+                    &lt;Textarea
+                      placeholder=&#39;Testing this great app!&#39;
+                      {...field}
+                    /&gt;
+                  &lt;/FormControl&gt;
+                  &lt;FormMessage /&gt;
+                &lt;/FormItem&gt;
+              )}
+            /&gt;
+            &lt;Button className=&#39;w-full&#39; type=&#39;submit&#39;&gt;
+              Post
+            &lt;/Button&gt;
+          &lt;/form&gt;
+        &lt;/Form&gt;
+      &lt;/DialogContent&gt;
+    &lt;/Dialog&gt;
+  );
+}
+</code></pre>
+<p><code>src/app/page.tsx</code></p>
+<p>Fetch data from Prisma, as this page is a server component, we can fetch it directly.</p>
+<pre><code class="language-tsx">import { authOptions } from &#39;@/libs/auth&#39;;
+import { getServerSession } from &#39;next-auth&#39;;
+import prisma from &#39;@/libs/db&#39;;
+import CreatePost from &#39;@/components/post/create&#39;;
+import Post from &#39;@/components/post&#39;;
+
+export default async function Home() {
+  const session = await getServerSession(authOptions);
+
+  // You can fetch data to Prisma in server components
+  const posts = await prisma.post.findMany({
+    include: {
+      author: true,
+    },
+  });
+
+  return (
+    &lt;&gt;
+      &lt;h1 className=&#39;mb-5 font-bold text-xl&#39;&gt;Home&lt;/h1&gt;
+      {session ? (
+        &lt;&gt;
+          &lt;CreatePost session={session} /&gt;
+        &lt;/&gt;
+      ) : (
+        &lt;&gt;
+          &lt;p&gt;You are not logged in&lt;/p&gt;
+        &lt;/&gt;
+      )}
+      &lt;h3 className=&#39;text-lg font-semibold mt-10&#39;&gt;Posts&lt;/h3&gt;
+      &lt;ul className=&#39;mt-5 space-y-2.5&#39;&gt;
+        {posts.length &gt; 0 ? (
+          posts.map((post) =&gt; (
+            &lt;li key={post.id}&gt;
+              &lt;Post {...post} session={session} /&gt;
+            &lt;/li&gt;
+          ))
+        ) : (
+          &lt;p&gt;No posts&lt;/p&gt;
+        )}
+      &lt;/ul&gt;
+    &lt;/&gt;
+  );
+}
+</code></pre>
+<p><code>src/components/post/item.tsx</code></p>
+<pre><code class="language-tsx">&#39;use client&#39;;
+
+import DeletePost from &#39;./delete&#39;;
+import EditPost from &#39;./edit&#39;;
+import { TPostProps } from &#39;./types&#39;;
+
+export default function PostItem(props: TPostProps) {
+  return (
+    &lt;article className=&#39;w-max p-2 border border-slate-500 rounded-md&#39;&gt;
+      &lt;header className=&#39;flex justify-between items-center&#39;&gt;
+        &lt;h2 className=&#39;font-bold text-lg&#39;&gt;{props.title}&lt;/h2&gt;
+        {props.session?.user?.id === props.authorId &amp;&amp; (
+          &lt;section className=&#39;space-x-2&#39;&gt;
+            &lt;EditPost {...props} /&gt;
+            &lt;DeletePost {...props} /&gt;
+          &lt;/section&gt;
+        )}
+      &lt;/header&gt;
+      &lt;p&gt;{props.content}&lt;/p&gt;
+      &lt;span className=&#39;text-sm&#39;&gt;
+        Posted by {props.author?.email || &#39;anon&#39;} at{&#39; &#39;}
+        {new Date(props.createdAt).toLocaleString()}
+      &lt;/span&gt;
+    &lt;/article&gt;
+  );
+}
+</code></pre>
+<p><code>src/components/post/edit.tsx</code></p>
+<p>Create a button icon for opening a dialog rendering the post data for editing, add validation and fetch to the API endpoint.</p>
+<pre><code class="language-tsx">&#39;use client&#39;;
+
+import { useState } from &#39;react&#39;;
+import { Edit } from &#39;lucide-react&#39;;
+import {
+  Dialog,
+  DialogClose,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from &#39;@/components/ui/dialog&#39;;
+import {
+  Form,
+  FormControl,
+  FormField,
+  FormItem,
+  FormLabel,
+  FormMessage,
+} from &#39;@/components/ui/form&#39;;
+import { Input } from &#39;@/components/ui/input&#39;;
+import { Textarea } from &#39;@/components/ui/textarea&#39;;
+import { useForm } from &#39;react-hook-form&#39;;
+import * as z from &#39;zod&#39;;
+import { zodResolver } from &#39;@hookform/resolvers/zod&#39;;
+import { useRouter } from &#39;next/navigation&#39;;
+import { toast } from &#39;sonner&#39;;
+import { Button } from &#39;@/components/ui/button&#39;;
+import { TPostProps } from &#39;./types&#39;;
+
+const formSchema = z.object({
+  title: z.string().min(1).max(100),
+  content: z.string().min(1),
+});
+
+export default function EditPost(props: TPostProps) {
+  const [open, setOpen] = useState(false);
+  const router = useRouter();
+  const form = useForm&lt;z.infer&lt;typeof formSchema&gt;&gt;({
+    resolver: zodResolver(formSchema),
+    defaultValues: {
+      title: props.title,
+      content: props.content,
+    },
+  });
+
+  async function onSubmit(values: z.infer&lt;typeof formSchema&gt;) {
+    try {
+      const res = await fetch(&#39;/api/posts&#39;, {
+        method: &#39;PUT&#39;,
+        headers: { &#39;Content-Type&#39;: &#39;application/json&#39; },
+        body: JSON.stringify({
+          ...values,
+          id: props.id,
+        }),
+      });
+      const json = await res.json();
+      console.log(json);
+
+      if (!res.ok) {
+        toast(json.message);
+
+        return;
+      }
+
+      toast(&#39;Post edited!&#39;);
+      form.reset();
+      setOpen(false);
+      router.refresh();
+    } catch (error) {
+      console.error(error);
+    }
+  }
+
+  return (
+    &lt;Dialog open={open} onOpenChange={setOpen}&gt;
+      &lt;DialogTrigger asChild&gt;
+        &lt;Button variant=&#39;secondary&#39; size=&#39;icon&#39;&gt;
+          &lt;Edit /&gt;
+        &lt;/Button&gt;
+      &lt;/DialogTrigger&gt;
+      &lt;DialogContent className=&#39;max-w-[300px]&#39;&gt;
+        &lt;DialogHeader className=&#39;text-left&#39;&gt;
+          &lt;DialogTitle&gt;Edit post&lt;/DialogTitle&gt;
+          &lt;DialogDescription&gt;
+            Please &lt;strong&gt;do not&lt;/strong&gt; post &lt;strong&gt;NSFW&lt;/strong&gt; content.
+          &lt;/DialogDescription&gt;
+        &lt;/DialogHeader&gt;
+        &lt;Form {...form}&gt;
+          &lt;form className=&#39;space-y-4&#39; onSubmit={form.handleSubmit(onSubmit)}&gt;
+            &lt;FormField
+              control={form.control}
+              name=&#39;title&#39;
+              render={({ field }) =&gt; (
+                &lt;FormItem&gt;
+                  &lt;FormLabel&gt;Title&lt;/FormLabel&gt;
+                  &lt;FormControl&gt;
+                    &lt;Input placeholder=&#39;Hi there!&#39; {...field} /&gt;
+                  &lt;/FormControl&gt;
+                  &lt;FormMessage /&gt;
+                &lt;/FormItem&gt;
+              )}
+            /&gt;
+            &lt;FormField
+              control={form.control}
+              name=&#39;content&#39;
+              render={({ field }) =&gt; (
+                &lt;FormItem&gt;
+                  &lt;FormLabel&gt;Content&lt;/FormLabel&gt;
+                  &lt;FormControl&gt;
+                    &lt;Textarea
+                      placeholder=&#39;Testing this great app!&#39;
+                      {...field}
+                    /&gt;
+                  &lt;/FormControl&gt;
+                  &lt;FormMessage /&gt;
+                &lt;/FormItem&gt;
+              )}
+            /&gt;
+            &lt;DialogClose asChild&gt;
+              &lt;Button className=&#39;w-full&#39; type=&#39;submit&#39;&gt;
+                Edit post
+              &lt;/Button&gt;
+            &lt;/DialogClose&gt;
+          &lt;/form&gt;
+        &lt;/Form&gt;
+      &lt;/DialogContent&gt;
+    &lt;/Dialog&gt;
+  );
+}
+</code></pre>
+<p><code>src/components/post/delete.tsx</code></p>
+<p>Create a button icon for opening a dialog for deleting the post, add validation and fetch to the API endpoint.</p>
+<pre><code class="language-tsx">&#39;use client&#39;;
+
+import { LucideTrash2 } from &#39;lucide-react&#39;;
+import { Button } from &#39;@/components/ui/button&#39;;
+import {
+  Dialog,
+  DialogClose,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from &#39;@/components/ui/dialog&#39;;
+import { useRouter } from &#39;next/navigation&#39;;
+import { toast } from &#39;sonner&#39;;
+import { TPostProps } from &#39;./types&#39;;
+
+export default function DeletePost(props: TPostProps) {
+  const router = useRouter();
+
+  async function handleDelete() {
+    try {
+      const res = await fetch(&#39;/api/posts&#39;, {
+        method: &#39;DELETE&#39;,
+        headers: { &#39;Content-Type&#39;: &#39;application/json&#39; },
+        body: JSON.stringify({
+          id: props.id,
+        }),
+      });
+      const json = await res.json();
+
+      if (!res.ok) {
+        toast(json.message);
+
+        return;
+      }
+
+      toast(&#39;Post deleted!&#39;);
+      router.refresh();
+    } catch (error) {
+      console.error(error);
+    }
+  }
+  return (
+    &lt;Dialog&gt;
+      &lt;DialogTrigger asChild&gt;
+        &lt;Button variant=&#39;destructive&#39; size=&#39;icon&#39;&gt;
+          &lt;LucideTrash2 /&gt;
+        &lt;/Button&gt;
+      &lt;/DialogTrigger&gt;
+      &lt;DialogContent className=&#39;max-w-[300px]&#39;&gt;
+        &lt;DialogHeader className=&#39;text-left&#39;&gt;
+          &lt;DialogTitle&gt;Delete post&lt;/DialogTitle&gt;
+          &lt;DialogDescription&gt;
+            Are you sure you want to &lt;strong&gt;delete&lt;/strong&gt; this post? This
+            action cannot be undone.
+          &lt;/DialogDescription&gt;
+        &lt;/DialogHeader&gt;
+        &lt;footer className=&#39;flex flex-col gap-2&#39;&gt;
+          &lt;DialogClose asChild&gt;
+            &lt;Button variant=&#39;secondary&#39; className=&#39;w-full&#39;&gt;
+              No, keep post
+            &lt;/Button&gt;
+          &lt;/DialogClose&gt;
+          &lt;DialogClose asChild&gt;
+            &lt;Button
+              onClick={handleDelete}
+              variant=&#39;destructive&#39;
+              className=&#39;w-full&#39;
+            &gt;
+              Yes, delete post
+            &lt;/Button&gt;
+          &lt;/DialogClose&gt;
+        &lt;/footer&gt;
+      &lt;/DialogContent&gt;
+    &lt;/Dialog&gt;
+  );
+}
+</code></pre>
+<p><code>src/components/post/types.ts</code></p>
+<pre><code class="language-ts">type SessionProps = {
+  session: any;
+};
+
+type TPostProps = {
+  author: {
+    id: string;
+    name: string | null;
+    email: string | null;
+    emailVerified: Date | null;
+    image: string | null;
+  } | null;
+  id: string;
+  createdAt: Date;
+  updatedAt: Date;
+  title: string;
+  content: string;
+  authorId: string | null;
+  session: any;
+};
+
+export type { SessionProps, TPostProps };
+</code></pre>
+<p><code>src/components/sign-out.tsx</code></p>
+<p>A simple sign out button.</p>
+<pre><code class="language-tsx">&#39;use client&#39;;
+
+import { signOut } from &#39;next-auth/react&#39;;
+import { Button } from &#39;./ui/button&#39;;
+
+export default function SignOut() {
+  return &lt;Button onClick={() =&gt; signOut()}&gt;Sign out&lt;/Button&gt;;
+}
+</code></pre>
+<p><code>src/components/navbar.tsx</code></p>
+<p>Render the sign out or sign in button depending if the user is logged in or not.</p>
+<pre><code class="language-tsx">import Link from &#39;next/link&#39;;
+import { Button } from &#39;./ui/button&#39;;
+import { getServerSession } from &#39;next-auth&#39;;
+import { authOptions } from &#39;@/libs/auth&#39;;
+import SignOut from &#39;./sign-out&#39;;
+
+export default async function Navbar() {
+  const session = await getServerSession(authOptions);
+
+  return (
+    &lt;nav className=&#39;w-full p-4 border-b flex justify-between items-center&#39;&gt;
+      &lt;section&gt;
+        &lt;Button variant=&#39;link&#39; className=&#39;px-0 font-semibold text-lg&#39;&gt;
+          &lt;Link href=&#39;/&#39;&gt;Fullstack app&lt;/Link&gt;
+        &lt;/Button&gt;
+      &lt;/section&gt;
+      &lt;section&gt;
+        {session ? (
+          &lt;SignOut /&gt;
+        ) : (
+          &lt;Button asChild&gt;
+            &lt;Link href=&#39;/auth&#39;&gt;Sign in&lt;/Link&gt;
+          &lt;/Button&gt;
+        )}
+      &lt;/section&gt;
+    &lt;/nav&gt;
+  );
+}
+</code></pre>
+<p><code>src/app/layout.tsx</code></p>
+<p>Add your <strong>Navbar</strong> and <strong>Toaster</strong> components and some styles.</p>
+<pre><code class="language-tsx">import { Inter } from &#39;next/font/google&#39;;
+import Navbar from &#39;@/components/navbar&#39;;
+import { Toaster } from &#39;@/components/ui/sonner&#39;;
+import &#39;./globals.css&#39;;
+
+const inter = Inter({ subsets: [&#39;latin&#39;] });
+
+interface Props extends React.PropsWithChildren {}
+
+export default function RootLayout(props: Props) {
+  return (
+    &lt;html lang=&#39;en&#39;&gt;
+      &lt;body className={inter.className}&gt;
+        &lt;Navbar /&gt;
+        &lt;main className=&#39;px-4 py-8&#39;&gt;{props.children}&lt;/main&gt;
+        &lt;Toaster /&gt;
+      &lt;/body&gt;
+    &lt;/html&gt;
+  );
+}
+</code></pre>
+<h2>4. Add CRUD functionality</h2>
+<p>Now we can add Create, Read, Update and Delete functionality to our app.</p>
+<p><code>prisma/schema.prisma</code></p>
+<p>Update your Prisma schema adding to User model a relationship with Post model:</p>
+<pre><code class="language-prisma">generator client {
+  provider = &quot;prisma-client-js&quot;
+}
+
+datasource db {
+  provider = &quot;postgresql&quot;
+  url      = env(&quot;DATABASE_URL&quot;)
+}
+
+model Account {
+  id                String  @id @default(cuid())
+  userId            String
+  type              String
+  provider          String
+  providerAccountId String
+  refresh_token     String? @db.Text
+  access_token      String? @db.Text
+  expires_at        Int?
+  token_type        String?
+  scope             String?
+  id_token          String? @db.Text
+  session_state     String?
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([provider, providerAccountId])
+}
+
+model Session {
+  id           String   @id @default(cuid())
+  sessionToken String   @unique
+  userId       String
+  expires      DateTime
+  user         User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+model User {
+  id            String    @id @default(cuid())
+  name          String?
+  email         String?   @unique
+  emailVerified DateTime?
+  image         String?
+  accounts      Account[]
+  sessions      Session[]
+  posts         Post[]
+}
+
+model VerificationToken {
+  identifier String
+  token      String   @unique
+  expires    DateTime
+
+  @@unique([identifier, token])
+}
+
+model Post {
+  id        String   @id @default(cuid())
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  title     String
+  content   String
+  author    User     @relation(fields: [authorId], references: [id])
+  authorId  String
+}
+</code></pre>
+<p>Generate a new Prisma migration:</p>
+<pre><code class="language-bash">npx prisma migrate dev --name add-posts
+</code></pre>
+<p>Now, create a <code>src/app/api/posts/route.ts</code> file with a <strong>POST</strong>, <strong>PUT</strong> and <strong>DELETE</strong> async functions:</p>
+<pre><code class="language-ts">import prisma from &#39;@/libs/db&#39;;
+import { NextRequest, NextResponse } from &#39;next/server&#39;;
+
+export async function POST(req: Request) {
+  try {
+    if (!req.body) {
+      return NextResponse.json({
+        ok: false,
+        status: 400,
+        message: &#39;Data required&#39;,
+      });
+    }
+
+    const json = await req.json();
+    const res = await prisma.post.create({
+      data: json,
+    });
+
+    return NextResponse.json({
+      ok: true,
+      status: 201,
+      data: res,
+    });
+  } catch (error) {
+    if (error instanceof Error) {
+      return NextResponse.json({
+        ok: false,
+        status: 500,
+        message: error.message,
+      });
+    }
+
+    return NextResponse.json({
+      ok: false,
+      status: 500,
+      message: &#39;Internal server error&#39;,
+    });
+  }
+}
+
+export async function PUT(req: NextRequest) {
+  try {
+    const body = await req.json();
+    const res = await prisma.post.update({
+      where: { id: body.id },
+      data: {
+        title: body.title,
+        content: body.content,
+      },
+    });
+
+    return NextResponse.json({
+      ok: true,
+      status: 200,
+      data: res,
+    });
+  } catch (error) {
+    if (error instanceof Error) {
+      return NextResponse.json({
+        ok: false,
+        status: 500,
+        message: error.message,
+      });
+    }
+
+    return NextResponse.json({
+      ok: false,
+      status: 500,
+      message: &#39;Internal server error&#39;,
+    });
+  }
+}
+
+export async function DELETE(req: NextRequest) {
+  try {
+    const body = await req.json();
+    const res = await prisma.post.delete({
+      where: { id: body.id },
+    });
+
+    return NextResponse.json({
+      ok: true,
+      status: 200,
+      data: res,
+    });
+  } catch (error) {
+    if (error instanceof Error) {
+      return NextResponse.json({
+        ok: false,
+        status: 500,
+        message: error.message,
+      });
+    }
+
+    return NextResponse.json({
+      ok: false,
+      status: 500,
+      message: &#39;Internal server error&#39;,
+    });
+  }
+}
+</code></pre>
+<p>Try creating a post in the home.</p>
+<p>The page will refresh and you&#39;ll see the post, as you created it, only you can edit or delete it.</p>
+<h2>5. Conclusion</h2>
+<p>As you can see, create a fullstack app with Next.js and Prisma is really easy.</p>
+<p>Of course, it could be improved, adding server side validation for inputs, adding pagination for posts in the home, etc.</p>
+<p>If you want to work together, email me to <a href="mailto:contact@juancman.dev" target="_blank" rel="noopener noreferrer">contact@juancman.dev</a>.</p>
+]]></description>
+            <link>https://juancman.dev/portfolio/build-a-fullstack-app</link>
+            <guid isPermaLink="false">https://juancman.dev/portfolio/build-a-fullstack-app</guid>
+            <category><![CDATA[Next.js]]></category>
+            <category><![CDATA[PostgreSQL]]></category>
+            <category><![CDATA[Prisma]]></category>
+            <category><![CDATA[Auth.js]]></category>
+            <category><![CDATA[tailwindcss]]></category>
+            <category><![CDATA[shadcn/ui]]></category>
+            <dc:creator><![CDATA[Juan Manzanero]]></dc:creator>
+            <pubDate>Thu, 18 Jan 2024 06:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Next Intl Blog Template]]></title>
+            <description><![CDATA[<h1>Next Intl Blog Template</h1>
+<p><img src="/portfolio/next-intl-blog-template/banner.png" alt="Next Intl Blog Template banner"><br><em>Next Intl Blog Template banner</em></p>
+<p><PostData
+  date='December 18, 2023'
+  author='Juan Manzanero'
+  website='https://next-intl-blog-template.vercel.app/en'
+  github='https://github.com/juancmandev/next-intl-blog-template'
+/></p>
+<h2>Overview</h2>
+<p>Recently I update this website, and as you may know, is an <strong>English and Spanish content website</strong>.</p>
+<p>I&#39;m not using a translation plugin, instead I write every work in both English and Spanish.</p>
+<p>Thanks to Next.js and <a href="https://next-intl-docs.vercel.app/" target="_blank" rel="noopener noreferrer">next-intl</a> I can achieve this, rendering routes for each language in the website, accessing a dictionary that contains the content translated by me.</p>
+<p>For the .mdx files, I created a directory for each language, and inside of those directories it contains the content in both languages too.</p>
+<h2>How to use</h2>
+<p>This template is an extension of <a href="https://next-intl-docs.vercel.app/" target="_blank" rel="noopener noreferrer">next-intl</a>, chek the <a href="https://next-intl-docs.vercel.app/docs/getting-started" target="_blank" rel="noopener noreferrer">getting started</a> to learn the basics, the purpouse of the template is to create a simple layout for future customization.</p>
+<h3>Add or remove locales</h3>
+<p>You can add or remove locales in the <code>src/lang/locales.ts</code> file.</p>
+<pre><code class="language-ts">export type locales = &#39;en&#39; | &#39;es&#39;;
+
+export const localesList: locales[] = [&#39;en&#39;, &#39;es&#39;];
+</code></pre>
+<p>Just add or remove a locale from the <code>locales</code> const, and add or remove it from the list.</p>
+<p>The first item in the <code>localesList</code> must be the default locale.</p>
+<p>The list is used for static generation of the routes in <code>src/app/[locale]/layout.tsx</code>.</p>
+<pre><code class="language-ts">import { localesList } from &#39;@/lang/locales&#39;;
+
+export function generateStaticParams() {
+  return localesList.map((locale) =&gt; ({ locale }));
+}
+</code></pre>
+<p>Remember to update the matcher in <code>src/middleware.ts</code>.</p>
+<pre><code class="language-ts">//...
+
+export const config = {
+  matcher: [&#39;/&#39;, &#39;/(en|es)/:path*&#39;],
+};
+</code></pre>
+<p>And of course, update your <code>src/lang/[locale].json</code> files.</p>
+<h3>Content creation</h3>
+<p>Use <code>src/content/[locale]</code> for create content, in the <code>/[locale]/</code> directory ceate the directory for each purpouse, for example: <code>/[locale]/blog</code>.</p>
+<p>Inside create the .mdx file with an unique name, the name will be used as the slug for create the static page for that post.</p>
+<p>For create a blog section, you&#39;ll use the <em>getAllContent</em> function in your route, for example: <code>src/app/[locale]/blog/[slug]/page.tsx</code>.</p>
+<pre><code class="language-tsx">import { Mdx } from &#39;@/components&#39;;
+import { TParamsLocale, TPage, TSlugLang } from &#39;@/types&#39;;
+import { Metadata } from &#39;next&#39;;
+import { getAllContent, getContent } from &#39;@/utils/getContent&#39;;
+
+export async function generateStaticParams(
+  props: TParamsLocale
+): Promise&lt;TSlugLang[]&gt; {
+  const blogs = await getAllContent(props.params.locale, &#39;blog&#39;);
+
+  if (!blogs) return [];
+
+  return blogs.map((blog) =&gt; ({
+    slug: blog.slug,
+    locale: props.params.locale,
+  }));
+}
+
+//...
+</code></pre>
+<p>This will create each static page for each blog post.</p>
+<p>You can get the metadata of the .mdx file too.</p>
+<pre><code class="language-tsx">//...
+
+export async function generateMetadata(props: TPage): Promise&lt;Metadata&gt; {
+  const blog = await getContent(props.params.locale, &#39;blog&#39;, props.params.slug);
+
+  if (!blog) return {};
+
+  return {
+    title: blog.title,
+    //...
+  };
+}
+
+//...
+</code></pre>
+<p>Then, render the content using the <em>Mdx</em> component.</p>
+<pre><code class="language-tsx">//...
+
+export default async function Page(props: TPage) {
+  const post = await getContent(props.params.locale, &#39;blog&#39;, props.params.slug);
+
+  if (!post) return null;
+
+  return &lt;Mdx code={post.body.code} /&gt;;
+}
+</code></pre>
+<p><a href="https://github.com/juancmandev/next-intl-blog-template" target="_blank" rel="noopener noreferrer">You can fork this template here</a></p>
+<h2>Contact</h2>
+<p>If you want <strong>to work together</strong> in a website with internationalization with Next.js, email me at <a href="mailto:contact@juancman.dev" target="_blank" rel="noopener noreferrer">contact@juancman.dev</a></p>
+]]></description>
+            <link>https://juancman.dev/portfolio/next-intl-blog-template</link>
+            <guid isPermaLink="false">https://juancman.dev/portfolio/next-intl-blog-template</guid>
+            <category><![CDATA[Next.js]]></category>
+            <category><![CDATA[next-intl]]></category>
+            <category><![CDATA[tailwindcss]]></category>
+            <dc:creator><![CDATA[Juan Manzanero]]></dc:creator>
+            <pubDate>Mon, 18 Dec 2023 06:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Human to JS]]></title>
+            <description><![CDATA[<h1>Human to JS</h1>
+<p><img src="/portfolio/human-to-js/banner.png" alt="Human to JS banner"><br><em>Human to JS diagram</em></p>
+<p><PostData
+  date='April 4, 2023'
+  author='Juan Manzanero'
+  website='https://human-to-js.juancman.dev'
+  github='https://github.com/juancmandev/human-to-js'
+/></p>
+<h2>Background</h2>
+<p>I’m always looking to grow my career by learning new technologies as well known Software Engineer; however, that could be dangerous because Software Engineer is not about using the ultimate tech stack but making things happen.</p>
+<h2>Inspiration source</h2>
+<p>I was checking Twitter until I found a tweet where a person created a side project over a weekend. That project is <a href="https://www.sqltranslate.app/" target="_blank" rel="noopener noreferrer">SQL Translator</a>, a simple UI to put text input describing a query; then you get the query into SQL, simple!</p>
+<p><a href="https://twitter.com/whoiskatrin?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1634973237829599233%7Ctwgr%5Eb49b9d28e6ea7383ef16ea3c8c6040656ff0c944%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fpublish.twitter.com%2F%3Fquery%3Dhttps3A2F2Ftwitter.com2Fwhoiskatrin2Fstatus2F1634973237829599233widget%3DTweet" target="_blank" rel="noopener noreferrer">@whoiskatrin</a> used ChatGPT API to send a prompt typed by the user, and then show SQL response into a component to copy to the clipboard. That was enough to get the deserved attention of the community. <a href="https://twitter.com/whoiskatrin/status/1634973237829599233" target="_blank" rel="noopener noreferrer">Tweet link</a></p>
+<h2>My idea</h2>
+<blockquote>
+<p><em>“Why not a web app to type a prompt to generate JavaScript code?”</em></p>
+</blockquote>
+<p>So I started to build my idea using this tech stack:</p>
+<ul>
+<li><strong>Next.js</strong>: Web framework to build the UI and Next.js provides you with an API directory to communicate with ChatGPT API</li>
+<li><strong>MUI</strong>: To use the UI components and as a design system</li>
+<li><strong>Formik &amp; Yup</strong>: To manage the state of the prompt form and create validation schemas</li>
+</ul>
+<p>Using all these technologies I build a simple UI with a MUI Card component, then I created a form where I manage all the inputs with Formik, the text and select inputs are directly from MUI, and to create the validation schema I used Yup to mark as required those fields and don’t send them empty.</p>
+<p>With the UI finished, I started creating the endpoint in the API directory to consume ChatGPT’s API, just using a fetch like <a href="https://twitter.com/whoiskatrin?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1634973237829599233%7Ctwgr%5Eb49b9d28e6ea7383ef16ea3c8c6040656ff0c944%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fpublish.twitter.com%2F%3Fquery%3Dhttps3A2F2Ftwitter.com2Fwhoiskatrin2Fstatus2F1634973237829599233widget%3DTweet" target="_blank" rel="noopener noreferrer">@whoiskatrin</a>’s project, indicating which OpenAI model to use, in this case, <em>text-davinci-003</em>, you can learn more about those models <a href="https://platform.openai.com/docs/api-reference/models/list" target="_blank" rel="noopener noreferrer">here</a>. Obviously, in that request, I send the prompt from the user into a string indicating ChatGPT to only give me the code, without comments or more results.</p>
+<h2>Added value</h2>
+<p>Yes, there’re options like GitHub Copilot that resolve that problem, that’s why I added a select option to choose if the syntax should be an arrow function or a simple function.</p>
+<p>I’ll add more features, like a TypeScript option, and use a TS Interface to use as a reference, but now I’m working on more projects!</p>
+<h2>Inspiring people!</h2>
+<p>The cool thing about side projects is that inspires people like us, we can use our tech skill that serves the bread on the table to transform ideas into products, and products into a community, as <a href="https://twitter.com/serudda" target="_blank" rel="noopener noreferrer">@Serudda</a> talks in this <a href="https://www.youtube.com/watch?v=LXgPNdw8avI&t" target="_blank" rel="noopener noreferrer">video</a> (video audio in Spanish).</p>
+]]></description>
+            <link>https://juancman.dev/portfolio/human-to-js</link>
+            <guid isPermaLink="false">https://juancman.dev/portfolio/human-to-js</guid>
+            <category><![CDATA[ChatGPT]]></category>
+            <category><![CDATA[Next.js]]></category>
+            <category><![CDATA[JavaScript]]></category>
+            <category><![CDATA[Vercel]]></category>
+            <dc:creator><![CDATA[Juan Manzanero]]></dc:creator>
+            <pubDate>Fri, 14 Apr 2023 06:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Workarise]]></title>
+            <description><![CDATA[<h1>Workarise</h1>
+<p><img src="/portfolio/workarise/banner.png" alt="Workarise Banner"><br><em>Workarise Banner</em></p>
+<p><PostData
+  date='April 13, 2023'
+  author='Juan Manzanero'
+  website='https://workarise.com'
+/></p>
+<h2>Overview</h2>
+<p><a href="http://workarise.com" target="_blank" rel="noopener noreferrer">Workarise</a> is a Team Manager Software as a Service to create task cards assigning people, set a start and due date, add attachments files, etc.</p>
+<p>You can use the Calendar to see the tasks&#39; due dates and schedule Google Meet events authorizing the use of your Google Calendar. You can edit and delete events which sync with your Google Calendar and guests&#39; Google Calendars. The Gantt provides you with a timeline to check task duration.</p>
+<p>The web app is developed with <a href="https://react.dev/" target="_blank" rel="noopener noreferrer">React.js</a>, using <a href="https://vitejs.dev/" target="_blank" rel="noopener noreferrer">Vite.js</a> to run the development environment. For functionality like modals, and popovers we use <a href="https://mui.com/" target="_blank" rel="noopener noreferrer">MUI</a>. To manage the state of components we’re using useContext.</p>
+<p>To create Google Meet events and sync the calendar we&#39;d develop a small Node.js API to use Google OAuth 2 API, as we need to prompt our users to give access to their Google Calendars.</p>
+<p>Currently, Workarise is in the first version, using <a href="https://firebase.google.com/" target="_blank" rel="noopener noreferrer">Firebase</a> to authenticate users and store raw data and files. Firebase uses <a href="https://firebase.google.com/docs/firestore" target="_blank" rel="noopener noreferrer">Firestore</a>, a NoSQL DB, however we’re developing an API using <a href="https://www.djangoproject.com/" target="_blank" rel="noopener noreferrer">Django</a> running on <a href="https://cloud.google.com/run" target="_blank" rel="noopener noreferrer">Cloud Run</a> connected to <a href="https://cloud.google.com/sql" target="_blank" rel="noopener noreferrer">Cloud SQL</a> to a MySQL instance, as we’ll be using a SQL DB in the future. Currently the web app and landing are deployed on Firebase Hosting, but we’ll move the landing page to Vercel, and it’ll be updated to use Next.js in the future to optimize SEO and publish blog posts.</p>
+<h2>My impact in Workarise</h2>
+<p>Currently, we’re developing an MVP, and everyone is working part-time on this project. I joined in December, but before there wasn’t a product that users can use, so as I was the only Frontend Engineer at that moment I taked full responsibility for delivering something that can be considered an MVP.</p>
+<p>It took me like 3 months to achieve that, I updated some dependencies of the project to improve the development flow, and I suggested using Firebase as Backend and Hosting.</p>
+<p>Thanks to all this we got our first users and feedback, so we’re working on that feedback to keep improving our app, our users like the design and simplicity!</p>
+<p>At the moment there’re 3 engineers in the team, 2 on the front (including me) and 1 on the back, but I’m helping to our Backend Engineer to deploy on GCP to production the API and DB, and I&#39;m guiding the new Frontend to deliver new features, he’d developed the responsive design and some features to complement the task cards.</p>
+<p>I’m happy to test my skills in this project, it’s not easy to take more responsibility with less than 2 years of labor experience, and it’d help me to grow a lot in these months.</p>
+<p>Even if the market doesn’t consider my years of experience as a senior, I think that doesn’t matter at all, the only thing that matters is that you can understand why you’re using code, to create solutions and reach people across their computers.</p>
+]]></description>
+            <link>https://juancman.dev/portfolio/workarise</link>
+            <guid isPermaLink="false">https://juancman.dev/portfolio/workarise</guid>
+            <category><![CDATA[React.js]]></category>
+            <category><![CDATA[Vite.js]]></category>
+            <category><![CDATA[MUI]]></category>
+            <category><![CDATA[Firebase]]></category>
+            <category><![CDATA[GCP]]></category>
+            <category><![CDATA[Node.js]]></category>
+            <dc:creator><![CDATA[Juan Manzanero]]></dc:creator>
+            <pubDate>Thu, 13 Apr 2023 06:00:00 GMT</pubDate>
+        </item>
+    </channel>
+</rss>
