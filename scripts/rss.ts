@@ -3,7 +3,7 @@ import RSS from 'rss';
 import path from 'path';
 import { marked } from 'marked';
 import matter from 'gray-matter';
-import { getAllContent } from '@/utils/getContent';
+import { getAllContent } from '@/utils/get-content';
 
 const url = 'https://juancman.dev';
 

@@ -1,5 +1,5 @@
 import ItemCard from '@/components/item-card';
-import { getAllContent } from '@/utils/getContent';
+import { getAllContent } from '@/utils/get-content';
 import { sortByKeyDesc } from '@/utils/sorts';
 import { Metadata } from 'next';
 

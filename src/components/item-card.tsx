@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { Calendar } from 'lucide-react';
+import formatDate from '@/utils/format-date';
 
 type Props = {
   title?: string;
@@ -44,7 +45,7 @@ export default function ItemCard(props: Props) {
             <h4 className='text-sm flex items-center gap-1.5'>
               <Calendar className='w-5' />
               <span className='mt-0.5'>
-                {props.date && new Date(props.date).toLocaleDateString()}
+                {props.date && formatDate(new Date(props.date))}
               </span>
             </h4>
           </section>
