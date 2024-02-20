@@ -3,21 +3,22 @@ import RSS from 'rss';
 import path from 'path';
 import { marked } from 'marked';
 import matter from 'gray-matter';
+import { getAllContent } from '@/utils/getContent';
 
 const url = 'https://juancman.dev';
 
-const blogs = fs
-  .readdirSync(path.resolve(__dirname, '../../content/blog/'))
-  .filter((file) => path.extname(file) === '.mdx')
-  .map((file) => {
-    const postContent = fs.readFileSync(`content/blog/${file}`, 'utf8');
-    const { data, content }: { data: any; content: string } =
-      matter(postContent);
-    const slug = file.replace('.mdx', '');
+// const blogs = fs
+//   .readdirSync(path.resolve(__dirname, '../../content/blog/'))
+//   .filter((file) => path.extname(file) === '.mdx')
+//   .map((file) => {
+//     const postContent = fs.readFileSync(`content/blog/${file}`, 'utf8');
+//     const { data, content }: { data: any; content: string } =
+//       matter(postContent);
+//     const slug = file.replace('.mdx', '');
 
-    return { ...data, body: content, slug };
-  })
-  .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+//     return { ...data, body: content, slug };
+//   })
+//   .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 
 const portfolio = fs
   .readdirSync(path.resolve(__dirname, '../../content/portfolio/'))
@@ -45,7 +46,7 @@ marked.setOptions({
 
 const renderContent = (md: string) => marked.parse(md);
 
-const main = () => {
+const main = async () => {
   const feed = new RSS({
     title: 'juancmandev',
     site_url: `${url}`,
@@ -55,19 +56,22 @@ const main = () => {
     image_url: `${url}/logo.png`,
   });
 
-  blogs.forEach((blog) => {
-    const link = `${url}/blog/${blog.slug}`;
+  const blogs = await getAllContent('blog');
 
-    feed.item({
-      title: blog.title,
-      description: renderContent(blog.body),
-      date: new Date(blog.date),
-      author: blog.author,
-      url: link,
-      guid: link,
-      categories: blog.tags,
+  blogs &&
+    blogs.forEach((blog) => {
+      console.log(blog);
+
+      // feed.item({
+      //   title: blog.title!,
+      //   description: renderContent(blog),
+      //   date: new Date(blog.date),
+      //   author: blog.author,
+      //   url: link,
+      //   guid: link,
+      //   categories: blog.tags,
+      // });
     });
-  });
 
   portfolio.forEach((portfolioProject) => {
     const link = `${url}/portfolio/${portfolioProject.slug}`;

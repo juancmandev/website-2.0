@@ -8,5 +8,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly',
       priority: 1,
     },
+    {
+      url: 'https://juancman.dev/blog',
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
+      url: 'https://juancman.dev/portfolio',
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
   ];
 }
