@@ -28,12 +28,12 @@ export async function generateMetadata(props: TPage): Promise<Metadata> {
   if (!blog) return {};
 
   return {
-    title: `juancmandev | ${blog.title}`,
+    title: blog.title,
     description: blog.description,
     openGraph: {
       type: 'article',
       locale: 'en',
-      title: `juancmandev | ${blog.title}`,
+      title: blog.title,
       description: blog.description,
       publishedTime: blog.date ? new Date(blog.date).toISOString() : '',
       authors: blog.author,

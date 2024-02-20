@@ -3,7 +3,7 @@ import Mdx from '@/components/mdx-component';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'juancmandev | Resources',
+  title: 'Resources',
   description:
     'Here you can find websites, YouTube channels, courses and more stuff that I consume or find interesting.',
 };

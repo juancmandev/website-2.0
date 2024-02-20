@@ -28,12 +28,12 @@ export async function generateMetadata(props: TPage): Promise<Metadata> {
   if (!portfolio) return {};
 
   return {
-    title: `juancmandev | ${portfolio.title}`,
+    title: portfolio.title,
     description: portfolio.description,
     openGraph: {
       type: 'article',
       locale: 'en',
-      title: `juancmandev | ${portfolio.title}`,
+      title: portfolio.title,
       description: portfolio.description,
       publishedTime: new Date(portfolio.date || '').toISOString(),
       authors: portfolio.author,

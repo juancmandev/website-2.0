@@ -7,7 +7,7 @@
     "build": "contentlayer build && next build",
     "start": "next start",
     "lint": "next lint",
-    "rss": "ts-node --project ./node.tsconfig.json src/scripts/rss"
+    "rss": "node scripts/rss.mts"
   },
   "dependencies": {
     "@formatjs/intl-localematcher": "0.2.32",
@@ -61,6 +61,7 @@
     "remark-gfm": "^3.0.1",
     "shiki": "^0.14.7",
     "tailwindcss": "3.3.1",
+    "tsx": "^4.7.1",
     "unist-util-visit": "^5.0.0"
   },
   "overrides": {

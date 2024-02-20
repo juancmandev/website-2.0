@@ -7,7 +7,7 @@ import { Metadata } from 'next';
 export const revalidate = 0;
 
 export const metadata: Metadata = {
-  title: 'juancmandev | Milpa',
+  title: 'Milpa',
   description:
     'Welcome to my Milpa, something like a garden; but instead of growing crops, I grow my thoughts.',
 };
