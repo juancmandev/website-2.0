@@ -1,4 +1,4 @@
-import { getContent } from '@/utils/getContent';
+import { getContent } from '@/utils/get-content';
 import Mdx from '@/components/mdx-component';
 import { Metadata } from 'next';
 

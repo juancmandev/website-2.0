@@ -1,6 +1,6 @@
 import Mdx from '@/components/mdx-component';
 import { Metadata } from 'next';
-import { getAllContent, getContent } from '@/utils/getContent';
+import { getAllContent, getContent } from '@/utils/get-content';
 
 type TParams = {
   slug: string;
