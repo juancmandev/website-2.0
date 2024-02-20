@@ -8,7 +8,7 @@ export default function NotFound() {
           <div className='text-center space-y-4'>
             <h1 className='text-2xl font-semibold'>Error 404: Not found</h1>
             <p>
-              Don't worry, you can just <strong>go to home</strong>!
+              {`Don't`} worry, you can just <strong>go to home</strong>!
             </p>
             <Button asChild className='w-full'>
               <a href='/'>Go to home</a>
