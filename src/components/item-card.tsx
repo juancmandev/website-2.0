@@ -28,12 +28,11 @@ export default function ItemCard(props: Props) {
     >
       <article className='w-[280px] h-full rounded-md shadow-xl bg-secondary'>
         <header className='w-[280px] overflow-hidden rounded-t-md'>
-          <Image
-            priority
+          <img
             src={props.image || ''}
             width={640}
             height={427}
-            className='w-full h-auto max-h-[157.48px] -z-10 group-focus:scale-110 group-hover:scale-110 transition-all duration-300'
+            className='w-full h-auto max-h-[157.48px] aspect-[640/427] -z-10 group-focus:scale-110 group-hover:scale-110 transition-all duration-300'
             alt={props.imageCaption || 'Image caption'}
           />
         </header>

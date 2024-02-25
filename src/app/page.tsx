@@ -5,8 +5,8 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'juancmandev',
-  description:
-    'Welcome to my website, here I share my projects and things that I think.',
+  description: `Welcome to my domain, stranger. I'm juancmandev, web Developer. Here you will find side projects, blog posts, or other related content
+    about my hobbies. Take a seat, drink some tea, and enjoy your stay.`,
 };
 
 export default async function Page() {
@@ -22,11 +22,19 @@ export default async function Page() {
   return (
     <div className='flex flex-col gap-20'>
       <section className='flex flex-col gap-1'>
-        <h2 className='text-4xl'>{`Hello, I'm Juan Manzanero`}</h2>
-        <h1 className='text-primary text-4xl font-bold'>Web Developer</h1>
+        <h1 className='text-primary text-4xl font-bold'>
+          Welcome to my domain, stranger.
+        </h1>
+        <h2 className='text-xl'>
+          I am <span className='text-primary font-semibold'>juancmandev</span>,{' '}
+          <span className='underline'>web developer</span>.
+        </h2>
         <p className='text-lg'>
-          Welcome to my website, here I share my projects and things that I
-          think.
+          Here you will find side projects, blog posts, or other related content
+          about my hobbies.
+        </p>
+        <p className='text-lg'>
+          Take a seat, drink some tea, and enjoy your stay.
         </p>
       </section>
 
