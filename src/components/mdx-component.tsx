@@ -2,7 +2,6 @@ import dynamic from 'next/dynamic';
 import Image from 'next/image';
 import { useMDXComponent } from 'next-contentlayer/hooks';
 import cn from '@/utils/cn';
-import PostData from './post-data';
 import React from 'react';
 import Link from 'next/link';
 
@@ -61,9 +60,7 @@ const components = {
     // eslint-disable-next-line @next/next/no-img-element
     <img
       {...props}
-      width={578.5}
-      height={385.967}
-      className={`w-full max-w-[578.5px] h-auto max-h-[385.967] ${cn(
+      className={`w-full max-w-[578.5px] h-auto max-h-[385.967] aspect-video ${cn(
         'rounded-md',
         className
       )}`}
@@ -101,12 +98,6 @@ const components = {
       {...props}
     />
   ),
-  PostData: (props: {
-    date: string;
-    author: string;
-    website?: string;
-    github?: string;
-  }) => <PostData {...props} />,
   Image,
 };
 

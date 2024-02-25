@@ -50,6 +50,20 @@ export default async function Page() {
             })}
           </ul>
         </section>
+        <section>
+          <h2 className='text-2xl font-bold mb-4'>Personal</h2>
+          <ul className='flex flex-wrap gap-6'>
+            {posts.map((post) => {
+              if (post.tags?.includes('Personal')) {
+                return (
+                  <li key={post.slug}>
+                    <ItemCard {...post} type='blog' />
+                  </li>
+                );
+              }
+            })}
+          </ul>
+        </section>
       </div>
     </>
   );

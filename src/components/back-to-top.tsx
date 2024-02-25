@@ -9,7 +9,7 @@ export default function BackToTop() {
   const scrollToTop = () => {
     if (!isBrowser()) return;
 
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    window.scrollTo({ top: 0, behavior: 'auto' });
   };
 
   return (
