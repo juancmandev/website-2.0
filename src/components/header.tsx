@@ -45,18 +45,14 @@ export default function Header() {
         <section className='hidden lg:block'>
           <ul className='flex items-center gap-2'>
             {socialItems.map((socialItem) => (
-              <li title={socialItem.label} key={socialItem.to} className='flex'>
+              <li key={socialItem.to} className='flex'>
                 <Button
                   asChild
                   size={null}
                   variant='link'
                   className='px-1 grid justify-items-center'
                 >
-                  <a
-                    title={socialItem.label}
-                    href={socialItem.to}
-                    target='_blank'
-                  >
+                  <a href={socialItem.to} target='_blank'>
                     {socialItem.icon}
                     <span className='text-xs'>{socialItem.label}</span>
                   </a>
@@ -71,7 +67,6 @@ export default function Header() {
                 className="px-1 grid justify-items-center"
               >
                 <a
-                  title="RSS Feed"
                   href={`https://juancman.dev/${props.locale}-feed.xml`}
                   target="_blank"
                 >
