@@ -26,8 +26,8 @@ export default async function Page() {
           Welcome to my domain, stranger.
         </h1>
         <h2 className='text-xl'>
-          I am <span className='text-primary font-semibold'>juancmandev</span>,{' '}
-          <span className='underline'>web developer</span>.
+          I am <span className='text-primary font-semibold'>juancmandev</span>,
+          web developer.
         </h2>
         <p className='text-lg'>
           Here you will find side projects, blog posts, or other related content
