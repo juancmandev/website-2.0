@@ -9,8 +9,8 @@ import {
   SheetClose,
 } from '@/components/ui/sheet';
 import { Button } from './ui/button';
-import { MenuIcon, Rss } from 'lucide-react';
-import { navItems, socialItems } from '@/utils';
+import { MenuIcon } from 'lucide-react';
+import { navItems } from '@/utils';
 import Link from 'next/link';
 
 export default function MobileMenu() {
@@ -46,44 +46,6 @@ export default function MobileMenu() {
                       </SheetClose>
                     </li>
                   ))}
-                </ul>
-              </section>
-              <section className='mt-2'>
-                <ul className='flex flex-col gap-0.5'>
-                  {socialItems.map((socialItem) => (
-                    <li title={socialItem.label} key={socialItem.to}>
-                      <SheetClose asChild>
-                        <Button
-                          asChild
-                          size={null}
-                          variant='link'
-                          className='w-full cursor-default py-2 grid justify-items-center gap-0.5 rounded-none hover:bg-background/50 focus:bg-background/50 hover:no-underline'
-                        >
-                          <a target='_blank' href={socialItem.to}>
-                            {socialItem.icon}
-                            <span className='text-xs'>{socialItem.label}</span>
-                          </a>
-                        </Button>
-                      </SheetClose>
-                    </li>
-                  ))}
-                  {/* <li className="flex">
-                    <Button
-                      asChild
-                      size={null}
-                      variant="link"
-                      className="w-full cursor-default py-2 grid justify-items-center gap-0.5 rounded-none hover:bg-background/50 focus:bg-background/50 hover:no-underline"
-                    >
-                      <a
-                        target="_blank"
-                        title="RSS Feed"
-                        href={`https://juancman.dev/${props.locale}-feed.xml`}
-                      >
-                        <Rss className="w-4" />
-                        <span className="text-xs">RSS</span>
-                      </a>
-                    </Button>
-                  </li> */}
                 </ul>
               </section>
             </nav>

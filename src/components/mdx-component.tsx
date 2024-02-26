@@ -58,8 +58,11 @@ const components = {
     ...props
   }: React.ImgHTMLAttributes<HTMLImageElement>) => (
     // eslint-disable-next-line @next/next/no-img-element
-    <img
-      {...props}
+    <Image
+      priority
+      src={props.src || ''}
+      width={640}
+      height={427}
       className={`w-full max-w-[578.5px] h-auto max-h-[385.967] aspect-video ${cn(
         'rounded-md',
         className

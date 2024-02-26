@@ -1,7 +1,9 @@
 import ItemCard from '@/components/item-card';
+import { Button } from '@/components/ui/button';
 import { getAllContent } from '@/utils/get-content';
 import { sortByKeyDesc } from '@/utils/sorts';
 import type { Metadata } from 'next';
+import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'juancmandev',
@@ -48,6 +50,9 @@ export default async function Page() {
               </li>
             ))}
         </ul>
+        <Button asChild className='mt-5'>
+          <Link href='/blog'>More posts</Link>
+        </Button>
       </section>
 
       <section>
@@ -63,6 +68,9 @@ export default async function Page() {
             <p className='font-thin'>No projects found</p>
           )}
         </ul>
+        <Button asChild className='mt-5'>
+          <Link href='/portfolio'>More projects</Link>
+        </Button>
       </section>
     </div>
   );
