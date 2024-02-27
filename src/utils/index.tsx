@@ -21,8 +21,8 @@ export const navItems: TNavItem[] = [
     to: '/resources',
   },
   {
-    label: 'Milpa',
-    to: '/milpa',
+    label: 'Microblog',
+    to: '/microblog',
   },
   {
     label: 'Contact',
