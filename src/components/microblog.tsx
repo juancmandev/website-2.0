@@ -10,7 +10,7 @@ type Props = MicroblogsResponse<unknown> & {
 
 export default function Microblog(props: Props) {
   return (
-    <article className='prose prose-invert border px-4 py-2 rounded-sm bg-dark2'>
+    <article className='prose prose-invert border px-4 py-2 rounded-sm bg-secondary/70'>
       <header className='mb-2'>
         <div className='flex items-center justify-between text-sm'>
           <span className='font-light'>
