@@ -1,33 +1,31 @@
-import { Mail, Github } from 'lucide-react';
+type TNavItem = {
+  label: string;
+  to: string;
+};
 
-export const navItems = [
+export const navItems: TNavItem[] = [
   {
-    label: 'blog',
+    label: 'About',
+    to: '/about',
+  },
+  {
+    label: 'Blog',
     to: '/blog',
   },
   {
-    label: 'portfolio',
+    label: 'Portfolio',
     to: '/portfolio',
   },
   {
-    label: 'resources',
+    label: 'Resources',
     to: '/resources',
   },
   {
-    label: 'milpa',
-    to: '/milpa',
-  },
-];
-
-export const socialItems = [
-  {
-    to: 'https://github.com/juancmandev',
-    icon: <Github className='w-4' />,
-    label: 'GitHub',
+    label: 'Microblog',
+    to: '/microblog',
   },
   {
-    to: 'mailto:contact@juancman.dev',
-    icon: <Mail className='w-4' />,
-    label: 'Email',
+    label: 'Contact',
+    to: '/contact',
   },
 ];

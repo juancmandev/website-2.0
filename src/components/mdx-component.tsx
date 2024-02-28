@@ -64,7 +64,7 @@ const components = {
         'rounded-md',
         className
       )}`}
-      alt={alt || 'Image'}
+      alt={alt}
     />
   ),
   hr: ({ ...props }) => <hr className='my-4 md:my-8' {...props} />,
