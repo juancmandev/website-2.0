@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import Link from 'next/link';
 import { Calendar } from 'lucide-react';
 import formatDate from '@/utils/format-date';

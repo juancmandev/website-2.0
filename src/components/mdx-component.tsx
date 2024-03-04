@@ -1,5 +1,4 @@
 import dynamic from 'next/dynamic';
-import Image from 'next/image';
 import { useMDXComponent } from 'next-contentlayer/hooks';
 import cn from '@/utils/cn';
 import React from 'react';
@@ -98,7 +97,6 @@ const components = {
       {...props}
     />
   ),
-  Image,
 };
 
 type MdxProps = {
