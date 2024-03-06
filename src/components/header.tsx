@@ -2,7 +2,6 @@ import dynamic from 'next/dynamic';
 import Link from 'next/link';
 import { navItems } from '@/utils';
 import { Button } from './ui/button';
-import Image from 'next/image';
 
 const MobileMenu = dynamic(() => import('@/components/mobile-menu'));
 
@@ -18,10 +17,8 @@ export default function Header() {
             className='px-0 rounded-full'
           >
             <Link href='/'>
-              <Image
-                priority
-                width={40}
-                height={40}
+              <img
+                className='w-10 h-10'
                 src='/logo.png'
                 alt='juancmandev logo'
               />
