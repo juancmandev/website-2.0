@@ -18,7 +18,7 @@ export default function BackToTop() {
       variant='default'
       onClick={scrollToTop}
       size='icon'
-      className='fixed top-[calc(100%_-_56px)] left-[calc(100%_-_56px)] rounded-full shadow-md '
+      className='fixed right-2.5 bottom-2.5 rounded-full shadow-md '
     >
       <ChevronUpIcon className='w-5' />
     </Button>
