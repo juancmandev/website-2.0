@@ -4,7 +4,7 @@ import { sortByKeyDesc } from '@/utils/sorts';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'juancmandev | Portfolio',
+  title: 'Portfolio',
   description: 'Check my projects.',
 };
 
@@ -18,7 +18,7 @@ export default async function Page() {
   return (
     <>
       <section className='mb-10'>
-        <h1 className='text-3xl font-bold mb-5'>Portfolio</h1>
+        <h1 className='mb-5 text-3xl font-bold'>Portfolio</h1>
         <p>Check my projects.</p>
       </section>
       <ul className='flex flex-wrap gap-6'>

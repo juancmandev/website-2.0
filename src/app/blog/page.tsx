@@ -4,7 +4,7 @@ import { sortByKeyDesc } from '@/utils/sorts';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: `juancmandev | Blog`,
+  title: 'Blog',
   description: 'Long format about thoughts and other topics.',
 };
 
@@ -18,12 +18,12 @@ export default async function Page() {
   return (
     <>
       <section className='mb-10'>
-        <h1 className='text-3xl font-bold mb-5'>Blog</h1>
+        <h1 className='mb-5 text-3xl font-bold'>Blog</h1>
         <p>Long format about thoughts and other topics.</p>
       </section>
       <div className='flex flex-col gap-10'>
         <section>
-          <h2 className='text-2xl font-bold mb-4'>Tech</h2>
+          <h2 className='mb-4 text-2xl font-bold'>Tech</h2>
           <ul className='flex flex-wrap gap-6'>
             {posts.map((post) => {
               if (post.tags?.includes('Tech')) {
@@ -37,7 +37,7 @@ export default async function Page() {
           </ul>
         </section>
         <section>
-          <h2 className='text-2xl font-bold mb-4'>Thoughts</h2>
+          <h2 className='mb-4 text-2xl font-bold'>Thoughts</h2>
           <ul className='flex flex-wrap gap-6'>
             {posts.map((post) => {
               if (post.tags?.includes('Thoughts')) {
@@ -51,7 +51,7 @@ export default async function Page() {
           </ul>
         </section>
         <section>
-          <h2 className='text-2xl font-bold mb-4'>Personal</h2>
+          <h2 className='mb-4 text-2xl font-bold'>Personal</h2>
           <ul className='flex flex-wrap gap-6'>
             {posts.map((post) => {
               if (post.tags?.includes('Personal')) {
