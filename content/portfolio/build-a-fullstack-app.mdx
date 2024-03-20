@@ -1,6 +1,8 @@
 ---
 title: Build a fullstack web app
-description: Build a fullstack web app using Next.js as meta-framework and PostgreSQL as database.
+description:
+  Build a fullstack web app using Next.js as meta-framework and PostgreSQL as
+  database.
 tags:
   - Next.js
   - PostgreSQL
@@ -9,7 +11,9 @@ tags:
   - tailwindcss
   - shadcn/ui
 image: /portfolio/build-a-fullstack-app/banner.png
-imageCaption: Banner with the tech stack used in this tutorial, Next.js, TailwindCSS, shadcn/ui, Prisma, PostgreSQL and Auth.js.
+imageCaption:
+  Banner with the tech stack used in this tutorial, Next.js, TailwindCSS,
+  shadcn/ui, Prisma, PostgreSQL and Auth.js.
 date: 1/18/2024
 author: Juan Manzanero
 ---
@@ -35,7 +39,8 @@ _Tech stack used in this tutorial_
 
 ## 1. Introduction
 
-In this tutorial, we will develop a fullstack web app with the following tech stack:
+In this tutorial, we will develop a fullstack web app with the following tech
+stack:
 
 - [Next.js](https://nextjs.org/) as meta-framework
 - [TailwindCSS](https://tailwindcss.com/) for styling
@@ -43,9 +48,11 @@ In this tutorial, we will develop a fullstack web app with the following tech st
 - [Prisma](https://www.prisma.io/) as ORM
 - [PostgreSQL](https://www.postgresql.org/) as database
 - [Auth.js](https://authjs.dev/) for authentication
-- [Docker](https://www.docker.com/) for creating an intance of a PostgreSQL database locally
+- [Docker](https://www.docker.com/) for creating an intance of a PostgreSQL
+  database locally
 
-We'll learn some of the fundamentals of this tech stack, like using **server components** in Next.js, or creating **API endpoints** using the **app router**.
+We'll learn some of the fundamentals of this tech stack, like using **server
+components** in Next.js, or creating **API endpoints** using the **app router**.
 
 ## 2. Initial setup
 
@@ -74,7 +81,8 @@ Make sure to mark **Yes** the following options:
 > What import alias would you like configured? @/*
 ```
 
-Wait until the dependencies installation is completed, then access to the project directory:
+Wait until the dependencies installation is completed, then access to the
+project directory:
 
 ```bash title="Terminal"
 cd fullstack-app
@@ -94,7 +102,8 @@ npx shadcn-ui@latest init
 
 Make sure to config shadcn/ui according your project configuration.
 
-You can check the [shadcn/ui docs](https://ui.shadcn.com/docs) for every component that you could need, each components is installed individually.
+You can check the [shadcn/ui docs](https://ui.shadcn.com/docs) for every
+component that you could need, each components is installed individually.
 
 ### 2.2 Create a PostgreSQL database using Docker
 
@@ -126,7 +135,8 @@ Now initialize Prisma:
 npx prisma init
 ```
 
-A new `./prisma` direcotry will be created in the root of your project, with a schema.prisma file.
+A new `./prisma` direcotry will be created in the root of your project, with a
+schema.prisma file.
 
 You'll create your schemas in this file.
 
@@ -147,17 +157,23 @@ Update your `.env` file with the following:
 DATABASE_URL="postgresql://postgres:password@localhost:5432/postgres?schema=public"
 ```
 
-In the URL is your username (by default is postgres), your password (in this case password), the host (by default is localhost), the port (by default is 5432), the database name (by default is postgres) and the schema (by default is public).
+In the URL is your username (by default is postgres), your password (in this
+case password), the host (by default is localhost), the port (by default is
+5432), the database name (by default is postgres) and the schema (by default is
+public).
 
-Create your first migration to test if Prisma can connect to your local database:
+Create your first migration to test if Prisma can connect to your local
+database:
 
 ```bash title="Terminal"
 npx prisma migrate dev --name init
 ```
 
-If everything is ok, you'll see a new /migrations directory with a new file inside.
+If everything is ok, you'll see a new /migrations directory with a new file
+inside.
 
-> If you have an error, make sure you can connect to your local DB. Delete, and create the container again if necessary.
+> If you have an error, make sure you can connect to your local DB. Delete, and
+> create the container again if necessary.
 
 ### 2.4 Config Auth.js
 
@@ -277,7 +293,8 @@ export const authOptions = {
 } satisfies NextAuthOptions;
 ```
 
-This config is for using an email provider, for this project we'll use [Resend](https://resend.com/).
+This config is for using an email provider, for this project we'll use
+[Resend](https://resend.com/).
 
 Create an account and get the next credentials in your .env file:
 
@@ -363,13 +380,15 @@ export default async function Signin() {
 }
 ```
 
-As you can see, you can redirect users if they're not authenticated getting the session with **getServerSession**.
+As you can see, you can redirect users if they're not authenticated getting the
+session with **getServerSession**.
 
 ## 3. Improve your UI
 
 Let's create a short posts like app.
 
-First, add some shadcn/ui components and update your components, we'll create new components too:
+First, add some shadcn/ui components and update your components, we'll create
+new components too:
 
 ```bash title="Terminal"
 npx shadcn-ui@latest add button
@@ -601,7 +620,8 @@ export default function CreatePost(props: SessionProps) {
 
 `src/app/page.tsx`
 
-Fetch data from Prisma, as this page is a server component, we can fetch it directly.
+Fetch data from Prisma, as this page is a server component, we can fetch it
+directly.
 
 ```tsx title="src/app/page.tsx"
 import { authOptions } from '@/libs/auth';
@@ -682,7 +702,8 @@ export default function PostItem(props: TPostProps) {
 
 `src/components/post/edit.tsx`
 
-Create a button icon for opening a dialog rendering the post data for editing, add validation and fetch to the API endpoint.
+Create a button icon for opening a dialog rendering the post data for editing,
+add validation and fetch to the API endpoint.
 
 ```tsx title="src/components/post/edit.tsx"
 'use client';
@@ -820,7 +841,8 @@ export default function EditPost(props: TPostProps) {
 
 `src/components/post/delete.tsx`
 
-Create a button icon for opening a dialog for deleting the post, add validation and fetch to the API endpoint.
+Create a button icon for opening a dialog for deleting the post, add validation
+and fetch to the API endpoint.
 
 ```tsx title="src/components/post/delete.tsx"
 'use client';
@@ -1088,7 +1110,8 @@ Generate a new Prisma migration:
 npx prisma migrate dev --name add-posts
 ```
 
-Now, create a `src/app/api/posts/route.ts` file with a **POST**, **PUT** and **DELETE** async functions:
+Now, create a `src/app/api/posts/route.ts` file with a **POST**, **PUT** and
+**DELETE** async functions:
 
 ```ts title="src/app/api/posts/route.ts"
 import prisma from '@/libs/db';
@@ -1196,15 +1219,18 @@ export async function DELETE(req: NextRequest) {
 
 Try creating a post in the home.
 
-The page will refresh and you'll see the post, as you created it, only you can edit or delete it.
+The page will refresh and you'll see the post, as you created it, only you can
+edit or delete it.
 
 ## 5. Conclusion
 
 As you can see, create a fullstack app with Next.js and Prisma is really easy.
 
-Of course, it could be improved, adding server side validation for inputs, adding pagination for posts in the home, etc.
+Of course, it could be improved, adding server side validation for inputs,
+adding pagination for posts in the home, etc.
 
-If you want to work together, email me to [contact@juancman.dev](mailto:contact@juancman.dev).
+If you want to work together, email me to
+[contact@juancman.dev](mailto:contact@juancman.dev).
 
 ---
 

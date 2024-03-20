@@ -2,3 +2,4 @@ jsxSingleQuote: true
 singleQuote: true
 semi: true
 tabWidth: 2
+proseWrap: 'always'
