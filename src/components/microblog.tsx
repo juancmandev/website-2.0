@@ -10,13 +10,13 @@ type Props = MicroblogsResponse<unknown> & {
 
 export default function Microblog(props: Props) {
   return (
-    <article className='prose prose-invert border px-4 py-2 rounded-sm'>
+    <article className='prose prose-invert rounded-sm border px-4 py-2'>
       <header className='mb-2'>
         <div className='flex items-center justify-between text-sm'>
           <span className='font-light'>
             {formatDate(new Date(props.published))}{' '}
           </span>
-          <span className='font-thin text-sm'>
+          <span className='text-sm font-thin'>
             {new Date(props.published).toLocaleTimeString()}
           </span>
         </div>
@@ -29,7 +29,7 @@ export default function Microblog(props: Props) {
                   <span className='text-sm' key={tag.id}>
                     #{tag.name}{' '}
                   </span>
-                )
+                ),
             )}
         </div>
       </header>

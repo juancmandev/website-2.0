@@ -25,22 +25,22 @@ export default function ItemCard(props: Props) {
       className='group outline-card'
       href={`/${props.type}/${props.slug}`}
     >
-      <article className='w-[280px] h-full rounded-md shadow-xl bg-secondary'>
+      <article className='h-full w-[280px] rounded-md bg-secondary shadow-xl'>
         <header className='w-[280px] overflow-hidden rounded-t-md'>
           <img
             src={props.image || ''}
             width={640}
             height={427}
-            className='w-full h-auto max-h-[157.48px] aspect-[640/427] -z-10 group-focus:scale-110 group-hover:scale-110 transition-all duration-300'
+            className='-z-10 aspect-[640/427] h-auto max-h-[157.48px] w-full transition-all duration-300 group-hover:scale-110 group-focus:scale-110'
             alt={props.imageCaption || 'Image caption'}
           />
         </header>
-        <main className='p-3 flex flex-col gap-3'>
+        <main className='flex flex-col gap-3 p-3'>
           <section className='flex flex-col gap-1'>
-            <h3 className='line-clamp-1 text-lg transition-colors group-focus:text-primary group-hover:text-primary group-hover:underline group-focus:underline'>
+            <h3 className='line-clamp-1 text-lg transition-colors group-hover:text-primary group-hover:underline group-focus:text-primary group-focus:underline'>
               {props.title}
             </h3>
-            <h4 className='text-sm flex items-center gap-1.5'>
+            <h4 className='flex items-center gap-1.5 text-sm'>
               <Calendar className='w-5' />
               <span className='mt-0.5'>
                 {props.date && formatDate(new Date(props.date))}

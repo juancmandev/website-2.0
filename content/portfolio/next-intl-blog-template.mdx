@@ -99,7 +99,7 @@ import { Metadata } from 'next';
 import { getAllContent, getContent } from '@/utils/getContent';
 
 export async function generateStaticParams(
-  props: TParamsLocale
+  props: TParamsLocale,
 ): Promise<TSlugLang[]> {
   const blogs = await getAllContent(props.params.locale, 'blog');
 
@@ -151,11 +151,5 @@ export default async function Page(props: TPage) {
 
 [You can fork this template here](https://github.com/juancmandev/next-intl-blog-template)
 
-## Contact
-
-If you want **to work together** in a website with internationalization with
-Next.js, email me at [contact@juancman.dev](mailto:contact@juancman.dev)
-
----
 
 **Posted**: December 18, 2023
