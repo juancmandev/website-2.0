@@ -9,12 +9,12 @@
             <link>https://juancman.dev</link>
         </image>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Mon, 01 Apr 2024 22:18:51 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 01 Apr 2024 22:26:05 GMT</lastBuildDate>
         <atom:link href="https://juancman.dev/rss.xml" rel="self" type="application/rss+xml"/>
         <language><![CDATA[en]]></language>
         <item>
             <title><![CDATA[I'll not continue creating content in Spanish for my website]]></title>
-            <description><![CDATA[I had the idea of maintaining my website in both English and Spanish; however... <br /> <a href='https://juancman.dev/blog/i-will-not-continue-creating-content-in-spanish-for-my-website'>Read online</a>]]></description>
+            <description><![CDATA[I had the idea of maintaining my website in both English and Spanish; however... <br /><br /> <a href='https://juancman.dev/blog/i-will-not-continue-creating-content-in-spanish-for-my-website'>Read online</a>]]></description>
             <link>https://juancman.dev/blog/i-will-not-continue-creating-content-in-spanish-for-my-website</link>
             <guid isPermaLink="false">https://juancman.dev/blog/i-will-not-continue-creating-content-in-spanish-for-my-website</guid>
             <category><![CDATA[Personal]]></category>
@@ -23,7 +23,7 @@
         </item>
         <item>
             <title><![CDATA[Rewind 2023 and future plans]]></title>
-            <description><![CDATA[My rewind for 2023 and my plans for 2024 and beyond. <br /> <a href='https://juancman.dev/blog/rewind-2023-and-future-plans'>Read online</a>]]></description>
+            <description><![CDATA[My rewind for 2023 and my plans for 2024 and beyond. <br /><br /> <a href='https://juancman.dev/blog/rewind-2023-and-future-plans'>Read online</a>]]></description>
             <link>https://juancman.dev/blog/rewind-2023-and-future-plans</link>
             <guid isPermaLink="false">https://juancman.dev/blog/rewind-2023-and-future-plans</guid>
             <category><![CDATA[Thoughts]]></category>
@@ -32,7 +32,7 @@
         </item>
         <item>
             <title><![CDATA[Peddler App]]></title>
-            <description><![CDATA[You hear the ice cream man in his truck, you try to catch him, but the guy is already far away. <br /> <a href='https://juancman.dev/blog/peddler-app'>Read online</a>]]></description>
+            <description><![CDATA[You hear the ice cream man in his truck, you try to catch him, but the guy is already far away. <br /><br /> <a href='https://juancman.dev/blog/peddler-app'>Read online</a>]]></description>
             <link>https://juancman.dev/blog/peddler-app</link>
             <guid isPermaLink="false">https://juancman.dev/blog/peddler-app</guid>
             <category><![CDATA[Tech]]></category>
@@ -42,7 +42,7 @@
         </item>
         <item>
             <title><![CDATA[I participated in a Hackathon]]></title>
-            <description><![CDATA[I recently participated in a Supabase Hackathon, forming a team with people from other countries. <br /> <a href='https://juancman.dev/blog/i-participated-in-a-hackathon'>Read online</a>]]></description>
+            <description><![CDATA[I recently participated in a Supabase Hackathon, forming a team with people from other countries. <br /><br /> <a href='https://juancman.dev/blog/i-participated-in-a-hackathon'>Read online</a>]]></description>
             <link>https://juancman.dev/blog/i-participated-in-a-hackathon</link>
             <guid isPermaLink="false">https://juancman.dev/blog/i-participated-in-a-hackathon</guid>
             <category><![CDATA[Tech]]></category>
@@ -53,7 +53,7 @@
         </item>
         <item>
             <title><![CDATA[The Monotony of Social Media]]></title>
-            <description><![CDATA[Abstracting human interaction using software has caused many problems that didn’t exist before. <br /> <a href='https://juancman.dev/blog/the-monotony-of-social-media'>Read online</a>]]></description>
+            <description><![CDATA[Abstracting human interaction using software has caused many problems that didn’t exist before. <br /><br /> <a href='https://juancman.dev/blog/the-monotony-of-social-media'>Read online</a>]]></description>
             <link>https://juancman.dev/blog/the-monotony-of-social-media</link>
             <guid isPermaLink="false">https://juancman.dev/blog/the-monotony-of-social-media</guid>
             <category><![CDATA[Thoughts]]></category>
@@ -62,7 +62,7 @@
         </item>
         <item>
             <title><![CDATA[How Computers Works]]></title>
-            <description><![CDATA[Today we use, in some way, the computer in almost every activity in our lives, being indispensable. <br /> <a href='https://juancman.dev/blog/how-computers-works'>Read online</a>]]></description>
+            <description><![CDATA[Today we use, in some way, the computer in almost every activity in our lives, being indispensable. <br /><br /> <a href='https://juancman.dev/blog/how-computers-works'>Read online</a>]]></description>
             <link>https://juancman.dev/blog/how-computers-works</link>
             <guid isPermaLink="false">https://juancman.dev/blog/how-computers-works</guid>
             <category><![CDATA[Tech]]></category>
@@ -72,7 +72,7 @@
         </item>
         <item>
             <title><![CDATA[The reason to create a version 2.0 of my website]]></title>
-            <description><![CDATA[I commited some errors when creating the first version of my website, here Ill share what Ive learned. <br /> <a href='https://juancman.dev/blog/website-2.0'>Read online</a>]]></description>
+            <description><![CDATA[I commited some errors when creating the first version of my website, here Ill share what Ive learned. <br /><br /> <a href='https://juancman.dev/blog/website-2.0'>Read online</a>]]></description>
             <link>https://juancman.dev/blog/website-2.0</link>
             <guid isPermaLink="false">https://juancman.dev/blog/website-2.0</guid>
             <category><![CDATA[Tech]]></category>
@@ -81,7 +81,7 @@
         </item>
         <item>
             <title><![CDATA[Build a fullstack web app]]></title>
-            <description><![CDATA[Build a fullstack web app using Next.js as meta-framework and PostgreSQL as database. <br /> <a href='https://juancman.dev/portfolio/build-a-fullstack-app'>Read online</a>]]></description>
+            <description><![CDATA[Build a fullstack web app using Next.js as meta-framework and PostgreSQL as database. <br /><br /> <a href='https://juancman.dev/portfolio/build-a-fullstack-app'>Read online</a>]]></description>
             <link>https://juancman.dev/portfolio/build-a-fullstack-app</link>
             <guid isPermaLink="false">https://juancman.dev/portfolio/build-a-fullstack-app</guid>
             <category><![CDATA[Next.js]]></category>
@@ -95,7 +95,7 @@
         </item>
         <item>
             <title><![CDATA[Next Intl Blog Template]]></title>
-            <description><![CDATA[Start your blog in multiple languages! <br /> <a href='https://juancman.dev/portfolio/next-intl-blog-template'>Read online</a>]]></description>
+            <description><![CDATA[Start your blog in multiple languages! <br /><br /> <a href='https://juancman.dev/portfolio/next-intl-blog-template'>Read online</a>]]></description>
             <link>https://juancman.dev/portfolio/next-intl-blog-template</link>
             <guid isPermaLink="false">https://juancman.dev/portfolio/next-intl-blog-template</guid>
             <category><![CDATA[Next.js]]></category>
@@ -106,7 +106,7 @@
         </item>
         <item>
             <title><![CDATA[Human to JS]]></title>
-            <description><![CDATA[Translate human language to JavaScript code! <br /> <a href='https://juancman.dev/portfolio/human-to-js'>Read online</a>]]></description>
+            <description><![CDATA[Translate human language to JavaScript code! <br /><br /> <a href='https://juancman.dev/portfolio/human-to-js'>Read online</a>]]></description>
             <link>https://juancman.dev/portfolio/human-to-js</link>
             <guid isPermaLink="false">https://juancman.dev/portfolio/human-to-js</guid>
             <category><![CDATA[ChatGPT]]></category>
@@ -118,7 +118,7 @@
         </item>
         <item>
             <title><![CDATA[Workarise]]></title>
-            <description><![CDATA[Workarise Web App, manage tasks with your team. <br /> <a href='https://juancman.dev/portfolio/workarise'>Read online</a>]]></description>
+            <description><![CDATA[Workarise Web App, manage tasks with your team. <br /><br /> <a href='https://juancman.dev/portfolio/workarise'>Read online</a>]]></description>
             <link>https://juancman.dev/portfolio/workarise</link>
             <guid isPermaLink="false">https://juancman.dev/portfolio/workarise</guid>
             <category><![CDATA[React.js]]></category>
