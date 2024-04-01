@@ -3,14 +3,14 @@
 import { Button } from './ui/button';
 import { ChevronUpIcon } from 'lucide-react';
 
-const isBrowser = () => typeof window !== 'undefined'; //The approach recommended by Next.js
+const isBrowser = () => typeof window !== 'undefined';
 
 export default function BackToTop() {
-  const scrollToTop = () => {
+  function scrollToTop() {
     if (!isBrowser()) return;
 
     window.scrollTo({ top: 0, behavior: 'auto' });
-  };
+  }
 
   return (
     <Button
@@ -18,7 +18,7 @@ export default function BackToTop() {
       variant='default'
       onClick={scrollToTop}
       size='icon'
-      className='fixed right-2.5 bottom-2.5 rounded-full shadow-md '
+      className='fixed bottom-4 right-4 rounded-full shadow-md '
     >
       <ChevronUpIcon className='w-5' />
     </Button>

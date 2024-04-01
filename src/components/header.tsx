@@ -7,28 +7,28 @@ const MobileMenu = dynamic(() => import('@/components/mobile-menu'));
 
 export default function Header() {
   return (
-    <header className='w-full p-6 md:px-15 flex justify-between items-center'>
-      <nav className='w-full max-w-[1200px] xl:mx-auto flex justify-between items-center'>
+    <header className='md:px-15 flex w-full items-center justify-between p-6'>
+      <nav className='flex w-full max-w-[1200px] items-center justify-between xl:mx-auto'>
         <section>
           <Button
             asChild
             size='icon'
             variant='link'
-            className='px-0 rounded-full'
+            className='rounded-full px-0'
           >
             <Link href='/'>
               <img
-                className='w-10 h-10'
+                className='h-10 w-10'
                 src='/logo.png'
                 alt='juancmandev logo'
               />
             </Link>
           </Button>
         </section>
-        <section className='hidden lg:flex items-center'>
+        <section className='hidden items-center lg:flex'>
           <ul className='flex items-center gap-4'>
             {navItems.map((navItem) => (
-              <li key={navItem.label} className='w-max h-max'>
+              <li key={navItem.label} className='h-max w-max'>
                 <Button asChild variant='link' className='px-2'>
                   <Link href={navItem.to}>{navItem.label}</Link>
                 </Button>
@@ -37,7 +37,7 @@ export default function Header() {
           </ul>
         </section>
       </nav>
-      <section className='flex lg:hidden h-max items-center'>
+      <section className='flex h-max items-center lg:hidden'>
         <MobileMenu />
       </section>
     </header>

@@ -36,7 +36,7 @@
     ".next/types/**/*.ts",
     "build/types/**/*.ts",
     "dist/types/**/*.ts"
-, "scripts/rss.ts"  ],
+  ],
   "exclude": ["node_modules"],
   "mdx": {
     "plugins": [["remark-frontmatter", ["toml", "yaml"]], "remark-gfm"]

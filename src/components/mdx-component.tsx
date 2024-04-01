@@ -59,9 +59,9 @@ const components = {
     // eslint-disable-next-line @next/next/no-img-element
     <img
       {...props}
-      className={`w-full max-w-[578.5px] h-auto max-h-[385.967] aspect-video ${cn(
+      className={`aspect-video h-auto max-h-[385.967] w-full max-w-[578.5px] ${cn(
         'rounded-md',
-        className
+        className,
       )}`}
       alt={alt}
     />
@@ -93,7 +93,7 @@ const components = {
   ),
   code: ({ className, ...props }: React.HTMLAttributes<HTMLElement>) => (
     <code
-      className='w-full p-1 bg-[#282c34] border border-border/20 font-normal rounded-md after:content-none before:content-none'
+      className='w-full rounded-md border border-border/20 bg-[#282c34] p-1 font-normal before:content-none after:content-none'
       {...props}
     />
   ),

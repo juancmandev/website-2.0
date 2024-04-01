@@ -23,21 +23,21 @@ export default function MobileMenu() {
       </SheetTrigger>
       <SheetContent
         side='right'
-        className='w-max px-0 pt-14 bg-secondary border-0 shadow-2xl'
+        className='w-max border-0 bg-secondary px-0 pt-14 shadow-2xl'
       >
         <SheetHeader>
           <ScrollArea>
             <nav className='h-[calc(100vh_-_100px)]'>
-              <section className='flex flex-col mt-1'>
+              <section className='mt-1 flex flex-col'>
                 <ul className='flex flex-col gap-1'>
                   {navItems.map((navItem) => (
-                    <li key={navItem.label} className='w-full h-max flex'>
+                    <li key={navItem.label} className='flex h-max w-full'>
                       <SheetClose asChild>
                         <Button
                           asChild
                           size={null}
                           variant='link'
-                          className='w-full px-10 py-3 cursor-default rounded-none hover:bg-background/50 focus:bg-background/50 hover:no-underline'
+                          className='w-full cursor-default rounded-none px-10 py-3 hover:bg-background/50 hover:no-underline focus:bg-background/50'
                         >
                           <Link className='capitalize' href={navItem.to}>
                             {navItem.label}
