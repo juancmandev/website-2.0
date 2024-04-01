@@ -53,7 +53,7 @@ const main = async () => {
 
       feed.item({
         title: blog.title!,
-        description: `${blog.description} \n <a href='${link}'>Read online</a>`,
+        description: `${blog.description} \n\n <a href='${link}'>Read online</a>`,
         date: new Date(blog.date),
         author: 'juancmandev',
         url: link,
@@ -67,7 +67,7 @@ const main = async () => {
 
     feed.item({
       title: portfolioProject.title,
-      description: `${portfolioProject.description} \n <a href='${link}'>Read online</a>`,
+      description: `${portfolioProject.description} \n\n <a href='${link}'>Read online</a>`,
       date: new Date(portfolioProject.date),
       author: 'juancmandev',
       url: link,
