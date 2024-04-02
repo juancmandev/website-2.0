@@ -18,7 +18,10 @@ export default function Header() {
           >
             <Link href='/'>
               <img
+                loading='lazy'
                 className='h-10 w-10'
+                width={40}
+                height={40}
                 src='/logo.png'
                 alt='juancmandev logo'
               />

@@ -59,6 +59,7 @@ const components = {
     // eslint-disable-next-line @next/next/no-img-element
     <img
       {...props}
+      loading='lazy'
       className={`aspect-video h-auto max-h-[385.967] w-full max-w-[578.5px] ${cn(
         'rounded-md',
         className,
