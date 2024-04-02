@@ -28,6 +28,7 @@ export default function ItemCard(props: Props) {
       <article className='h-full w-[280px] rounded-md bg-secondary shadow-xl'>
         <header className='w-[280px] overflow-hidden rounded-t-md'>
           <img
+            loading='lazy'
             src={props.image || ''}
             width={640}
             height={427}
