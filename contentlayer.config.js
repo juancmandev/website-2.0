@@ -56,6 +56,9 @@ export const Content = defineDocumentType(() => ({
     author: {
       type: 'string',
     },
+    rss: {
+      type: 'boolean',
+    },
   },
   computedFields,
 }));

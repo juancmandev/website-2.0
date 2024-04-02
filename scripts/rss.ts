@@ -33,6 +33,7 @@ const portfolio = fs
   .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 
 const renderer = new marked.Renderer();
+const renderContent = (md: string) => marked.parse(md);
 
 renderer.link = (href, _, text) =>
   `<a href="${href}" target="_blank" rel="noopener noreferrer">${text}</a>`;
@@ -43,17 +44,19 @@ const main = async () => {
     site_url: `${url}`,
     feed_url: `${url}/rss.xml`,
     language: 'en',
-    description: 'Get updates about my blog and portfolio.',
+    description: 'My latest blog posts and projects.',
     image_url: `${url}/logo.png`,
   });
 
   blogs &&
     blogs.forEach((blog) => {
+      if (!blog.rss) return;
+
       const link = `${url}/blog/${blog.slug}`;
 
       feed.item({
         title: blog.title!,
-        description: `${blog.description} <br /><br /> <a href='${link}'>Read online</a>`,
+        description: renderContent(blog.body),
         date: new Date(blog.date),
         author: 'juancmandev',
         url: link,
@@ -63,11 +66,13 @@ const main = async () => {
     });
 
   portfolio.forEach((portfolioProject) => {
+    if (!portfolioProject.rss) return;
+
     const link = `${url}/portfolio/${portfolioProject.slug}`;
 
     feed.item({
       title: portfolioProject.title,
-      description: `${portfolioProject.description} <br /><br /> <a href='${link}'>Read online</a>`,
+      description: renderContent(portfolioProject.body),
       date: new Date(portfolioProject.date),
       author: 'juancmandev',
       url: link,
@@ -79,6 +84,8 @@ const main = async () => {
   const rss = feed.xml({ indent: true });
 
   fs.writeFileSync(path.join(__dirname, '../public/rss.xml'), rss);
+
+  console.log('✅ RSS feed generated');
 };
 
 main();
