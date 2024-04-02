@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title><![CDATA[juancmandev]]></title>
-        <description><![CDATA[Get updates about my blog and portfolio.]]></description>
+        <description><![CDATA[My latest blog posts and projects.]]></description>
         <link>https://juancman.dev</link>
         <image>
             <url>https://juancman.dev/logo.png</url>
@@ -9,7 +9,7 @@
             <link>https://juancman.dev</link>
         </image>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Tue, 02 Apr 2024 21:58:46 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 02 Apr 2024 22:10:14 GMT</lastBuildDate>
         <atom:link href="https://juancman.dev/rss.xml" rel="self" type="application/rss+xml"/>
         <language><![CDATA[en]]></language>
         <item>
@@ -429,6 +429,98 @@ group of talented persons that uses their brains to create solutions.</p>
             <category><![CDATA[Informatic]]></category>
             <dc:creator><![CDATA[juancmandev]]></dc:creator>
             <pubDate>Mon, 29 May 2023 06:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[The reason to create a version 2.0 of my website]]></title>
+            <description><![CDATA[<h1>The reason to create a version 2.0 of my website</h1>
+<p><img src="/blog/website-2.0/banner.png" alt="Tech stack"> <em>Tech Stack of this website.
+Next.js, Vercel, React.js, TypeScript and TailwindCSS</em></p>
+<p>The first version of my website was one of my biggest projects so fat, but
+<strong>now</strong> as I’ve <strong>more</strong> <strong>experience</strong> as a <strong>Frontend</strong> Engineer, I realize I
+<strong>didn’t</strong> do <strong>enough</strong> <strong>research</strong> into <strong>creating</strong> a <strong>web</strong> site with a
+<strong>blog</strong>.</p>
+<h2>Client Side Rendering (CSR) vs Server Side Rendering (SSR) vs Static Generation (SG)</h2>
+<p>When developing a <strong>web</strong> <strong>application</strong>, you should <strong>think</strong> <strong>about</strong> the
+type of <strong>rendering</strong> to use, while <strong>considering</strong> the <strong>requirements</strong> of the
+<strong>problems</strong> you want to <strong>solve</strong>.</p>
+<h3>Client Side Rendering (CSR)</h3>
+<p>For example, a web <strong>application</strong> like a <strong>SaaS</strong> to create tasks and manage
+people will have <strong>dynamic</strong> <strong>pages</strong> to show the tasks, update the cards when
+is edited or deleted, show notifications, etc. In this situation, a <strong>CSR</strong>
+would be <strong>better</strong>, to <strong>render</strong> the page <strong>each</strong> time the user <strong>request</strong>
+access will <strong>keep</strong> the data <strong>updated</strong>. However, a <strong>CSR</strong> needs to
+<strong>hydrate</strong> the page when is <strong>requested</strong>, this causes a <strong>slow</strong> <strong>first</strong>
+<strong>load</strong>, and uses <strong>more</strong> <strong>resources</strong> of the user’s PC.</p>
+<h3>Server Side Rendering (SSR)</h3>
+<p>This could be solved using <strong>SSR</strong>, this consist in <strong>generate</strong> the page in the
+<strong>Server</strong> where the web app is hosted <strong>using</strong> all the <strong>power</strong> that a
+<strong>server</strong> can provide. The problem is that a <strong>server</strong> is <strong>required</strong>, Google
+Cloud provides with serverless options like App Engine or Cloud Run, but you’ll
+need to learn about this services and how to deploy the project, so the
+<strong>technical</strong> <strong>knowledge</strong> is <strong>high</strong>.</p>
+<p>The <strong>disadvantage</strong> of <strong>CSG</strong> and <strong>SSR</strong> is that because <strong>each</strong> <strong>page</strong>
+<strong>must</strong> be <strong>rendered</strong> on each <strong>request</strong>, <strong>web</strong> <strong>crawlers</strong> and
+<strong>search</strong> <strong>engines</strong> such as Google&#39;s will take <strong>longer</strong> to <strong>obtain</strong>
+<strong>information</strong> about your page, resulting in a <strong>low</strong> <strong>SEO</strong> priority.</p>
+<h3>Static Generation (SG)</h3>
+<p>Well, if a <strong>page</strong> <strong>doesn’t</strong> require <strong>fetch</strong> <strong>data</strong> for <strong>each</strong>
+<strong>request</strong>, then you could use <strong>SG</strong>, this means that the <strong>page</strong> is
+<strong>generated</strong> when you <strong>build</strong> the <strong>production</strong> directory <strong>before</strong> you
+<strong>deploy</strong> it. The page will be generated into a HTML/CSS/JS one time, and if
+you need to <strong>update</strong> the <strong>data</strong> in that page you’ll need to do the
+<strong>changes</strong> and <strong>deploy</strong> the project. Yes, you’ll need to be more cautious
+when reviewing the changes before deploying, but as the page is already
+generated, <strong>web</strong> <strong>crawlers</strong> and the Google’s <strong>search</strong> <strong>engine</strong> will get
+the <strong>info</strong> in your page <strong>faster</strong>, <strong>improving</strong> your <strong>SEO</strong>.</p>
+<h2>The cool thing about Next.js</h2>
+<p>In the <strong>past</strong> you will require to <strong>think</strong> if go <strong>full</strong> CSR, SSR or SG,
+linking your web to their respecting sections, like the app, blog, etc.</p>
+<p><strong><a href="https://nextjs.org/">Next.js</a></strong> is a <strong>Node.js</strong> <strong>meta-framework</strong> that uses
+<strong><a href="https://react.dev/">React.js</a></strong> to build the UI, and provides with CSR, SSR,
+SG and more, so you can generate SG fetching async data, allowing you to don’t
+<strong>need</strong> to <strong>create</strong> <strong>every</strong> <strong>static</strong> <strong>page</strong>.</p>
+<p>Is that the <strong>approach</strong> <strong>used</strong> for <strong>this</strong> <strong>web</strong> site, <strong>instead</strong> of
+<strong>fetch</strong> the data on <strong>each</strong> <strong>request</strong>, I only <strong>fetch</strong> data <strong>when</strong> I
+<strong>create</strong> the <strong>build</strong> of the project.</p>
+<p><strong>Each</strong> <strong>article</strong> is a SG page, but I use a <strong>template</strong> to keep every blog
+similar, using <strong>markdown</strong> syntax for the content of the blog, and with an
+<strong>extension</strong> of <strong>TailwindCSS</strong> I keep the styles consistent.</p>
+<p>So, <strong>Next.js</strong> allows you to <strong>choose</strong> the <strong>rendering</strong> method for <strong>each</strong>
+<strong>page</strong> in your web, this feature permits to create amazing websites in the
+same project, keeping consistence and with fast load times, Next.js even lazy
+loads each page and start loading when you hover a link like Home, Contact, etc.</p>
+<blockquote>
+<p>I’ll explain in more detail the architecture of this project in the future!</p>
+</blockquote>
+<h2>TailwindCSS vs MUI</h2>
+<p>I choose to use <strong><a href="https://tailwindcss.com/">TailwindCSS</a></strong> to learn about this
+CSS library, and I’m impressed the <strong>faster</strong> that makes the development of the
+styles of a web project. <strong>MUI</strong> <strong>provides</strong> <strong>functionalities</strong>, but sometimes
+<strong>gives</strong> <strong>problems</strong> with <strong>hydration</strong> like in my previous website, when you
+<strong>first</strong> <strong>load</strong> the page it takes a <strong>time</strong> to <strong>show</strong> all the <strong>styles</strong>,
+now it no longer occurs because TailwindCSS is pure CSS and the pages are
+static.</p>
+<h2>Deploying on Vercel</h2>
+<p><strong><a href="https://vercel.com">Vercel</a></strong> is the company behind Next.js, and they
+provides with <strong>hosting</strong> services <strong>optimized</strong> for <strong>Node.js</strong> apps, and as
+I’m learning about Cloud Development maybe I could try to host this web like my
+previous web into a Cloud Service like Cloud Run, but this time I choose to use
+<strong>Vercel</strong> to get the <strong>analytics</strong> that are very useful, and as the <strong>hobby
+plan</strong> gives me free hosting for small projects.</p>
+<p>To deploy I use the <strong><a href="https://vercel.com/docs/cli">Vercel CLI</a></strong>, pretty simple
+and straightforward.</p>
+<h2>More content coming soon!</h2>
+<p>I’ll keep updating with posts, features and more content to share my experience,
+and know I’m writing this paragraph, I think the next feature it would be a
+newsletter to notify people when I create a new post. Time to work!</p>
+<hr>
+<p><strong>Posted</strong>: April 7, 2023</p>
+]]></description>
+            <link>https://juancman.dev/blog/website-2.0</link>
+            <guid isPermaLink="false">https://juancman.dev/blog/website-2.0</guid>
+            <category><![CDATA[Tech]]></category>
+            <dc:creator><![CDATA[juancmandev]]></dc:creator>
+            <pubDate>Fri, 07 Apr 2023 06:00:00 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[Build a fullstack web app]]></title>
