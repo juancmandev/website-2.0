@@ -5,10 +5,10 @@ import { Button } from './ui/button';
 
 const MobileMenu = dynamic(() => import('@/components/mobile-menu'));
 
-export default function Header() {
+export default function Navbar() {
   return (
-    <header className='md:px-15 flex w-full items-center justify-between p-6'>
-      <nav className='flex w-full max-w-[1200px] items-center justify-between xl:mx-auto'>
+    <nav className='md:px-15 fixed top-0 z-50 flex w-full items-center justify-between border-b border-secondary px-6 py-4 backdrop-blur-lg'>
+      <div className='flex w-full max-w-[1200px] items-center justify-between xl:mx-auto'>
         <section>
           <Button
             asChild
@@ -39,10 +39,10 @@ export default function Header() {
             ))}
           </ul>
         </section>
-      </nav>
+      </div>
       <section className='flex h-max items-center lg:hidden'>
         <MobileMenu />
       </section>
-    </header>
+    </nav>
   );
 }
