@@ -3,7 +3,7 @@ import { Button } from './ui/button';
 
 export default function Footer() {
   return (
-    <footer className='px-6 py-8 text-center text-sm font-light md:px-16'>
+    <footer className='border-t border-secondary px-6 py-8 text-center text-sm font-light md:px-16'>
       <p>Uncopyrighted by Juan Manzanero. 2024.</p>
       <p>The content of this website is written without AI.</p>
       <p>Built handcrafted with Next.js.</p>
