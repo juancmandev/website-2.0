@@ -9,13 +9,12 @@
             <link>https://juancman.dev</link>
         </image>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Tue, 02 Apr 2024 22:10:14 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 03 Apr 2024 03:19:48 GMT</lastBuildDate>
         <atom:link href="https://juancman.dev/rss.xml" rel="self" type="application/rss+xml"/>
         <language><![CDATA[en]]></language>
         <item>
             <title><![CDATA[I'll not continue creating content in Spanish for my website]]></title>
-            <description><![CDATA[<h1>I&#39;ll not continue creating content in Spanish for my website</h1>
-<p><img src="/blog/i-will-not-continue-creating-content-in-spanish-for-my-website/banner.jpg" alt="Letters mixed">
+            <description><![CDATA[<p><img src="/blog/i-will-not-continue-creating-content-in-spanish-for-my-website/banner.jpg" alt="Letters mixed">
 <em>Mixed letters. Photo by
 <a href="https://unsplash.com/@ninjason?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Jason Leung</a>
 on
@@ -40,8 +39,7 @@ will be just juancman.dev/blog instead of juancman.dev/[locale]/blog.</p>
         </item>
         <item>
             <title><![CDATA[Rewind 2023 and future plans]]></title>
-            <description><![CDATA[<h1>Rewind 2023 and future plans</h1>
-<p><img src="/blog/rewind-2023-and-future-plans/banner.jpg" alt="A sunset with a sign"> <em>Photo by
+            <description><![CDATA[<p><img src="/blog/rewind-2023-and-future-plans/banner.jpg" alt="A sunset with a sign"> <em>Photo by
 <a href="https://unsplash.com/@soymeraki?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Javier Allegue Barros</a>
 on
 <a href="https://unsplash.com/photos/silhouette-of-road-signage-during-golden-hour-C7B-ExXpOIE?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a></em></p>
@@ -116,8 +114,7 @@ overwhelming myself, I&#39;ll keep my <strong>ambitions simple</strong>, but <st
         </item>
         <item>
             <title><![CDATA[Peddler App]]></title>
-            <description><![CDATA[<h1>Peddler App</h1>
-<p><img src="/blog/peddler-app/banner.png" alt="Peddler App provisional logo"> <em>Peddler App
+            <description><![CDATA[<p><img src="/blog/peddler-app/banner.png" alt="Peddler App provisional logo"> <em>Peddler App
 provisional logo</em></p>
 <h2>The idea</h2>
 <p>You hear the ice cream man in his truck, you try to catch him, but the guy is
@@ -177,8 +174,7 @@ be a future feature.</p>
         </item>
         <item>
             <title><![CDATA[I participated in a Hackathon]]></title>
-            <description><![CDATA[<h1>I participated in a Hackathon</h1>
-<p><img src="/blog/i-participated-in-a-hackathon/banner.png" alt="Tech Stack"> <em>Tech stack used:
+            <description><![CDATA[<p><img src="/blog/i-participated-in-a-hackathon/banner.png" alt="Tech Stack"> <em>Tech stack used:
 Supabase, Next.js and Shadcn/UI, My first hackathon!</em></p>
 <p>I recently participated in a
 <a href="https://supabase.com/blog/supabase-lw8-hackathon">Supabase Hackathon</a>, forming
@@ -233,8 +229,7 @@ big tech trend or when.</p>
         </item>
         <item>
             <title><![CDATA[The Monotony of Social Media]]></title>
-            <description><![CDATA[<h1>The Monotony of Social Media</h1>
-<p><img src="/blog/the-monotony-of-social-media/banner.jpg" alt="Person checking social media">
+            <description><![CDATA[<p><img src="/blog/the-monotony-of-social-media/banner.jpg" alt="Person checking social media">
 <em>Person checking social media. Photo by
 <a href="https://unsplash.com/@austindistel?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Austin Distel</a>
 on
@@ -310,8 +305,7 @@ Murphy on YouTube.</p>
         </item>
         <item>
             <title><![CDATA[How Computers Works]]></title>
-            <description><![CDATA[<h1>How Computers Works</h1>
-<p><img src="/blog/how-computers-works/banner.jpg" alt="Open laptop"> <em>An open laptop. Photo by
+            <description><![CDATA[<p><img src="/blog/how-computers-works/banner.jpg" alt="Open laptop"> <em>An open laptop. Photo by
 <a href="https://unsplash.com/@fantasyflip?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'">Philipp Katzenberger</a>
 on
 <a href="https://unsplash.com/photos/iIJrUoeRoCQ?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></em></p>
@@ -432,8 +426,7 @@ group of talented persons that uses their brains to create solutions.</p>
         </item>
         <item>
             <title><![CDATA[The reason to create a version 2.0 of my website]]></title>
-            <description><![CDATA[<h1>The reason to create a version 2.0 of my website</h1>
-<p><img src="/blog/website-2.0/banner.png" alt="Tech stack"> <em>Tech Stack of this website.
+            <description><![CDATA[<p><img src="/blog/website-2.0/banner.png" alt="Tech stack"> <em>Tech Stack of this website.
 Next.js, Vercel, React.js, TypeScript and TailwindCSS</em></p>
 <p>The first version of my website was one of my biggest projects so fat, but
 <strong>now</strong> as I’ve <strong>more</strong> <strong>experience</strong> as a <strong>Frontend</strong> Engineer, I realize I
@@ -524,8 +517,7 @@ newsletter to notify people when I create a new post. Time to work!</p>
         </item>
         <item>
             <title><![CDATA[Build a fullstack web app]]></title>
-            <description><![CDATA[<h1>Build a fullstack web app</h1>
-<p><img src="/portfolio/build-a-fullstack-app/banner.png" alt="Banner with the tech stack used in this tutorial, Next.js, TailwindCSS, shadcn/ui, Prisma, PostgreSQL and Auth.js">
+            <description><![CDATA[<p><img src="/portfolio/build-a-fullstack-app/banner.png" alt="Banner with the tech stack used in this tutorial, Next.js, TailwindCSS, shadcn/ui, Prisma, PostgreSQL and Auth.js">
 <em>Tech stack used in this tutorial</em></p>
 <p><a href="https://github.com/juancmandev/fullstack-app">GitHub repo</a></p>
 <h2>Content</h2>
@@ -1602,8 +1594,7 @@ adding pagination for posts in the home, etc.</p>
         </item>
         <item>
             <title><![CDATA[Next Intl Blog Template]]></title>
-            <description><![CDATA[<h1>Next Intl Blog Template</h1>
-<p><img src="/portfolio/next-intl-blog-template/banner.png" alt="Next Intl Blog Template banner">
+            <description><![CDATA[<p><img src="/portfolio/next-intl-blog-template/banner.png" alt="Next Intl Blog Template banner">
 <em>Next Intl Blog Template banner</em></p>
 <p><a href="https://github.com/juancmandev/next-intl-blog-template">GitHub</a></p>
 <p><a href="https://next-intl-blog-template.vercel.app/en">Website</a></p>
@@ -1717,8 +1708,7 @@ export default async function Page(props: TPage) {
         </item>
         <item>
             <title><![CDATA[Human to JS]]></title>
-            <description><![CDATA[<h1>Human to JS</h1>
-<p><img src="/portfolio/human-to-js/banner.png" alt="Human to JS banner"> <em>Human to JS diagram</em></p>
+            <description><![CDATA[<p><img src="/portfolio/human-to-js/banner.png" alt="Human to JS banner"> <em>Human to JS diagram</em></p>
 <p><em>This project has been achieved.</em></p>
 <h2>Background</h2>
 <p>I’m always looking to grow my career by learning new technologies as well known
@@ -1784,8 +1774,7 @@ products, and products into a community, as
         </item>
         <item>
             <title><![CDATA[Workarise]]></title>
-            <description><![CDATA[<h1>Workarise</h1>
-<p><img src="/portfolio/workarise/banner.png" alt="Workarise Banner"> <em>Workarise Banner</em></p>
+            <description><![CDATA[<p><img src="/portfolio/workarise/banner.png" alt="Workarise Banner"> <em>Workarise Banner</em></p>
 <p><a href="https://workarise.com">Website</a></p>
 <h2>Overview</h2>
 <p><a href="http://workarise.com">Workarise</a> is a Team Manager Software as a Service to

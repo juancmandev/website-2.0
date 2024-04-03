@@ -12,34 +12,36 @@ export const metadata: Metadata = {
 };
 
 export default async function MicroblogPage() {
-  const microblogging = await getContent('microblog', 'content');
+  const microblogContent = await getContent('microblog', 'content');
   const pb = createServerClient();
   const data = await pb.collection('microblogs').getFullList({
     expand: 'tags',
     sort: '-published',
   });
 
-  if (!microblogging) return null;
+  if (!microblogContent) return null;
 
   return (
     <>
-      <Mdx code={microblogging.body.code} />
-
-      <div className='mt-10 max-w-[65ch] mx-auto flex flex-col gap-10'>
-        {data ? (
-          data.map((item) => (
-            <Microblog
-              key={item.id}
-              {...item}
-              expand={{
-                ...(item.expand as any),
-              }}
-            />
-          ))
-        ) : (
-          <p>Not found</p>
-        )}
+      <div className='prose prose-invert mx-auto'>
+        <Mdx code={microblogContent.body.code} />
       </div>
+      {data ? (
+        <ul className='mx-auto mt-10 flex max-w-[65ch] flex-col gap-10'>
+          {data.map((item) => (
+            <li key={item.id}>
+              <Microblog
+                {...item}
+                expand={{
+                  ...(item.expand as any),
+                }}
+              />
+            </li>
+          ))}
+        </ul>
+      ) : (
+        <p>Not found</p>
+      )}
     </>
   );
 }

@@ -12,5 +12,9 @@ export default async function Contact() {
 
   if (!contact) return null;
 
-  return <Mdx code={contact.body.code} />;
+  return (
+    <article className='prose prose-invert mx-auto'>
+      <Mdx code={contact.body.code} />
+    </article>
+  );
 }
