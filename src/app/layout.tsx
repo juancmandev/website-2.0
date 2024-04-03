@@ -16,7 +16,7 @@ export default async function RootLayout(props: Props) {
       <body>
         <NextTopLoader color='#00adb5' showSpinner={false} />
         <Navbar />
-        <main className='min-h-screen max-w-[1200px] px-6 pb-20 pt-36 xl:mx-auto xl:px-0'>
+        <main className='min-h-screen max-w-[1200px] px-6 pb-20 pt-24 xl:mx-auto xl:px-0'>
           {props.children}
           <BackToTop />
         </main>
