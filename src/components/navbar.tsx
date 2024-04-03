@@ -7,7 +7,7 @@ const MobileMenu = dynamic(() => import('@/components/mobile-menu'));
 
 export default function Navbar() {
   return (
-    <nav className='md:px-15 fixed top-0 z-50 flex w-full items-center justify-between border-b border-secondary px-6 py-4 backdrop-blur-lg'>
+    <nav className='md:px-15 fixed top-0 z-50 flex w-full items-center justify-between border-b border-secondary px-6 py-1 backdrop-blur-lg'>
       <div className='flex w-full max-w-[1200px] items-center justify-between xl:mx-auto'>
         <section>
           <Button
@@ -19,9 +19,9 @@ export default function Navbar() {
             <Link href='/'>
               <img
                 loading='lazy'
-                className='h-10 w-10'
-                width={40}
-                height={40}
+                className='h-8 w-8'
+                width={32}
+                height={32}
                 src='/logo.png'
                 alt='juancmandev logo'
               />
