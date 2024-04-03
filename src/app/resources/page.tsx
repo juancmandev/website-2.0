@@ -13,5 +13,9 @@ export default async function Page() {
 
   if (!resource) return null;
 
-  return <Mdx code={resource.body.code} />;
+  return (
+    <article className='prose prose-invert mx-auto'>
+      <Mdx code={resource.body.code} />
+    </article>
+  );
 }

@@ -8,9 +8,13 @@ export const metadata: Metadata = {
 };
 
 export default async function About() {
-  const contact = await getContent('about', 'content');
+  const about = await getContent('about', 'content');
 
-  if (!contact) return null;
+  if (!about) return null;
 
-  return <Mdx code={contact.body.code} />;
+  return (
+    <article className='prose prose-invert mx-auto'>
+      <Mdx code={about.body.code} />
+    </article>
+  );
 }

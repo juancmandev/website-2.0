@@ -107,9 +107,5 @@ type MdxProps = {
 export default function Mdx({ code }: MdxProps) {
   const Component = useMDXComponent(code);
 
-  return (
-    <article className='prose prose-invert mx-auto'>
-      <Component components={components} />
-    </article>
-  );
+  return <Component components={components} />;
 }

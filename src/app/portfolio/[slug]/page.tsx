@@ -66,5 +66,10 @@ export default async function Page(props: TPage) {
 
   if (!portfolio) return null;
 
-  return <Mdx code={portfolio.body.code} />;
+  return (
+    <article className='prose prose-invert mx-auto'>
+      <h1>{portfolio.title}</h1>
+      <Mdx code={portfolio.body.code} />
+    </article>
+  );
 }
