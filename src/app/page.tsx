@@ -29,7 +29,7 @@ export default async function Page() {
         </h1>
         <h2 className='text-xl'>
           I am <span className='text-primary font-semibold'>juancmandev</span>,
-          web developer.
+          Frontend Developer.
         </h2>
         <p className='text-lg'>
           Here you will find side projects, blog posts, or other related content
