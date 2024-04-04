@@ -1,8 +1,8 @@
 ![Tech Stack of this web site. Next.js, Vercel, React.js, TypeScript and TailwindCSS](/public/blog/website-2.0/banner.png)
 
-# The reason to create a version 2.0 of my web site
+# The reason to create a version 2.0 of my website
 
-I commited some errors when creating the first version of my web site, here I'll
+I commited some errors when creating the first version of my website, here I'll
 share what I've learned
 
 04-08-2023
@@ -75,7 +75,7 @@ similar, using **markdown** syntax for the content of the blog, and with an
 **extension** of **TailwindCSS** I keep the styles consistent.
 
 So, **Next.js** allows you to **choose** the **rendering** method for **each**
-**page** in your web, this feature permits to create amazing web sites in the
+**page** in your web, this feature permits to create amazing websites in the
 same project, keeping consistence and with fast load times, Next.js even lazy
 loads each page and start loading when you hover a link like Home, Contact, etc.
 
@@ -86,7 +86,7 @@ loads each page and start loading when you hover a link like Home, Contact, etc.
 I choose to use **[TailwindCSS](https://tailwindcss.com/)** to learn about this
 CSS library, and I’m impressed the **faster** that makes the development of the
 styles of a web project. **MUI** **provides** **functionalities**, but sometimes
-**gives** **problems** with **hydration** like in my previous web site, when you
+**gives** **problems** with **hydration** like in my previous website, when you
 **first** **load** the page it takes a **time** to **show** all the **styles**,
 now it no longer occurs because TailwindCSS is pure CSS and the pages are
 static.
