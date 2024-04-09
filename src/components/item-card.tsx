@@ -32,7 +32,7 @@ export default function ItemCard(props: Props) {
             src={props.image || ''}
             width={640}
             height={427}
-            className='-z-10 aspect-[640/427] h-auto max-h-[157.48px] w-full transition-all duration-300 group-hover:scale-110 group-focus:scale-110'
+            className='-z-10 aspect-[640/427] w-full h-auto max-h-[157.48px] transition-all duration-300 group-hover:scale-110 group-focus:scale-110'
             alt={props.imageCaption || 'Image caption'}
           />
         </header>

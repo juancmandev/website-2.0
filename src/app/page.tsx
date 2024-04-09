@@ -50,7 +50,7 @@ export default async function Page() {
               </li>
             ))}
         </ul>
-        <Button asChild className='mt-5'>
+        <Button asChild variant='secondary' className='mt-5'>
           <Link href='/blog'>More posts</Link>
         </Button>
       </section>
@@ -68,7 +68,7 @@ export default async function Page() {
             <p className='font-thin'>No projects found</p>
           )}
         </ul>
-        <Button asChild className='mt-5'>
+        <Button asChild variant='secondary' className='mt-5'>
           <Link href='/portfolio'>More projects</Link>
         </Button>
       </section>
