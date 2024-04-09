@@ -1,6 +1,7 @@
 import Mdx from '@/components/mdx-component';
 import { Metadata } from 'next';
 import { getAllContent, getContent } from '@/utils/get-content';
+import formatDate from '@/utils/format-date';
 
 type TParams = {
   slug: string;
@@ -70,6 +71,11 @@ export default async function Page(props: TPage) {
     <article className='prose prose-invert mx-auto'>
       <h1>{portfolio.title}</h1>
       <Mdx code={portfolio.body.code} />
+      <hr />
+      <p>
+        <strong>Posted: </strong>
+        {portfolio.date && formatDate(new Date(portfolio.date))}
+      </p>
     </article>
   );
 }

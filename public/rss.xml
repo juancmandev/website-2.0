@@ -9,7 +9,7 @@
             <link>https://juancman.dev</link>
         </image>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Thu, 04 Apr 2024 15:51:30 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 09 Apr 2024 15:03:38 GMT</lastBuildDate>
         <atom:link href="https://juancman.dev/rss.xml" rel="self" type="application/rss+xml"/>
         <language><![CDATA[en]]></language>
         <item>
@@ -28,8 +28,6 @@ practicality.</p>
 <p>I&#39;ll try to update the links to my posts shared on social media, as this website
 will be just juancman.dev/blog instead of juancman.dev/[locale]/blog.</p>
 <p>However, if you want to contact me in Spanish, feel free to do it.</p>
-<hr>
-<p><strong>Posted</strong>: February 20, 2024</p>
 ]]></description>
             <link>https://juancman.dev/blog/i-will-not-continue-creating-content-in-spanish-for-my-website</link>
             <guid isPermaLink="false">https://juancman.dev/blog/i-will-not-continue-creating-content-in-spanish-for-my-website</guid>
@@ -103,8 +101,6 @@ but a complete one.</p>
 overwhelming myself, I&#39;ll keep my <strong>ambitions simple</strong>, but <strong>constant</strong>.</p>
 <h3>Happy holidays!</h3>
 <p><img src="/blog/rewind-2023-and-future-plans/2023-complete!.png" alt="2023 complete image!"></p>
-<hr>
-<p><strong>Posted</strong>: December 16, 2023</p>
 ]]></description>
             <link>https://juancman.dev/blog/rewind-2023-and-future-plans</link>
             <guid isPermaLink="false">https://juancman.dev/blog/rewind-2023-and-future-plans</guid>
@@ -162,8 +158,6 @@ locations, for example: house</li>
 the core idea.</p>
 <p>For the MVP I don&#39;t want to implement in-app payments, but of course, it could
 be a future feature.</p>
-<hr>
-<p><strong>Posted</strong>: November 12, 2023</p>
 ]]></description>
             <link>https://juancman.dev/blog/peddler-app</link>
             <guid isPermaLink="false">https://juancman.dev/blog/peddler-app</guid>
@@ -216,8 +210,6 @@ if you’re already ready it means that’s too late.</p>
 the topic, as the tech tends to go that way, who knows what would be the next
 big tech trend or when.</p>
 <p><a href="https://groce-wise.vercel.app/">You can see the project: Grocewise here</a></p>
-<hr>
-<p><strong>Posted</strong>: August 16, 2023</p>
 ]]></description>
             <link>https://juancman.dev/blog/i-participated-in-a-hackathon</link>
             <guid isPermaLink="false">https://juancman.dev/blog/i-participated-in-a-hackathon</guid>
@@ -293,9 +285,6 @@ Murphy on YouTube.</p>
   allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
   allowFullScreen
 ></iframe>
-
-<hr>
-<p><strong>Posted</strong>: July 17, 2023</p>
 ]]></description>
             <link>https://juancman.dev/blog/the-monotony-of-social-media</link>
             <guid isPermaLink="false">https://juancman.dev/blog/the-monotony-of-social-media</guid>
@@ -414,8 +403,6 @@ people to reach billions of customers.</p>
 <p>The reason that computers are too powerful is that the marginal cost is minimal,
 you don’t need to extract something from the earth to build an app, you need a
 group of talented persons that uses their brains to create solutions.</p>
-<hr>
-<p><strong>Posted</strong>: May 29, 2023</p>
 ]]></description>
             <link>https://juancman.dev/blog/how-computers-works</link>
             <guid isPermaLink="false">https://juancman.dev/blog/how-computers-works</guid>
@@ -506,8 +493,6 @@ and straightforward.</p>
 <p>I’ll keep updating with posts, features and more content to share my experience,
 and know I’m writing this paragraph, I think the next feature it would be a
 newsletter to notify people when I create a new post. Time to work!</p>
-<hr>
-<p><strong>Posted</strong>: April 7, 2023</p>
 ]]></description>
             <link>https://juancman.dev/blog/website-2.0</link>
             <guid isPermaLink="false">https://juancman.dev/blog/website-2.0</guid>
@@ -1578,8 +1563,6 @@ edit or delete it.</p>
 <p>As you can see, create a fullstack app with Next.js and Prisma is really easy.</p>
 <p>Of course, it could be improved, adding server side validation for inputs,
 adding pagination for posts in the home, etc.</p>
-<hr>
-<p><strong>Posted</strong>: January 18, 2024</p>
 ]]></description>
             <link>https://juancman.dev/portfolio/build-a-fullstack-app</link>
             <guid isPermaLink="false">https://juancman.dev/portfolio/build-a-fullstack-app</guid>
@@ -1695,8 +1678,6 @@ export default async function Page(props: TPage) {
 }
 </code></pre>
 <p><a href="https://github.com/juancmandev/next-intl-blog-template">You can fork this template here</a></p>
-<hr>
-<p><strong>Posted</strong>: December 18, 2023</p>
 ]]></description>
             <link>https://juancman.dev/portfolio/next-intl-blog-template</link>
             <guid isPermaLink="false">https://juancman.dev/portfolio/next-intl-blog-template</guid>
@@ -1760,8 +1741,6 @@ our tech skill that serves the bread on the table to transform ideas into
 products, and products into a community, as
 <a href="https://twitter.com/serudda">@Serudda</a> talks in this
 <a href="https://www.youtube.com/watch?v=LXgPNdw8avI&t">video</a> (video audio in Spanish).</p>
-<hr>
-<p><strong>Posted</strong>: April 14, 2023</p>
 ]]></description>
             <link>https://juancman.dev/portfolio/human-to-js</link>
             <guid isPermaLink="false">https://juancman.dev/portfolio/human-to-js</guid>
@@ -1823,8 +1802,6 @@ grow a lot in these months.</p>
 that doesn’t matter at all, the only thing that matters is that you can
 understand why you’re using code, to create solutions and reach people across
 their computers.</p>
-<hr>
-<p><strong>Posted</strong>: April 13, 2023</p>
 ]]></description>
             <link>https://juancman.dev/portfolio/workarise</link>
             <guid isPermaLink="false">https://juancman.dev/portfolio/workarise</guid>
