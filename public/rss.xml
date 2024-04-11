@@ -9,9 +9,97 @@
             <link>https://juancman.dev</link>
         </image>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Thu, 11 Apr 2024 16:14:12 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 11 Apr 2024 19:28:31 GMT</lastBuildDate>
         <atom:link href="https://juancman.dev/rss.xml" rel="self" type="application/rss+xml"/>
         <language><![CDATA[en]]></language>
+        <item>
+            <title><![CDATA[A Better Way for Consuming Content]]></title>
+            <description><![CDATA[<p><img src="/blog/a-better-way-for-consuming-content/banner.webp" alt="Newspapers"> <em>Photo by
+<a href="https://unsplash.com/@ashni_ahlawat?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Ashni</a>
+on
+<a href="https://unsplash.com/photos/text-ePWaAwUn80k?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a></em></p>
+<p>Get your news without visiting websites with algorithms that shows content that
+you don&#39;t want to see.</p>
+<h2>Algorithms that Dictates What You See</h2>
+<p>Social media are not designed for showing you the latest and most important
+news, but for showing you content dictated by an algorithm.</p>
+<p>And this content is normally viral, and viral doesn&#39;t mean .</p>
+<p>Usually this algorithm prioritizes content that may get you angry.</p>
+<p>Content that promotes negativity gets more clicks rather than those whose
+promotes positivity.</p>
+<p>That&#39;s the reason why Twitter and Facebook are full of stupid and irrelevant
+posts (usually).</p>
+<p>Of course, it&#39;s really cool when the algorithm shows you content that you like,
+discovering new people and pages, but that&#39;s not usual.</p>
+<p>Adding the annoying ads and more stuff that wants you to click it.</p>
+<p>Meta (previously Facebook) knows about this, and encourages it in their products
+like Instagram and Facebook, and the same for Twitter.</p>
+<h2>The Solution: News Aggregators (RSS)</h2>
+<p>RSS is an acronym for &quot;Really Simple Syndication&quot;.</p>
+<p>It&#39;s an ancient technology, not promoted so much by companies.</p>
+<p>That&#39;s because when you read a post in an RSS Reader, you don&#39;t need to visit
+the website, and the website can&#39;t show advertisements using Google Ads (for
+example). You don&#39;t generate traffic; your visits don&#39;t count, at least not if
+you don&#39;t open the post link in your RSS Reader.</p>
+<p>Not only that, but almost every RSS Reader shows you content sorted by date, not
+by a creepy algorithm that wants you to be mad.</p>
+<p><a href="https://github.com/juancmandev/website/blob/main/scripts/rss.ts">For my website</a>,
+I use a Node.js script that takes all my files inside <code>content</code>, then generates
+the RSS Items, those with the <code>rss: true</code> in the metadata.</p>
+<h2>How to Use an RSS Reader</h2>
+<p>First, you should download one.</p>
+<p>There are many options:</p>
+<ul>
+<li><a href="https://netnewswire.com/">NetNewsWire</a>: a native RSS Reader for macOS and
+iOS, free and Open Source, my favorite option as an Apple <del>Sinner</del> user</li>
+<li><a href="https://apps.kde.org/akregator">Akregator</a>: from the KDE project for Linux</li>
+<li><a href="https://play.google.com/store/apps/details?id=com.nononsenseapps.feeder.play">Feeder</a>:
+for Android</li>
+<li><a href="https://ravenreader.app/">Raven Reader</a>: desktop cross-platform</li>
+</ul>
+<h3>Adding Feeds</h3>
+<p>Now you need to search for the RSS URL on your favorite website, like
+<a href="https://juancman.dev/rss.xml">this one</a>!</p>
+<pre><code>https://juancman.dev/rss.xml
+</code></pre>
+<p>If you open it, you&#39;ll get a weird page with code similar to HTML.</p>
+<p>Once copied, go to your RSS feed and search for &quot;Add feed&quot; or something similar,
+and paste the link, and you&#39;re done! Now you&#39;ll get the latest posts from my
+website.</p>
+<h3>Adding Social Media Feeds</h3>
+<p>You can even add feeds from sites like Reddit or YouTube.</p>
+<h4>Reddit</h4>
+<p>Just change <code>[SUBREDDIT]</code> for the name of your subreddit to add:</p>
+<pre><code>https://reddit.com/r/[SUBREDDIT]/new/.rss
+</code></pre>
+<h4>YouTube</h4>
+<p>Go to the channel to add, then go to the <strong>About</strong> tab, then click on <strong>Share &gt;
+Copy channel ID</strong>.</p>
+<p>Now just change <code>[CHANNEL ID]</code> for the copied one:</p>
+<pre><code>https://youtube.com/feeds/videos.xml?channel_id=[CHANNEL ID]
+</code></pre>
+<h3>My Favorite Feeds</h3>
+<ul>
+<li><a href="https://www.juancman.dev/rss.xml">juancman.dev (obviously!)</a></li>
+<li><a href="https://apod.com/feed.rss">Astronomic Picture of the Day (apod)</a></li>
+<li><a href="https://feeds2.feedburner.com/EarthSciencePictureoftheDay">Earth Science Picture of the Day (epod)</a></li>
+<li><a href="https://ericmurphy.xyz/index.xml">Erick Murphy (cool guy)</a></li>
+</ul>
+<h2>More About RSS</h2>
+<ul>
+<li><a href="https://www.privacytools.io/privacy-rss-feed-readers">Privacy Tools - RSS Feed Readers</a></li>
+<li><a href="https://www.privacyguides.org/en/news-aggregators/">Privacy Guides - News Aggregators</a></li>
+</ul>
+]]></description>
+            <link>https://juancman.dev/blog/a-better-way-for-consuming-content</link>
+            <guid isPermaLink="false">https://juancman.dev/blog/a-better-way-for-consuming-content</guid>
+            <category><![CDATA[Tech]]></category>
+            <category><![CDATA[Informatic]]></category>
+            <category><![CDATA[Freedom]]></category>
+            <category><![CDATA[Libre]]></category>
+            <dc:creator><![CDATA[juancmandev]]></dc:creator>
+            <pubDate>Thu, 11 Apr 2024 06:00:00 GMT</pubDate>
+        </item>
         <item>
             <title><![CDATA[I'll not continue creating content in Spanish for my website]]></title>
             <description><![CDATA[<p><img src="/blog/i-will-not-continue-creating-content-in-spanish-for-my-website/banner.jpg" alt="Letters mixed">

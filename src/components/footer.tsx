@@ -11,11 +11,17 @@ export default function Footer(props: Props) {
     <footer className='border-t border-secondary px-6 pb-20 pt-16 text-center text-sm font-light md:px-16'>
       <section className='space-y-2'>
         <p>
-          Uncopyrighted, developed and maintained by{' '}
+          Developed by{' '}
           <strong className='font-bold text-primary'>juancmandev</strong>
         </p>
-        <p>The content of this website is written without AI</p>
-        <p>Built handcrafted with Next.js</p>
+        <p>
+          Built handcrafted with{' '}
+          <Button size={null} asChild variant='link'>
+            <a href='https://nextjs.org/' target='_blank'>
+              Next.js
+            </a>
+          </Button>
+        </p>
         <p>Last built {formatDate(new Date(props.lastBuildDate))}</p>
       </section>
       <ul className='mx-auto mt-4 flex max-w-[250px] justify-between gap-2'>
