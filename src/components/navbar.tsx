@@ -28,7 +28,7 @@ export default function Navbar() {
             </Link>
           </Button>
         </section>
-        <section className='hidden items-center lg:flex'>
+        <section className='hidden items-center md:flex'>
           <ul className='flex items-center gap-4'>
             {navItems.map((navItem) => (
               <li key={navItem.label} className='h-max w-max'>
@@ -40,7 +40,7 @@ export default function Navbar() {
           </ul>
         </section>
       </div>
-      <section className='flex h-max items-center lg:hidden'>
+      <section className='flex h-max items-center md:hidden'>
         <MobileMenu />
       </section>
     </nav>
