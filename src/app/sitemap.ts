@@ -11,31 +11,32 @@ export default function sitemap(): MetadataRoute.Sitemap {
     {
       url: 'https://juancman.dev/blog',
       changeFrequency: 'monthly',
-      priority: 0.8,
+      priority: 0.9,
     },
     {
       url: 'https://juancman.dev/portfolio',
       changeFrequency: 'monthly',
+      priority: 0.9,
+    },
+
+    {
+      url: 'https://juancman.dev/microblog',
+      changeFrequency: 'monthly',
       priority: 0.8,
     },
     {
-      url: 'https://juancman.dev/about',
-      changeFrequency: 'yearly',
-      priority: 0.6,
-    },
-    {
       url: 'https://juancman.dev/resources',
-      changeFrequency: 'yearly',
-      priority: 0.6,
+      changeFrequency: 'monthly',
+      priority: 0.7,
     },
     {
-      url: 'https://juancman.dev/microblog',
-      changeFrequency: 'weekly',
-      priority: 0.6,
+      url: 'https://juancman.dev/about',
+      changeFrequency: 'monthly',
+      priority: 0.7,
     },
     {
       url: 'https://juancman.dev/contact',
-      changeFrequency: 'yearly',
+      changeFrequency: 'monthly',
       priority: 0.6,
     },
   ];

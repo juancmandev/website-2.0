@@ -5,10 +5,6 @@ type TNavItem = {
 
 export const navItems: TNavItem[] = [
   {
-    label: 'About',
-    to: '/about',
-  },
-  {
     label: 'Blog',
     to: '/blog',
   },
@@ -16,13 +12,18 @@ export const navItems: TNavItem[] = [
     label: 'Portfolio',
     to: '/portfolio',
   },
+
+  {
+    label: 'Microblog',
+    to: '/microblog',
+  },
   {
     label: 'Resources',
     to: '/resources',
   },
   {
-    label: 'Microblog',
-    to: '/microblog',
+    label: 'About',
+    to: '/about',
   },
   {
     label: 'Contact',
