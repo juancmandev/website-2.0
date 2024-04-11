@@ -2,6 +2,8 @@ import dynamic from 'next/dynamic';
 import Footer from '@/components/footer';
 import Navbar from '@/components/navbar';
 import NextTopLoader from 'nextjs-toploader';
+import rssParser from 'rss-parser';
+
 import './globals.css';
 
 const BackToTop = dynamic(() => import('@/components/back-to-top'));
@@ -10,7 +12,12 @@ type Props = {
   children: React.ReactNode;
 };
 
+const parser = new rssParser();
+const url = process.env.NEXT_PAGE_URL ?? 'https://juancman.dev';
+
 export default async function RootLayout(props: Props) {
+  const { lastBuildDate } = await parser.parseURL(`${url}/rss.xml`);
+
   return (
     <html lang='en'>
       <body>
@@ -20,7 +27,7 @@ export default async function RootLayout(props: Props) {
           {props.children}
           <BackToTop />
         </main>
-        <Footer />
+        <Footer lastBuildDate={lastBuildDate} />
       </body>
     </html>
   );
