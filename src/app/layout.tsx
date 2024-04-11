@@ -3,7 +3,6 @@ import Footer from '@/components/footer';
 import Navbar from '@/components/navbar';
 import NextTopLoader from 'nextjs-toploader';
 import rssParser from 'rss-parser';
-
 import './globals.css';
 
 const BackToTop = dynamic(() => import('@/components/back-to-top'));
