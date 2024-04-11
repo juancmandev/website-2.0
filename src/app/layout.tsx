@@ -13,7 +13,7 @@ type Props = {
 };
 
 const parser = new rssParser();
-const url = process.env.NEXT_PAGE_URL ?? 'https://juancman.dev';
+const url = process.env.NEXT_PAGE_URL ?? 'https://www.juancman.dev/';
 
 export default async function RootLayout(props: Props) {
   const { lastBuildDate } = await parser.parseURL(`${url}/rss.xml`);
