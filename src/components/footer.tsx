@@ -24,7 +24,7 @@ export default function Footer(props: Props) {
         </p>
         <p>
           Last built{' '}
-          {formatDate(new Date(props.lastBuildDate).toLocaleString())}
+          {formatDate(new Date(props.lastBuildDate).toLocaleDateString())}
         </p>
       </section>
       <ul className='mx-auto mt-4 flex max-w-[250px] justify-between gap-2'>
