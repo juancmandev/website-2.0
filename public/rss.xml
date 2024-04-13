@@ -9,7 +9,7 @@
             <link>https://juancman.dev</link>
         </image>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Sat, 13 Apr 2024 04:00:29 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 13 Apr 2024 04:03:15 GMT</lastBuildDate>
         <atom:link href="https://juancman.dev/rss.xml" rel="self" type="application/rss+xml"/>
         <language><![CDATA[en]]></language>
         <item>
@@ -44,8 +44,9 @@ you don&#39;t open the post link in your RSS Reader.</p>
 <p>The good thing is that almost every RSS Reader shows you content sorted by date,
 not by a creepy algorithm that wants you to be mad.</p>
 <p><a href="https://github.com/juancmandev/website/blob/main/scripts/rss.ts">For my website</a>,
-I use a Node.js script that takes all my files inside <code>content</code>, then generates
-the RSS Items, those with the <code>rss: true</code> in the metadata.</p>
+I use a Node.js script that takes the <code>.mdx</code> files inside <code>content/blog</code> and
+<code>content/portfolio</code>, then generates the RSS Items, those with the <code>rss: true</code> in
+the metadata.</p>
 <h2>How to Use an RSS Reader</h2>
 <p>First, you should download one.</p>
 <p>There are many options:</p>
