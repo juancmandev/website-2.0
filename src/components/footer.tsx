@@ -22,18 +22,15 @@ export default function Footer(props: Props) {
             </a>
           </Button>
         </p>
-        <p>
-          Last built{' '}
-          {formatDate(new Date(props.lastBuildDate).toLocaleDateString())}
-        </p>
+        <p>Last built {formatDate(new Date(props.lastBuildDate))}</p>
       </section>
-      <ul className='mx-auto mt-4 flex max-w-[250px] justify-between gap-2'>
+      <ul className='mx-auto mt-4 flex max-w-[200px] justify-between'>
         <li>
           <Button
             size={null}
             asChild
             variant='link'
-            className='flex w-max items-center gap-1'
+            className='flex flex-col justify-center'
           >
             <a target='_blank' href='https://github.com/juancmandev/website'>
               <Code className='w-6' />
@@ -46,7 +43,7 @@ export default function Footer(props: Props) {
             size={null}
             asChild
             variant='link'
-            className='flex w-max items-center gap-1'
+            className='flex flex-col justify-center'
           >
             <a target='_blank' href='https://juancman.dev/rss.xml'>
               <RssIcon className='w-6' />

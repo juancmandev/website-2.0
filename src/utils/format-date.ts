@@ -13,7 +13,7 @@ const months = [
   'December',
 ];
 
-export default function formatDate(date: string | Date) {
+export default function formatDate(date: Date) {
   const newDate = new Date(date);
   const month = months[newDate.getMonth()];
   const day = newDate.getDate();
