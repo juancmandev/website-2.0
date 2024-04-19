@@ -9,7 +9,7 @@
             <link>https://juancman.dev</link>
         </image>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Sat, 13 Apr 2024 18:15:40 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 19 Apr 2024 21:10:33 GMT</lastBuildDate>
         <atom:link href="https://juancman.dev/rss.xml" rel="self" type="application/rss+xml"/>
         <language><![CDATA[en]]></language>
         <item>
@@ -599,7 +599,7 @@ newsletter to notify people when I create a new post. Time to work!</p>
 <li><a href="#1-introduction">Introduction</a></li>
 <li><a href="#2-initial-setup">Initial setup</a><ol>
 <li><a href="#21-install-shadcnui">Install shadcn/ui</a></li>
-<li><a href="#22-create-a-postgresql-database-using-docker">Create a PostgreSQL database using Docker</a></li>
+<li><a href="#22-create-a-db-using-docker">Create a db using Docker</a></li>
 <li><a href="#23-install-prisma">Install Prisma</a></li>
 <li><a href="#24-config-authjs">Config Auth.js</a></li>
 </ol>
@@ -657,7 +657,7 @@ project directory:</p>
 <p>Make sure to config shadcn/ui according your project configuration.</p>
 <p>You can check the <a href="https://ui.shadcn.com/docs">shadcn/ui docs</a> for every
 component that you could need, each components is installed individually.</p>
-<h3>2.2 Create a PostgreSQL database using Docker</h3>
+<h3>2.2 Create a db using Docker</h3>
 <p>Make sure to have <a href="https://www.docker.com/">Docker</a> installed in your machine.</p>
 <p>First you need to pull a PostgreSQL image from Docker Hub:</p>
 <pre><code class="language-bash">docker pull postgres

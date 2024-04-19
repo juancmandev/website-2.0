@@ -1,8 +1,8 @@
-import dynamic from 'next/dynamic';
-import { useMDXComponent } from 'next-contentlayer/hooks';
 import cn from '@/utils/cn';
-import React from 'react';
 import Link from 'next/link';
+import dynamic from 'next/dynamic';
+import { Button } from '@/components/ui/button';
+import { useMDXComponent } from 'next-contentlayer/hooks';
 
 const CopyButton = dynamic(() => import('@/components/copy-button'));
 
@@ -31,9 +31,27 @@ const components = {
   ),
   a: ({ ...props }: IAnchor | any) =>
     props.href.startsWith('/') || props.href.startsWith('#') ? (
-      <Link {...props} />
+      <Button
+        asChild
+        size={null}
+        variant='link'
+        className='m-0 p-0 text-base no-underline hover:underline'
+      >
+        <Link {...props} />
+      </Button>
     ) : (
-      <a {...props} target='_blank' className='text-primary outline-ring' />
+      <Button
+        asChild
+        size={null}
+        variant='link'
+        className='m-0 p-0 text-base text-primary no-underline hover:underline'
+      >
+        <a
+          {...props}
+          target='_blank'
+          className='max-w-max text-primary outline-ring'
+        />
+      </Button>
     ),
   p: ({ className, ...props }: React.HTMLAttributes<HTMLParagraphElement>) => (
     <p {...props} />
