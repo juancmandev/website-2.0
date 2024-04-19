@@ -20,8 +20,8 @@ type Props = {
 export default function ItemCard(props: Props) {
   return (
     <Link
-      title={props.title}
       tabIndex={0}
+      title={props.title}
       className='group outline-card'
       href={`/${props.type}/${props.slug}`}
     >
@@ -36,21 +36,15 @@ export default function ItemCard(props: Props) {
             alt={props.imageCaption || 'Image caption'}
           />
         </header>
-        <main className='flex flex-col gap-3 p-3'>
-          <section className='flex flex-col gap-1'>
-            <h3 className='line-clamp-1 text-lg transition-colors group-hover:text-primary group-hover:underline group-focus:text-primary group-focus:underline'>
-              {props.title}
-            </h3>
-            <h4 className='flex items-center gap-1.5 text-sm'>
-              <Calendar className='w-5' />
-              <span className='mt-0.5'>
-                {props.date && formatDate(new Date(props.date))}
-              </span>
-            </h4>
-          </section>
-          <section>
-            <p>{props.description}</p>
-          </section>
+        <main className='px-3 py-2 space-y-1.5'>
+          <h3 className='line-clamp-1 text-lg font-medium group-hover:underline group-focus:underline'>
+            {props.title}
+          </h3>
+          <h4 className='text-sm font-light flex items-center gap-1'>
+            <Calendar className='w-4' />
+            <span>{props.date && formatDate(new Date(props.date))}</span>
+          </h4>
+          <p>{props.description}</p>
         </main>
       </article>
     </Link>

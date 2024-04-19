@@ -8,7 +8,7 @@ type Props = {
 
 export default function Footer(props: Props) {
   return (
-    <footer className='border-t border-secondary px-6 pb-20 pt-16 text-center text-sm font-light md:px-16'>
+    <footer className='border-t border-secondary px-6 py-10 text-center text-sm font-light md:px-16'>
       <section className='space-y-2'>
         <p>
           Developed by <strong className='font-bold '>juancmandev</strong>
