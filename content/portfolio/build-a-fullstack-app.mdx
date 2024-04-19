@@ -303,9 +303,9 @@ Create an account and get the next credentials in your .env file:
 - EMAIL_FROM: onboarding@resend(dot)dev
 - EMAIL_SERVER_PASSWORD: yor api key
 
-Now, create a `src/pages/api/auth/[...nextauth]/route.ts` file:
+Now, create a `src/app/api/auth/[...nextauth]/route.ts` file:
 
-```ts title="src/pages/api/auth/[...nextauth]/route.ts"
+```ts title="src/app/api/auth/[...nextauth]/route.ts"
 import { authOptions } from '@/libs/auth';
 import NextAuth from 'next-auth/next';
 
