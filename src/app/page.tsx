@@ -33,7 +33,7 @@ export default async function Page() {
             .
           </h2>
           <p className='text-lg'>
-            I like computers, and all stuff related with technology.
+            I like computers, and all stuff related to technology.
           </p>
           <p className='text-lg'>
             Take a seat, drink some tea, and enjoy your stay.
