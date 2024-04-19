@@ -16,18 +16,20 @@ export default async function Page() {
   sortByKeyDesc(portfolio, 'date');
 
   return (
-    <>
-      <section className='mb-10'>
-        <h1 className='mb-5 text-3xl font-bold'>Portfolio</h1>
+    <div className='space-y-8'>
+      <div className='space-y-1'>
+        <h1 className='text-3xl font-bold'>Portfolio</h1>
         <p>Check my projects.</p>
+      </div>
+      <section>
+        <ul className='flex flex-wrap gap-6'>
+          {portfolio.map((portfolioItem) => (
+            <li key={portfolioItem.slug}>
+              <ItemCard {...portfolioItem} type='portfolio' />
+            </li>
+          ))}
+        </ul>
       </section>
-      <ul className='flex flex-wrap gap-6'>
-        {portfolio.map((portfolioItem) => (
-          <li key={portfolioItem.slug}>
-            <ItemCard {...portfolioItem} type='portfolio' />
-          </li>
-        ))}
-      </ul>
-    </>
+    </div>
   );
 }
