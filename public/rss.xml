@@ -9,7 +9,7 @@
             <link>https://juancman.dev</link>
         </image>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Fri, 19 Apr 2024 22:10:36 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 19 Apr 2024 22:45:39 GMT</lastBuildDate>
         <atom:link href="https://juancman.dev/rss.xml" rel="self" type="application/rss+xml"/>
         <language><![CDATA[en]]></language>
         <item>
@@ -812,7 +812,7 @@ export const authOptions = {
 <li>EMAIL_FROM: onboarding@resend(dot)dev</li>
 <li>EMAIL_SERVER_PASSWORD: yor api key</li>
 </ul>
-<p>Now, create a <code>src/pages/api/auth/[...nextauth]/route.ts</code> file:</p>
+<p>Now, create a <code>src/app/api/auth/[...nextauth]/route.ts</code> file:</p>
 <pre><code class="language-ts">import { authOptions } from &#39;@/libs/auth&#39;;
 import NextAuth from &#39;next-auth/next&#39;;
 
