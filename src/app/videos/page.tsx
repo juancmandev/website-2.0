@@ -19,7 +19,7 @@ export default async function VideosPage() {
     <>
       <h1 className='text-3xl font-bold'>Videos</h1>
       <p>
-        My YouTube channel is in Spanish, that's because there's not enough
+        My YouTube channel is in Spanish, that is because there are not enough
         content about the topics that I talk in Spanish, but in English are
         enough (I think).
       </p>
