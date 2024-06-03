@@ -13,6 +13,7 @@ export const metadata: Metadata = {
 
 export default async function Page() {
   const blogs = await getAllContent('blog');
+  console.log(blogs);
   const projects = await getAllContent('portfolio');
 
   sortByKeyDesc(blogs!, 'date');

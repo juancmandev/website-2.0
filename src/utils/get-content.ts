@@ -2,7 +2,7 @@ import { allContents, Content } from 'contentlayer/generated';
 
 export async function getAllContent(type: string) {
   const content = allContents.filter((c: Content) =>
-    new RegExp(`${type}/`).test(c._id),
+    type === c._raw.sourceFileDir
   );
 
   if (!content) return;
