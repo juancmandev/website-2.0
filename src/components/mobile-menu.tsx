@@ -10,7 +10,7 @@ import {
 } from '@/components/ui/sheet';
 import { Button } from './ui/button';
 import { MenuIcon } from 'lucide-react';
-import { navItems } from '@/utils';
+import { navItems } from '@/utils/nav-links';
 import Link from 'next/link';
 
 export default function MobileMenu() {

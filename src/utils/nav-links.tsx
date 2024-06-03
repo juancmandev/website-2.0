@@ -22,6 +22,10 @@ export const navItems: TNavItem[] = [
     to: '/resources',
   },
   {
+    label: 'Videos',
+    to: '/videos',
+  },
+  {
     label: 'About',
     to: '/about',
   },

@@ -5,7 +5,7 @@ import formatDate from '@/utils/format-date';
 type Props = {
   title?: string;
   date?: string;
-  type?: 'blog' | 'portfolio';
+  type?: 'blog' | 'portfolio' | 'videos';
   description?: string;
   slug: string;
   tags?: string[];

@@ -1,6 +1,6 @@
 import dynamic from 'next/dynamic';
 import Link from 'next/link';
-import { navItems } from '@/utils';
+import { navItems } from '@/utils/nav-links';
 import { Button } from './ui/button';
 
 const MobileMenu = dynamic(() => import('@/components/mobile-menu'));
